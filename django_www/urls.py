@@ -18,6 +18,13 @@ from django.urls import path
 from app01 import views
 
 urlpatterns = [
+    # 网易爬虫
+    path('crawler/music/', views.crawler_music),
+    # 音乐列表编辑页
+    path('music/list/edit/<int:global_id>/', views.music_list_edit),
+    # 音乐列表
+    path('music/list/', views.music_list),
+    # 测试
     path('demo/text/', views.demo_text),
-    path('admin/', admin.site.urls),
+    # path('admin/', admin.site.urls),
 ]

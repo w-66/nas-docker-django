@@ -84,12 +84,13 @@ DATABASES = {
     'default':{
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'blog_django',
-        'USER': 'blog',
-        'PASSWORD': 'asdf;lkjblogdlmm',
+        'USER': 'blogadmin',
+        'PASSWORD': 'asdf;lkjdlmmperson',
         'HOST': 'mysql5.7.39',
         'PORT': 3306,
-    }
+    },
 }
+
 
 
 # Password validation

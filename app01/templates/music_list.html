@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favor Music</title>
+    <style>
+        table,
+            td {border: 0.2rem outset rgb(251, 207, 215);}
+    </style>
+</head>
+<body>
+    <table border="1" align="center">
+        <caption>Favor Music</caption>
+        <tr>
+            <!-- <td>1</td> -->
+            <td>编辑</td>
+            <td>序列号</td>
+            <td>添加时间</td>
+            <td>歌手</td>
+            <td>歌名</td>
+            <td>专辑</td>
+
+        </tr>
+        {% for item  in musicobj %}
+        <tr>
+            <td><a href="/music/list/edit/{{item.global_id}}/">修改</a></td>
+            <td>{{ forloop.revcounter }}</td>
+            <td>{{ item.addtime }}</td>
+            <td>{{ item.songer }}</td>
+            <td>{{ item.song   }}</td>
+            <td>{{ item.album  }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

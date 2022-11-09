@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music_list_edit</title>
+    <style>
+        input{width: 400px;}
+        input[type=submit]{width:100px}
+    </style>
+</head>
+<body>
+    <form method="post" action="">
+        {% csrf_token %}
+        <div>
+            <label>歌名</label>
+            <input name="c_song" type="text" value="{{rowobj.song}}">
+        </div>
+        <div>
+            <label>歌手</label>
+            <input name="c_songer" type="text" value="{{rowobj.songer}}">
+        </div>
+        <div>
+            <label>专辑</label>
+            <input name="c_album" type="text" value="{{rowobj.album}}">
+        </div>
+        <div>
+            <input type="submit" value="Subscribe!">
+        </div>
+
+    </form>
+
+</body>
+</html>
