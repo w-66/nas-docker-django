@@ -5171,3 +5171,321 @@ Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
 Watching for file changes with StatReloader
 [09/Nov/2022 19:54:07] "GET /crawler/music/ HTTP/1.1" 200 13
+[09/Nov/2022 20:47:30] "GET /music/list/ HTTP/1.1" 200 40288
+/www/django_www/app01/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 09, 2022 - 19:54:07
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+[09/Nov/2022 23:10:05] "GET /favicon.ico HTTP/1.1" 404 2370
+[09/Nov/2022 23:10:05] "GET /music/list/ HTTP/1.1" 200 40288
+Internal Server Error: /crawler/music/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/www/django_www/app01/views.py", line 37, in crawler_music
+    songList = get_html_selenium(wangyiyun_music_list_predownload)
+  File "/www/django_www/app01/views.py", line 60, in get_html_selenium
+    browser = webdriver.Chrome(executable_path='/usr/local/bin/chromedriver', options=chrome_option)
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/chrome/webdriver.py", line 81, in __init__
+    super().__init__(
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/chromium/webdriver.py", line 106, in __init__
+    super().__init__(
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/webdriver.py", line 288, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/webdriver.py", line 381, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/webdriver.py", line 444, in execute
+    self.error_handler.check_response(response)
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/errorhandler.py", line 249, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Stacktrace:
+#0 0x55f67be54013 <unknown>
+#1 0x55f67bc1a8f8 <unknown>
+#2 0x55f67bc42b80 <unknown>
+#3 0x55f67bc3dc25 <unknown>
+#4 0x55f67bc817f2 <unknown>
+#5 0x55f67bc8129f <unknown>
+#6 0x55f67bc79433 <unknown>
+#7 0x55f67bc4a3d5 <unknown>
+#8 0x55f67bc4b541 <unknown>
+#9 0x55f67bea5eae <unknown>
+#10 0x55f67bea93e5 <unknown>
+#11 0x55f67be8a9ee <unknown>
+#12 0x55f67beaa173 <unknown>
+#13 0x55f67be7de45 <unknown>
+#14 0x55f67beca968 <unknown>
+#15 0x55f67becaaf9 <unknown>
+#16 0x55f67bee5f62 <unknown>
+#17 0x7f5c36029609 start_thread
+
+[09/Nov/2022 23:10:05] "GET /crawler/music/ HTTP/1.1" 500 107228
+[09/Nov/2022 23:10:07] "GET /music/list/edit/6995706686862397440/ HTTP/1.1" 200 1083
+[09/Nov/2022 23:10:53] "GET /music/list/ HTTP/1.1" 200 40288
+[09/Nov/2022 23:14:32] "GET /music/list/edit/6995249053390999552/ HTTP/1.1" 200 993
+Internal Server Error: /crawler/music/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/www/django_www/app01/views.py", line 37, in crawler_music
+    songList = get_html_selenium(wangyiyun_music_list_predownload)
+  File "/www/django_www/app01/views.py", line 60, in get_html_selenium
+    browser = webdriver.Chrome(executable_path='/usr/local/bin/chromedriver', options=chrome_option)
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/chrome/webdriver.py", line 81, in __init__
+    super().__init__(
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/chromium/webdriver.py", line 106, in __init__
+    super().__init__(
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/webdriver.py", line 288, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/webdriver.py", line 381, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/webdriver.py", line 444, in execute
+    self.error_handler.check_response(response)
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/errorhandler.py", line 249, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Stacktrace:
+#0 0x55f0e67b4013 <unknown>
+#1 0x55f0e657a8f8 <unknown>
+#2 0x55f0e65a2b80 <unknown>
+#3 0x55f0e659dc25 <unknown>
+#4 0x55f0e65e17f2 <unknown>
+#5 0x55f0e65e129f <unknown>
+#6 0x55f0e65d9433 <unknown>
+#7 0x55f0e65aa3d5 <unknown>
+#8 0x55f0e65ab541 <unknown>
+#9 0x55f0e6805eae <unknown>
+#10 0x55f0e68093e5 <unknown>
+#11 0x55f0e67ea9ee <unknown>
+#12 0x55f0e680a173 <unknown>
+#13 0x55f0e67dde45 <unknown>
+#14 0x55f0e682a968 <unknown>
+#15 0x55f0e682aaf9 <unknown>
+#16 0x55f0e6845f62 <unknown>
+#17 0x7f3ede47f609 start_thread
+
+[09/Nov/2022 23:14:48] "GET /crawler/music/ HTTP/1.1" 500 107228
+/www/django_www/app01/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 09, 2022 - 23:10:02
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[09/Nov/2022 23:15:26] "GET /crawler/music/ HTTP/1.1" 200 2
+[09/Nov/2022 23:42:55] "GET /crawler/music/ HTTP/1.1" 200 2
+/www/django_www/app01/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 09, 2022 - 23:15:26
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[09/Nov/2022 23:44:43] "GET /music/list/ HTTP/1.1" 200 40288
+Internal Server Error: /crawler/music/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/www/django_www/app01/views.py", line 39, in crawler_music
+    songList = get_html_selenium(wangyiyun_music_list_predownload)
+  File "/www/django_www/app01/views.py", line 63, in get_html_selenium
+    browser = webdriver.Chrome(executable_path='/usr/local/bin/chromedriver', options=chrome_option)
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/chrome/webdriver.py", line 81, in __init__
+    super().__init__(
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/chromium/webdriver.py", line 106, in __init__
+    super().__init__(
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/webdriver.py", line 288, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/webdriver.py", line 381, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/webdriver.py", line 444, in execute
+    self.error_handler.check_response(response)
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/errorhandler.py", line 249, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Stacktrace:
+#0 0x55acfa5fd013 <unknown>
+#1 0x55acfa3c38f8 <unknown>
+#2 0x55acfa3ebb80 <unknown>
+#3 0x55acfa3e6c25 <unknown>
+#4 0x55acfa42a7f2 <unknown>
+#5 0x55acfa42a29f <unknown>
+#6 0x55acfa422433 <unknown>
+#7 0x55acfa3f33d5 <unknown>
+#8 0x55acfa3f4541 <unknown>
+#9 0x55acfa64eeae <unknown>
+#10 0x55acfa6523e5 <unknown>
+#11 0x55acfa6339ee <unknown>
+#12 0x55acfa653173 <unknown>
+#13 0x55acfa626e45 <unknown>
+#14 0x55acfa673968 <unknown>
+#15 0x55acfa673af9 <unknown>
+#16 0x55acfa68ef62 <unknown>
+#17 0x7f48162c8609 start_thread
+
+[09/Nov/2022 23:44:54] "GET /crawler/music/ HTTP/1.1" 500 107213
+/www/django_www/app01/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 09, 2022 - 23:44:32
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Internal Server Error: /crawler/music/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/www/django_www/app01/views.py", line 41, in crawler_music
+    songList = get_html_selenium(wangyiyun_music_list_predownload)
+  File "/www/django_www/app01/views.py", line 65, in get_html_selenium
+    browser = webdriver.Chrome(service=s, options=chrome_option)
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/chrome/webdriver.py", line 81, in __init__
+    super().__init__(
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/chromium/webdriver.py", line 106, in __init__
+    super().__init__(
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/webdriver.py", line 288, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/webdriver.py", line 381, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/webdriver.py", line 444, in execute
+    self.error_handler.check_response(response)
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/errorhandler.py", line 249, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Stacktrace:
+#0 0x558583a99013 <unknown>
+#1 0x55858385f8f8 <unknown>
+#2 0x558583887b80 <unknown>
+#3 0x558583882c25 <unknown>
+#4 0x5585838c67f2 <unknown>
+#5 0x5585838c629f <unknown>
+#6 0x5585838be433 <unknown>
+#7 0x55858388f3d5 <unknown>
+#8 0x558583890541 <unknown>
+#9 0x558583aeaeae <unknown>
+#10 0x558583aee3e5 <unknown>
+#11 0x558583acf9ee <unknown>
+#12 0x558583aef173 <unknown>
+#13 0x558583ac2e45 <unknown>
+#14 0x558583b0f968 <unknown>
+#15 0x558583b0faf9 <unknown>
+#16 0x558583b2af62 <unknown>
+#17 0x7ff6494c3609 start_thread
+
+[10/Nov/2022 00:37:01] "GET /crawler/music/ HTTP/1.1" 500 107295
+Not Found: /favicon.ico
+[10/Nov/2022 00:37:01] "GET /favicon.ico HTTP/1.1" 404 2370
+/www/django_www/app01/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 10, 2022 - 00:36:59
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/www/django_www/app01/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 10, 2022 - 01:17:31
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Internal Server Error: /crawler/music/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/www/django_www/app01/views.py", line 41, in crawler_music
+    songList = get_html_selenium(wangyiyun_music_list_predownload)
+  File "/www/django_www/app01/views.py", line 70, in get_html_selenium
+    browser = webdriver.Chrome(service=s, options=chrome_option)
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/chrome/webdriver.py", line 81, in __init__
+    super().__init__(
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/chromium/webdriver.py", line 106, in __init__
+    super().__init__(
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/webdriver.py", line 288, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/webdriver.py", line 381, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/webdriver.py", line 444, in execute
+    self.error_handler.check_response(response)
+  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/remote/errorhandler.py", line 249, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Stacktrace:
+#0 0x5652fadf2013 <unknown>
+#1 0x5652fabb88f8 <unknown>
+#2 0x5652fabe0b80 <unknown>
+#3 0x5652fabdbc25 <unknown>
+#4 0x5652fac1f7f2 <unknown>
+#5 0x5652fac1f29f <unknown>
+#6 0x5652fac17433 <unknown>
+#7 0x5652fabe83d5 <unknown>
+#8 0x5652fabe9541 <unknown>
+#9 0x5652fae43eae <unknown>
+#10 0x5652fae473e5 <unknown>
+#11 0x5652fae289ee <unknown>
+#12 0x5652fae48173 <unknown>
+#13 0x5652fae1be45 <unknown>
+#14 0x5652fae68968 <unknown>
+#15 0x5652fae68af9 <unknown>
+#16 0x5652fae83f62 <unknown>
+#17 0x7fa326b78609 start_thread
+
+[10/Nov/2022 01:24:55] "GET /crawler/music/ HTTP/1.1" 500 107531
+Not Found: /favicon.ico
+[10/Nov/2022 01:24:55] "GET /favicon.ico HTTP/1.1" 404 2370
+/www/django_www/app01/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 10, 2022 - 01:24:46
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[10/Nov/2022 01:26:06] "GET /crawler/music/ HTTP/1.1" 200 1066
+/www/django_www/app01/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 10, 2022 - 01:25:58
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+----------------已切换frame至g_iframe-----------------
+Watching for file changes with StatReloader
