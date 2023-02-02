@@ -1,0 +1,57 @@
+{%extends 'tplt_init_bootstrap.html'%}
+{%load static%}
+{%block bodyContent %}
+<style>
+  .custom-fs-small {
+    font-size: 9px;
+  }
+  a {
+    /* 超链接 样式 */
+    text-decoration: none;
+    color: black;
+  }
+  #log {
+  /* 记录按钮 的位置设置  */
+  margin-bottom: 30px;  /*底部距离*/
+  z-index: 2;
+  }
+
+</style>
+
+
+<title>lifelog</title>
+
+<div class="container position-relative">
+  <!-- # 记录按钮 -->
+  <div id="log" class="position-fixed bottom-0 start-50 translate-middle-x shadow rounded">
+    <a href="/lifelog/log/">
+      <button type="button" class="btn btn-outline-primary">记录</button>
+    </a>
+  </div>
+
+
+  <!-- # 内容 -->
+  {% for item in lifelog %}
+  <div class="row p-2 position-relative ">
+    <div class="col-md-12" >
+      <div class="custom-fs-small border-top rounded-0 border-primary list-group list-group-horizontal  position-absolute bg-white " style="left:30px;z-index:1;">
+        <div class=" p-1 border border-end-0">{{item.addtime}}</div>
+        <div class=" p-1 border">{{item.tag}}</div>
+        <div class=" p-1 border">{{item.location_id}}</div>
+        <div class=" p-1 border"><a href="/lifelog/edit/{{item.global_id}}/">编辑</a></div>
+
+      </div>
+
+      <div  class=" position-relative border-top border-start mt-3 p-2 pt-4 shadow-sm" >
+        <div class="">{{item.content}}</div>
+        
+        <span class="custom-fs-small mx-2 mb-1 position-absolute bottom-0 end-0 badge bg-info shadow-sm">{{item.weather}}</span>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+  
+
+{% endblock %}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        span{
+            border-bottom: 1px solid rgb(193, 193, 193);
+            margin: 3px;
+            background-color: rgb(210, 255, 239);
+        }
+        textarea{
+            overflow: hidden;
+            height: 90px;
+            width: 400px;
+        }
+    </style>
+    <title>JavaScript Learn 01</title>
+</head>
+<body>
+    <hr>
+    <div id="1">
+        <h4>九九乘法表</h4>
+        <script>
+            for (let i = 1; i <= 9; i++) {
+                for (let j = 1 ; j <= i ; j++) {
+                    // document.write(i+'*'+j+'='+(i*j)+'&nbsp  ')
+                    document.write(`<span>${j}x${i}=${(i*j)}</span>`)
+                }
+            document.write('<br>')
+            }
+        </script>
+    </div>
+    <!-- //分隔 -->
+    <hr>
+    <!-- //分隔 -->
+    <div id="2">
+        <h4>函数的声明与调用</h4>
+        <script>
+            function showStr(str='default') {
+                document.write(`<span>这是函数声明与调用 -- ${str}</span>`)
+        }
+        
+        showStr('第一次调用')
+        </script>
+        <script>
+            showStr('第二次调用')
+        </script>
+        <div><h5>默认值</h5></div>
+        <script>
+            showStr()
+        </script>
+
+    </div>
+    <!-- 分隔 -->
+    <hr>
+    <!-- //分隔 -->
+
+    <div>
+        <h4>Object 语法</h4>
+        <div>写法一</div>
+        <div>
+            <textarea name="" id="" cols="30" rows="10">
+// 声明对象
+let obj = new Object()
+// 定义对象属性
+obj.name = "qusay"
+// 调用对象属性
+document.write(obj.name)
+            </textarea>
+        </div>
+
+        <script>
+            // 声明对象
+            let obj = new Object()
+            // 定义对象属性
+            obj.name = "qusay"
+            // 调用对象属性
+            document.write(obj.name)
+        </script>
+        <hr style="color: rgb(255, 255, 255);">
+        <div>写法二</div>
+        <div>
+            <textarea name="" id="" cols="30" rows="10">
+// 声明对象
+let obj1 = Object()
+// 定义对象属性
+obj1.name = "qusay"
+// 调用对象属性
+document.write(obj1.name)
+            </textarea>
+        </div>
+
+        <script>
+            // 声明对象
+            let obj1 = Object()
+            // 定义对象属性
+            obj1.name = "qusay"
+            // 调用对象属性
+            document.write(obj1.name)
+        </script>
+        <hr style="color: rgb(255, 255, 255);">
+        <!-- ############### -->
+        <div>写法三</div>
+        <div>
+            <textarea name="" id="" cols="30" rows="10">
+// 声明对象
+let  obj2= {
+    name : "qusay"
+}
+// 调用对象属性
+document.write(obj2.name)
+            </textarea>
+        </div>
+
+        <script>
+            // 声明对象
+            let  obj2= {
+                name : "qusay"
+            }
+            // 调用对象属性
+            document.write(obj2.name)
+        </script>
+        <hr style="color: rgb(255, 255, 255);">  
+        <hr>
+        <div>
+            <h4>typeof 的使用</h4>
+            <textarea style="height: 20px;" name="" id="" cols="30" rows="10">
+document.write(typeof obj2)
+            </textarea>
+            <script>
+                document.write(typeof obj2)
+            </script>
+            
+        </div>
+    </div>
+
+</body>
+</html>

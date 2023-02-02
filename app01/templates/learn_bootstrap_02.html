@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+    <title>learn_bootstrap_02</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h2>字体颜色</h2>
+            <div>
+                <p class="text-primary">text-primary</p>
+                <p class="text-secondary">text-secondary</p>
+                <p class="text-black">text-black</p>
+                <p class="text-black-50">text-black-50</p>
+                <p class="text-blue">text-blue</p>
+            </div>
+        </div>
+        <div>
+            <h2>背景颜色</h2>
+            <div>
+                <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+                <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+                <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+                <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+                <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+                <div class="p-3 mb-2 bg-info text-white">.bg-info</div>
+                <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+                <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+                <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+                <div class="p-3 mb-2 bg-transparent text-dark">.bg-transparent</div>
+            </div>
+        </div>
+        <script src="/static/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <div>
+            <h2>列表组</h2>
+            <div>
+                <h4>内联列表</h4>
+                <ul class="list-inline">
+                    <li class="list-inline-item">1</li>
+                    <li class="list-inline-item">2</li>
+                    <li class="list-inline-item">3</li>
+                    <li class="list-inline-item">4</li>
+                </ul>
+                <h4>列表组</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">1</li>
+                    <li class="list-group-item">2</li>
+                </ul>
+                <h4>列表组---禁用与活动</h4>
+                <ul class="list-group">
+                    <li class="list-group-item active">1 active</li>
+                    <li class="list-group-item disable">2 disable</li>
+                    <li class="list-group-item disable">2 disable</li>
+                    <li class="list-group-item active">1 active</li>
+                </ul>
+                <h4>带链接的列表组</h4>
+                <ul class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">1</a>
+                    <a href="#" class="list-group-item list-group-item-action">2</a>
+                </ul>
+                <h4>去除列表外边框</h4>
+                <ul class="list-group list-group-flush">
+                    <a href="#" class="list-group-item list-group-item-action">1</a>
+                    <a href="#" class="list-group-item list-group-item-action">2</a>
+                </ul>
+                <h4>水平列表组</h4>
+                <ul class="list-group list-group-horizontal">
+                    <a href="#" class="list-group-item ">1</a>
+                    <a href="#" class="list-group-item ">2</a>
+                </ul>
+                <h4>列表的编号</h4>
+                <ul class="list-group list-group-numbered">
+                    <li class="list-group-item">Lorem, ipsum dolor.</li>
+                    <li class="list-group-item">Lorem ipsum dolor sit.</li>
+                </ul>
+                <h4>列表项目带徽章</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">qusay
+                        <small class="bg-primary badge">666</small>
+                    </li>
+                    <li class="list-group-item">Bob</li>
+                </ul>
+                <h4>列表项目背景颜</h4>
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-success">qusay</li>
+                    <li class="list-group-item list-group-item-danger">Bob</li>
+                </ul>
+                <ul class="list-group">
+                    <a class="list-group-item list-group-item-success list-group-item-action">qusay</a>
+                    <a class="list-group-item list-group-item-danger list-group-item-action">Bob</a>
+                </ul>
+                <h4>列表添加自定义内容</h4>
+                <ul class="list-group">
+                    <a class="list-group-item ">
+                        <p class="list-group-heading">Qusay</p>
+                        <p>Qusay</p>
+
+                    </a>
+                    <a class="list-group-item ">Bob</a>
+                </ul>
+
+
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">List group item heading</h5>
+                            <small>3 days ago</small>
+                        </div>
+                        <p class="mb-1">Some placeholder content in a paragraph.</p>
+                        <small>And some small print.</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">List group item heading</h5>
+                            <small class="text-muted">3 days ago</small>
+                        </div>
+                        <p class="mb-1">Some placeholder content in a paragraph.</p>
+                        <small class="text-muted">And some muted small print.</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">List group item heading</h5>
+                            <small class="text-muted">3 days ago</small>
+                        </div>
+                        <p class="mb-1">Some placeholder content in a paragraph.</p>
+                        <small class="text-muted">And some muted small print.</small>
+                    </a>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                  
+            </div>
+            
+        </div>
+        
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

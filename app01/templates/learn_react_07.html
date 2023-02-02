@@ -1,0 +1,101 @@
+{% extends 'react_import_tmplate.html' %}
+
+{% block title %}setState{% endblock %}
+{% block h2 %}setState{% endblock %}
+
+{% block content %}
+    <!-- 创建容器 -->
+    <div id="text"></div>
+    <!-- <script type="text/babel">
+        class Weather extends React.Component{
+            constructor(props){
+                super(props)
+                this.state = {isHot:false, fen:'有风'}
+                // 解决changWeather()指向问题
+                this.changW = this.changWeather.bind(this)
+            }
+            render(){
+                // console.log(this)
+                // 读取状态
+                const {isHot,fen} = this.state
+                // console.log(isHot)
+                return <h3 onClick={this.changW}>今天天气很{isHot ? '炎热' : '凉快'},{fen}！</h3>
+            }
+            changWeather(){
+                const isHot = this.state.isHot
+                this.setState({isHot:!isHot}) 
+                // console.log(isHot)
+            }
+        }
+        ReactDOM.render(<Weather/>, document.getElementById('text'))
+    </script> -->
+
+    <!-- #####精简##### -->
+<textarea name="" id="" cols="100" rows="30">
+<script type="text/babel">
+    class Weather extends React.Component{
+        constructor(props){
+            super(props)
+            this.state = {isHot:false, fen:'有风'}
+            // 解决changWeather()指向问题
+            this.changW = this.changWeather.bind(this)
+        }
+        render(){
+            // console.log(this)
+            // 读取状态
+            const {isHot,fen} = this.state
+            // console.log(isHot)
+            return <h3 onClick={this.changW}>今天天气很{isHot ? '炎热' : '凉快'},{fen}！</h3>
+        }
+        changWeather(){
+            const isHot = this.state.isHot
+            this.setState({isHot:!isHot}) 
+            // console.log(isHot)
+        }
+    }
+    ReactDOM.render(<Weather/>, document.getElementById('text'))
+</script>
+
+</textarea>
+
+<h5>精简后</h5>
+    <textarea name="" id="" cols="100" rows="20">
+<script type="text/babel">
+    class Weather extends React.Component{
+        // 初始化状态
+        state = {isHost:false, fen:'有风'}
+
+        render(){
+            const {isHot,fen} = this.state
+            return <h3 onClick={this.changWeather}>今天天气很{isHot ? '炎热' : '凉快'},{fen}！</h3>
+        }
+        // 自定义方法
+        changWeather = ()=>{
+            const isHot = this.state.isHot
+            this.setState({isHot:!isHot}) 
+        }
+    }
+    // 渲染组件到页面
+    ReactDOM.render(<Weather/>, document.getElementById('text'))
+</script>
+    </textarea>
+    <!-- 创建组件 -->
+    <script type="text/babel">
+        class Weather extends React.Component{
+            // 初始化状态
+            state = {isHost:false, fen:'有风'}
+
+            render(){
+                const {isHot,fen} = this.state
+                return <h3 onClick={this.changWeather}>今天天气很{isHot ? '炎热' : '凉快'},{fen}！</h3>
+            }
+            // 自定义方法
+            changWeather = ()=>{
+                const isHot = this.state.isHot
+                this.setState({isHot:!isHot}) 
+            }
+        }
+        // 渲染组件到页面
+        ReactDOM.render(<Weather/>, document.getElementById('text'))
+    </script>
+{% endblock %}

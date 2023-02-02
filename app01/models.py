@@ -1,6 +1,26 @@
+# This is an auto-generated Django model module.
+# You'll have to do the following manually to clean this up:
+#   * Rearrange models' order
+#   * Make sure each model has one field with primary_key=True
+#   * Make sure each ForeignKey and OneToOneField has `on_delete` set to the desired behavior
+#   * Remove `managed = False` lines if you wish to allow Django to create, modify, and delete the table
+# Feel free to rename the models, but don't rename db_table values or field names.
 from django.db import models
 
-# Create your models here.
+
+class App01Lifelog(models.Model):
+    global_id = models.PositiveBigIntegerField(verbose_name="ID", primary_key=True)
+    addtime = models.DateTimeField(verbose_name="添加时间")
+    tag = models.CharField(verbose_name="分类", max_length=128, blank=True, null=True)
+    content = models.TextField(verbose_name="内容")
+    weather = models.CharField(verbose_name="天气", max_length=64, null=True)
+    location_id = models.IntegerField(verbose_name="地址", db_column='location_Id')  # Field name made lowercase.
+
+    class Meta:
+        managed = False
+        db_table = 'app01_lifelog'
+        
+
 class AuthGroup(models.Model):
     name = models.CharField(unique=True, max_length=150)
 
@@ -115,11 +135,18 @@ class DjangoSession(models.Model):
         db_table = 'django_session'
 
 
-class UserInfo(models.Model):
+class LearningAppUserinfo(models.Model):
     id = models.BigAutoField(primary_key=True)
     name = models.CharField(max_length=32)
     password = models.CharField(max_length=32)
-    # age = models.IntegerField(blank=True, null=True)
+    age = models.IntegerField(blank=True, null=True)
+
+    class Meta:
+        managed = False
+        db_table = 'learning_app_userinfo'
+
+# 第二个数据库
+
 
 class Favormusic(models.Model):
     song = models.CharField(max_length=128)
@@ -128,10 +155,31 @@ class Favormusic(models.Model):
     album = models.CharField(max_length=100, blank=True, null=True)
     info_from = models.IntegerField()
     duration = models.TimeField()
-    global_id = models.PositiveBigIntegerField(primary_key = True)
-    native_id = models.CharField(max_length=18)
+    global_id = models.PositiveBigIntegerField(unique=True)
+    native_id = models.CharField(primary_key=True, max_length=18)
+    tag = models.CharField(max_length=1024, blank=True, null=True)
 
     class Meta:
         managed = False
         db_table = 'favormusic'
+        unique_together = (('native_id', 'info_from'), ('native_id', 'info_from'),)
+        db_tablespace = 'second_db'
+
+
+class Lifelog(models.Model):
+    global_id = models.PositiveBigIntegerField(verbose_name="ID", primary_key=True)
+    addtime = models.DateTimeField(verbose_name="添加时间")
+    tag = models.CharField(verbose_name="分类", max_length=128, blank=True, null=True)
+    content = models.TextField(verbose_name="内容")
+    weather = models.CharField(verbose_name="天气", max_length=64, null=True)
+    location_id = models.IntegerField(verbose_name="地址", db_column='location_Id')  # Field name made lowercase.
+
+    class Meta:
+        managed = False
+        db_table = 'lifelog'
+        db_tablespace = 'second_db'
+       
+
+        
+
 

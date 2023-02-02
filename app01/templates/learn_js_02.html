@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Learn 02</title>
+</head>
+<body>
+    <!-- <script>
+        function fn() {
+            return ()=>alert('警告提示')
+        }
+        let result = fn()
+        document.write(result)
+        // alert('警告提示')
+    </script> -->
+
+<!-- ###################### -->
+<h4>类的定义与类的属性定义，与类的调用</h4>
+<textarea name="" id="" cols="30" rows="10" style="width: 550px; height: 130px;">
+    class Person{   // 定义类
+        name = '1'  // 定义类的实例属性name
+        two = '2'   // 定义类的实例属性two
+        static version = 'v1'  // 定义类的静态属性 version
+    }
+    let p1 = new Person()            // 类的实例化 Person类实例化一个p1对象
+    document.write(p1.name, p1.two)  // 对象p1调用类的示例属性 name与two
+    document.write(Person.version)   // 调用类的静态属性 version
+</textarea>
+
+<script>
+    class Person{   // 定义类
+        name = '1'  // 定义类的实例属性name
+        two = '2'   // 定义类的实例属性two
+        static version = 'v1'  // 定义类的静态属性 version
+    }
+    let p1 = new Person()            // 类的实例化 Person类实例化一个p1对象
+    document.write(p1.name, p1.two)  // 对象p1调用类的示例属性 name与two
+    document.write(Person.version)   // 调用类的静态属性 version
+</script>
+
+<!-- ########################################## -->
+<h4>类的方法</h4>
+
+<script>
+    class C2{
+        name = 'TT'
+        sayHi(){
+            document.write('实例方法输出')
+        }
+        static sayHi2(){
+            document.write('静态方法输出')
+        }
+    }
+    const c2 = new C2() // 创建实例c2
+    c2.sayHi()   // 调用实例方法 sayHi
+    C2.sayHi2()  // 调用静态方法 sayHi2
+</script>
+<!-- ########################################## -->
+<h4>构造函数</h4>
+<script>
+    class C3{
+        constructor(name, age){
+            this.name = name;
+            this.age  = age;
+        }
+    }
+    const c3 = new C3('玉皇大帝', '与天同寿')
+    document.write('构造函数输出: ', c3.name, c3.age)
+</script>
+<!-- ########################################## -->
+<h4>私有属性</h4>
+<script>
+    class C4{
+        #name
+        #age
+        constructor(name, age){
+            this.#name = name;
+            this.#age  = age;
+        }
+        getName(){
+            return this.#name
+        }
+        setName(name){
+            this.#name = name
+        }
+        get age(){
+            return this.#age
+        }
+        set age(age){
+            if (age >= 0){
+                this.#age = age    
+            }
+            
+        }
+    }
+    const c4 = new C4('老猪', '888')
+    console.log(c4.age)
+    c4.age = 999
+    console.log(c4.age)
+</script>
+<!-- ########################################## -->
+<h4>数组</h4>
+<script>
+    const arr1 = [1, 'one']
+    const arr2 = new Array(1, 'one')
+    console.log(arr1)
+    console.log(arr2)
+    console.log(typeof(arr1), typeof(arr2))
+
+    const arr3 = [0,1,2, 'tree', '四', {name:'qusay'}, ()=>{}]
+    console.log(arr3[0], typeof(arr3[0]))
+    console.log(arr3[5], typeof(arr3[5]))
+    console.log(arr3[6], typeof(arr3[6]))
+</script>
+<!-- ########################################## -->
+<h4>for of</h4>
+<script>
+    const arr4 = ["老大", "老二", "老三"]
+    for(let value of arr4){
+        console.log(1)
+        console.log(value)
+    }
+</script>
+<!-- ########################################## -->
+<h4>数组方法</h4>
+<script>
+    console.log('###################分隔符#######################')
+    const arr5 = ["老大", "老二", "老三"]
+    console.log(arr5.at(0))
+    console.log(arr5.at(1))
+    console.log(arr5.at(-1))
+    console.log(arr5.at(-2))
+</script>
+<script>
+    console.log('###################分隔符#######################')
+    const arr6 = ["老大", "老二", "老三"]
+    const arr7 = ["张三", "李四", "王五"]
+    const arr8 = ["老六"]
+    console.log(arr6.concat(arr7, arr8))
+</script>
+<script>
+    console.log('###################分隔符#######################')
+    const arr9 = ["老大", "老二", "老三"]
+    console.log(arr6.indexOf('老三'))    // 从0开始查询
+    console.log(arr6.indexOf('老三',1))  // 从1开始查询，跳过0，节省时间
+</script>
+<script>
+    console.log('###################分隔符#######################')
+    const arr10 = ["老大", "老二", "老三"]
+    console.log(arr10.join(), typeof(arr10.join())) 
+    console.log(arr10.join(':'))
+</script>
+<script>
+    console.log('###################分隔符#######################')
+    const arr11 = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight"]
+    console.log(arr11.slice(0))  // 从0开始到最后的所有数据
+    console.log(arr11.slice(1))  // 从1开始到最后的所有数据
+    console.log(arr11.slice(0,3))// 从0开始到第3个截止三个数据
+    console.log(arr11.slice(3,5))// 从3开始到第5个截止两个数据
+    console.log(arr11.slice(-1)) // 倒数第1的数据
+    console.log(arr11.slice(-3)) // 从倒数第3个值，往后所有数据
+    console.log(arr11.slice(-3,-1))  // 从倒数第3个值到倒数第1个值，两个值
+</script>
+
+<!-- ########################################## -->
+<h4>对象的复制</h4>
+<script>
+    console.log('###################对象的复制#######################')
+    const arr12 = ['one', 'two']
+    const arr13 = arr12
+    console.log(arr12 === arr13)  // 返回true 表示二者指向同一个对象
+
+    const arr14 = arr12.slice()
+    console.log(arr14 === arr12)   // 返回false 表示两者不相同
+</script>
+
+<!-- ########################################## -->
+<h4>浅拷贝与深拷贝</h4>
+<script>
+    console.log('###################浅拷贝与深拷贝#######################')
+    const arr15 = [{1:'one'}, {2:'two'}]
+
+    const arr16 = arr15.slice()           // 浅拷贝
+    const arr17 = structuredClone(arr15)  // 深拷贝
+    
+    console.log('arr15与arr16的浅拷贝对象的是否相同：',arr15 === arr16)
+    console.log('arr15与arr16的浅拷贝对象中的值是否相同：',arr15[0] === arr16[0])
+    console.log('arr15与arr17的深拷贝对象是否相同：',arr15 === arr17)
+    console.log('arr15与arr17的浅拷贝对象中的值是否相同：',arr15[0] === arr17[0])
+</script>
+
+<!-- ########################################## -->
+<h4>浅拷贝方式</h4>
+<script>
+    console.log('###################数组 浅拷贝#######################')
+    const arr18 = ['one', 'two']
+    const arr19 = [...arr18]
+    console.log(arr18 === arr19)
+    console.log(arr19, '----', arr18)
+    console.log('###################对象 浅拷贝#######################')
+    const obj1 = [{1:'one'}, {2:'two'}]
+    const obj2 = Object.assign({},obj1)
+    console.log(obj1, '----',obj2)
+    console.log('#####')
+    obj3 = {}
+    Object.assign(obj3,obj1)
+    console.log(obj1, '----',obj3)
+    console.log('#####')
+    const obj4 = [...obj1]
+    console.log(obj1, '----',obj4)
+</script>
+
+<!-- ########################################## -->
+<h4>数组的方法</h4>
+<script>
+    console.log('##################数组的方法 2########################')
+    const arr30 = ['a', 'b', 'c', 'd', 'e']
+    // 参数1, 参数2, 参数3
+    // 参数1：保留前几个值; 参数2：指定从参数1之后删除几个值; 参数3：将被删除的值的位置填充值
+    // ### 保留值 ###
+    // a = arr30.splice(1)     // splice之后arr30的值: Array [ "a" ]
+    // a = arr30.splice(2)     // splice之后arr30的值: Array [ "a", "b" ]
+    // ### 删除指定个数的值 ###
+    // a = arr30.splice(1,1)   // splice之后返回的值:  Array [ "b" ]  
+                               // splice之后arr30的值: Array(4) [ "a", "c", "d", "e" ]
+    // a = arr30.splice(1,2)   // splice之后返回的值:  Array [ "b", "c" ]
+                               // splice之后arr30的值: Array(3) [ "a", "d", "e" ]
+    // a = arr30.splice(2,2)   // splice之后返回的值:  Array [ "c", "d" ]
+                               // splice之后arr30的值: Array(3) [ "a", "b", "e" ]
+    // ### 删除并替换 ###
+    // a = arr30.splice(2,2, '替身攻击')  // splice之后返回的值:  Array [ "c", "d" ]
+                                          // splice之后arr30的值: Array(4) [ "a", "b", "替身攻击", "e" ]
+    // a = arr30.splice(0,2, '替身攻击')  // splice之后返回的值:  Array [ "a", "b" ] 
+                                          // splice之后arr30的值: Array(4) [ "替身攻击", "c", "d", "e" ]
+    // ### 插入 ###
+    // a = arr30.splice(0,0, '替身攻击')  // splice之后返回的值:  Array []
+                                          // splice之后arr30的值:  Array(6) [ "替身攻击", "a", "b", "c", "d", "e" ]          
+    // a = arr30.splice(3,0, '替身攻击')  // splice之后返回的值:  Array []
+                                          // splice之后arr30的值:  Array(6) [ "a", "b", "c", "替身攻击", "d", "e" ]
+    // console.log('splice之后返回的值: ', a) 
+    // console.log('splice之后arr30的值: ', arr30)
+    // ##################################
+    const arr31 = ['a', 'b', 'c', 'd', 'e']
+    console.log(arr31.reverse())   // Array(5) [ "e", "d", "c", "b", "a" ]
+
+</script>
+
+<!-- ########################################## -->
+<h4>数组去重</h4>
+<script>
+    console.log('##################数组去重########################')
+    const arr33 = [1,3,3,3,5,6,2,5,76,8,2,4,2,0,9,55,44,44,0]
+    const arr32 = ['a', 'a', 'b', 'a', 'c', 'd', 'e', 'd', 'e']
+    const arr34 = []
+    for(let item of arr33){              // 遍历arr33中每一个值
+        // console.log(item, arr34.indexOf(item))  
+        if(arr34.indexOf(item) === -1){  // indexOf没有找到值 则返回 -1
+            arr34.push(item)             // 如果不存在 添加值到arr34数组
+        }
+    }
+    document.write(arr34)
+</script>
+
+
+<!-- ########################################## -->
+<h4>数组排序</h4>
+<h5>冒泡排序</h5>
+<script>
+    console.log('##################数组排序从小到大：冒泡排序########################')
+    const arr35 = [10,20,3,2,1,0]
+    for(let j=0; j<arr35.length-1; j++){        // 数组中的每个数循环一次，但是倒数第二次之后就已经完成排序，所以可以减少一次
+        for(let i=0; i<arr35.length-1-j; i++){  // 循环一次数组，将一个数排到对应位置，如20排到最后面。最后一个数不需要比较，可以减少一次循环
+                                                // 但是排到最后的数字一定是最大的，所以不需要再比可以减去
+            if(arr35[i] > arr35[i+1]){          // 如果检测左边的值大于右边的值
+                [arr35[i], arr35[i+1]] = [arr35[i+1], arr35[i]]  // 将两个值的交换
+            }
+        }
+    console.log(j)
+    console.log(arr35)
+    }
+</script>
+<h5>选择排序</h5>
+<script>
+    console.log('##################数组排序从小到大：选择排序########################')
+    const arr36 = [10,20,3,2,1,0]
+    // 过程 第一个数与后面左右数进行比较，如果比第一个大，就替换，然后继续向后比较
+    for(let j=0; j<arr36.length-1; j++){      //
+        for(let i=j+1; i<arr36.length; i++){ 
+            if(arr36[j]>arr36[i]){
+                [[arr36[i]],[arr36[j]]] = [[arr36[j]],[arr36[i]]]
+            }
+        }
+    console.log(j)
+    console.log(arr36)
+    }
+</script>
+
+
+<br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

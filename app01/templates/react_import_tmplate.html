@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <h2>{% block h2 %}{% endblock %}</h2>
+
+    <!-- react 核心库 -->
+    <script type="text/javascript" src="/static/js/react.development.js"></script>     
+    <!-- 用于react 操作DOM  -->
+    <script type="text/javascript" src="/static/js/react-dom.development.js"></script> 
+    <!-- 将jsx转换为js -->
+    <script type="text/javascript" src="/static/js/babel.min.js"></script>
+    <!-- 引入prop-types.js，用于限制组件标签属性限制 -->
+    <script type="text/javascript" src="/static/js/prop-types.js"></script>
+    {% block content %}{% endblock %}
+    
+</body>
+</html>

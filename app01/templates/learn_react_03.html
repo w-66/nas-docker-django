@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>react JSX语法规则</title>
+    <style>
+        .title{
+            width: 200px;
+            background-color: darkgray;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>JSX语法规则</h2>
+    <div id="text"></div>
+
+    <!-- react 核心库 -->
+    <script type="text/javascript" src="/static/js/react.development.js"></script>     
+    <!-- 用于react 操作DOM  -->
+    <script type="text/javascript" src="/static/js/react-dom.development.js"></script> 
+    <!-- 将jsx转换为js -->
+    <script type="text/javascript" src="/static/js/babel.min.js"></script>
+
+    <script type="text/babel">  
+        const myID = "TITLE"
+        const myData = "hello JSX"
+        const VDOM = (
+            <div>
+                <h3 className="title" id={myID}>
+                    {% verbatim %}      
+                    <span style={{color:'white', fontSize:'30px'}}>{myData.toLowerCase()}</span>
+                    {% endverbatim %}
+                </h3>
+                <h3>
+                    <p>标签必须闭合(如input)</p>
+                    <input type="text"/>
+                    <p>只能存在一个跟标签(目前)</p>
+                </h3>
+            </div>
+            
+        ) 
+        ReactDOM.render(VDOM, document.getElementById('text'))
+    </script>  
+</body>
+</html>

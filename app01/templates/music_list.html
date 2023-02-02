@@ -1,38 +1,117 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Favor Music</title>
-    <style>
-        table,
-            td {border: 0.2rem outset rgb(251, 207, 215);}
-    </style>
-</head>
-<body>
-    <table border="1" align="center">
-        <caption>Favor Music</caption>
-        <tr>
-            <!-- <td>1</td> -->
-            <td>编辑</td>
-            <td>序列号</td>
-            <td>添加时间</td>
-            <td>歌手</td>
-            <td>歌名</td>
-            <td>专辑</td>
 
-        </tr>
-        {% for item  in musicobj %}
-        <tr>
-            <td><a href="/music/list/edit/{{item.global_id}}/">修改</a></td>
-            <td>{{ forloop.revcounter }}</td>
-            <td>{{ item.addtime }}</td>
-            <td>{{ item.songer }}</td>
-            <td>{{ item.song   }}</td>
-            <td>{{ item.album  }}</td>
-        </tr>
-        {% endfor %}
-    </table>
-</body>
-</html>
+{%extends 'tplt_init_bootstrap.html'%}
+{%load static%}
+
+{%block bodyContent %}
+
+<style>
+    /* 去除body的滚动条 */
+    body {   
+        overflow-y: hidden;
+    }
+    /* 火狐浏览器 滚动条设置 */
+    #ml {
+        overflow:scroll;
+        /* overflow-x: hidden; */  /*在隐藏x滚动条会导致超出部份因无法滚动而看不到*/
+        scrollbar-width: thin;
+        scrollbar-color: #0dcaf0 rgb(6, 6, 6);
+    }
+    /* 谷歌浏览器 滚动条设置 */
+    ::-webkit-scrollbar {
+        width: 10px; /* 设置滚动条宽度 */
+        background-color: rgb(255, 255, 255); /* 设置滚动条背景色 */
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: #0dcaf0; /* 设置滚动条按钮背景色 */
+    }
+    /* 火狐滚动条自定义设置 */
+</style>
+
+<style>
+    /*设置表格高度 占满屏幕高度*/
+    #ml { 
+        height: 95vh;
+    }
+</style>
+
+<style>
+    table td{
+    word-break: break-all;        /*允许在字内换行,即单词可分*/
+    word-wrap:break-word;         /*允许长单词或URL地址换行*/ 
+    font:500 16px Arial;
+}
+</style>
+
+<style>
+    table {
+        table-layout: fixed;      /*去除表格自适应列宽 默认列 等宽*/
+    }
+    td {
+        overflow: hidden;         /*超出隐藏*/
+        white-space: nowrap;      /*不换行*/
+        text-overflow: ellipsis;  /*超出文字使用...替代*/
+    }
+</style>
+
+<style>
+    /*设置列宽*/
+    #t1>thead>tr>th:nth-child(-n+2) {  /*前2排*/
+        width: 60px;
+    }
+    #t1>thead>tr>th:nth-child(3) {     /*第3列*/
+        width: 130px;
+    }
+    #t1>thead>tr>th:nth-child(4) {     /*第4列*/
+        width: 150px;
+    }
+    #t1>thead>tr>th:nth-child(n+5):nth-child(-n+6) {  /*第5列到第6列*/
+        width: 180px;
+    }
+    #t1>thead>tr>th:nth-child(8) {
+        width: 195px;
+    }
+</style>
+    <title>Music List</title>
+    <div class="container">
+        <div class="row">
+            <!-- <div class="col-md-1"></div> -->
+            <div class="col-md-12">
+                <div><h1 class="h1 bg-black m-0  text-info text-center w-100 p-2">音乐信息列表</h1></div>
+                <div id="ml" class="table-responsive-md col custom-table-width" >
+                    <table id="t1" class="table table-hover table-bordered table-striped">  
+                        <caption class="caption-top  bg-info m-0  text-light text-center w-100">Favor Music</caption>
+                        <thead  class="table-dark">
+                            <tr>
+                                <th scope="col" class="text-nowrap">编辑</th>
+                                <th scope="col" class="text-nowrap">序列号</th>
+                                <th scope="col" class="text-nowrap">native_id</th>
+                                <th scope="col" >标签</th>
+                                <th scope="col" >歌手</th>
+                                <th scope="col" >歌名</th>
+                                <th scope="col" >专辑</th>
+                                <th scope="col" >添加时间</th>
+                            </tr>
+                        </thead>  
+                        {% for item  in musicobj %}
+                        <tr class="table">
+                            <td class="table-info"><a class="text-decoration-none" href="/music/list/edit/{{item.global_id}}/">修改</a></td>
+                            <td class="table-info" >{{ forloop.revcounter }}</td>
+                            <td class="">{{ item.native_id }}</td>
+                            <td>{{ item.tag       }}</td>
+                            <td>{{ item.songer    }}</td>
+                            <td>{{ item.song      }}</td>
+                            <td>{{ item.album     }}</td>
+                            <td>{{ item.addtime   }}</td>
+                        </tr>
+                        {% endfor %}
+                    </table>
+                </div>            
+
+            </div>
+            <!-- <div class="col-md-1"></div> -->
+
+        </div>
+    </div>
+
+
+    {% endblock %}

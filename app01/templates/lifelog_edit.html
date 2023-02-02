@@ -1,0 +1,44 @@
+{%extends 'tplt_init_bootstrap.html'%}
+
+{%block bodyContent %}
+
+<title>{{global_id}}</title>
+<div class="container">
+    <div class="col-md-12">
+        <div ><h1 class="h1 bg-black  text-info text-center w-100 p-2 mb-3">日志编辑</h1></div>
+        <div>
+            <div class="shadow p-4 mb-3 border " >
+                <form method="post" action="">
+                    {% csrf_token %}
+                    <div class="form-label h3 text-info text-center">{{global_id}}</div>
+                    <div class="mb-3 pt-1">
+                        <label for="exampleInputEmail1" class="form-label">添加时间</label>
+                        <input name="c_song" type="text" value="{{onerow.addtime}}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <!-- <div id="emailHelp" class="form-text">歌名哒</div> -->
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">分类</label>
+                        <input name="c_songer" type="text" value="{{onerow.tag}}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">地址</label>
+                        <input name="c_album" type="text" value="{{onerow.location_id}}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">天气与温度</label>
+                        <input name="c_tag" type="text" value="{{onerow.weather}}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">内容</label>
+                        <textarea name="c_tag" class="form-control" id="exampleInputEmail1" rows="3" >{{onerow.content}}</textarea>
+                    </div>
+                    <button form="in1" type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+    
+</div>
+
+{% endblock %}

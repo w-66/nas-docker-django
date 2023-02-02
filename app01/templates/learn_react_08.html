@@ -1,0 +1,42 @@
+{% extends 'react_import_tmplate.html' %}
+
+{% block title %}组件实例的三大核心属性：props{% endblock %}
+{% block h2 %}组件实例的三大核心属性：props{% endblock %}
+
+{% block content %}
+    <!-- 创建容器 -->
+    <div id="text"></div>
+    <div id="text1"></div>
+    <div id="text2"></div>
+
+    <script type="text/babel"> 
+        class Person extends React.Component{
+            static propTypes = {
+                name:PropTypes.string.isRequired,  // 限制为，name只能是字符串类型，否则将报错
+            }
+            static defaultProps = {
+                age:18,
+            }
+            render(){
+                const {name, age, weight} = this.props  // 解构赋值
+                return (
+                    <ul>
+                        <li>{name}</li>
+                        <li>{age+1}</li>
+                        <li>{weight}</li>
+                    </ul>
+                )
+            }
+        }
+
+        const p = {name:'tom',age:20,weight:'50kg'}
+        ReactDOM.render(<Person {...p}/>, document.getElementById('text'))
+
+        ReactDOM.render(<Person name='kaka' age={29} weight='50kg'/>, document.getElementById('text1'))
+        
+        const p2 = {name:'jojo', weight:'50kg'}
+        ReactDOM.render(<Person {...p2}/>, document.getElementById('text2'))
+    </script>
+
+
+{% endblock %}

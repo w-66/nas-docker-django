@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>react learn 01</title>
+</head>
+<body>
+    <div id="text"></div>
+
+    <!-- react 核心库 -->
+    <script type="text/javascript" src="/static/js/react.development.js"></script>     
+    <!-- 用于react 操作DOM  -->
+    <script type="text/javascript" src="/static/js/react-dom.development.js"></script> 
+    <!-- 将jsx转换为js -->
+    <script type="text/javascript" src="/static/js/babel.min.js"></script>
+    
+    <script type="text/babel">  //这里必须写text/babel
+        const var1 = 'Angular'
+        const var2 = 'React'
+        const var3 = 'Vue'
+            // 创建虚拟DOM
+            const VDOM = (
+                <div>
+                    <h1>前端JS框架列表</h1>
+                    <ul>
+                        <li>{var1}</li>
+                        <li>{var2}</li>
+                        <li>{var3}</li>
+                    </ul>
+                </div>
+            )  
+            // 渲染虚拟DOM到页面
+            ReactDOM.render(VDOM,document.getElementById('text'))
+    </script>  
+</body>
+</html>

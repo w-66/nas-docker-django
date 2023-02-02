@@ -1,0 +1,18 @@
+{% extends 'react_import_tmplate.html' %}
+
+{% block title %}类式组件{% endblock %}
+{% block h2 %}类式组件{% endblock %}
+
+{% block content %}
+<!-- // 创建容器 -->
+<div id="text"></div>
+
+<script type="text/babel">
+    class MyComponent extends React.Component {
+        render(){
+            return  <h3>我是类定义的组件(适用于[复杂组件]的定义)</h3>
+        }
+    }
+    ReactDOM.render(<MyComponent/>, document.getElementById('text'))
+</script>
+{% endblock %}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>react learn 02</title>
+</head>
+<body>
+    <!-- 创建一个容器 -->
+    <div id="text"></div>
+
+    <!-- react 核心库 -->
+    <script type="text/javascript" src="/static/js/react.development.js"></script>     
+    <!-- 用于react 操作DOM  -->
+    <script type="text/javascript" src="/static/js/react-dom.development.js"></script> 
+    <!-- 将jsx转换为js -->
+    <script type="text/javascript" src="/static/js/babel.min.js"></script>
+    <script type="text/babel">  //这里必须写text/babel
+            // 创建虚拟DOM
+            const VDOM = (  //这里不用写引号，因为不是字符串
+                    <h1 id="title">
+                        <span>hello react</span>
+                    </h1>
+            )
+            // 渲染虚拟DOM到页面
+            ReactDOM.render(VDOM,document.getElementById('text'))
+    </script>  
+</body>
+</html>

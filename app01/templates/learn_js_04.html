@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <button id="a1">按钮1</button>
+    <button id="a2">按钮2</button>
+    <button onclick="demo()">按钮3</button>
+    <script>
+        const va1 = document.getElementById('a1')
+        va1.addEventListener('click', ()=>{
+            alert('按钮1被点击')
+        })
+        const va2 = document.getElementById('a2')
+        va2.onclick = ()=>{
+            alert('按钮2被点击')
+        }
+        function demo(){
+            alert('按钮3被点击')
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <a href="#" class="brand">Logo</a>
+    <div class="menu-btn"></div>
+    <div class="navigation">
+      <div class="navigation-items">
+        <a href="#">Home</a>
+        <a href="#" >About</a>
+        <a href="#" >Explore</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contart</a>
+      </div>
+    </div>
+  </header>
+  <section class="home">
+    <video  class="video-slide active" src="home.mp4" autoplay muted loop></video>
+    <video  class="video-slide" src="home2.mp4" autoplay muted loop></video>
+
+    <div class="content active">
+        <h1>Wonderful.<br><span>IsLand</span></h1>
+        <p>If our time is usefully employed, it will either turn out some useful and important piece of work which will fetch its price in the market, or it will add to our experience and increase our capacities so as to enable us to earn money when the proper opportunity comes. Let those, who think nothing of wasting time, remember this.</p>
+        <a href="#">  Read More</a>
+    </div>
+
+    <div class="content">
+      <h1>美丽大海<br><span>最美丽的大海</span></h1>
+      <p>If our time is usefully employed, it will either turn out some useful and important piece of work which will fetch its price in the market, or it will add to our experience and increase our capacities so as to enable us to earn money when the proper opportunity comes. Let those, who think nothing of wasting time, remember this.</p>
+      <a href="#">  Read More</a>
+    </div>
+
+    <div class="media-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+
+    <div class="slider-navigation">
+      <div class="nav-btn active"></div>
+      <div class="nav-btn"></div>    
+    </div>
+  </section>   
+
+<script>
+ const menuBtn = document.querySelector(".menu-btn")
+ const navigation = document.querySelector(".navigation")
+
+ menuBtn.addEventListener("click",()=>{
+  menuBtn.classList.toggle("active");
+  navigation.classList.toggle("active");
+ });
+
+
+
+ const btns = document.querySelectorAll(".nav-btn")
+ const slides = document.querySelectorAll(".video-slide")
+ const contents = document.querySelectorAll(".content")
+
+ var sliderNav= function(manual){
+  btns.forEach((btn) => {
+    btn.classList.remove("active")
+
+  })
+
+  slides.forEach((slide) => {
+    slide.classList.remove("active")
+  })
+
+  contents.forEach((content) => {
+    content.classList.remove("active")
+  })
+
+  btns[manual].classList.add("active")
+  slides[manual].classList.add("active")
+  contents[manual].classList.add("active")
+
+ }
+
+ btns.forEach((btn,i)=>{
+    btn.addEventListener("click",()=>{
+      sliderNav(i)
+    })
+ });
+
+
+
+
+</script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,26 @@
+{% extends 'react_import_tmplate.html' %}
+
+{% block title %}函数式组件的props{% endblock %}
+{% block h2 %}函数式组件的props{% endblock %}
+
+{% block content %}
+    <!-- 创建容器 -->
+    <div id="text"></div>
+
+    <script type="text/babel">
+        function Person(props){
+            const {name,age,weight} = props
+            return(
+                <div>
+                    <ul>
+                        <li>{name}</li>
+                        <li>{age}</li>
+                        <li>{weight}</li>
+                    </ul>
+                </div>
+            )
+        }
+        const p = {name:'tom',age:20,weight:'50kg'}
+        ReactDOM.render(<Person {...p}/>, document.getElementById('text'))
+    </script>
+{% endblock %}
