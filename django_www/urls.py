@@ -38,6 +38,8 @@ urlpatterns = [
     path('lifelog/', views.lifelog),
     path('lifelog/edit/<int:global_id>/', views.lifelog_edit),
     path('lifelog/log/', views.lifelog_log),
+    path('lifelog/del/<int:global_id>/', views.lifelog_del),
+
 
     # 音乐列表
     path('music/list/', views.music_list),

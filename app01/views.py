@@ -87,6 +87,10 @@ def lifelog_edit(request,global_id):
         return redirect('/lifelog/')
     return render(request, 'lifelog_edit.html', {'form':form})
 
+def lifelog_del(request, global_id):
+    App01Lifelog.objects.filter(global_id=global_id).delete()
+    return redirect('/lifelog/')
+
 ##music
 def music_list(request):
     '''favor music list'''

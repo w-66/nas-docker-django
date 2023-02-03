@@ -39,12 +39,11 @@
         <div class=" p-1 border">{{item.tag}}</div>
         <div class=" p-1 border">{{item.location_id}}</div>
         <div class=" p-1 border"><a href="/lifelog/edit/{{item.global_id}}/">编辑</a></div>
-
+        <div class=" p-1 border bg-danger"><a href="/lifelog/del/{{ item.global_id }}/" class="">Del</a></div>
       </div>
 
       <div  class=" position-relative border-top border-start mt-3 p-2 pt-4 shadow-sm" >
         <div class="">{{item.content}}</div>
-        
         <span class="custom-fs-small mx-2 mb-1 position-absolute bottom-0 end-0 badge bg-info shadow-sm">{{item.weather}}</span>
       </div>
     </div>
