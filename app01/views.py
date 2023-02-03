@@ -74,14 +74,13 @@ def lifelog_log(request):
         return HttpResponse(errors)
         
 def lifelog_edit(request,global_id):
+    # one_row = App01Lifelog.objects.filter(global_id=global_id).first()  # 获取数据方式一(教程中的方式)
+    one_row = App01Lifelog.objects.get(global_id=global_id)               # 获取数据方式二
     if request.method == "GET":
-        # one_row = App01Lifelog.objects.filter(global_id=global_id).first()  # 获取数据方式一(教程中的方式)
-        one_row = App01Lifelog.objects.get(global_id=global_id)               # 获取数据方式二
         form = LogModeForm(instance=one_row)
         # return render(request, 'lifelog_edit.html', {'onerow':one_row,'global_id':global_id})
         return render(request, 'lifelog_edit.html', {'form':form})
     
-    one_row = App01Lifelog.objects.filter(global_id=global_id).first()
     form = LogModeForm(data=request.POST, instance=one_row)
     if form.is_valid():    # 校验提交的数据 
         form.save()
