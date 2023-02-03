@@ -37,7 +37,7 @@ class LogModeForm(forms.ModelForm):
         model = models.App01Lifelog # 获取表 
         # fields = ["addtime", "tag", "content", "weather", "location_id"]  # 获取表中的列
         fields = "__all__"                                       # 获取表中的所有列
-    # weather = forms.DateTimeField(required=False)              # 取消input标签的required属性(默认所有inpute标签带有required属性)
+    weather = forms.CharField(required=False)              # 取消input标签的required属性(默认所有inpute标签带有required属性)
         # widgets = {
         #     "addtime": forms.TextInput(attrs={"value": "2020"}),
         # }
