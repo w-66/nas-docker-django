@@ -4,6 +4,10 @@ from app01.models import Favormusic
 from app01.models import Lifelog
 from app01.models import App01Lifelog
 
+
+from django.utils import timezone
+# 导入自定义模块 雪花ID
+from custom_modles import module_snowflake
 #
 def demo_test(request):
     content = '测试内容'
@@ -21,20 +25,19 @@ def lifelog(request):
     if request.method == "GET":
         lifelog = App01Lifelog.objects.all().order_by("-addtime")[:40]
         return render(request, 'lifelog.html', {'lifelog':lifelog})
+
 def lifelog_edit(request,global_id):
     if request.method == "GET":
-        one_row = App01Lifelog.objects.using('app01_lifelog').filter(global_id=global_id).first()
+        one_row = App01Lifelog.objects.filter(global_id=global_id).first()
         return render(request, 'lifelog_edit.html', {'onerow':one_row,'global_id':global_id})
     else:
         pass
 
-# ModeForm模块
+# ModeForm模块(实现添加日志信息)
 from django import forms
-from app01 import models
+from app01  import models
 
-from django.utils import timezone
-# 导入自定义模块 雪花ID
-from custom_modles import module_snowflake
+
 
 class LogModeForm(forms.ModelForm):
     class Meta:
@@ -46,7 +49,7 @@ class LogModeForm(forms.ModelForm):
         #     "addtime": forms.TextInput(attrs={"value": "2020"}),
         # }
     
-    def __init__(self, *args, **kwargs):  # 定义单独input的class属性
+    def __init__(self, *args, **kwargs):  # 定义input标签的class属性
         super().__init__(*args, **kwargs)
         for field in self.fields.items():
             field[1].widget.attrs = {"class": "form-control"}
@@ -56,9 +59,8 @@ class LogModeForm(forms.ModelForm):
                 field[1].widget.attrs = {"class": "form-control", "value": current_time}
             # 单独设置global_id
             elif field[0] == "global_id":
-                worker = module_snowflake.IdWorker(1, 1, 0).get_id()
+                worker = module_snowflake.IdWorker(1, 1, 0).get_id()  # 获取全局ID
                 field[1].widget.attrs = {"class": "form-control", "value": worker}
-            # field[1][1].widget.attrs =  {"value": "2020"}
 
 def lifelog_log(request):
     # ModeForm (Django)
