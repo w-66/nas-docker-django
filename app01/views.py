@@ -26,14 +26,7 @@ def lifelog(request):
         lifelog = App01Lifelog.objects.all().order_by("-addtime")[:40]
         return render(request, 'lifelog.html', {'lifelog':lifelog})
 
-def lifelog_edit(request,global_id):
-    if request.method == "GET":
-        one_row = App01Lifelog.objects.filter(global_id=global_id).first()
-        return render(request, 'lifelog_edit.html', {'onerow':one_row,'global_id':global_id})
-    else:
-        pass
-
-# ModeForm模块(实现添加日志信息)
+# ModelForm(实现添加日志信息)
 from django import forms
 from app01  import models
 
@@ -80,7 +73,15 @@ def lifelog_log(request):
         errors = form.errors
         return HttpResponse(errors)
         
-
+def lifelog_edit(request,global_id):
+    if request.method == "GET":
+        # one_row = App01Lifelog.objects.filter(global_id=global_id).first()  # 获取数据方式一(教程中的方式)
+        one_row = App01Lifelog.objects.get(global_id=global_id)               # 获取数据方式二
+        form = LogModeForm(instance=one_row)
+        # return render(request, 'lifelog_edit.html', {'onerow':one_row,'global_id':global_id})
+        return render(request, 'lifelog_edit.html', {'form':form})
+    else:
+        pass
 
 ##music
 def music_list(request):

@@ -1,44 +1,77 @@
 {%extends 'tplt_init_bootstrap.html'%}
 
 {%block bodyContent %}
+<title>记录 Log</title>
 
-<title>{{global_id}}</title>
-<div class="container">
-    <div class="col-md-12">
-        <div ><h1 class="h1 bg-black  text-info text-center w-100 p-2 mb-3">日志编辑</h1></div>
-        <div>
-            <div class="shadow p-4 mb-3 border " >
-                <form method="post" action="">
+<style>
+.card {
+  box-sizing: border-box;
+  /* width: 100vh; */
+  /* height: auto; */
+  /* width: 300px; */
+  max-width: 100vh;
+  min-height: 80vh;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  /* text-align: center; */
+  cursor: pointer;
+  transition: all 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  /* font-weight: bolder; */
+
+  margin:auto auto  /*块级元素 水平居中*/
+}
+
+.card:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+.card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+</style>
+
+<style>
+    .czjz {
+        /* 垂直居中 */
+        display: flex;
+        align-items: center;
+
+    }
+</style>
+
+<div class="container" >
+    <div class="row " style="height:100vh;"> 
+        <div class="czjz col-md-12 w-100" >
+            <div class="card w-100">
+                <form id="in1" method="post" action="" class="px-4 w-100"> 
                     {% csrf_token %}
-                    <div class="form-label h3 text-info text-center">{{global_id}}</div>
-                    <div class="mb-3 pt-1">
-                        <label for="exampleInputEmail1" class="form-label">添加时间</label>
-                        <input name="c_song" type="text" value="{{onerow.addtime}}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <!-- <div id="emailHelp" class="form-text">歌名哒</div> -->
-                    </div>
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">分类</label>
-                        <input name="c_songer" type="text" value="{{onerow.tag}}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        {% for field in form %}
+                            <label for="exampleInputEmail1" class="form-label mt-2 mb-0">{{field.label}}</label>
+                            {{field}}
+                        {% endfor %}
+                        <button form="in1" type="submit" class="btn btn-primary mt-4">Submit</button>
                     </div>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">地址</label>
-                        <input name="c_album" type="text" value="{{onerow.location_id}}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">天气与温度</label>
-                        <input name="c_tag" type="text" value="{{onerow.weather}}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">内容</label>
-                        <textarea name="c_tag" class="form-control" id="exampleInputEmail1" rows="3" >{{onerow.content}}</textarea>
-                    </div>
-                    <button form="in1" type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
-            
         </div>
     </div>
-    
 </div>
+
+<!-- <form id="in1" method="post" action=""> -->
+    <!-- {% csrf_token %}
+    {% for field in form %}
+        {{field.label}} : {{field}}
+    {% endfor %} -->
+
+
 
 {% endblock %}
