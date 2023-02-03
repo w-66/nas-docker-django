@@ -80,8 +80,13 @@ def lifelog_edit(request,global_id):
         form = LogModeForm(instance=one_row)
         # return render(request, 'lifelog_edit.html', {'onerow':one_row,'global_id':global_id})
         return render(request, 'lifelog_edit.html', {'form':form})
-    else:
-        pass
+    
+    one_row = App01Lifelog.objects.filter(global_id=global_id).first()
+    form = LogModeForm(data=request.POST, instance=one_row)
+    if form.is_valid():    # 校验提交的数据 
+        form.save()
+        return redirect('/lifelog/')
+    return render(request, 'lifelog_edit.html', {'form':form})
 
 ##music
 def music_list(request):
