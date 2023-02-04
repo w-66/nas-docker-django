@@ -85,10 +85,12 @@ def lifelog_log(request):
         return HttpResponse(errors)
 
 class LifeLogEdit(forms.ModelForm):                            # 专门针对编辑的页面，去除了ID和添加时间的修改，不使用所有字段
+    global_id = forms.CharField(disabled=True, label='ID')
+    addtime = forms.CharField(disabled=True, label='添加时间')
     class Meta:
         model = models.App01Lifelog # 获取表 
-        fields = ["tag", "content", "weather", "location_id"]  # 获取表中的列，专门针对编辑的页面，去除了ID和添加时间的修改
-        # fields = "__all__"                                   # 获取表中的所有列
+        fields = ["global_id", "addtime", "tag", "content", "weather", "location_id"]  # 获取表中的列，专门针对编辑的页面，去除了ID和添加时间的修改
+        # fields = "__all__"                                   # 获取表中的所有列，等同于: fields = ["global_id", "addtime", "tag", "content", "weather", "location_id"]
     weather = forms.CharField(required=False)                  # 取消input标签的required属性(默认所有inpute标签带有required属性)
         # widgets = {
         #     "addtime": forms.TextInput(attrs={"value": "2020"}),
