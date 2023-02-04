@@ -72,16 +72,35 @@ def lifelog_log(request):
         print('form.errors',"+++++form.errors的错误+++++")
         errors = form.errors
         return HttpResponse(errors)
-        
-def lifelog_edit(request,global_id):
+
+class LifeLogEdit(forms.ModelForm):                            # 专门针对编辑的页面，去除了ID和添加时间的修改，不使用所有字段
+    class Meta:
+        model = models.App01Lifelog # 获取表 
+        fields = ["tag", "content", "weather", "location_id"]  # 获取表中的列，专门针对编辑的页面，去除了ID和添加时间的修改
+        # fields = "__all__"                                   # 获取表中的所有列
+    weather = forms.CharField(required=False)                  # 取消input标签的required属性(默认所有inpute标签带有required属性)
+        # widgets = {
+        #     "addtime": forms.TextInput(attrs={"value": "2020"}),
+        # }
+    
+    def __init__(self, *args, **kwargs):  # 定义input标签的class属性
+        super().__init__(*args, **kwargs)
+        for field in self.fields.items():
+            field[1].widget.attrs = {"class": "form-control"}
+            # 单独设置addtime项 默认值为当前日期时间
+            if field[0] == "addtime":
+                current_time = timezone.now()  # 获取当前时间
+                field[1].widget.attrs = {"class": "form-control", "value": current_time}
+
+def lifelog_edit(request,global_id):                                      # 编辑记录
     # one_row = App01Lifelog.objects.filter(global_id=global_id).first()  # 获取数据方式一(教程中的方式)
-    one_row = App01Lifelog.objects.get(global_id=global_id)               # 获取数据方式二
+    one_row = App01Lifelog.objects.get(global_id=global_id)               # 获取数据方式二 <one_row复用>
     if request.method == "GET":
-        form = LogModeForm(instance=one_row)
+        form = LifeLogEdit(instance=one_row)                              ## 复用处1
         # return render(request, 'lifelog_edit.html', {'onerow':one_row,'global_id':global_id})
         return render(request, 'lifelog_edit.html', {'form':form})
     
-    form = LogModeForm(data=request.POST, instance=one_row)
+    form = LifeLogEdit(data=request.POST, instance=one_row)               ## 复用处2
     if form.is_valid():    # 校验提交的数据 
         form.save()
         return redirect('/lifelog/')
