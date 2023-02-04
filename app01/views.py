@@ -96,12 +96,10 @@ class LifeLogEdit(forms.ModelForm):                            # 专门针对编
     
     def __init__(self, *args, **kwargs):  # 定义input标签的class属性
         super().__init__(*args, **kwargs)
-        for field in self.fields.items():
-            field[1].widget.attrs = {"class": "form-control"}
-            # 单独设置addtime项 默认值为当前日期时间
-            if field[0] == "addtime":
-                current_time = timezone.now()  # 获取当前时间
-                field[1].widget.attrs = {"class": "form-control", "value": current_time}
+        for field_name, field in self.fields.items():
+            field.widget.attrs = {        # 把需要的默认值直接赋值给了 field.widget.attrs 字典，例外需要定义的标签class再单独设置
+                "class": "form-control"
+            }
 
 def lifelog_edit(request,global_id):                                      # 编辑记录
     # one_row = App01Lifelog.objects.filter(global_id=global_id).first()  # 获取数据方式一(教程中的方式)
