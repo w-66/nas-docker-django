@@ -85,8 +85,8 @@ def lifelog_log(request):
         return HttpResponse(errors)
 
 class LifeLogEdit(forms.ModelForm):                            # 专门针对编辑的页面，去除了ID和添加时间的修改，不使用所有字段
-    global_id = forms.CharField(disabled=True, label='ID')
-    addtime = forms.CharField(disabled=True, label='添加时间')
+    global_id = forms.CharField(disabled=True, label='ID')     # 可看不能改
+    addtime = forms.CharField(disabled=True, label='添加时间') # 可看不能改
     class Meta:
         model = models.App01Lifelog # 获取表 
         fields = ["global_id", "addtime", "tag", "content", "weather", "location_id"]  # 获取表中的列，专门针对编辑的页面，去除了ID和添加时间的修改
