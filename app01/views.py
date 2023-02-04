@@ -44,16 +44,27 @@ class LogModeForm(forms.ModelForm):
     
     def __init__(self, *args, **kwargs):  # 定义input标签的class属性
         super().__init__(*args, **kwargs)
-        for field in self.fields.items():
-            field[1].widget.attrs = {"class": "form-control"}
-            # 单独设置addtime项 默认值为当前日期时间
-            if field[0] == "addtime":
-                current_time = timezone.now()  # 获取当前时间
-                field[1].widget.attrs = {"class": "form-control", "value": current_time}
-            # 单独设置global_id
-            elif field[0] == "global_id":
-                worker = module_snowflake.IdWorker(1, 1, 0).get_id()  # 获取全局ID
-                field[1].widget.attrs = {"class": "form-control", "value": worker}
+        # for field in self.fields.items():
+        #     field[1].widget.attrs = {"class": "form-control"}
+        #     # 单独设置addtime项 默认值为当前日期时间
+        #     if field[0] == "addtime":
+        #         current_time = timezone.now()  # 获取当前时间
+        #         field[1].widget.attrs = {"class": "form-control", "value": current_time}
+        #     # 单独设置global_id
+        #     elif field[0] == "global_id":
+        #         worker = module_snowflake.IdWorker(1, 1, 0).get_id()  # 获取全局ID
+        #         field[1].widget.attrs = {"class": "form-control", "value": worker}
+
+        for field_name, field in self.fields.items():
+            field.widget.attrs = {        # 把需要的默认值直接赋值给了 field.widget.attrs 字典，例外需要定义的标签class再单独设置
+                "class": "form-control"
+            }
+            # 设置addtime默认值: 默认值为当前日期时间
+            if field_name == "addtime":
+                field.widget.attrs["value"] = timezone.now()
+            # 设置global_id默认值: 雪花ID
+            elif field_name == "global_id":
+                field.widget.attrs["value"] = module_snowflake.IdWorker(1, 1, 0).get_id()
 
 def lifelog_log(request):
     # ModeForm (Django)
