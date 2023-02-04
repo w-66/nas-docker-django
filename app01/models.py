@@ -18,7 +18,7 @@ class App01Lifelog(models.Model):
     location_id_choices = (
         (0, '无'), (1, '环卫局宿舍'), (2, '奥莱'), (3, '老家')
         )
-    location_id = models.IntegerField(verbose_name="地址", db_column='location_Id', choices=location_id_choices)  # Field name made lowercase.
+    location_id = models.IntegerField(verbose_name="地址", db_column='location_Id', choices=location_id_choices, default=2)  # Field name made lowercase.
     
 
     class Meta:
