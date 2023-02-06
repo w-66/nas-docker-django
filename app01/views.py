@@ -30,13 +30,13 @@ def lifelog(request):
 
     ### 创建空字典，存储get请求的数据
     data_dict = {}
-    value = request.GET.get('search','')  # 后面的空值，没看到啥用啊，有没有都一样，只是在判断的时候，添加到字典一个空值?
+    search_data = request.GET.get('s','')  # 后面的空值，没看到啥用啊，有没有都一样，只是在判断的时候，添加到字典一个空值?
     ### 判断通过get传过来的值是否为空，不为空，则添加到字典中
-    if value:
-        data_dict['content__contains'] = value
+    if search_data:
+        data_dict['content__contains'] = search_data
     ### 通过字典的内容进行数据库查询
     queryset = models.App01Lifelog.objects.filter(**data_dict).order_by("-addtime")
-    return render(request, 'lifelog.html', {'queryset':queryset, 'value':value})
+    return render(request, 'lifelog.html', {'queryset':queryset, 'search_data':search_data})
 
 ## lifelog的搜索功能(暂时为只能搜索内容)
 def lifelog_search(request):
