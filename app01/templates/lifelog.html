@@ -23,16 +23,34 @@
 
 <div class="container position-relative">
   <!-- # 记录按钮 -->
-  <div id="log" class="position-fixed bottom-0 start-50 translate-middle-x shadow rounded">
+  <div id="log" class="position-fixed bottom-0 start-50 translate-middle-x  rounded">
     <a href="/lifelog/log/">
-      <button type="button" class="btn btn-outline-primary">记录</button>
+      <button type="button" class="btn btn-outline-primary shadow">记录</button>
     </a>
   </div>
+
+<div class="row pt-4">
+  <div class="col-md-9"></div>
+    <!-- 占位 -->
+  <div class="col-md-3"> 
+    <!-- 搜索框 -->
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+      <button class="btn btn-primary" type="button">
+        <svg class="icon" aria-hidden="true"><use xlink:href="#icon-search1"></use></svg>
+      </button>
+    </div>
+
+  </div>
+</div>
+      
+
+
 
 
   <!-- # 内容 -->
   {% for item in lifelog %}
-  <div class="row p-2 position-relative ">
+  <div class="row  position-relative ">
     <div class="col-md-12" >
       <div class="custom-fs-small border-top rounded-0 border-primary list-group list-group-horizontal  position-absolute bg-white " style="left:30px;z-index:1;">
         <div class=" p-1 border border-end-0">{{item.addtime}}</div>

@@ -8,9 +8,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
-    <script defer src="{% static 'bootstrap/js/bootstrap.min.js'     %}"></script>
+    <script defer src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+
+    <!-- fontawesome图标 -->
+    <script src="https://kit.fontawesome.com/24ee1fea7f.js" crossorigin="anonymous"></script>
+    
+    <!-- 阿里图标库 -->
+    <script src="//at.alicdn.com/t/c/font_3883106_kc1e58f87rb.js"></script>
+    <style type="text/css">
+        .icon {
+           width: 1em; height: 1em;
+           vertical-align: -0.15em;
+           fill: currentColor;
+           overflow: hidden;
+        }
+    </style>
 </head>
 <body>
+
    {%block bodyContent %}{% endblock %}
 </body>
 </html>
