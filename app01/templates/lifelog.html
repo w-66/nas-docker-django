@@ -30,17 +30,20 @@
   </div>
 
 <div class="row pt-4">
-  <div class="col-md-9"></div>
-    <!-- 占位 -->
+  <div class="col-md-9">
+        <!-- 占位 -->
+  </div>
+
   <div class="col-md-3"> 
     <!-- 搜索框 -->
-    <div class="input-group mb-3">
-      <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
-      <button class="btn btn-primary" type="button">
-        <svg class="icon" aria-hidden="true"><use xlink:href="#icon-search1"></use></svg>
-      </button>
-    </div>
-
+    <form action="" method="get">
+        <div class="input-group mb-3">
+          <input type="text" name="search" class="form-control" placeholder="Search" value="{{value}}">
+          <button class="btn btn-primary" type="submit">
+            <svg class="icon" aria-hidden="true"><use xlink:href="#icon-search"></use></svg>
+          </button>
+        </div>
+      </form>
   </div>
 </div>
       
@@ -49,8 +52,8 @@
 
 
   <!-- # 内容 -->
-  {% for item in lifelog %}
-  <div class="row  position-relative ">
+  {% for item in queryset %}
+  <div class="row  position-relative pt-2 pb-3 ">
     <div class="col-md-12" >
       <div class="custom-fs-small border-top rounded-0 border-primary list-group list-group-horizontal  position-absolute bg-white " style="left:30px;z-index:1;">
         <div class=" p-1 border border-end-0">{{item.addtime}}</div>

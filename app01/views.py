@@ -20,17 +20,39 @@ def index(request):
     return render(request, 'index.html')
 
 # 可用页面
-##lifelog
+#lifelog 查看
+## lifelog的搜索功能(暂时为只能搜索内容)20230207
 def lifelog(request):
-    if request.method == "GET":
-        lifelog = App01Lifelog.objects.all().order_by("-addtime")[:40]
-        return render(request, 'lifelog.html', {'lifelog':lifelog})
+    ### 添加搜索功能，原本的注释了
+    # if request.method == "GET":   
+        # lifelog = App01Lifelog.objects.all().order_by("-addtime")[:40]
+        # return render(request, 'lifelog.html', {'lifelog':lifelog})
 
-# ModelForm(实现添加日志信息)
+    ### 创建空字典，存储get请求的数据
+    data_dict = {}
+    value = request.GET.get('search','')  # 后面的空值，没看到啥用啊，有没有都一样，只是在判断的时候，添加到字典一个空值?
+    ### 判断通过get传过来的值是否为空，不为空，则添加到字典中
+    if value:
+        data_dict['content__contains'] = value
+    ### 通过字典的内容进行数据库查询
+    queryset = models.App01Lifelog.objects.filter(**data_dict).order_by("-addtime")
+    return render(request, 'lifelog.html', {'queryset':queryset, 'value':value})
+
+## lifelog的搜索功能(暂时为只能搜索内容)
+def lifelog_search(request):
+    ### 创建空字典，存储get请求的数据
+    data_dict = {}
+    value = request.GET.get('search')
+    ### 判断通过get传过来的值是否为空，不为空，则添加到字典中
+    if value:
+        data_dict['content__contains'] = value
+    ### 通过字典的内容进行数据库查询
+    queryset = models.App01Lifelog.objects.filter(**data_dict).order_by("-addtime")
+    return render(request, 'lifelog_search.html', {'queryset':queryset, 'value':value})
+
+# ModelForm(实现web添加日志信息)
 from django import forms
 from app01  import models
-
-
 
 class LogModeForm(forms.ModelForm):
     class Meta:
