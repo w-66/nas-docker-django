@@ -41,11 +41,8 @@ def lifelog(request):
     queryset = models.App01Lifelog.objects.filter(**data_dict).order_by("-addtime")
 
     from app01.utils.pagination import Pagination 
-    obj_page = Pagination(request, queryset, subsection=3, page_limit=5)     #创建对象实例 
-    
-    to_page_num = request.GET.get('to_page_num', '')
+    obj_page = Pagination(request, queryset, subsection=3, page_limit=6)     #创建对象实例 
 
-        
     return render(request, 'lifelog.html', 
                   {'queryset':obj_page.one_page_queryset , 'page_count':obj_page.page_count, 'page_up':obj_page.page-1, 'page_down':obj_page.page+1, 'search_data':search_data, 'page_Num_HTML':obj_page.page_num_html()})
 
