@@ -34,25 +34,25 @@ def lifelog(request):
     ### 判断通过get传过来的值是否为空，不为空，则添加到字典中
     if search_data:
         data_dict['content__contains'] = search_data
-    ### 通过字典的内容进行数据库查询
+    
+    ### 分页操作
+    #### 方式二 定义类，使用对象来生成页码
+    #### 通过字典的内容进行数据库查询
     queryset = models.App01Lifelog.objects.filter(**data_dict).order_by("-addtime")
-    return render(request, 'lifelog.html', {'queryset':queryset, 'search_data':search_data})
 
-## lifelog的搜索功能(暂时为只能搜索内容)
-def lifelog_search(request):
-    ### 创建空字典，存储get请求的数据
-    data_dict = {}
-    value = request.GET.get('search')
-    ### 判断通过get传过来的值是否为空，不为空，则添加到字典中
-    if value:
-        data_dict['content__contains'] = value
-    ### 通过字典的内容进行数据库查询
-    queryset = models.App01Lifelog.objects.filter(**data_dict).order_by("-addtime")
-    return render(request, 'lifelog_search.html', {'queryset':queryset, 'value':value})
+    from app01.utils.pagination import Pagination 
+    obj_page = Pagination(request, queryset, subsection=3, page_limit=5)     #创建对象实例 
+    
+    to_page_num = request.GET.get('to_page_num', '')
+
+        
+    return render(request, 'lifelog.html', 
+                  {'queryset':obj_page.one_page_queryset , 'page_count':obj_page.page_count, 'page_up':obj_page.page-1, 'page_down':obj_page.page+1, 'search_data':search_data, 'page_Num_HTML':obj_page.page_num_html()})
+
 
 # ModelForm(实现web添加日志信息)
 from django import forms
-from app01  import models
+from app01  import models 
 
 class LogModeForm(forms.ModelForm):
     class Meta:

@@ -25,7 +25,7 @@
   <!-- # 记录按钮 -->
   <div id="log" class="position-fixed bottom-0 start-50 translate-middle-x  rounded">
     <a href="/lifelog/log/">
-      <button type="button" class="btn btn-outline-primary shadow">记录</button>
+      <button type="button" class="btn btn-outline-primary shadow mb-5">记录</button>
     </a>
   </div>
 
@@ -46,11 +46,6 @@
       </form>
   </div>
 </div>
-      
-
-
-
-
   <!-- # 内容 -->
   {% for item in queryset %}
   <div class="row  position-relative pt-2 pb-3 ">
@@ -62,7 +57,7 @@
         <div class=" p-1 border"><a href="/lifelog/edit/{{item.global_id}}/">编辑</a></div>
         <div class=" p-1 border bg-danger"><a href="/lifelog/del/{{ item.global_id }}/" class="">Del</a></div>
       </div>
-
+      <!-- 内容 -->
       <div  class=" position-relative border-top border-start mt-3 p-2 pt-4 shadow-sm" >
         <div class="">{{item.content}}</div>
         <span class="custom-fs-small mx-2 mb-1 position-absolute bottom-0 end-0 badge bg-info shadow-sm">{{item.weather}}</span>
@@ -70,6 +65,66 @@
     </div>
   </div>
   {% endfor %}
+
+  <div class="row">
+    <div class="col-md-6"></div>
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-md-10">
+          <nav class="d-flex justify-content-end">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="?page=1">
+                  {% comment %} <span aria-hidden="true">&laquo;</span> {% endcomment %}
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-arrow-double-left"></use>
+                </svg>
+                </a>
+              </li>
+
+              <li class="page-item">
+                <a class="page-link" href="?page={{page_up}}" >
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-arrow-left-bold"></use>
+                </svg>
+                </a>
+              </li>
+
+
+              {{page_Num_HTML}}
+
+              <li class="page-item">
+                <a class="page-link" href="?page={{page_down}}" >
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-arrow-right-bold"></use>
+                </svg>
+                </a>
+              </li>
+
+              <li class="page-item">
+                <a class="page-link" href="?page={{page_count}}" >
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-arrow-double-right"></use>
+                </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-2">
+          <form action="" method="get" >
+            <div class="input-group mb-3">
+              <input type="text" name="to_page_num" class="form-control " placeholder="" value="">
+              <button class="btn btn-secondary  px-1" type="submit">
+                <svg class="icon" aria-hidden="true"><use xlink:href="#icon-juli"></use></svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
 </div>
 
   
