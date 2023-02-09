@@ -53,26 +53,32 @@
     }
 </style>
 
-<style>
+<!-- <style>
     /*设置列宽*/
     #t1>thead>tr>th:nth-child(-n+2) {  /*前2排*/
         width: 60px;
     }
     #t1>thead>tr>th:nth-child(3) {     /*第3列*/
-        width: 130px;
+        width: 300px;
     }
     #t1>thead>tr>th:nth-child(4) {     /*第4列*/
         width: 150px;
     }
-    #t1>thead>tr>th:nth-child(n+5):nth-child(-n+6) {  /*第5列到第6列*/
-        width: 180px;
+    /*第5列到第6列*/
+    #t1>thead>tr>th:nth-child(n+5):nth-child(-n+6) {  
+        width: 100px;
     }
     #t1>thead>tr>th:nth-child(8) {
-        width: 195px;
+        width: 105px;
     }
-</style>
+</style> -->
     <title>Music List</title>
     <div class="container">
+        <div id="log" class="position-fixed bottom-0 start-50 translate-middle-x shadow rounded mb-5">
+            <a href="/lifelog/log/">
+              <button type="button" class="btn btn-outline-primary">搜索</button>
+            </a>
+          </div>
         <div class="row">
             <!-- <div class="col-md-1"></div> -->
             <div class="col-md-12">
@@ -84,24 +90,24 @@
                             <tr>
                                 <th scope="col" class="text-nowrap">编辑</th>
                                 <th scope="col" class="text-nowrap">序列号</th>
-                                <th scope="col" class="text-nowrap">native_id</th>
-                                <th scope="col" >标签</th>
-                                <th scope="col" >歌手</th>
                                 <th scope="col" >歌名</th>
+                                <th scope="col" >歌手</th>
+                                <th scope="col" >标签</th>
                                 <th scope="col" >专辑</th>
                                 <th scope="col" >添加时间</th>
+                                <th scope="col" class="text-nowrap">native_id</th>
                             </tr>
                         </thead>  
                         {% for item  in musicobj %}
                         <tr class="table">
                             <td class="table-info"><a class="text-decoration-none" href="/music/list/edit/{{item.global_id}}/">修改</a></td>
                             <td class="table-info" >{{ forloop.revcounter }}</td>
-                            <td class="">{{ item.native_id }}</td>
-                            <td>{{ item.tag       }}</td>
-                            <td>{{ item.songer    }}</td>
                             <td>{{ item.song      }}</td>
+                            <td>{{ item.songer    }}</td>
+                            <td>{{ item.tag       }}</td>
                             <td>{{ item.album     }}</td>
                             <td>{{ item.addtime   }}</td>
+                            <td class="">{{ item.native_id }}</td>
                         </tr>
                         {% endfor %}
                     </table>

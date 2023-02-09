@@ -1,0 +1,4 @@
+crawler/
+django_www.log
+django_www/__pycache__/
+__pycache__

@@ -2,18 +2,32 @@
 
 {%block bodyContent %}
 
-<style>
-    .full {
-        min-height: 100vh;
-        min-width: 100vh;
-        background-color: rgb(0, 0, 0);
-        /* 垂直居中 */
-        display: flex;
-        align-items: center;
-    }
-</style>
 
-<div class="full">
-    <div class="jz text-info">cao</div>
+<div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <div class="input-group-append">
+        <button class="btn btn-primary" type="button">Button</button>
+    </div>
 </div>
+
+
+
+
+<button type="button" class="btn btn-default">Default</button>
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-info">
+    <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-weixin"></use>
+    </svg>
+</button>
+<svg class="icon" aria-hidden="true">
+    <use xlink:href="#icon-weixin"></use>
+</svg>
+
+
+
 {% endblock %}
