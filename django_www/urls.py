@@ -1,5 +1,6 @@
 from django.contrib import admin
-from django.urls import path, index, learn_bootstrap, learn_js, learn_react, lifelog, music
+from django.urls import path
+from app01.views import index, learn_bootstrap, learn_js, learn_react, lifelog, music
 
 
 urlpatterns = [
