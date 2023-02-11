@@ -75,9 +75,12 @@ class LogModeForm(forms.ModelForm):
         #         field[1].widget.attrs = {"class": "form-control", "value": worker}
 
         for field_name, field in self.fields.items():
-            field.widget.attrs = {        # 把需要的默认值直接赋值给了 field.widget.attrs 字典，例外需要定义的标签class再单独设置
-                "class": "form-control"
-            }
+            if field.widget.attrs:            # 如果原本class有值则新增一个class 属性
+                field.widget.attrs["class"] = "form-control"
+            else:                             # 否则直接添加
+                field.widget.attrs = {        # 把需要的默认值直接赋值给了 field.widget.attrs 字典，例外需要定义的标签class再单独设置
+                    "class": "form-control"
+                }
             # 设置addtime默认值: 默认值为当前日期时间
             if field_name == "addtime":
                 field.widget.attrs["value"] = timezone.now()
