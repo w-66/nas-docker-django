@@ -1,5 +1,41 @@
 {%extends 'tplt_init_bootstrap.html'%}
+{%load static%}
 
-{%block bodyContent %}
+<!-- 引入css -->
+{% block css %}
+<link rel="stylesheet" href="{% static 'bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css' %}">
+{% endblock %}
+<!-- #引入js -->
+{% block js %}
+<script  src="{% static 'bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js' %}"></script>
+<script  src="{% static 'bootstrap-datepicker/dist/locales/bootstrap-datepicker.zh-CN.min.js' %}"></script>
+<script>
+    $(function () {
+        $('#dt').datepicker({
+            format: "yyyy-mm-dd",          // 日期格式
+            startDate: '0',                // 一周从周一开始
+            forceParse: false,         
+            language: "zh-CN",             // 中文
+            daysOfWeekHighlighted: "0,6",  // 显眼的显示周六周日
+            todayBtn: "linked",            // 显示 今天 按钮
+            todayHighlight: true           // 今日高亮
+        });
+    })
+
+
+</script>
+{% endblock %}
+
+<!-- #分隔 -->
+{% block bodyContent %}
+<div class="container">
+    <div class="col-md-12">
+        <span>日期插件：</span>
+        <input type="text" class="form-control inputDate" id="dt">
+    </div>
+</div>
 
 {% endblock %}
+
+
+
