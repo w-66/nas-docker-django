@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path
-from app01.views import index, learn_bootstrap, learn_js, learn_react, lifelog, music
+from app01.views import index, learn_bootstrap, learn_js, learn_react, lifelog, music, admin
 
 
 urlpatterns = [
@@ -33,8 +33,10 @@ urlpatterns = [
     path('learn/js/03/', learn_js.learn_js_03),
     path('learn/js/02/', learn_js.learn_js_02),
     path('learn/js/01/', learn_js.learn_js_01),
-    # 页面图标
-    #
+    
+    # Admin
+    path('admin/', admin.admin),
+
     # 时间记录
     path('lifelog/', lifelog.lifelog),
     path('lifelog/edit/<int:global_id>/', lifelog.lifelog_edit),

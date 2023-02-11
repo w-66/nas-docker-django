@@ -1,40 +1,54 @@
 {%extends 'tplt_init_bootstrap.html'%}
+{% load static %}
 
-{%block bodyContent %}
+<!-- #body内容 -->
+{%block bodyContent%}
 <title>记录 Log</title>
-
 <style>
 .card {
   box-sizing: border-box;
+  /* 设置盒模型为 border-box，使得边框和内边距不会对元素的实际宽度和高度造成影响 */
   /* width: 100vh; */
   /* height: auto; */
   /* width: 300px; */
   max-width: 100vh;
   min-height: 80vh;
+  /* 设置最大宽度和最小高度为视口高度的百分比 */
   background: rgba(217, 217, 217, 0.58);
+  /* 设置背景色，使用 rgba 格式是为了添加透明度 */
   border: 1px solid white;
+  /* 设置边框 */
   box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  /* 设置阴影 */
   backdrop-filter: blur(6px);
+  /* 设置背景模糊 */
   border-radius: 17px;
+  /* 设置圆角 */
   /* text-align: center; */
   cursor: pointer;
-  transition: all 0.4s;
+  /* 设置鼠标样式为手形 */
+  transition: all 0.3s;
+  /* 设置过渡效果，所有的属性都以 0.2s 的时间过渡 */
   display: flex;
+  /* 设置元素为 flex 布局 */
   align-items: center;
+  /* 在 flex 布局中设置子元素在交叉轴上的对齐方式为居中对齐 */
   justify-content: center;
+  /* 在 flex 布局中设置子元素在主轴上的对齐方式为居中对齐 */
   user-select: none;
+  /* 设置用户不能选择文本内容 */
   /* font-weight: bolder; */
 
-  margin:auto auto  /*块级元素 水平居中*/
+  margin:auto auto  /* 块级元素水平居中 */
 }
 
 .card:hover {
-  border: 1px solid black;
-  transform: scale(1.05);
+  border: 1px solid rgb(174, 174, 174);  /* 鼠标移到卡片上时，边框颜色变为黑色 */
+  transform: scale(1.01);   /* 鼠标移到卡片上时，卡片的大小放大 1.05 倍 */
 }
 
 .card:active {
-  transform: scale(0.95) rotateZ(1.7deg);
+  transform: scale(0.99) rotateZ(0.2deg);  /* 鼠标按下卡片时，卡片大小缩小 0.99 倍并旋转 0.2 度 */
 }
 </style>
 
@@ -65,13 +79,6 @@
         </div>
     </div>
 </div>
-
-<!-- <form id="in1" method="post" action=""> -->
-    <!-- {% csrf_token %}
-    {% for field in form %}
-        {{field.label}} : {{field}}
-    {% endfor %} -->
-
 
 
 {% endblock %}

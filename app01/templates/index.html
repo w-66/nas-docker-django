@@ -1,23 +1,24 @@
 {%extends 'tplt_init_bootstrap.html'%}
 
+{% block css %}
+<style>
+    a{
+        text-decoration: none;
+    }
+</style>
+{% endblock %}
+
 {%block bodyContent %}
 <title>Index</title>
 
-<div class="bg-primary text-white text-center"><h1>Index</h1></div>
 <div class="container">
     <!-- http://qwertyui.vip:22280/music/list/ -->
     <div>
         <h4>可用页面</h4>
-        <div>
-            <p>
-                <a href="/music/list/" target="_blank"> 我喜欢的音乐列表</a>
-            </p>
-        </div>
-        <div>
-            <p>
-                <a href="/lifelog/">时间记录</a>
-            </p>
-        </div>
+        <div><p><a href="/music/list/" target="_blank"> 我喜欢的音乐列表</a></p></div>
+        <div><p><a href="/lifelog/" target="_blank">时间记录</a></p></div>
+        <div><p><a href="/admin/" target="_blank">admin管理</a></p></div>
+
     </div>
     
     <hr>
@@ -28,6 +29,19 @@
 
     <div class="container">
         <h5>Web 学习</h5>
+        <div class="row">
+            <div class="col md-6">
+                <h6>Bootstrap</h6>
+                <p><a href="/learn/bootstrap/01/">学习Bootstrap01：</a></p>
+                <p><a href="/learn/bootstrap/02/">学习Bootstrap02：</a></p>
+                <p><a href="/learn/bootstrap/03/">学习Bootstrap03：</a></p>
+                <p><a href="/learn/bootstrap/04/">学习Bootstrap04：时间插件</a></p>
+                <p><a href="/learn/bootstrap/05/">学习Bootstrap05：</a></p>
+                
+                <hr>
+            </div>
+            <!-- <div class="col-md-6">2</div> -->
+        </div>
         <div class="row">
            
             <div class="col-md-6">
@@ -56,18 +70,7 @@
         
             </div>
         </div>
-        <div class="row">
-            <div class="col md-6">
-                <h6>Bootstrap</h6>
-                <p><a href="/learn/bootstrap/01/">学习Bootstrap01：</a></p>
-                <p><a href="/learn/bootstrap/02/">学习Bootstrap02：</a></p>
-                <p><a href="/learn/bootstrap/03/">学习Bootstrap03：</a></p>
-                <p><a href="/learn/bootstrap/04/">学习Bootstrap04：</a></p>
-                <p><a href="/learn/bootstrap/05/">学习Bootstrap05：</a></p>
-    
-            </div>
-            <div class="col-md-6">2</div>
-        </div>
+
     </div>
     <div>
         
