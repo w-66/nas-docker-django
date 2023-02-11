@@ -1,13 +1,13 @@
 from django.shortcuts import HttpResponse, render, redirect
 
 from app01.models import Favormusic
-from app01.models import Lifelog
 from app01.models import App01Lifelog
 
 
 from django.utils import timezone
 # 导入自定义模块 雪花ID
 from custom_modles import module_snowflake
+from app01.utils.bootstrap_form import BootstrapModelForm
 #
 def demo_test(request):
     content = '测试内容'
@@ -23,11 +23,6 @@ def index(request):
 #lifelog 查看
 ## lifelog的搜索功能(暂时为只能搜索内容)20230207
 def lifelog(request):
-    ### 添加搜索功能，原本的注释了
-    # if request.method == "GET":   
-        # lifelog = App01Lifelog.objects.all().order_by("-addtime")[:40]
-        # return render(request, 'lifelog.html', {'lifelog':lifelog})
-
     ### 创建空字典，存储get请求的数据
     data_dict = {}
     search_data = request.GET.get('s','')  # 后面的空值，没看到啥用啊，有没有都一样，只是在判断的时候，添加到字典一个空值?
@@ -51,42 +46,29 @@ def lifelog(request):
 from django import forms
 from app01  import models 
 
-class LogModeForm(forms.ModelForm):
+class LogModeForm(BootstrapModelForm):
+    weather = forms.CharField(required=False)              # 取消input标签的required属性(默认所有inpute标签带有required属性)
+
     class Meta:
         model = models.App01Lifelog # 获取表 
         # fields = ["addtime", "tag", "content", "weather", "location_id"]  # 获取表中的列
-        fields = "__all__"                                       # 获取表中的所有列
-    weather = forms.CharField(required=False)              # 取消input标签的required属性(默认所有inpute标签带有required属性)
+        fields = "__all__"                                 # 获取表中的所有列
         # widgets = {
         #     "addtime": forms.TextInput(attrs={"value": "2020"}),
         # }
     
     def __init__(self, *args, **kwargs):  # 定义input标签的class属性
         super().__init__(*args, **kwargs)
-        # for field in self.fields.items():
-        #     field[1].widget.attrs = {"class": "form-control"}
-        #     # 单独设置addtime项 默认值为当前日期时间
-        #     if field[0] == "addtime":
-        #         current_time = timezone.now()  # 获取当前时间
-        #         field[1].widget.attrs = {"class": "form-control", "value": current_time}
-        #     # 单独设置global_id
-        #     elif field[0] == "global_id":
-        #         worker = module_snowflake.IdWorker(1, 1, 0).get_id()  # 获取全局ID
-        #         field[1].widget.attrs = {"class": "form-control", "value": worker}
 
         for field_name, field in self.fields.items():
-            if field.widget.attrs:            # 如果原本class有值则新增一个class 属性
-                field.widget.attrs["class"] = "form-control"
-            else:                             # 否则直接添加
-                field.widget.attrs = {        # 把需要的默认值直接赋值给了 field.widget.attrs 字典，例外需要定义的标签class再单独设置
-                    "class": "form-control"
-                }
             # 设置addtime默认值: 默认值为当前日期时间
             if field_name == "addtime":
                 field.widget.attrs["value"] = timezone.now()
             # 设置global_id默认值: 雪花ID
             elif field_name == "global_id":
                 field.widget.attrs["value"] = module_snowflake.IdWorker(1, 1, 0).get_id()
+
+             
 
 def lifelog_log(request):
     # ModeForm (Django)
@@ -102,28 +84,21 @@ def lifelog_log(request):
         form.save()        # 如果数据是有效的，存入之前获取的表中
         return redirect('/lifelog/')
     else:
-        print('form.errors',"+++++form.errors的错误+++++")
         errors = form.errors
         return HttpResponse(errors)
 
-class LifeLogEdit(forms.ModelForm):                            # 专门针对编辑的页面，去除了ID和添加时间的修改，不使用所有字段
+class LifeLogEdit(BootstrapModelForm):                         # 专门针对编辑的页面，去除了ID和添加时间的修改，不使用所有字段
     global_id = forms.CharField(disabled=True, label='ID')     # 可看不能改
     addtime = forms.CharField(disabled=True, label='添加时间') # 可看不能改
+    weather = forms.CharField(required=False)                  # 取消input标签的required属性(默认所有inpute标签带有required属性)
     class Meta:
         model = models.App01Lifelog # 获取表 
         fields = ["global_id", "addtime", "tag", "content", "weather", "location_id"]  # 获取表中的列，专门针对编辑的页面，去除了ID和添加时间的修改
         # fields = "__all__"                                   # 获取表中的所有列，等同于: fields = ["global_id", "addtime", "tag", "content", "weather", "location_id"]
-    weather = forms.CharField(required=False)                  # 取消input标签的required属性(默认所有inpute标签带有required属性)
         # widgets = {
         #     "addtime": forms.TextInput(attrs={"value": "2020"}),
         # }
     
-    def __init__(self, *args, **kwargs):  # 定义input标签的class属性
-        super().__init__(*args, **kwargs)
-        for field_name, field in self.fields.items():
-            field.widget.attrs = {        # 把需要的默认值直接赋值给了 field.widget.attrs 字典，例外需要定义的标签class再单独设置
-                "class": "form-control"
-            }
 
 def lifelog_edit(request,global_id):                                      # 编辑记录
     # one_row = App01Lifelog.objects.filter(global_id=global_id).first()  # 获取数据方式一(教程中的方式)
