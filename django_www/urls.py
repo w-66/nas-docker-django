@@ -1,11 +1,6 @@
 from django.contrib import admin
-from django.urls import path
-from app01.views import index
-from app01.views import learn_bootstrap
-from app01.views import learn_js
-from app01.views import learn_react
-from app01.views import lifelog
-from app01.views import music
+from django.urls import path, index, learn_bootstrap, learn_js, learn_react, lifelog, music
+
 
 urlpatterns = [
     # Bootstrap
