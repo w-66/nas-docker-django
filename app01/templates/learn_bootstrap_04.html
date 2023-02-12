@@ -7,6 +7,7 @@
 {% endblock %}
 <!-- #引入js -->
 {% block js %}
+<!-- 时间插件1 -->
 <script  src="{% static 'bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js' %}"></script>
 <script  src="{% static 'bootstrap-datepicker/dist/locales/bootstrap-datepicker.zh-CN.min.js' %}"></script>
 <script>
@@ -21,8 +22,24 @@
             todayHighlight: true           // 今日高亮
         });
     })
+</script>
+<!-- 时间插件2 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script  src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script>
+    $(function () {
+        $("#dt2").flatpickr({
+            enableTime: true,
+            dateFormat: "Y-m-d H:i",
+        });
+        $("#dt2-1").flatpickr({
+            enableTime: true,
+            noCalendar: true,
+            dateFormat: "H:i",
+        });
 
-
+    })
+    
 </script>
 {% endblock %}
 
@@ -30,8 +47,17 @@
 {% block bodyContent %}
 <div class="container">
     <div class="col-md-12">
-        <span>日期插件：</span>
+        <span>Bootstrap-datepicker日期插件：</span>
         <input type="text" class="form-control inputDate" id="dt">
+    </div>
+    <br>
+    <div class="col-md-12">
+        <span>flatpickr时间选择插件:</span>
+        <input type="text" class="form-control inputDate" id="dt2">
+    </div>
+    <div class="col-md-12">
+        <span>flatpickr时间选择插件:</span>
+        <input type="text" class="form-control inputDate" id="dt2-1">
     </div>
 </div>
 

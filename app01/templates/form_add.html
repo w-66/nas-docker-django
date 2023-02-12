@@ -2,7 +2,8 @@
 {% load static %}
 
 <!-- #body内容 -->
-{%block bodyContent%}
+{% block bodyContent %}
+
 <title>记录 Log</title>
 <style>
 .card {
@@ -33,7 +34,7 @@
   /* 设置元素为 flex 布局 */
   align-items: center;
   /* 在 flex 布局中设置子元素在交叉轴上的对齐方式为居中对齐 */
-  justify-content: center;
+  /* justify-content: center; */
   /* 在 flex 布局中设置子元素在主轴上的对齐方式为居中对齐 */
   user-select: none;
   /* 设置用户不能选择文本内容 */
@@ -65,12 +66,16 @@
     <div class="row " style="height:100vh;"> 
         <div class="czjz col-md-12 w-100" >
             <div class="card w-100">
+                <div><p class="h4 mt-4 text-primary">{{form_title}}</p></div>
                 <form id="in1" method="post" action="" class="px-4 w-100"> 
                     {% csrf_token %}
                     <div class="mb-3">
                         {% for field in form %}
                             <label for="exampleInputEmail1" class="form-label mt-2 mb-0">{{field.label}}</label>
                             {{field}}
+                            {% for error in field.errors %}
+                            <p class="text-danger">{{ error }}</p>
+                        {% endfor %}
                         {% endfor %}
                         <button form="in1" type="submit" class="btn btn-primary mt-4">Submit</button>
                     </div>
@@ -79,6 +84,5 @@
         </div>
     </div>
 </div>
-
 
 {% endblock %}

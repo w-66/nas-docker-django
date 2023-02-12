@@ -30,7 +30,7 @@ def lifelog_log(request):
     # ModeForm (Django)
     if request.method == "GET":
         form = LogModeForm()  # 创建LogModeForm的实例对象
-        return render(request, 'lifelog_log.html',{"form":form})  # 传到模板中
+        return render(request, 'form_add.html',{"form":form, 'form_title':'添加记录'})  # 传到模板中
     
     # 用户POST提交数据，数据校验
     form = LogModeForm(data=request.POST)
@@ -39,9 +39,7 @@ def lifelog_log(request):
         # print(form.cleaned_data)
         form.save()        # 如果数据是有效的，存入之前获取的表中
         return redirect('/lifelog/')
-    else:
-        errors = form.errors
-        return HttpResponse(errors)
+    return render(request, 'form_add.html',{"form":form, 'form_title':'添加记录'})  # 传到模板中
 
 
 def lifelog_edit(request,global_id):                                      # 编辑记录

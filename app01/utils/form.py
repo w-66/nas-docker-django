@@ -1,10 +1,12 @@
 from django.utils import timezone
-# 导入自定义模块 雪花ID
-from custom_modles import module_snowflake
+from django.core.exceptions import ValidationError
 from app01.utils.bootstrap_form import BootstrapModelForm
 # ModelForm(实现web添加日志信息)
 from django import forms
 from app01  import models 
+
+# 导入自定义模块 雪花ID
+from custom_modles import module_snowflake
 
 class LogModeForm(BootstrapModelForm):
     weather = forms.CharField(required=False)              # 取消input标签的required属性(默认所有inpute标签带有required属性)
@@ -41,4 +43,20 @@ class LifeLogEdit(BootstrapModelForm):                         # 专门针对编
         # widgets = {
         #     "addtime": forms.TextInput(attrs={"value": "2020"}),
         # }
-    
+
+class Admin_add_ModeForm(BootstrapModelForm):   
+    verify_password = forms.CharField(label='确认密码', widget=forms.PasswordInput)   
+
+    class Meta:
+        model = models.Admin  # 获取表 
+        fields = "__all__"    # 获取表中的所有列
+        fields = ["username", "password", "verify_password"]
+        widgets = {
+            "password": forms.PasswordInput
+        }
+    def clean_verify_password(self):
+        password = self.cleaned_data.get("password")
+        verify_password = self.cleaned_data.get("verify_password")
+        if password != verify_password:
+            raise ValidationError("密码不一致")
+        return verify_password

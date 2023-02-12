@@ -36,6 +36,7 @@ urlpatterns = [
     
     # Admin
     path('admin/', admin.admin),
+    path('admin/add/', admin.admin_add),
 
     # 时间记录
     path('lifelog/', lifelog.lifelog),
