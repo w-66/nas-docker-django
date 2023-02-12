@@ -1,8 +1,17 @@
+{% extends 'tplt_init_bootstrap.html'%}
+{% load static %}
+{% block css %}
+<style>
+    a {
+        text-decoration: none
+    }
+</style>
 
-{%extends 'tplt_init_bootstrap.html'%}
-{%load static%}
-
-{%block bodyContent %}
+{% endblock%}
+<!-- #body内容 -->
+{%block bodyContent%}
+<title>admin</title>
+<!-- Navbar -->
 <div class="container">
     <div class="row">
         <div class="col-md-12">
@@ -10,7 +19,7 @@
             <nav class="navbar navbar-expand-lg top-0 z-index-3 w-100 shadow-sm my-3  navbar-transparent ">
                 <div class="container">
                     <a class="navbar-brand  text-primary" href="/index/" rel="tooltip"
-                        title="Designed and Coded by Creative Tim" data-placement="bottom" >
+                        title="Designed and Coded by Creative Tim" data-placement="bottom">
                         Index
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
@@ -54,120 +63,121 @@
         </div>
     </div>
 </div>
-<style>
-    /* 去除body的滚动条 */
-    body {   
-        overflow-y: hidden;
-    }
-    /* 火狐浏览器 滚动条设置 */
-    #ml {
-        overflow:scroll;
-        /* overflow-x: hidden; */  /*在隐藏x滚动条会导致超出部份因无法滚动而看不到*/
-        scrollbar-width: thin;
-        scrollbar-color: #0dcaf0 rgb(6, 6, 6);
-    }
-    /* 谷歌浏览器 滚动条设置 */
-    ::-webkit-scrollbar {
-        width: 10px; /* 设置滚动条宽度 */
-        background-color: rgb(255, 255, 255); /* 设置滚动条背景色 */
-    }
-    ::-webkit-scrollbar-thumb {
-        background-color: #0dcaf0; /* 设置滚动条按钮背景色 */
-    }
-    /* 火狐滚动条自定义设置 */
-</style>
 
-<style>
-    /*设置表格高度 占满屏幕高度*/
-    #ml { 
-        height: 95vh;
-    }
-</style>
-
-<style>
-    table td{
-    word-break: break-all;        /*允许在字内换行,即单词可分*/
-    word-wrap:break-word;         /*允许长单词或URL地址换行*/ 
-    font:500 16px Arial;
-}
-</style>
-
-<style>
-    table {
-        table-layout: fixed;      /*去除表格自适应列宽 默认列 等宽*/
-    }
-    td {
-        overflow: hidden;         /*超出隐藏*/
-        white-space: nowrap;      /*不换行*/
-        text-overflow: ellipsis;  /*超出文字使用...替代*/
-    }
-</style>
-
-<!-- <style>
-    /*设置列宽*/
-    #t1>thead>tr>th:nth-child(-n+2) {  /*前2排*/
-        width: 60px;
-    }
-    #t1>thead>tr>th:nth-child(3) {     /*第3列*/
-        width: 300px;
-    }
-    #t1>thead>tr>th:nth-child(4) {     /*第4列*/
-        width: 150px;
-    }
-    /*第5列到第6列*/
-    #t1>thead>tr>th:nth-child(n+5):nth-child(-n+6) {  
-        width: 100px;
-    }
-    #t1>thead>tr>th:nth-child(8) {
-        width: 105px;
-    }
-</style> -->
-    <title>Music List</title>
-    <div class="container">
-        <div id="log" class="position-fixed bottom-0 start-50 translate-middle-x shadow rounded mb-5">
-            <a href="/lifelog/log/">
-              <button type="button" class="btn btn-outline-primary">搜索</button>
-            </a>
-          </div>
-        <div class="row">
-            <!-- <div class="col-md-1"></div> -->
-            <div class="col-md-12">
-                <div><h1 class="h1 bg-black m-0  text-info text-center w-100 p-2">音乐信息列表</h1></div>
-                <div id="ml" class="table-responsive-md col custom-table-width" >
-                    <table id="t1" class="table table-hover table-bordered table-striped">  
-                        <caption class="caption-top  bg-info m-0  text-light text-center w-100">Favor Music</caption>
-                        <thead  class="table-dark">
-                            <tr>
-                                <th scope="col" class="text-nowrap">编辑</th>
-                                <th scope="col" class="text-nowrap">序列号</th>
-                                <th scope="col" >歌名</th>
-                                <th scope="col" >歌手</th>
-                                <th scope="col" >标签</th>
-                                <th scope="col" >专辑</th>
-                                <th scope="col" >添加时间</th>
-                                <th scope="col" class="text-nowrap">native_id</th>
-                            </tr>
-                        </thead>  
-                        {% for item  in musicobj %}
-                        <tr class="table">
-                            <td class="table-info"><a class="text-decoration-none" href="/music/list/edit/{{item.global_id}}/">修改</a></td>
-                            <td class="table-info" >{{ forloop.revcounter }}</td>
-                            <td>{{ item.song      }}</td>
-                            <td>{{ item.songer    }}</td>
-                            <td>{{ item.tag       }}</td>
-                            <td>{{ item.album     }}</td>
-                            <td>{{ item.addtime   }}</td>
-                            <td class="">{{ item.native_id }}</td>
-                        </tr>
-                        {% endfor %}
-                    </table>
-                </div>            
-
-            </div>
-            <!-- <div class="col-md-1"></div> -->
+<div class="container">
+    <!-- 新建与搜索框 -->
+    <div class="row pt-4">
+        <div class="col-md-9">
+            <button type="button" class="btn btn-primary"><a class="text-white" href="/admin/add/">新建管理员</a></button>
 
         </div>
+        <div class="col-md-3">
+            <!-- 搜索框 -->
+            <form action="" method="get">
+                <div class="input-group mb-3">
+                    <input type="text" name="s" class="form-control" placeholder="Search" value="{{search_data}}">
+                    <button class="btn btn-primary" type="submit">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-search"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
+    <!-- 内容  -->
+    <div class="col-md-12">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="text-nowrap">编辑</th>
+                    <!-- <th class="text-nowrap">序列号</th> -->
+                    <th>歌名</th>
+                    <th>歌手</th>
+                    <th>标签</th>
+                    <th>专辑</th>
+                    <th>添加时间</th>
+                    <!-- <th scope="col" class="text-nowrap">native_id</th> -->
+                </tr>
+            </thead>  
+            <tbody>
+                {% for item  in queryset %}
+                <tr>
+                    <td><a class="text-decoration-none" href="/music/list/edit/{{item.global_id}}/">修改</a></td>
+                    <!-- <td class="table-info" >{{ forloop.revcounter }}</td> -->
+                    <td>{{ item.song      }}</td>
+                    <td>{{ item.songer    }}</td>
+                    <td>{{ item.tag       }}</td>
+                    <td>{{ item.album     }}</td>
+                    <td>{{ item.addtime   }}</td>
+                    <!-- <td class="">{{ item.native_id }}</td> -->
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        </table>
+    </div>
+    <!-- 分页 -->
+    <div class="row">
+        <div class="col-md-6"></div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-10">
+                    <nav class="d-flex justify-content-end">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="?page=1">
+                                    {% comment %} <span aria-hidden="true">&laquo;</span> {% endcomment %}
+                                    <svg class="icon" aria-hidden="true">
+                                        <use xlink:href="#icon-arrow-double-left"></use>
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li class="page-item">
+                                <a class="page-link" href="?page={{page_up}}">
+                                    <svg class="icon" aria-hidden="true">
+                                        <use xlink:href="#icon-arrow-left-bold"></use>
+                                    </svg>
+                                </a>
+                            </li>
 
 
-    {% endblock %}
+                            {{page_Num_HTML}}
+
+                            <li class="page-item">
+                                <a class="page-link" href="?page={{page_down}}">
+                                    <svg class="icon" aria-hidden="true">
+                                        <use xlink:href="#icon-arrow-right-bold"></use>
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li class="page-item">
+                                <a class="page-link" href="?page={{page_count}}">
+                                    <svg class="icon" aria-hidden="true">
+                                        <use xlink:href="#icon-arrow-double-right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-2">
+                    <form action="" method="get">
+                        <div class="input-group mb-3">
+                            <input type="text" name="page" class="form-control " placeholder="" value="">
+                            <button class="btn btn-secondary  px-1" type="submit">
+                                <svg class="icon" aria-hidden="true">
+                                    <use xlink:href="#icon-juli"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    {%endblock%}

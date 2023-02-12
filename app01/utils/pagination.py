@@ -1,7 +1,7 @@
 from django.utils.safestring import mark_safe       ###导入之后，才能使用page_str_list中的html标签
 
 class Pagination():
-    def __init__(self, request, queryset, page_limit = 7, subsection = 4, param_page='page'):
+    def __init__(self, request, queryset, page_limit = 7, subsection = 3, param_page='page'):
         """
         : 分页功能 : 
         : request  : 请求
