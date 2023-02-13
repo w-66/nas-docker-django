@@ -14,7 +14,7 @@ def music_list(request):
     if search_data:
         data_dict['song__contains'] = search_data
     # user_list = Admin.objects.using('second_db').all().order_by("-addtime")[:40]
-    queryset = Favormusic.objects.using('second_db').filter(**data_dict).order_by("addtime")
+    queryset = Favormusic.objects.using('second_db').filter(**data_dict).order_by("-addtime")
 
     # musicobj = Favormusic.objects.using('second_db').all().order_by("-addtime")[:40]
     obj_page = Pagination(request, queryset, subsection=3, page_limit=9)     #创建对象实例 
