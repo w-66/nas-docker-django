@@ -10,7 +10,6 @@ def admin(request):
     ### 判断通过get传过来的值是否为空，不为空，则添加到字典中
     if search_data:
         data_dict['username__contains'] = search_data
-    # user_list = Admin.objects.using('second_db').all().order_by("-addtime")[:40]
     queryset = Admin.objects.filter(**data_dict).order_by("id")
 
     obj_page = Pagination(request, queryset, subsection=3, page_limit=6)     #创建对象实例 
@@ -32,7 +31,7 @@ def admin_add(request):
     form = Admin_add_ModeForm(data=request.POST)
     if form.is_valid():
         # 如果数据合法，保存到数据库中
-        # print(form.cleaned_data)
         form.save()        # 如果数据是有效的，存入之前获取的表中
         return redirect('/admin/')
     return render(request, 'form_add.html',{"form":form, 'form_title':'新建管理员'})  # 传到模板中
+
