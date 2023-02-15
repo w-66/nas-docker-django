@@ -1,231 +1,525 @@
-
-nohup: ignoring input
-Watching for file changes with StatReloader
-[12/Feb/2023 07:09:53] "GET /admin/add/ HTTP/1.1" 200 4408
 /www/django_www/app01/utils/form.py changed, reloading.
 Performing system checks...
 
 System check identified no issues (0 silenced).
-February 12, 2023 - 07:09:53
+February 15, 2023 - 12:20:47
 Django version 3.2, using settings 'django_www.settings'
 Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
 Watching for file changes with StatReloader
-/www/django_www/app01/utils/form.py changed, reloading.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-February 12, 2023 - 07:12:58
-Django version 3.2, using settings 'django_www.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Watching for file changes with StatReloader
-[12/Feb/2023 07:13:45] "GET /admin/add/ HTTP/1.1" 200 4412
-/www/django_www/app01/utils/form.py changed, reloading.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-February 12, 2023 - 07:13:45
-Django version 3.2, using settings 'django_www.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Watching for file changes with StatReloader
-/www/django_www/app01/utils/form.py changed, reloading.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-February 12, 2023 - 07:13:51
-Django version 3.2, using settings 'django_www.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Watching for file changes with StatReloader
-[12/Feb/2023 07:14:12] "GET /admin/add/ HTTP/1.1" 200 4403
-/www/django_www/app01/utils/form.py changed, reloading.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-February 12, 2023 - 07:14:12
-Django version 3.2, using settings 'django_www.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Watching for file changes with StatReloader
-[12/Feb/2023 07:14:26] "GET /admin/add/ HTTP/1.1" 200 4401
-/www/django_www/app01/utils/form.py changed, reloading.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-February 12, 2023 - 07:14:25
-Django version 3.2, using settings 'django_www.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Watching for file changes with StatReloader
-/www/django_www/app01/utils/form.py changed, reloading.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-February 12, 2023 - 07:15:45
-Django version 3.2, using settings 'django_www.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Watching for file changes with StatReloader
-[12/Feb/2023 07:15:54] "GET /admin/add/ HTTP/1.1" 200 4412
-/www/django_www/app01/utils/form.py changed, reloading.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-February 12, 2023 - 07:15:54
-Django version 3.2, using settings 'django_www.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Watching for file changes with StatReloader
-/www/django_www/app01/utils/form.py changed, reloading.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-February 12, 2023 - 07:15:58
-Django version 3.2, using settings 'django_www.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Watching for file changes with StatReloader
-[12/Feb/2023 07:16:02] "GET /admin/add/ HTTP/1.1" 200 4416
-/www/django_www/app01/utils/form.py changed, reloading.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-February 12, 2023 - 07:16:02
-Django version 3.2, using settings 'django_www.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Watching for file changes with StatReloader
-Internal Server Error: /admin/add/
+Exception in thread django-main-thread:
 Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/www/django_www/app01/views/admin.py", line 33, in admin_add
-    if form.is_valid():
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/forms.py", line 175, in is_valid
-    return self.is_bound and not self.errors
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/forms.py", line 170, in errors
-    self.full_clean()
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/forms.py", line 372, in full_clean
-    self._clean_fields()
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/forms.py", line 393, in _clean_fields
-    value = getattr(self, 'clean_%s' % name)()
-  File "/www/django_www/app01/utils/form.py", line 58, in clean_verify_password
-    password = self.cleaed_data.get["password"]
-AttributeError: 'Admin_add_ModeForm' object has no attribute 'cleaed_data'
-[12/Feb/2023 07:45:03] "POST /admin/add/ HTTP/1.1" 500 76493
-Internal Server Error: /admin/add/
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/module_loading.py", line 20, in import_string
+    return getattr(module, class_name)
+AttributeError: module 'app01.middleware.auth' has no attribute 'Auth'
+
+The above exception was the direct cause of the following exception:
+
 Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/www/django_www/app01/views/admin.py", line 33, in admin_add
-    if form.is_valid():
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/forms.py", line 175, in is_valid
-    return self.is_bound and not self.errors
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/forms.py", line 170, in errors
-    self.full_clean()
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/forms.py", line 372, in full_clean
-    self._clean_fields()
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/forms.py", line 393, in _clean_fields
-    value = getattr(self, 'clean_%s' % name)()
-  File "/www/django_www/app01/utils/form.py", line 58, in clean_verify_password
-    password = self.cleaed_data.get["password"]
-AttributeError: 'Admin_add_ModeForm' object has no attribute 'cleaed_data'
-[12/Feb/2023 07:45:11] "POST /admin/add/ HTTP/1.1" 500 76484
-/www/django_www/app01/utils/form.py changed, reloading.
-Performing system checks...
+  File "/usr/local/lib/python3.8/dist-packages/django/core/servers/basehttp.py", line 45, in get_internal_wsgi_application
+    return import_string(app_path)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/module_loading.py", line 17, in import_string
+    module = import_module(module_path)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/www/django_www/django_www/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/usr/local/lib/python3.8/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    return WSGIHandler()
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/wsgi.py", line 127, in __init__
+    self.load_middleware()
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 40, in load_middleware
+    middleware = import_string(middleware_path)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/module_loading.py", line 22, in import_string
+    raise ImportError('Module "%s" does not define a "%s" attribute/class' % (
+ImportError: Module "app01.middleware.auth" does not define a "Auth" attribute/class
 
-System check identified no issues (0 silenced).
-February 12, 2023 - 07:44:59
-Django version 3.2, using settings 'django_www.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Watching for file changes with StatReloader
-Internal Server Error: /admin/add/
+The above exception was the direct cause of the following exception:
+
 Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/www/django_www/app01/views/admin.py", line 33, in admin_add
-    if form.is_valid():
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/forms.py", line 175, in is_valid
-    return self.is_bound and not self.errors
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/forms.py", line 170, in errors
-    self.full_clean()
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/forms.py", line 372, in full_clean
-    self._clean_fields()
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/forms.py", line 393, in _clean_fields
-    value = getattr(self, 'clean_%s' % name)()
-  File "/www/django_www/app01/utils/form.py", line 58, in clean_verify_password
-    password = self.clean_data.get["password"]
-AttributeError: 'Admin_add_ModeForm' object has no attribute 'clean_data'
-[12/Feb/2023 07:46:07] "POST /admin/add/ HTTP/1.1" 500 76478
-/www/django_www/app01/utils/form.py changed, reloading.
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/runserver.py", line 138, in inner_run
+    handler = self.get_handler(*args, **options)
+  File "/usr/local/lib/python3.8/dist-packages/django/contrib/staticfiles/management/commands/runserver.py", line 27, in get_handler
+    handler = super().get_handler(*args, **options)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/runserver.py", line 65, in get_handler
+    return get_internal_wsgi_application()
+  File "/usr/local/lib/python3.8/dist-packages/django/core/servers/basehttp.py", line 47, in get_internal_wsgi_application
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: WSGI application 'django_www.wsgi.application' could not be loaded; Error importing module.
+/www/django_www/app01/utils/bootstrap_form.py changed, reloading.
 Performing system checks...
 
 System check identified no issues (0 silenced).
-February 12, 2023 - 07:46:02
+February 15, 2023 - 12:21:21
 Django version 3.2, using settings 'django_www.settings'
 Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
 Watching for file changes with StatReloader
-/www/django_www/app01/utils/form.py changed, reloading.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-February 12, 2023 - 07:46:35
-Django version 3.2, using settings 'django_www.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Watching for file changes with StatReloader
-[12/Feb/2023 07:46:52] "POST /admin/add/ HTTP/1.1" 302 0
-[12/Feb/2023 07:46:52] "GET /admin/ HTTP/1.1" 200 9576
-[12/Feb/2023 07:46:59] "GET /admin/add/ HTTP/1.1" 200 4416
-[12/Feb/2023 07:47:03] "POST /admin/add/ HTTP/1.1" 200 15
-[12/Feb/2023 07:47:06] "GET /admin/add/ HTTP/1.1" 200 4416
-/www/django_www/app01/utils/form.py changed, reloading.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-February 12, 2023 - 07:46:49
-Django version 3.2, using settings 'django_www.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Watching for file changes with StatReloader
-[12/Feb/2023 07:47:43] "POST /admin/add/ HTTP/1.1" 200 15
-[12/Feb/2023 07:47:43] "GET /admin/add/ HTTP/1.1" 200 4416
-/www/django_www/app01/views/admin.py changed, reloading.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-February 12, 2023 - 07:47:40
-Django version 3.2, using settings 'django_www.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Watching for file changes with StatReloader
-[12/Feb/2023 07:48:14] "POST /admin/add/ HTTP/1.1" 200 4428
-[12/Feb/2023 07:48:18] "POST /admin/add/ HTTP/1.1" 200 4428
-[12/Feb/2023 07:56:53] "POST /admin/add/ HTTP/1.1" 200 4428
-[12/Feb/2023 07:56:56] "POST /admin/add/ HTTP/1.1" 200 4428
-[12/Feb/2023 08:01:11] "POST /admin/add/ HTTP/1.1" 200 4611
-[12/Feb/2023 08:01:56] "GET /lifelog/log/ HTTP/1.1" 200 5514
-Internal Server Error: /lifelog/log/
+Exception in thread django-main-thread:
 Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/django/db/backends/mysql/base.py", line 73, in execute
-    return self.cursor.execute(query, args)
-  File "/usr/local/lib/python3.8/dist-packages/MySQLdb/cursors.py", line 206, in execute
-    res = self._query(query)
-  File "/usr/local/lib/python3.8/dist-packages/MySQLdb/cursors.py", line 319, in _query
-    db.query(q)
-  File "/usr/local/lib/python3.8/dist-packages/MySQLdb/connections.py", line 254, in query
-    _mysql.connection.query(self, query)
-MySQLdb.OperationalError: (1048, "Column 'tag' cannot be null")
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/module_loading.py", line 20, in import_string
+    return getattr(module, class_name)
+AttributeError: module 'app01.middleware.auth' has no attribute 'Auth'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/servers/basehttp.py", line 45, in get_internal_wsgi_application
+    return import_string(app_path)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/module_loading.py", line 17, in import_string
+    module = import_module(module_path)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/www/django_www/django_www/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/usr/local/lib/python3.8/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    return WSGIHandler()
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/wsgi.py", line 127, in __init__
+    self.load_middleware()
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 40, in load_middleware
+    middleware = import_string(middleware_path)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/module_loading.py", line 22, in import_string
+    raise ImportError('Module "%s" does not define a "%s" attribute/class' % (
+ImportError: Module "app01.middleware.auth" does not define a "Auth" attribute/class
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/runserver.py", line 138, in inner_run
+    handler = self.get_handler(*args, **options)
+  File "/usr/local/lib/python3.8/dist-packages/django/contrib/staticfiles/management/commands/runserver.py", line 27, in get_handler
+    handler = super().get_handler(*args, **options)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/runserver.py", line 65, in get_handler
+    return get_internal_wsgi_application()
+  File "/usr/local/lib/python3.8/dist-packages/django/core/servers/basehttp.py", line 47, in get_internal_wsgi_application
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: WSGI application 'django_www.wsgi.application' could not be loaded; Error importing module.
+/www/django_www/app01/utils/form.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 15, 2023 - 12:22:08
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/module_loading.py", line 20, in import_string
+    return getattr(module, class_name)
+AttributeError: module 'app01.middleware.auth' has no attribute 'Auth'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/servers/basehttp.py", line 45, in get_internal_wsgi_application
+    return import_string(app_path)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/module_loading.py", line 17, in import_string
+    module = import_module(module_path)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/www/django_www/django_www/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/usr/local/lib/python3.8/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    return WSGIHandler()
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/wsgi.py", line 127, in __init__
+    self.load_middleware()
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 40, in load_middleware
+    middleware = import_string(middleware_path)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/module_loading.py", line 22, in import_string
+    raise ImportError('Module "%s" does not define a "%s" attribute/class' % (
+ImportError: Module "app01.middleware.auth" does not define a "Auth" attribute/class
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/runserver.py", line 138, in inner_run
+    handler = self.get_handler(*args, **options)
+  File "/usr/local/lib/python3.8/dist-packages/django/contrib/staticfiles/management/commands/runserver.py", line 27, in get_handler
+    handler = super().get_handler(*args, **options)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/runserver.py", line 65, in get_handler
+    return get_internal_wsgi_application()
+  File "/usr/local/lib/python3.8/dist-packages/django/core/servers/basehttp.py", line 47, in get_internal_wsgi_application
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: WSGI application 'django_www.wsgi.application' could not be loaded; Error importing module.
+/www/django_www/app01/middleware/auth.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 15, 2023 - 12:23:17
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/www/django_www/app01/middleware/auth.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 15, 2023 - 12:23:30
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[15/Feb/2023 12:24:01] "GET /index/ HTTP/1.1" 200 7227
+[15/Feb/2023 12:24:03] "GET /index/ HTTP/1.1" 200 7227
+[15/Feb/2023 12:24:03] "GET /admin/ HTTP/1.1" 200 8500
+[15/Feb/2023 12:24:04] "GET /lifelog/ HTTP/1.1" 200 12883
+[15/Feb/2023 12:24:05] "GET /music/list/ HTTP/1.1" 200 13074
+[15/Feb/2023 12:24:06] "GET /logout/ HTTP/1.1" 302 0
+[15/Feb/2023 12:24:06] "GET /login/ HTTP/1.1" 200 4684
+[15/Feb/2023 12:24:06] "GET /auth/code/ HTTP/1.1" 200 3902
+[15/Feb/2023 12:24:08] "GET /index/ HTTP/1.1" 200 7226
+[15/Feb/2023 12:24:09] "GET /lifelog/ HTTP/1.1" 302 0
+[15/Feb/2023 12:24:09] "GET /login/ HTTP/1.1" 200 4684
+[15/Feb/2023 12:24:09] "GET /auth/code/ HTTP/1.1" 200 4964
+[15/Feb/2023 12:24:10] "GET /admin/ HTTP/1.1" 302 0
+[15/Feb/2023 12:24:10] "GET /login/ HTTP/1.1" 200 4684
+[15/Feb/2023 12:24:10] "GET /auth/code/ HTTP/1.1" 200 3774
+[15/Feb/2023 12:24:11] "GET /music/list/ HTTP/1.1" 302 0
+[15/Feb/2023 12:24:11] "GET /login/ HTTP/1.1" 200 4684
+[15/Feb/2023 12:24:11] "GET /auth/code/ HTTP/1.1" 200 4741
+[15/Feb/2023 12:24:12] "GET /index/ HTTP/1.1" 200 7226
+[15/Feb/2023 12:32:22] "GET /login/ HTTP/1.1" 200 4684
+[15/Feb/2023 12:32:22] "GET /auth/code/ HTTP/1.1" 200 3505
+[15/Feb/2023 12:32:22] "GET /login/ HTTP/1.1" 200 4684
+[15/Feb/2023 12:32:22] "GET /auth/code/ HTTP/1.1" 200 4451
+[15/Feb/2023 12:32:23] "GET /login/ HTTP/1.1" 200 4684
+[15/Feb/2023 12:32:23] "GET /auth/code/ HTTP/1.1" 200 4551
+[15/Feb/2023 12:32:23] "GET /login/ HTTP/1.1" 200 4684
+[15/Feb/2023 12:32:23] "GET /auth/code/ HTTP/1.1" 200 4430
+[15/Feb/2023 12:32:23] "GET /login/ HTTP/1.1" 200 4684
+[15/Feb/2023 12:32:23] "GET /auth/code/ HTTP/1.1" 200 3935
+[15/Feb/2023 12:32:23] "GET /login/ HTTP/1.1" 200 4684
+[15/Feb/2023 12:32:23] "GET /auth/code/ HTTP/1.1" 200 3366
+[15/Feb/2023 12:32:23] "GET /login/ HTTP/1.1" 200 4684
+[15/Feb/2023 12:32:23] "GET /auth/code/ HTTP/1.1" 200 4522
+[15/Feb/2023 12:32:23] "GET /login/ HTTP/1.1" 200 4684
+[15/Feb/2023 12:32:23] "GET /auth/code/ HTTP/1.1" 200 4078
+[15/Feb/2023 12:33:01] "GET /login/ HTTP/1.1" 200 4671
+[15/Feb/2023 12:33:01] "GET /auth/code/ HTTP/1.1" 200 4168
+[15/Feb/2023 12:33:05] "GET /login/ HTTP/1.1" 200 4684
+[15/Feb/2023 12:33:05] "GET /auth/code/ HTTP/1.1" 200 4726
+[15/Feb/2023 12:38:18] "GET /login/ HTTP/1.1" 200 4716
+[15/Feb/2023 12:38:18] "GET /auth/code/ HTTP/1.1" 200 3899
+[15/Feb/2023 12:40:32] "GET /login/ HTTP/1.1" 200 4715
+[15/Feb/2023 12:40:32] "GET /auth/code/ HTTP/1.1" 200 4126
+[15/Feb/2023 12:40:42] "GET /login/ HTTP/1.1" 200 4685
+[15/Feb/2023 12:40:42] "GET /auth/code/ HTTP/1.1" 200 5109
+[15/Feb/2023 12:41:54] "GET /login/ HTTP/1.1" 200 4689
+[15/Feb/2023 12:41:54] "GET /auth/code/ HTTP/1.1" 200 4212
+[15/Feb/2023 12:41:56] "GET /login/ HTTP/1.1" 200 4689
+[15/Feb/2023 12:41:56] "GET /auth/code/ HTTP/1.1" 200 3989
+[15/Feb/2023 12:41:56] "GET /login/ HTTP/1.1" 200 4689
+[15/Feb/2023 12:41:57] "GET /auth/code/ HTTP/1.1" 200 3866
+[15/Feb/2023 12:41:57] "GET /login/ HTTP/1.1" 200 4689
+[15/Feb/2023 12:41:57] "GET /auth/code/ HTTP/1.1" 200 4343
+[15/Feb/2023 12:41:57] "GET /login/ HTTP/1.1" 200 4689
+[15/Feb/2023 12:41:57] "GET /auth/code/ HTTP/1.1" 200 3522
+[15/Feb/2023 12:41:57] "GET /login/ HTTP/1.1" 200 4689
+[15/Feb/2023 12:41:57] "GET /auth/code/ HTTP/1.1" 200 4600
+[15/Feb/2023 12:42:13] "GET /login/ HTTP/1.1" 200 4689
+[15/Feb/2023 12:42:13] "GET /auth/code/ HTTP/1.1" 200 4227
+[15/Feb/2023 12:42:14] "GET /login/ HTTP/1.1" 200 4689
+[15/Feb/2023 12:42:14] "GET /auth/code/ HTTP/1.1" 200 3936
+[15/Feb/2023 12:42:14] "GET /login/ HTTP/1.1" 200 4689
+[15/Feb/2023 12:42:14] "GET /auth/code/ HTTP/1.1" 200 4021
+[15/Feb/2023 12:42:19] "GET /login/ HTTP/1.1" 200 4685
+[15/Feb/2023 12:42:19] "GET /auth/code/ HTTP/1.1" 200 4520
+[15/Feb/2023 12:43:01] "GET /login/ HTTP/1.1" 200 4699
+[15/Feb/2023 12:43:01] "GET /auth/code/ HTTP/1.1" 200 3963
+[15/Feb/2023 12:43:09] "GET /login/ HTTP/1.1" 200 4685
+[15/Feb/2023 12:43:09] "GET /auth/code/ HTTP/1.1" 200 4660
+[15/Feb/2023 12:44:16] "GET /login/ HTTP/1.1" 200 4700
+[15/Feb/2023 12:44:16] "GET /auth/code/ HTTP/1.1" 200 4382
+[15/Feb/2023 12:44:38] "GET /login/ HTTP/1.1" 200 4687
+[15/Feb/2023 12:44:38] "GET /auth/code/ HTTP/1.1" 200 4240
+[15/Feb/2023 12:45:24] "GET /login/ HTTP/1.1" 200 4709
+[15/Feb/2023 12:45:24] "GET /auth/code/ HTTP/1.1" 200 3734
+[15/Feb/2023 12:45:31] "GET /login/ HTTP/1.1" 200 4709
+[15/Feb/2023 12:45:31] "GET /auth/code/ HTTP/1.1" 200 4166
+[15/Feb/2023 12:45:45] "GET /login/ HTTP/1.1" 200 4709
+[15/Feb/2023 12:45:45] "GET /auth/code/ HTTP/1.1" 200 4198
+[15/Feb/2023 12:45:51] "GET /login/ HTTP/1.1" 200 4709
+[15/Feb/2023 12:45:51] "GET /auth/code/ HTTP/1.1" 200 4466
+[15/Feb/2023 12:46:16] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[15/Feb/2023 12:46:16] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[15/Feb/2023 12:46:33] "GET /login/ HTTP/1.1" 200 4713
+[15/Feb/2023 12:46:33] "GET /auth/code/ HTTP/1.1" 200 4811
+[15/Feb/2023 12:46:38] "GET /login/ HTTP/1.1" 200 4714
+[15/Feb/2023 12:46:38] "GET /auth/code/ HTTP/1.1" 200 4180
+[15/Feb/2023 12:46:43] "GET /login/ HTTP/1.1" 200 4714
+[15/Feb/2023 12:46:43] "GET /auth/code/ HTTP/1.1" 200 4365
+[15/Feb/2023 12:46:44] "GET /login/ HTTP/1.1" 200 4714
+[15/Feb/2023 12:46:44] "GET /auth/code/ HTTP/1.1" 200 4449
+[15/Feb/2023 12:46:44] "GET /login/ HTTP/1.1" 200 4714
+[15/Feb/2023 12:46:44] "GET /auth/code/ HTTP/1.1" 200 4593
+[15/Feb/2023 12:46:44] "GET /login/ HTTP/1.1" 200 4714
+[15/Feb/2023 12:46:44] "GET /auth/code/ HTTP/1.1" 200 3680
+[15/Feb/2023 12:46:46] "GET /login/ HTTP/1.1" 200 4714
+[15/Feb/2023 12:46:46] "GET /auth/code/ HTTP/1.1" 200 4253
+[15/Feb/2023 12:46:49] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[15/Feb/2023 12:46:49] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[15/Feb/2023 12:47:09] "GET /login/ HTTP/1.1" 200 4714
+[15/Feb/2023 12:47:09] "GET /auth/code/ HTTP/1.1" 200 4173
+[15/Feb/2023 12:47:12] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[15/Feb/2023 12:47:12] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[15/Feb/2023 12:47:26] "GET /login/ HTTP/1.1" 200 4714
+[15/Feb/2023 12:47:26] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[15/Feb/2023 12:47:26] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[15/Feb/2023 12:47:26] "GET /auth/code/ HTTP/1.1" 200 4326
+[15/Feb/2023 12:47:26] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[15/Feb/2023 12:47:26] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[15/Feb/2023 12:47:26] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[15/Feb/2023 12:47:42] "GET /login/ HTTP/1.1" 200 4708
+[15/Feb/2023 12:47:42] "GET /auth/code/ HTTP/1.1" 200 4516
+[15/Feb/2023 12:47:48] "GET /login/ HTTP/1.1" 200 4708
+[15/Feb/2023 12:47:48] "GET /auth/code/ HTTP/1.1" 200 4113
+[15/Feb/2023 12:47:57] "GET /login/ HTTP/1.1" 200 4708
+[15/Feb/2023 12:47:57] "GET /auth/code/ HTTP/1.1" 200 5310
+[15/Feb/2023 12:48:10] "GET /login/ HTTP/1.1" 200 4708
+[15/Feb/2023 12:48:10] "GET /auth/code/ HTTP/1.1" 200 3740
+[15/Feb/2023 12:48:15] "GET /login/ HTTP/1.1" 200 4708
+[15/Feb/2023 12:48:15] "GET /auth/code/ HTTP/1.1" 200 4346
+[15/Feb/2023 12:48:28] "GET /login/ HTTP/1.1" 200 4708
+[15/Feb/2023 12:48:28] "GET /auth/code/ HTTP/1.1" 200 4220
+[15/Feb/2023 12:48:53] "GET /login/ HTTP/1.1" 200 4708
+[15/Feb/2023 12:48:53] "GET /auth/code/ HTTP/1.1" 200 3703
+/www/django_www/app01/views/login.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 15, 2023 - 12:24:01
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+request <WSGIRequest: GET '/admin/'>
+request.session <django.contrib.sessions.backends.db.SessionStore object at 0x7fa042b8a130>
+Watching for file changes with StatReloader
+/www/django_www/app01/views/login.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 15, 2023 - 12:53:58
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/www/django_www/app01/views/login.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 15, 2023 - 12:54:42
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[15/Feb/2023 12:55:31] "GET /login/ HTTP/1.1" 200 4816
+[15/Feb/2023 12:55:31] "GET /auth/code/ HTTP/1.1" 200 4467
+[15/Feb/2023 12:55:32] "GET /login/ HTTP/1.1" 200 4816
+[15/Feb/2023 12:55:32] "GET /auth/code/ HTTP/1.1" 200 3645
+/www/django_www/app01/views/login.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 15, 2023 - 12:54:55
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/www/django_www/django_www/urls.py", line 4, in <module>
+    from app01.views import login
+  File "/www/django_www/app01/views/login.py", line 11, in <module>
+    class LoginForm(forms.Form):
+  File "/www/django_www/app01/views/login.py", line 18, in LoginForm
+    widget=forms.PasswordInput(attrs={'class': 'form-control','placeholder':Password})  
+NameError: name 'Password' is not defined
+/www/django_www/app01/views/login.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+[15/Feb/2023 12:56:22] "GET /login/ HTTP/1.1" 200 4839
+[15/Feb/2023 12:56:22] "GET /auth/code/ HTTP/1.1" 200 5356
+[15/Feb/2023 12:56:23] "GET /login/ HTTP/1.1" 200 4839
+[15/Feb/2023 12:56:23] "GET /auth/code/ HTTP/1.1" 200 3931
+[15/Feb/2023 12:56:42] "GET /login/ HTTP/1.1" 200 4840
+[15/Feb/2023 12:56:42] "GET /auth/code/ HTTP/1.1" 200 4434
+/www/django_www/app01/views/login.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 15, 2023 - 12:56:22
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[15/Feb/2023 12:57:31] "GET /login/ HTTP/1.1" 200 4884
+[15/Feb/2023 12:57:31] "GET /auth/code/ HTTP/1.1" 200 4183
+[15/Feb/2023 13:00:10] "GET /login/ HTTP/1.1" 200 4889
+[15/Feb/2023 13:00:10] "GET /auth/code/ HTTP/1.1" 200 3879
+[15/Feb/2023 13:00:10] "GET /login/ HTTP/1.1" 200 4889
+[15/Feb/2023 13:00:10] "GET /auth/code/ HTTP/1.1" 200 4109
+[15/Feb/2023 13:00:11] "GET /login/ HTTP/1.1" 200 4889
+[15/Feb/2023 13:00:11] "GET /auth/code/ HTTP/1.1" 200 4484
+[15/Feb/2023 13:00:11] "GET /login/ HTTP/1.1" 200 4889
+[15/Feb/2023 13:00:11] "GET /auth/code/ HTTP/1.1" 200 4884
+[15/Feb/2023 13:00:21] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[15/Feb/2023 13:00:21] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[15/Feb/2023 13:00:38] "GET /login/ HTTP/1.1" 200 4879
+[15/Feb/2023 13:00:38] "GET /auth/code/ HTTP/1.1" 200 4857
+[15/Feb/2023 13:00:42] "GET /login/ HTTP/1.1" 200 4885
+[15/Feb/2023 13:00:42] "GET /auth/code/ HTTP/1.1" 200 3671
+[15/Feb/2023 13:00:52] "GET /login/ HTTP/1.1" 200 4890
+[15/Feb/2023 13:00:52] "GET /auth/code/ HTTP/1.1" 200 4503
+[15/Feb/2023 13:00:53] "GET /login/ HTTP/1.1" 200 4890
+[15/Feb/2023 13:00:53] "GET /auth/code/ HTTP/1.1" 200 3858
+[15/Feb/2023 13:00:53] "GET /login/ HTTP/1.1" 200 4890
+[15/Feb/2023 13:00:53] "GET /auth/code/ HTTP/1.1" 200 3505
+[15/Feb/2023 13:01:09] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[15/Feb/2023 13:01:09] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[15/Feb/2023 13:01:46] "POST /login/ HTTP/1.1" 200 4901
+[15/Feb/2023 13:01:46] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[15/Feb/2023 13:01:46] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[15/Feb/2023 13:01:46] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[15/Feb/2023 13:01:46] "GET /auth/code/ HTTP/1.1" 200 3931
+[15/Feb/2023 13:01:46] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[15/Feb/2023 13:01:46] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[15/Feb/2023 13:02:59] "GET /login/?username=11&password=11 HTTP/1.1" 200 4890
+[15/Feb/2023 13:02:59] "GET /auth/code/ HTTP/1.1" 200 3814
+[15/Feb/2023 13:03:01] "GET /login/?username=1&password=1 HTTP/1.1" 200 4890
+[15/Feb/2023 13:03:01] "GET /auth/code/ HTTP/1.1" 200 3960
+[15/Feb/2023 13:03:22] "GET /login/?username=1&password=1 HTTP/1.1" 200 4904
+[15/Feb/2023 13:03:22] "GET /auth/code/ HTTP/1.1" 200 4246
+Forbidden (CSRF token missing or incorrect.): /login/
+[15/Feb/2023 13:03:24] "POST /login/?username=1&password=1 HTTP/1.1" 403 2514
+[15/Feb/2023 13:03:40] "GET /login/?username=1&password=1 HTTP/1.1" 200 5034
+[15/Feb/2023 13:03:40] "GET /auth/code/ HTTP/1.1" 200 4359
+[15/Feb/2023 13:03:42] "POST /login/?username=1&password=1 HTTP/1.1" 302 0
+[15/Feb/2023 13:03:42] "GET /admin/ HTTP/1.1" 200 8500
+[15/Feb/2023 13:03:46] "GET /admin/ HTTP/1.1" 200 8500
+[15/Feb/2023 13:03:47] "GET /lifelog/ HTTP/1.1" 200 12883
+[15/Feb/2023 13:03:47] "GET /music/list/ HTTP/1.1" 200 13074
+[15/Feb/2023 13:03:48] "GET /lifelog/ HTTP/1.1" 200 12883
+[15/Feb/2023 13:03:48] "GET /admin/ HTTP/1.1" 200 8500
+[15/Feb/2023 13:03:49] "GET /lifelog/ HTTP/1.1" 200 12883
+[15/Feb/2023 13:03:50] "GET /lifelog/log/ HTTP/1.1" 200 5523
+[15/Feb/2023 13:04:22] "POST /lifelog/log/ HTTP/1.1" 302 0
+[15/Feb/2023 13:04:22] "GET /lifelog/ HTTP/1.1" 200 12903
+[15/Feb/2023 13:04:28] "GET /logout/ HTTP/1.1" 302 0
+[15/Feb/2023 13:04:29] "GET /login/ HTTP/1.1" 200 5034
+[15/Feb/2023 13:04:29] "GET /auth/code/ HTTP/1.1" 200 4262
+[15/Feb/2023 13:04:48] "GET /login/ HTTP/1.1" 200 5025
+[15/Feb/2023 13:04:48] "GET /auth/code/ HTTP/1.1" 200 4089
+/www/django_www/app01/views/login.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 15, 2023 - 12:57:31
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+request <WSGIRequest: GET '/admin/'>
+request.session <django.contrib.sessions.backends.db.SessionStore object at 0x7f99c82be250>
+request <WSGIRequest: GET '/admin/'>
+request.session <django.contrib.sessions.backends.db.SessionStore object at 0x7f99c844e370>
+request <WSGIRequest: GET '/admin/'>
+request.session <django.contrib.sessions.backends.db.SessionStore object at 0x7f99c82dd1c0>
+Watching for file changes with StatReloader
+[15/Feb/2023 13:05:49] "GET /login/ HTTP/1.1" 200 5015
+[15/Feb/2023 13:05:49] "GET /auth/code/ HTTP/1.1" 200 3796
+[15/Feb/2023 13:05:50] "GET /login/ HTTP/1.1" 200 5015
+[15/Feb/2023 13:05:50] "GET /auth/code/ HTTP/1.1" 200 3469
+[15/Feb/2023 13:05:50] "GET /login/ HTTP/1.1" 200 5015
+[15/Feb/2023 13:05:50] "GET /auth/code/ HTTP/1.1" 200 3512
+[15/Feb/2023 13:05:50] "GET /login/ HTTP/1.1" 200 5015
+[15/Feb/2023 13:05:50] "GET /auth/code/ HTTP/1.1" 200 3889
+/www/django_www/app01/views/login.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 15, 2023 - 13:05:38
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[15/Feb/2023 13:06:17] "GET /login/ HTTP/1.1" 200 5020
+[15/Feb/2023 13:06:17] "GET /auth/code/ HTTP/1.1" 200 4091
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'title'
 
 During handling of the above exception, another exception occurred:
 
@@ -234,186 +528,216 @@ Traceback (most recent call last):
     response = get_response(request)
   File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/www/django_www/app01/views/lifelog.py", line 40, in lifelog_log
-    form.save()        # 如果数据是有效的，存入之前获取的表中
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/models.py", line 468, in save
-    self.instance.save()
-  File "/usr/local/lib/python3.8/dist-packages/django/db/models/base.py", line 726, in save
-    self.save_base(using=using, force_insert=force_insert,
-  File "/usr/local/lib/python3.8/dist-packages/django/db/models/base.py", line 763, in save_base
-    updated = self._save_table(
-  File "/usr/local/lib/python3.8/dist-packages/django/db/models/base.py", line 868, in _save_table
-    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
-  File "/usr/local/lib/python3.8/dist-packages/django/db/models/base.py", line 906, in _do_insert
-    return manager._insert(
-  File "/usr/local/lib/python3.8/dist-packages/django/db/models/manager.py", line 85, in manager_method
-    return getattr(self.get_queryset(), name)(*args, **kwargs)
-  File "/usr/local/lib/python3.8/dist-packages/django/db/models/query.py", line 1270, in _insert
-    return query.get_compiler(using=using).execute_sql(returning_fields)
-  File "/usr/local/lib/python3.8/dist-packages/django/db/models/sql/compiler.py", line 1410, in execute_sql
-    cursor.execute(sql, params)
-  File "/usr/local/lib/python3.8/dist-packages/django/db/backends/utils.py", line 98, in execute
-    return super().execute(sql, params)
-  File "/usr/local/lib/python3.8/dist-packages/django/db/backends/utils.py", line 66, in execute
-    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
-  File "/usr/local/lib/python3.8/dist-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
-    return executor(sql, params, many, context)
-  File "/usr/local/lib/python3.8/dist-packages/django/db/backends/utils.py", line 84, in _execute
-    return self.cursor.execute(sql, params)
-  File "/usr/local/lib/python3.8/dist-packages/django/db/backends/mysql/base.py", line 78, in execute
-    raise IntegrityError(*tuple(e.args))
-django.db.utils.IntegrityError: (1048, "Column 'tag' cannot be null")
-[12/Feb/2023 08:02:08] "POST /lifelog/log/ HTTP/1.1" 500 143473
-/www/django_www/app01/views/lifelog.py changed, reloading.
+  File "/www/django_www/app01/views/login.py", line 28, in login
+    return render(request, 'login.html', {'form':form})
+  File "/usr/local/lib/python3.8/dist-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader_tags.py", line 278, in do_extends
+    nodelist = parser.parse()
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader_tags.py", line 216, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 522, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 105: 'title', expected 'endblock'. Did you forget to register or load this tag?
+[15/Feb/2023 13:06:27] "GET /login/ HTTP/1.1" 500 159138
+[15/Feb/2023 13:06:36] "GET /login/ HTTP/1.1" 200 5015
+[15/Feb/2023 13:06:36] "GET /auth/code/ HTTP/1.1" 200 4343
+[15/Feb/2023 13:06:37] "GET /login/ HTTP/1.1" 200 5015
+[15/Feb/2023 13:06:37] "GET /auth/code/ HTTP/1.1" 200 3410
+[15/Feb/2023 13:06:37] "GET /login/ HTTP/1.1" 200 5015
+[15/Feb/2023 13:06:37] "GET /auth/code/ HTTP/1.1" 200 4286
+[15/Feb/2023 13:06:38] "GET /login/ HTTP/1.1" 200 5015
+[15/Feb/2023 13:06:38] "GET /auth/code/ HTTP/1.1" 200 4224
+/www/django_www/app01/views/login.py changed, reloading.
 Performing system checks...
 
 System check identified no issues (0 silenced).
-February 12, 2023 - 07:48:08
+February 15, 2023 - 13:06:06
 Django version 3.2, using settings 'django_www.settings'
 Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
 Watching for file changes with StatReloader
-[12/Feb/2023 08:09:39] "GET /lifelog/log/ HTTP/1.1" 200 5514
-Internal Server Error: /lifelog/log/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/django/db/backends/mysql/base.py", line 73, in execute
-    return self.cursor.execute(query, args)
-  File "/usr/local/lib/python3.8/dist-packages/MySQLdb/cursors.py", line 206, in execute
-    res = self._query(query)
-  File "/usr/local/lib/python3.8/dist-packages/MySQLdb/cursors.py", line 319, in _query
-    db.query(q)
-  File "/usr/local/lib/python3.8/dist-packages/MySQLdb/connections.py", line 254, in query
-    _mysql.connection.query(self, query)
-MySQLdb.OperationalError: (1048, "Column 'tag' cannot be null")
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/www/django_www/app01/views/lifelog.py", line 40, in lifelog_log
-    form.save()        # 如果数据是有效的，存入之前获取的表中
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/models.py", line 468, in save
-    self.instance.save()
-  File "/usr/local/lib/python3.8/dist-packages/django/db/models/base.py", line 726, in save
-    self.save_base(using=using, force_insert=force_insert,
-  File "/usr/local/lib/python3.8/dist-packages/django/db/models/base.py", line 763, in save_base
-    updated = self._save_table(
-  File "/usr/local/lib/python3.8/dist-packages/django/db/models/base.py", line 868, in _save_table
-    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
-  File "/usr/local/lib/python3.8/dist-packages/django/db/models/base.py", line 906, in _do_insert
-    return manager._insert(
-  File "/usr/local/lib/python3.8/dist-packages/django/db/models/manager.py", line 85, in manager_method
-    return getattr(self.get_queryset(), name)(*args, **kwargs)
-  File "/usr/local/lib/python3.8/dist-packages/django/db/models/query.py", line 1270, in _insert
-    return query.get_compiler(using=using).execute_sql(returning_fields)
-  File "/usr/local/lib/python3.8/dist-packages/django/db/models/sql/compiler.py", line 1410, in execute_sql
-    cursor.execute(sql, params)
-  File "/usr/local/lib/python3.8/dist-packages/django/db/backends/utils.py", line 98, in execute
-    return super().execute(sql, params)
-  File "/usr/local/lib/python3.8/dist-packages/django/db/backends/utils.py", line 66, in execute
-    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
-  File "/usr/local/lib/python3.8/dist-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
-    return executor(sql, params, many, context)
-  File "/usr/local/lib/python3.8/dist-packages/django/db/backends/utils.py", line 84, in _execute
-    return self.cursor.execute(sql, params)
-  File "/usr/local/lib/python3.8/dist-packages/django/db/backends/mysql/base.py", line 78, in execute
-    raise IntegrityError(*tuple(e.args))
-django.db.utils.IntegrityError: (1048, "Column 'tag' cannot be null")
-[12/Feb/2023 08:09:41] "POST /lifelog/log/ HTTP/1.1" 500 143738
-Internal Server Error: /lifelog/log/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/django/db/backends/mysql/base.py", line 73, in execute
-    return self.cursor.execute(query, args)
-  File "/usr/local/lib/python3.8/dist-packages/MySQLdb/cursors.py", line 206, in execute
-    res = self._query(query)
-  File "/usr/local/lib/python3.8/dist-packages/MySQLdb/cursors.py", line 319, in _query
-    db.query(q)
-  File "/usr/local/lib/python3.8/dist-packages/MySQLdb/connections.py", line 254, in query
-    _mysql.connection.query(self, query)
-MySQLdb.OperationalError: (1048, "Column 'tag' cannot be null")
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/www/django_www/app01/views/lifelog.py", line 40, in lifelog_log
-    form.save()        # 如果数据是有效的，存入之前获取的表中
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/models.py", line 468, in save
-    self.instance.save()
-  File "/usr/local/lib/python3.8/dist-packages/django/db/models/base.py", line 726, in save
-    self.save_base(using=using, force_insert=force_insert,
-  File "/usr/local/lib/python3.8/dist-packages/django/db/models/base.py", line 763, in save_base
-    updated = self._save_table(
-  File "/usr/local/lib/python3.8/dist-packages/django/db/models/base.py", line 868, in _save_table
-    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
-  File "/usr/local/lib/python3.8/dist-packages/django/db/models/base.py", line 906, in _do_insert
-    return manager._insert(
-  File "/usr/local/lib/python3.8/dist-packages/django/db/models/manager.py", line 85, in manager_method
-    return getattr(self.get_queryset(), name)(*args, **kwargs)
-  File "/usr/local/lib/python3.8/dist-packages/django/db/models/query.py", line 1270, in _insert
-    return query.get_compiler(using=using).execute_sql(returning_fields)
-  File "/usr/local/lib/python3.8/dist-packages/django/db/models/sql/compiler.py", line 1410, in execute_sql
-    cursor.execute(sql, params)
-  File "/usr/local/lib/python3.8/dist-packages/django/db/backends/utils.py", line 98, in execute
-    return super().execute(sql, params)
-  File "/usr/local/lib/python3.8/dist-packages/django/db/backends/utils.py", line 66, in execute
-    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
-  File "/usr/local/lib/python3.8/dist-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
-    return executor(sql, params, many, context)
-  File "/usr/local/lib/python3.8/dist-packages/django/db/backends/utils.py", line 84, in _execute
-    return self.cursor.execute(sql, params)
-  File "/usr/local/lib/python3.8/dist-packages/django/db/backends/mysql/base.py", line 78, in execute
-    raise IntegrityError(*tuple(e.args))
-django.db.utils.IntegrityError: (1048, "Column 'tag' cannot be null")
-[12/Feb/2023 08:10:38] "POST /lifelog/log/ HTTP/1.1" 500 143738
-[12/Feb/2023 08:11:27] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[12/Feb/2023 08:11:27] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-/www/django_www/app01/models.py changed, reloading.
+/www/django_www/app01/views/login.py changed, reloading.
 Performing system checks...
 
 System check identified no issues (0 silenced).
-February 12, 2023 - 08:09:39
+February 15, 2023 - 13:07:16
 Django version 3.2, using settings 'django_www.settings'
 Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
 Watching for file changes with StatReloader
-[12/Feb/2023 08:11:54] "GET /lifelog/log/ HTTP/1.1" 200 5514
-[12/Feb/2023 08:11:58] "POST /lifelog/log/ HTTP/1.1" 302 0
-[12/Feb/2023 08:11:58] "GET /lifelog/ HTTP/1.1" 200 13008
-[12/Feb/2023 08:12:04] "GET /lifelog/del/7030242774414921728/ HTTP/1.1" 302 0
-[12/Feb/2023 08:12:04] "GET /lifelog/ HTTP/1.1" 200 13332
-/www/django_www/app01/models.py changed, reloading.
+[15/Feb/2023 13:07:19] "GET /login/ HTTP/1.1" 200 5025
+[15/Feb/2023 13:07:19] "GET /login/ HTTP/1.1" 200 5025
+[15/Feb/2023 13:07:19] "GET /auth/code/ HTTP/1.1" 200 4128
+[15/Feb/2023 13:07:20] "GET /login/ HTTP/1.1" 200 5025
+[15/Feb/2023 13:07:20] "GET /auth/code/ HTTP/1.1" 200 3835
+[15/Feb/2023 13:07:21] "GET /login/ HTTP/1.1" 200 5025
+[15/Feb/2023 13:07:21] "GET /auth/code/ HTTP/1.1" 200 4015
+[15/Feb/2023 13:07:21] "GET /login/ HTTP/1.1" 200 5025
+[15/Feb/2023 13:07:21] "GET /auth/code/ HTTP/1.1" 200 4254
+[15/Feb/2023 13:07:40] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[15/Feb/2023 13:07:40] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+/www/django_www/app01/views/login.py changed, reloading.
 Performing system checks...
 
 System check identified no issues (0 silenced).
-February 12, 2023 - 08:11:53
+February 15, 2023 - 13:07:19
 Django version 3.2, using settings 'django_www.settings'
 Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
 Watching for file changes with StatReloader
-[12/Feb/2023 08:12:16] "GET /lifelog/log/ HTTP/1.1" 200 5514
-[12/Feb/2023 08:12:18] "POST /lifelog/log/ HTTP/1.1" 302 0
-[12/Feb/2023 08:12:18] "GET /lifelog/ HTTP/1.1" 200 13008
-[12/Feb/2023 08:12:29] "GET /lifelog/del/7030242867192926208/ HTTP/1.1" 302 0
-[12/Feb/2023 08:12:29] "GET /lifelog/ HTTP/1.1" 200 13332
-[12/Feb/2023 08:12:30] "GET /lifelog/log/ HTTP/1.1" 200 5514
-/www/django_www/app01/models.py changed, reloading.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-February 12, 2023 - 08:12:15
-Django version 3.2, using settings 'django_www.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Watching for file changes with StatReloader
-[12/Feb/2023 08:13:34] "POST /lifelog/log/ HTTP/1.1" 200 5695
-[12/Feb/2023 08:13:43] "POST /lifelog/log/ HTTP/1.1" 302 0
-[12/Feb/2023 08:13:43] "GET /lifelog/ HTTP/1.1" 200 13012
-[12/Feb/2023 08:13:47] "GET /lifelog/del/7030242927439908864/ HTTP/1.1" 302 0
-[12/Feb/2023 08:13:47] "GET /lifelog/ HTTP/1.1" 200 13332
+[15/Feb/2023 13:08:31] "GET /login/ HTTP/1.1" 200 5025
+[15/Feb/2023 13:08:31] "GET /login/ HTTP/1.1" 200 5025
+[15/Feb/2023 13:08:31] "GET /auth/code/ HTTP/1.1" 200 3987
+[15/Feb/2023 13:08:41] "POST /login/ HTTP/1.1" 302 0
+[15/Feb/2023 13:08:41] "GET /admin/ HTTP/1.1" 200 8500
+[15/Feb/2023 13:08:43] "GET /index/ HTTP/1.1" 200 7227
+[15/Feb/2023 13:08:46] "GET /admin/ HTTP/1.1" 200 8500
+[15/Feb/2023 13:08:47] "GET /lifelog/ HTTP/1.1" 200 12903
+[15/Feb/2023 13:08:47] "GET /music/list/ HTTP/1.1" 200 13074
+[15/Feb/2023 13:14:27] "GET /logout/ HTTP/1.1" 302 0
+[15/Feb/2023 13:14:27] "GET /login/ HTTP/1.1" 200 5050
+[15/Feb/2023 13:14:28] "GET /auth/code/ HTTP/1.1" 200 3953
+[15/Feb/2023 13:14:31] "POST /login/ HTTP/1.1" 200 5052
+[15/Feb/2023 13:14:31] "GET /auth/code/ HTTP/1.1" 200 4097
+[15/Feb/2023 13:14:40] "POST /login/ HTTP/1.1" 200 5052
+[15/Feb/2023 13:14:40] "GET /auth/code/ HTTP/1.1" 200 4604
+[15/Feb/2023 13:15:29] "POST /login/ HTTP/1.1" 200 5052
+[15/Feb/2023 13:15:30] "GET /auth/code/ HTTP/1.1" 200 4420
+[15/Feb/2023 13:15:32] "POST /login/ HTTP/1.1" 200 5052
+[15/Feb/2023 13:15:32] "GET /auth/code/ HTTP/1.1" 200 4153
+[15/Feb/2023 13:15:33] "POST /login/ HTTP/1.1" 200 5052
+[15/Feb/2023 13:15:33] "GET /auth/code/ HTTP/1.1" 200 3939
+[15/Feb/2023 13:15:59] "GET /login/ HTTP/1.1" 200 5050
+[15/Feb/2023 13:15:59] "GET /auth/code/ HTTP/1.1" 200 3933
+[15/Feb/2023 13:16:02] "POST /login/ HTTP/1.1" 200 5050
+[15/Feb/2023 13:16:02] "GET /auth/code/ HTTP/1.1" 200 4361
+[15/Feb/2023 13:16:28] "POST /login/ HTTP/1.1" 200 5114
+[15/Feb/2023 13:16:28] "GET /auth/code/ HTTP/1.1" 200 4894
+[15/Feb/2023 13:16:30] "POST /login/ HTTP/1.1" 200 5114
+[15/Feb/2023 13:16:30] "GET /auth/code/ HTTP/1.1" 200 4751
+[15/Feb/2023 13:16:39] "POST /login/ HTTP/1.1" 200 5229
+[15/Feb/2023 13:16:39] "GET /auth/code/ HTTP/1.1" 200 4014
+[15/Feb/2023 13:16:41] "POST /login/ HTTP/1.1" 200 5229
+[15/Feb/2023 13:16:41] "GET /auth/code/ HTTP/1.1" 200 4313
+[15/Feb/2023 13:16:44] "POST /login/ HTTP/1.1" 200 5229
+[15/Feb/2023 13:16:44] "GET /auth/code/ HTTP/1.1" 200 3486
+[15/Feb/2023 13:16:55] "POST /login/ HTTP/1.1" 200 5225
+[15/Feb/2023 13:16:55] "GET /auth/code/ HTTP/1.1" 200 4351
+[15/Feb/2023 13:17:24] "POST /login/ HTTP/1.1" 200 5225
+[15/Feb/2023 13:17:24] "GET /auth/code/ HTTP/1.1" 200 4387
+[15/Feb/2023 13:17:25] "POST /login/ HTTP/1.1" 200 5225
+[15/Feb/2023 13:17:25] "GET /auth/code/ HTTP/1.1" 200 3932
+[15/Feb/2023 13:17:33] "POST /login/ HTTP/1.1" 200 5225
+[15/Feb/2023 13:17:33] "GET /auth/code/ HTTP/1.1" 200 5021
+[15/Feb/2023 13:21:47] "POST /login/ HTTP/1.1" 200 5225
+[15/Feb/2023 13:21:47] "GET /auth/code/ HTTP/1.1" 200 4037
+[15/Feb/2023 13:21:49] "POST /login/ HTTP/1.1" 200 5225
+[15/Feb/2023 13:21:49] "GET /auth/code/ HTTP/1.1" 200 3826
+[15/Feb/2023 13:22:05] "POST /login/ HTTP/1.1" 200 5226
+[15/Feb/2023 13:22:05] "GET /auth/code/ HTTP/1.1" 200 3902
+[15/Feb/2023 13:22:12] "POST /login/ HTTP/1.1" 200 5111
+[15/Feb/2023 13:22:12] "GET /auth/code/ HTTP/1.1" 200 4135
+[15/Feb/2023 13:22:14] "POST /login/ HTTP/1.1" 200 5111
+[15/Feb/2023 13:22:14] "GET /auth/code/ HTTP/1.1" 200 4372
+[15/Feb/2023 13:29:54] "POST /login/ HTTP/1.1" 200 5111
+[15/Feb/2023 13:29:54] "GET /auth/code/ HTTP/1.1" 200 4379
+[15/Feb/2023 13:29:58] "POST /login/ HTTP/1.1" 200 5111
+[15/Feb/2023 13:29:58] "GET /auth/code/ HTTP/1.1" 200 4033
+[15/Feb/2023 13:29:59] "GET /login/ HTTP/1.1" 200 5111
+[15/Feb/2023 13:29:59] "GET /auth/code/ HTTP/1.1" 200 3745
+[15/Feb/2023 13:30:03] "POST /login/ HTTP/1.1" 200 5111
+[15/Feb/2023 13:30:03] "GET /auth/code/ HTTP/1.1" 200 4203
+[15/Feb/2023 13:30:13] "POST /login/ HTTP/1.1" 200 5111
+[15/Feb/2023 13:30:13] "GET /auth/code/ HTTP/1.1" 200 3963
+[15/Feb/2023 13:30:17] "GET /login/ HTTP/1.1" 200 5111
+[15/Feb/2023 13:30:17] "GET /auth/code/ HTTP/1.1" 200 4240
+[15/Feb/2023 13:30:46] "GET /login/ HTTP/1.1" 200 5111
+[15/Feb/2023 13:30:46] "GET /auth/code/ HTTP/1.1" 200 3755
+[15/Feb/2023 13:30:46] "GET /login/ HTTP/1.1" 200 5111
+[15/Feb/2023 13:30:46] "GET /auth/code/ HTTP/1.1" 200 4347
+[15/Feb/2023 13:30:46] "GET /login/ HTTP/1.1" 200 5111
+[15/Feb/2023 13:30:46] "GET /auth/code/ HTTP/1.1" 200 3809
+[15/Feb/2023 13:30:47] "GET /login/ HTTP/1.1" 200 5111
+[15/Feb/2023 13:30:47] "GET /auth/code/ HTTP/1.1" 200 4173
+[15/Feb/2023 13:30:47] "GET /login/ HTTP/1.1" 200 5111
+[15/Feb/2023 13:30:47] "GET /auth/code/ HTTP/1.1" 200 4038
+[15/Feb/2023 13:30:49] "POST /login/ HTTP/1.1" 200 5113
+[15/Feb/2023 13:30:49] "GET /auth/code/ HTTP/1.1" 200 3589
+[15/Feb/2023 13:30:51] "POST /login/ HTTP/1.1" 200 5113
+[15/Feb/2023 13:30:51] "GET /auth/code/ HTTP/1.1" 200 4260
+[15/Feb/2023 13:42:07] "POST /login/ HTTP/1.1" 200 5126
+[15/Feb/2023 13:42:07] "GET /auth/code/ HTTP/1.1" 200 4093
+[15/Feb/2023 13:42:18] "POST /login/ HTTP/1.1" 200 5139
+[15/Feb/2023 13:42:18] "GET /auth/code/ HTTP/1.1" 200 3834
+[15/Feb/2023 13:42:19] "POST /login/ HTTP/1.1" 200 5139
+[15/Feb/2023 13:42:19] "GET /auth/code/ HTTP/1.1" 200 4595
+[15/Feb/2023 13:42:26] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[15/Feb/2023 13:42:26] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[15/Feb/2023 13:42:37] "POST /login/ HTTP/1.1" 200 5139
+[15/Feb/2023 13:42:37] "GET /auth/code/ HTTP/1.1" 200 4347
+[15/Feb/2023 13:45:15] "POST /login/ HTTP/1.1" 200 5189
+[15/Feb/2023 13:45:15] "GET /auth/code/ HTTP/1.1" 200 3506
+[15/Feb/2023 13:45:24] "POST /login/ HTTP/1.1" 200 5190
+[15/Feb/2023 13:45:24] "GET /auth/code/ HTTP/1.1" 200 4136
+[15/Feb/2023 13:45:42] "GET /login/ HTTP/1.1" 200 5163
+[15/Feb/2023 13:45:42] "GET /auth/code/ HTTP/1.1" 200 3785
+[15/Feb/2023 13:45:44] "POST /login/ HTTP/1.1" 200 5211
+[15/Feb/2023 13:45:44] "GET /auth/code/ HTTP/1.1" 200 4146
+[15/Feb/2023 13:45:59] "POST /login/ HTTP/1.1" 200 5272
+[15/Feb/2023 13:45:59] "GET /auth/code/ HTTP/1.1" 200 4558
+[15/Feb/2023 13:46:19] "POST /login/ HTTP/1.1" 200 5290
+[15/Feb/2023 13:46:19] "GET /auth/code/ HTTP/1.1" 200 4060
+[15/Feb/2023 13:46:32] "POST /login/ HTTP/1.1" 200 5272
+[15/Feb/2023 13:46:32] "GET /auth/code/ HTTP/1.1" 200 4077
+[15/Feb/2023 13:46:34] "POST /login/ HTTP/1.1" 200 5272
+[15/Feb/2023 13:46:34] "GET /auth/code/ HTTP/1.1" 200 4119
+[15/Feb/2023 13:46:49] "POST /login/ HTTP/1.1" 200 5295
+[15/Feb/2023 13:46:49] "GET /auth/code/ HTTP/1.1" 200 4262
+[15/Feb/2023 13:46:51] "POST /login/ HTTP/1.1" 200 5295
+[15/Feb/2023 13:46:51] "GET /auth/code/ HTTP/1.1" 200 5109
+[15/Feb/2023 13:48:05] "POST /login/ HTTP/1.1" 200 5127
+[15/Feb/2023 13:48:05] "GET /auth/code/ HTTP/1.1" 200 4140
+[15/Feb/2023 13:48:07] "POST /login/ HTTP/1.1" 200 5127
+[15/Feb/2023 13:48:07] "GET /auth/code/ HTTP/1.1" 200 4928
+[15/Feb/2023 13:48:22] "POST /login/ HTTP/1.1" 302 0
+[15/Feb/2023 13:48:22] "GET /admin/ HTTP/1.1" 200 8500
+[15/Feb/2023 13:48:23] "GET /logout/ HTTP/1.1" 302 0
+[15/Feb/2023 13:48:23] "GET /login/ HTTP/1.1" 200 5103
+[15/Feb/2023 13:48:23] "GET /auth/code/ HTTP/1.1" 200 4188
+[15/Feb/2023 13:48:26] "POST /login/ HTTP/1.1" 200 5128
+[15/Feb/2023 13:48:26] "GET /auth/code/ HTTP/1.1" 200 4273
+[15/Feb/2023 13:49:17] "POST /login/ HTTP/1.1" 200 5102
+[15/Feb/2023 13:49:17] "GET /auth/code/ HTTP/1.1" 200 3780
+[15/Feb/2023 13:49:19] "POST /login/ HTTP/1.1" 200 5102
+[15/Feb/2023 13:49:19] "GET /auth/code/ HTTP/1.1" 200 4310
+[15/Feb/2023 13:49:36] "POST /login/ HTTP/1.1" 200 5152
+[15/Feb/2023 13:49:36] "GET /auth/code/ HTTP/1.1" 200 4271
+[15/Feb/2023 13:49:38] "POST /login/ HTTP/1.1" 200 5152
+[15/Feb/2023 13:49:38] "GET /auth/code/ HTTP/1.1" 200 3921

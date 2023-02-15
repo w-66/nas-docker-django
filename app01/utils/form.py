@@ -59,11 +59,11 @@ class Admin_add_ModeForm(BootstrapModelForm):
             "password": forms.PasswordInput
         }
 
-
+    # 对密码进行MD5加密
     def clean_password(self):
         password = self.cleaned_data.get('password')
         return md5(password)
-
+    # 对加密后的密码进行验证
     def clean_verify_password(self):
         # self.clean_passwrod()
         password = self.cleaned_data.get("password")

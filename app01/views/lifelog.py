@@ -42,19 +42,19 @@ def lifelog_log(request):
     return render(request, 'form_add.html',{"form":form, 'form_title':'添加记录'})  # 传到模板中
 
 
-def lifelog_edit(request,global_id):                                      # 编辑记录
+def lifelog_edit(request,id):                                      # 编辑记录
     # one_row = App01Lifelog.objects.filter(global_id=global_id).first()  # 获取数据方式一(教程中的方式)
-    one_row = App01Lifelog.objects.get(global_id=global_id)               # 获取数据方式二 <one_row复用>
+    one_row = App01Lifelog.objects.get(global_id=id)               # 获取数据方式二 <one_row复用>
     if request.method == "GET":
         form = LifeLogEdit(instance=one_row)                              ## 复用处1
         # return render(request, 'lifelog_edit.html', {'onerow':one_row,'global_id':global_id})
-        return render(request, 'lifelog_edit.html', {'form':form})
+        return render(request, 'form_edit.html', {'form':form})
     
     form = LifeLogEdit(data=request.POST, instance=one_row)               ## 复用处2
     if form.is_valid():    # 校验提交的数据 
         form.save()
         return redirect('/lifelog/')
-    return render(request, 'lifelog_edit.html', {'form':form})
+    return render(request, 'form_edit.html', {'form':form})
 
 def lifelog_del(request, global_id):
     App01Lifelog.objects.filter(global_id=global_id).delete()

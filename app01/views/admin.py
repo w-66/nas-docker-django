@@ -4,6 +4,10 @@ from app01.models import Admin
 from app01.utils.pagination import Pagination 
 from app01.utils.form import Admin_add_ModeForm
 def admin(request):
+    print('request', request)
+    print('request.session', request.session)
+
+
     # 创建空字典，存储get请求的数据
     data_dict = {}
     search_data = request.GET.get('s','')  # 后面的空值，没看到啥用啊，有没有都一样，只是在判断的时候，添加到字典一个空值?
@@ -35,3 +39,27 @@ def admin_add(request):
         return redirect('/admin/')
     return render(request, 'form_add.html',{"form":form, 'form_title':'新建管理员'})  # 传到模板中
 
+def admin_edit(request, id):
+    title = '管理员信息编辑'
+    one_row = Admin.objects.filter(id=id).first()               # 获取数据方式二 <one_row复用>
+    
+    # 判断编辑的信息是否存在，不存在则返回错误信息页面
+    if not one_row:
+        error = '编辑的信息不存在'
+        return render(request, 'error.html', {'error':error})
+    
+    if request.method == "GET":
+        form = Admin_add_ModeForm(instance=one_row)  # 创建Admin_add_ModeForm的实例对象
+        return render(request, 'form_edit.html', {'form':form,'title':title})
+
+    # 用户POST提交数据，数据校验
+    form = Admin_add_ModeForm(data=request.POST, instance=one_row)
+    if form.is_valid():
+        # 如果数据合法，保存到数据库中
+        form.save()        # 如果数据是有效的，存入之前获取的表中
+        return redirect('/admin/')
+    return render(request, 'form_add.html',{"form":form, 'form_title':'新建管理员'})  # 传到模板中
+
+def admin_del(request, id):
+    Admin.objects.filter(id=id).delete()
+    return redirect('/admin/')

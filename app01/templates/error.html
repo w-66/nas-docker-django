@@ -1,0 +1,67 @@
+{% extends 'tplt_init_bootstrap.html'%}
+{% load static %}
+
+{% block bodyContent %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <!-- Navbar Transparent -->
+            <nav class="navbar navbar-expand-lg top-0 z-index-3 w-100 shadow-sm my-3  navbar-transparent ">
+                <div class="container">
+                    <a class="navbar-brand  text-primary" href="/index/" rel="tooltip"
+                        title="Designed and Coded by Creative Tim" data-placement="bottom" >
+                        Index
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+                        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navigation">
+                        <ul class="navbar-nav navbar-nav-hover mx-auto">
+                            <li class="nav-item px-3">
+                                <a class="nav-link" href="/admin/">
+                                    Admin
+                                </a>
+                            </li>
+  
+                            <li class="nav-item px-3">
+                                <a class="nav-link" href="/lifelog/">
+                                    LifeLog
+                                </a>
+                            </li>
+  
+                            <li class="nav-item px-3">
+                                <a class="nav-link" href="/music/list/">
+                                    MusicList
+                                </a>
+                            </li>
+  
+                            <li class="nav-item px-3">
+                                <a class="nav-link">
+                                    ---
+                                </a>
+                            </li>
+                        </ul>
+  
+                        <ul class="navbar-nav ms-auto">
+                            <button class="btn  btn-white  mb-0">---</button>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- End Navbar -->
+        </div>
+    </div>
+  </div>
+  
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="alert alert-danger" role="alert">
+                {{error}}
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}
