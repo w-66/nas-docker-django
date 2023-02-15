@@ -7,7 +7,7 @@ def generate_auth_code_image(size=(120, 30),
                         position_offset_y=0,
                         bg_color=(255, 255, 255),
                         font_size=30,
-                        font_type='/www/django_www/static/font/Adec.ttf',
+                        font_type='/www/django_www/static/font/RockwellStd-BoldItalic.otf',
                         length=4,
                         draw_lines=True,
                         line_num=(1, 2),
@@ -71,7 +71,7 @@ def generate_auth_code_image(size=(120, 30),
 
 
 if __name__ == "__main__":
-    code, image= generate_auth_code_image(draw_points=True, point_chance=1, line_num=(1, 3))
+    code, image= generate_auth_code_image(draw_points=True, point_chance=0, line_num=(1, 3))
     
     print(code)
     image.show(image)

@@ -101,33 +101,34 @@
 <main class="form-signin w-100 m-auto">
     <form method="post">
         {% csrf_token %}
-        <!-- <img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
+        <img class="mb-0" src="{% static '/img/松树.svg' %}" alt="" width="72" height="80">
         <h1 class="h3 mb-3 fw-normal">{{title}}</h1>
 
         <div class="form-floating">
             {{form.username}}
-            <span>{{form.password.errors.0}}</span>
             <!-- <input type="text" class="form-control" id="floatingInput" placeholder="Username"> -->
             <label for="floatingInput">Username</label>
-            
         </div>
         <div class="form-floating">
             {{form.password}}
             <span>{{form.password.errors.0}}</span>
             <!-- <input type="password" class="form-control" id="floatingPassword" placeholder="Password"> -->
             <label for="floatingPassword">Password</label>
-            
         </div>
         <div class="container p-0 pb-2 mr-1 ">
             <div class="row">
                 <div class="col-7">
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="auth_code" placeholder="Auth code">
+                        {{form.auth_code}}
+                        <!-- <input type="text" class="form-control" id="auth_code" placeholder="Auth code"> -->
                         <label for="floatingPassword">Auth code</label>
+                        <span>{{form.auth_code.errors.0}}</span>
                     </div>
                 </div>
                 <div class="col-5 d-flex justify-content-center align-items-center">
+
                     <img class="img-fluid" src="/auth/code/" alt="">
+
                 </div>
             </div>
         </div>
