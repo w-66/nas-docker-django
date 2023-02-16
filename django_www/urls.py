@@ -1,7 +1,8 @@
 from django.contrib import admin
 from django.urls import path
 from app01.views import index, learn_bootstrap, learn_js, learn_react, lifelog, music, admin
-from app01.views import login
+from app01.views import login, task
+
 
 urlpatterns = [
     # Bootstrap
@@ -38,6 +39,12 @@ urlpatterns = [
     path('login/', login.login),
     path('logout/', login.logout),
     path('auth/code/', login.auth_code),
+
+    # 任务管理
+    path('task/', task.task_ajax),
+    path('task/add/', task.task_ajax_add),
+    path('task/edit/<int:id>/', task.task_edit),
+
 
     # Admin
     path('admin/', admin.admin),

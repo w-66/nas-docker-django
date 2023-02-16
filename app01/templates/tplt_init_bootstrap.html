@@ -28,9 +28,10 @@
     </style>
     <!-- 其他单独需要使用CSS或者JS的单独引用 -->
 {% block css %}{% endblock %}
-{% block js %}{% endblock %}
+
 </head>
 <body>
    {% block bodyContent %}{% endblock %}
+   {% block js %}{% endblock %}
 </body>
 </html>

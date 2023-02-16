@@ -19,7 +19,10 @@ class LoginForm(forms.Form):
         )
     auth_code = forms.CharField(
         label='验证码',
-        widget=forms.TextInput(attrs={'class': 'form-control','placeholder':'Password'})  
+        widget=forms.TextInput(attrs={
+                                      'class': 'form-control',
+                                      'placeholder':'Password',
+                                      'autocomplete':'off'})  
         )
 
     def clean_password(self):

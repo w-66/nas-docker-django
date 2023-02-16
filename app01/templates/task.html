@@ -1,12 +1,39 @@
 {% extends 'tplt_init_bootstrap.html'%}
 {% load static %}
 {% block css %}
+
 <style>
     a {
         text-decoration: none
     }
+    #form_add>.row>div:nth-last-child(1) {
+        width: 100%;
+    }
 </style>
 {% endblock%}
+
+{% block js %}
+<script type="text/javascript">
+    $(function () {
+        bindBtnAddEvent();
+    })
+
+    function bindBtnAddEvent() {
+        $("#but_add").click(function () {
+            $.ajax({
+                url: '/task/add/',
+                type: "post",
+                date: $("#form_add").serialize(),
+                dataType: "JSON",    // 将接收到的字符串类型的JSON数据 转换成 JSON数据类型
+                success: function (res) {
+                    console.log(res);
+                    console.log(res.status);
+                }
+            })
+        })
+    }
+</script>
+{% endblock %}
 
 <!-- #body内容 -->
 {%block bodyContent%}
@@ -15,10 +42,29 @@
 {% include "tplt_navbar.html" %}
 
 <div class="container">
+    <div class="row">
+        <form action="" id="form_add">
+            <div class="row">
+                {% for field in form %}
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="">{{field.label}}</label>
+                        {{field}}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <button form="but_add" class="btn btn-primary mt-4">Submit</button>
+        </form>
+    </div>
+</div>
+
+<div class="container">
     <!-- 新建与搜索框 -->
     <div class="row pt-4">
         <div class="col-md-9">
-            <button type="button" class="btn btn-primary"><a class="text-white" href="/admin/add/">新建管理员</a></button>
+            <button type="button" class="btn btn-primary"><a class="text-white"
+                    href="/task/add/">{{form_title}}</a></button>
 
         </div>
         <div class="col-md-3">
@@ -41,21 +87,26 @@
             <thead>
                 <tr>
                     <th scope="col">#</th>
-                    <th scope="col">UserName</th>
-                    <th scope="col">Pass</th>
-                    <th scope="col">control</th>
+                    <th scope="col">任务标题</th>
+                    <th scope="col">负责人</th>
+                    <th scope="col">紧急程度</th>
+                    <th scope="col">重要程度</th>
+                    <th scope="col">详细内容</th>
                 </tr>
             </thead>
             <tbody>
                 {% for item in queryset%}
                 <tr>
                     <th scope="row">{{ item.id }}</th>
-                    <td>{{ item.username }}</td>
-                    <!-- <td>{{ item.password }}</td> -->
-                    <td>*****</td>
+                    <th scope="row">{{ item.title }}</th>
+                    <td>{{ item.user }}</td>
+                    <td>{{ item.urgency }}</td>
+                    <td>{{ item.importance }}</td>
+                    <td>{{ item.detail }}</td>
+
                     <td>
-                        <a href="/admin/edit/{{item.id}}/"><span class="badge bg-primary mx-1">Edit</span></a>
-                        <a href="/admin/del/{{item.id}}/">  <span class="badge bg-warning text-dark mx-1">Del</span></a>
+                        <a href="/task/edit/{{item.id}}/"><span class="badge bg-primary mx-1">Edit</span></a>
+                        <a href="/task/done/{{item.id}}/"> <span class="badge bg-warning text-dark mx-1"></span></a>
                     </td>
                 </tr>
                 {% endfor %}

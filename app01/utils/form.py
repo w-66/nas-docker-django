@@ -71,3 +71,25 @@ class Admin_add_ModeForm(BootstrapModelForm):
         if password != verify_password:
             raise ValidationError("密码不一致")
         return verify_password
+
+
+class Task_add_ModeForm(BootstrapModelForm):   
+    # forms.PasswordInput 输入框密码不因错误而清空
+    # verify_password = forms.CharField(label='确认密码', widget=forms.PasswordInput)   
+    
+    class Meta:
+        model = models.Task  # 获取表 
+        fields = "__all__"    # 获取表中的所有列
+        widgets = {
+                    'detail':forms.TextInput,
+                   }
+        
+        # fields = ["username", "password", "verify_password"]
+        # widgets = {
+        #     "password": forms.PasswordInput
+        # }
+    # def __init__(self, *args, **kwargs):
+    #     super().__init__(*args, **kwargs)
+    #     self.fields['detail'].widget.attrs.update({'style': 'width100%;'})
+
+

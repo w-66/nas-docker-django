@@ -3,10 +3,11 @@ from app01.models import Admin
 
 from app01.utils.pagination import Pagination 
 from app01.utils.form import Admin_add_ModeForm
-def admin(request):
-    print('request', request)
-    print('request.session', request.session)
 
+
+def admin(request):
+    # print('request', request)
+    # print('request.session', request.session)
 
     # 创建空字典，存储get请求的数据
     data_dict = {}

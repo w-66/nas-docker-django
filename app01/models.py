@@ -7,10 +7,31 @@
 # Feel free to rename the models, but don't rename db_table values or field names.
 from django.db import models
 
+class Task(models.Model):
+    """任务"""
+    urgency_choices = (
+        (3, '紧急'),
+        (2, '一般'),
+        (1, '松弛')
+    )
+    importance_choice = (
+        (3, "重要"),
+        (2, '一般'),
+        (1, '次要')
+    )
+    title = models.CharField(verbose_name="标题", max_length=120)
+    user = models.ForeignKey(verbose_name="负责人", to="Admin", on_delete=models.CASCADE)
+    urgency = models.SmallIntegerField(verbose_name="紧急程度", choices=urgency_choices, default=1)
+    importance = models.SmallIntegerField(verbose_name="重要程度", choices=importance_choice, default=1)
+    detail = models.TextField(verbose_name="详细信息")
+
 class Admin(models.Model):
     '''管理员表'''
     username = models.CharField(verbose_name='用户名', max_length=32, unique=True)
     password = models.CharField(verbose_name='密码', max_length=64)
+    def __str__(self):
+        return self.username
+    
 
 class App01Lifelog(models.Model):
     global_id = models.PositiveBigIntegerField(verbose_name="ID", primary_key=True)

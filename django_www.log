@@ -2441,3 +2441,2792 @@ Django version 3.2, using settings 'django_www.settings'
 Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
 Watching for file changes with StatReloader
+[15/Feb/2023 15:38:23] "GET /music/list/ HTTP/1.1" 200 13074
+[15/Feb/2023 15:38:27] "GET /music/list/?page=2 HTTP/1.1" 200 13302
+[15/Feb/2023 15:38:32] "GET /music/list/?page=1 HTTP/1.1" 200 13074
+[15/Feb/2023 16:51:36] "GET /logout/ HTTP/1.1" 302 0
+[15/Feb/2023 16:51:36] "GET /login/ HTTP/1.1" 200 5223
+[15/Feb/2023 16:51:36] "GET /static/img/%E6%9D%BE%E6%A0%91.svg HTTP/1.1" 304 0
+[15/Feb/2023 16:51:36] "GET /auth/code/ HTTP/1.1" 200 5125
+[15/Feb/2023 18:25:46] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[15/Feb/2023 18:25:46] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[15/Feb/2023 18:26:48] "GET /login/ HTTP/1.1" 200 5223
+[15/Feb/2023 18:26:48] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[15/Feb/2023 18:26:48] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[15/Feb/2023 18:26:49] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[15/Feb/2023 18:26:49] "GET /static/img/%E6%9D%BE%E6%A0%91.svg HTTP/1.1" 200 4799
+[15/Feb/2023 18:26:49] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[15/Feb/2023 18:26:49] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[15/Feb/2023 18:26:49] "GET /auth/code/ HTTP/1.1" 200 4676
+[15/Feb/2023 18:29:49] "GET /login/ HTTP/1.1" 200 5223
+[15/Feb/2023 18:29:49] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[15/Feb/2023 18:29:49] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[15/Feb/2023 18:29:49] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[15/Feb/2023 18:29:49] "GET /static/img/%E6%9D%BE%E6%A0%91.svg HTTP/1.1" 200 4799
+[15/Feb/2023 18:29:49] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[15/Feb/2023 18:29:49] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[15/Feb/2023 18:29:49] "GET /auth/code/ HTTP/1.1" 200 4836
+[15/Feb/2023 18:29:49] "GET /login/ HTTP/1.1" 200 5223
+[15/Feb/2023 18:29:49] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[15/Feb/2023 18:29:49] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[15/Feb/2023 18:29:50] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[15/Feb/2023 18:29:50] "GET /static/img/%E6%9D%BE%E6%A0%91.svg HTTP/1.1" 200 4799
+[15/Feb/2023 18:29:50] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[15/Feb/2023 18:29:50] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[15/Feb/2023 18:29:50] "GET /auth/code/ HTTP/1.1" 200 4383
+[15/Feb/2023 18:29:50] "GET /login/ HTTP/1.1" 200 5223
+[15/Feb/2023 18:29:50] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[15/Feb/2023 18:29:50] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[15/Feb/2023 18:29:50] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[15/Feb/2023 18:29:50] "GET /static/img/%E6%9D%BE%E6%A0%91.svg HTTP/1.1" 200 4799
+[15/Feb/2023 18:29:50] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[15/Feb/2023 18:29:50] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[15/Feb/2023 18:29:50] "GET /auth/code/ HTTP/1.1" 200 4591
+[15/Feb/2023 18:29:53] "GET /login/ HTTP/1.1" 200 5223
+[15/Feb/2023 18:29:53] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[15/Feb/2023 18:29:53] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[15/Feb/2023 18:29:53] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[15/Feb/2023 18:29:53] "GET /static/img/%E6%9D%BE%E6%A0%91.svg HTTP/1.1" 200 4799
+[15/Feb/2023 18:29:53] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[15/Feb/2023 18:29:53] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[15/Feb/2023 18:29:53] "GET /auth/code/ HTTP/1.1" 200 4549
+[15/Feb/2023 18:29:53] "GET /login/ HTTP/1.1" 200 5223
+[15/Feb/2023 18:29:53] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[15/Feb/2023 18:29:53] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[15/Feb/2023 18:29:53] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[15/Feb/2023 18:29:53] "GET /static/img/%E6%9D%BE%E6%A0%91.svg HTTP/1.1" 200 4799
+[15/Feb/2023 18:29:53] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[15/Feb/2023 18:29:53] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[15/Feb/2023 18:29:53] "GET /auth/code/ HTTP/1.1" 200 4900
+[15/Feb/2023 18:29:54] "GET /login/ HTTP/1.1" 200 5223
+[15/Feb/2023 18:29:54] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[15/Feb/2023 18:29:54] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[15/Feb/2023 18:29:54] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[15/Feb/2023 18:29:54] "GET /static/img/%E6%9D%BE%E6%A0%91.svg HTTP/1.1" 200 4799
+[15/Feb/2023 18:29:54] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[15/Feb/2023 18:29:54] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[15/Feb/2023 18:29:54] "GET /auth/code/ HTTP/1.1" 200 4596
+[15/Feb/2023 18:30:11] "GET /login/ HTTP/1.1" 200 5223
+[15/Feb/2023 18:30:11] "GET /auth/code/ HTTP/1.1" 200 4191
+[15/Feb/2023 18:30:12] "GET /login/ HTTP/1.1" 200 5223
+[15/Feb/2023 18:30:12] "GET /auth/code/ HTTP/1.1" 200 4651
+[15/Feb/2023 18:46:53] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[15/Feb/2023 18:46:53] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[15/Feb/2023 18:47:22] "GET /login/ HTTP/1.1" 200 5223
+[15/Feb/2023 18:47:22] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[15/Feb/2023 18:47:22] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[15/Feb/2023 18:47:22] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[15/Feb/2023 18:47:23] "GET /static/img/%E6%9D%BE%E6%A0%91.svg HTTP/1.1" 200 4799
+[15/Feb/2023 18:47:23] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[15/Feb/2023 18:47:23] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[15/Feb/2023 18:47:23] "GET /auth/code/ HTTP/1.1" 200 4618
+/www/django_www/app01/views/login.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 15, 2023 - 15:26:58
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[15/Feb/2023 18:50:15] "GET /login/ HTTP/1.1" 200 5242
+[15/Feb/2023 18:50:15] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[15/Feb/2023 18:50:15] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[15/Feb/2023 18:50:15] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[15/Feb/2023 18:50:15] "GET /static/img/%E6%9D%BE%E6%A0%91.svg HTTP/1.1" 200 4799
+[15/Feb/2023 18:50:15] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[15/Feb/2023 18:50:15] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[15/Feb/2023 18:50:16] "GET /auth/code/ HTTP/1.1" 200 4789
+[15/Feb/2023 18:50:18] "GET /login/ HTTP/1.1" 200 5242
+[15/Feb/2023 18:50:18] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[15/Feb/2023 18:50:18] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[15/Feb/2023 18:50:18] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[15/Feb/2023 18:50:18] "GET /static/img/%E6%9D%BE%E6%A0%91.svg HTTP/1.1" 200 4799
+[15/Feb/2023 18:50:18] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[15/Feb/2023 18:50:18] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[15/Feb/2023 18:50:18] "GET /auth/code/ HTTP/1.1" 200 4916
+[15/Feb/2023 20:48:19] "GET /login/ HTTP/1.1" 200 5242
+[15/Feb/2023 20:48:19] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[15/Feb/2023 20:48:19] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[15/Feb/2023 20:48:19] "GET /static/img/%E6%9D%BE%E6%A0%91.svg HTTP/1.1" 200 4799
+[15/Feb/2023 20:48:19] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[15/Feb/2023 20:48:19] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[15/Feb/2023 20:48:19] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[15/Feb/2023 20:48:19] "GET /auth/code/ HTTP/1.1" 200 4840
+[15/Feb/2023 20:48:21] "GET /login/ HTTP/1.1" 200 5242
+[15/Feb/2023 20:48:21] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[15/Feb/2023 20:48:21] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[15/Feb/2023 20:48:21] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[15/Feb/2023 20:48:21] "GET /static/img/%E6%9D%BE%E6%A0%91.svg HTTP/1.1" 200 4799
+[15/Feb/2023 20:48:21] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[15/Feb/2023 20:48:21] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[15/Feb/2023 20:48:21] "GET /auth/code/ HTTP/1.1" 200 4765
+[15/Feb/2023 20:48:22] "GET /login/ HTTP/1.1" 200 5242
+[15/Feb/2023 20:48:22] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[15/Feb/2023 20:48:22] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[15/Feb/2023 20:48:22] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[15/Feb/2023 20:48:22] "GET /static/img/%E6%9D%BE%E6%A0%91.svg HTTP/1.1" 200 4799
+[15/Feb/2023 20:48:22] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[15/Feb/2023 20:48:22] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[15/Feb/2023 20:48:22] "GET /auth/code/ HTTP/1.1" 200 4057
+[15/Feb/2023 20:48:23] "GET /login/ HTTP/1.1" 200 5242
+[15/Feb/2023 20:48:23] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[15/Feb/2023 20:48:23] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[15/Feb/2023 20:48:23] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[15/Feb/2023 20:48:23] "GET /static/img/%E6%9D%BE%E6%A0%91.svg HTTP/1.1" 200 4799
+[15/Feb/2023 20:48:23] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[15/Feb/2023 20:48:23] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[15/Feb/2023 20:48:23] "GET /auth/code/ HTTP/1.1" 200 5398
+[15/Feb/2023 20:48:30] "POST /login/ HTTP/1.1" 302 0
+[15/Feb/2023 20:48:30] "GET /admin/ HTTP/1.1" 200 8588
+[15/Feb/2023 20:48:30] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[15/Feb/2023 20:48:30] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[15/Feb/2023 20:48:30] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[15/Feb/2023 20:48:30] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[15/Feb/2023 20:48:30] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[15/Feb/2023 20:48:33] "GET /lifelog/ HTTP/1.1" 200 12801
+[15/Feb/2023 20:48:33] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[15/Feb/2023 20:48:33] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[15/Feb/2023 20:48:33] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[15/Feb/2023 20:48:33] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[15/Feb/2023 20:48:33] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[15/Feb/2023 20:48:34] "GET /lifelog/log/ HTTP/1.1" 200 5523
+[15/Feb/2023 20:48:34] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[15/Feb/2023 20:48:34] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[15/Feb/2023 20:48:34] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[15/Feb/2023 20:48:34] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[15/Feb/2023 20:48:34] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[15/Feb/2023 20:49:00] "POST /lifelog/log/ HTTP/1.1" 302 0
+[15/Feb/2023 20:49:00] "GET /lifelog/ HTTP/1.1" 200 12844
+[15/Feb/2023 20:49:00] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[15/Feb/2023 20:49:00] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[15/Feb/2023 20:49:00] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[15/Feb/2023 20:49:00] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[15/Feb/2023 20:49:00] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[15/Feb/2023 20:49:05] "GET /lifelog/edit/7031520360566755328/ HTTP/1.1" 200 8126
+[15/Feb/2023 20:49:06] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[15/Feb/2023 20:49:06] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[15/Feb/2023 20:49:06] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[15/Feb/2023 20:49:06] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[15/Feb/2023 20:49:06] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[15/Feb/2023 20:49:35] "POST /lifelog/edit/7031520360566755328/ HTTP/1.1" 302 0
+[15/Feb/2023 20:49:36] "GET /lifelog/ HTTP/1.1" 200 12879
+[15/Feb/2023 20:49:36] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[15/Feb/2023 20:49:36] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[15/Feb/2023 20:49:36] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[15/Feb/2023 20:49:36] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[15/Feb/2023 20:49:36] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[15/Feb/2023 21:05:27] "GET /logout/ HTTP/1.1" 302 0
+[15/Feb/2023 21:05:27] "GET /login/ HTTP/1.1" 200 5242
+[15/Feb/2023 21:05:27] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[15/Feb/2023 21:05:27] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[15/Feb/2023 21:05:27] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[15/Feb/2023 21:05:27] "GET /static/img/%E6%9D%BE%E6%A0%91.svg HTTP/1.1" 200 4799
+[15/Feb/2023 21:05:27] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[15/Feb/2023 21:05:27] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[15/Feb/2023 21:05:27] "GET /auth/code/ HTTP/1.1" 200 4760
+[15/Feb/2023 21:07:40] "GET /login/ HTTP/1.1" 200 5256
+[15/Feb/2023 21:07:41] "GET /auth/code/ HTTP/1.1" 200 4978
+[15/Feb/2023 21:07:46] "GET /login/ HTTP/1.1" 200 5256
+[15/Feb/2023 21:07:46] "GET /auth/code/ HTTP/1.1" 200 4259
+[15/Feb/2023 21:07:52] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[15/Feb/2023 21:07:52] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[15/Feb/2023 21:08:06] "GET /login/ HTTP/1.1" 200 5256
+[15/Feb/2023 21:08:06] "GET /auth/code/ HTTP/1.1" 200 4708
+[15/Feb/2023 21:08:15] "GET /login/ HTTP/1.1" 200 5256
+[15/Feb/2023 21:08:15] "GET /auth/code/ HTTP/1.1" 200 4766
+[15/Feb/2023 21:08:55] "GET /login/ HTTP/1.1" 200 5433
+[15/Feb/2023 21:08:55] "GET /auth/code/ HTTP/1.1" 200 4919
+[15/Feb/2023 21:08:56] "GET /login/ HTTP/1.1" 200 5433
+[15/Feb/2023 21:08:56] "GET /auth/code/ HTTP/1.1" 200 4518
+[15/Feb/2023 21:09:37] "GET /login/ HTTP/1.1" 200 5336
+[15/Feb/2023 21:09:38] "GET /auth/code/ HTTP/1.1" 200 5124
+[15/Feb/2023 21:09:38] "GET /login/ HTTP/1.1" 200 5336
+[15/Feb/2023 21:09:38] "GET /auth/code/ HTTP/1.1" 200 4778
+[15/Feb/2023 21:09:42] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[15/Feb/2023 21:09:42] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[15/Feb/2023 21:10:01] "GET /login/ HTTP/1.1" 200 5305
+[15/Feb/2023 21:10:01] "GET /auth/code/ HTTP/1.1" 200 4933
+[15/Feb/2023 21:10:07] "GET /login/ HTTP/1.1" 200 5305
+[15/Feb/2023 21:10:08] "GET /auth/code/ HTTP/1.1" 200 5293
+[15/Feb/2023 21:10:20] "GET /login/ HTTP/1.1" 200 5305
+[15/Feb/2023 21:10:20] "GET /auth/code/ HTTP/1.1" 200 4274
+[15/Feb/2023 21:10:21] "GET /login/ HTTP/1.1" 200 5305
+[15/Feb/2023 21:10:22] "GET /auth/code/ HTTP/1.1" 200 4794
+[15/Feb/2023 21:10:28] "GET /login/ HTTP/1.1" 200 5305
+[15/Feb/2023 21:10:28] "GET /auth/code/ HTTP/1.1" 200 4599
+[15/Feb/2023 21:10:36] "GET /login/ HTTP/1.1" 200 5305
+[15/Feb/2023 21:10:37] "GET /auth/code/ HTTP/1.1" 200 4906
+[15/Feb/2023 21:10:43] "GET /login/ HTTP/1.1" 200 5305
+[15/Feb/2023 21:10:43] "GET /auth/code/ HTTP/1.1" 200 4571
+[15/Feb/2023 21:10:50] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[15/Feb/2023 21:10:50] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[15/Feb/2023 21:11:15] "GET /login/ HTTP/1.1" 200 5305
+[15/Feb/2023 21:11:15] "GET /auth/code/ HTTP/1.1" 200 4068
+[15/Feb/2023 21:11:26] "GET /login/ HTTP/1.1" 200 5305
+[15/Feb/2023 21:11:27] "GET /auth/code/ HTTP/1.1" 200 4829
+[15/Feb/2023 21:11:29] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[15/Feb/2023 21:11:29] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[15/Feb/2023 21:14:55] "GET /login/ HTTP/1.1" 200 5323
+[15/Feb/2023 21:14:56] "GET /auth/code/ HTTP/1.1" 200 4796
+[15/Feb/2023 21:15:14] "GET /login/ HTTP/1.1" 200 5341
+[15/Feb/2023 21:15:14] "GET /auth/code/ HTTP/1.1" 200 4700
+[15/Feb/2023 21:15:43] "GET /login/ HTTP/1.1" 200 5351
+[15/Feb/2023 21:15:43] "GET /auth/code/ HTTP/1.1" 200 5004
+[15/Feb/2023 21:15:44] "GET /login/ HTTP/1.1" 200 5351
+[15/Feb/2023 21:15:44] "GET /auth/code/ HTTP/1.1" 200 4546
+[15/Feb/2023 21:15:55] "GET /login/ HTTP/1.1" 200 5353
+[15/Feb/2023 21:15:55] "GET /auth/code/ HTTP/1.1" 200 4818
+[15/Feb/2023 21:15:56] "GET /login/ HTTP/1.1" 200 5353
+[15/Feb/2023 21:15:56] "GET /auth/code/ HTTP/1.1" 200 5143
+[15/Feb/2023 21:16:04] "GET /login/ HTTP/1.1" 200 5351
+[15/Feb/2023 21:16:04] "GET /auth/code/ HTTP/1.1" 200 5020
+[15/Feb/2023 21:19:43] "GET /index/ HTTP/1.1" 200 7226
+[15/Feb/2023 21:19:47] "GET /learn/bootstrap/03/ HTTP/1.1" 302 0
+[15/Feb/2023 21:19:47] "GET /login/ HTTP/1.1" 200 5351
+[15/Feb/2023 21:19:47] "GET /auth/code/ HTTP/1.1" 200 4694
+[15/Feb/2023 21:19:49] "GET /learn/bootstrap/02/ HTTP/1.1" 302 0
+[15/Feb/2023 21:19:49] "GET /login/ HTTP/1.1" 200 5351
+[15/Feb/2023 21:19:49] "GET /auth/code/ HTTP/1.1" 200 4551
+[15/Feb/2023 21:20:11] "GET /learn/bootstrap/02/ HTTP/1.1" 302 0
+[15/Feb/2023 21:20:11] "GET /login/ HTTP/1.1" 200 5351
+[15/Feb/2023 21:20:11] "GET /auth/code/ HTTP/1.1" 200 5106
+/www/django_www/app01/middleware/auth.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 15, 2023 - 18:50:15
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+request <WSGIRequest: GET '/admin/'>
+request.session <django.contrib.sessions.backends.db.SessionStore object at 0x7fd0d8e33310>
+Watching for file changes with StatReloader
+[15/Feb/2023 21:20:36] "GET /learn/bootstrap/01/ HTTP/1.1" 302 0
+[15/Feb/2023 21:20:36] "GET /login/ HTTP/1.1" 200 5351
+[15/Feb/2023 21:20:36] "GET /auth/code/ HTTP/1.1" 200 4486
+[15/Feb/2023 21:20:38] "GET /learn/bootstrap/03/ HTTP/1.1" 302 0
+[15/Feb/2023 21:20:38] "GET /login/ HTTP/1.1" 200 5351
+[15/Feb/2023 21:20:38] "GET /auth/code/ HTTP/1.1" 200 5002
+/www/django_www/app01/middleware/auth.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 15, 2023 - 21:20:35
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[15/Feb/2023 21:23:03] "GET /learn/bootstrap/01/ HTTP/1.1" 302 0
+[15/Feb/2023 21:23:03] "GET /login/ HTTP/1.1" 200 5351
+[15/Feb/2023 21:23:03] "GET /auth/code/ HTTP/1.1" 200 4661
+[15/Feb/2023 21:23:05] "GET /index/ HTTP/1.1" 200 7226
+[15/Feb/2023 21:23:06] "GET /learn/bootstrap/01/ HTTP/1.1" 302 0
+[15/Feb/2023 21:23:06] "GET /login/ HTTP/1.1" 200 5351
+[15/Feb/2023 21:23:06] "GET /auth/code/ HTTP/1.1" 200 4745
+[15/Feb/2023 21:23:07] "GET /learn/bootstrap/02/ HTTP/1.1" 302 0
+[15/Feb/2023 21:23:07] "GET /login/ HTTP/1.1" 200 5351
+[15/Feb/2023 21:23:07] "GET /auth/code/ HTTP/1.1" 200 5156
+/www/django_www/app01/middleware/auth.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 15, 2023 - 21:23:03
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[15/Feb/2023 21:23:12] "GET /index/ HTTP/1.1" 200 7226
+[15/Feb/2023 21:23:12] "GET /learn/bootstrap/02/ HTTP/1.1" 302 0
+[15/Feb/2023 21:23:12] "GET /login/ HTTP/1.1" 200 5351
+[15/Feb/2023 21:23:13] "GET /auth/code/ HTTP/1.1" 200 5039
+[15/Feb/2023 21:23:16] "GET /learn/bootstrap/03/ HTTP/1.1" 302 0
+[15/Feb/2023 21:23:16] "GET /login/ HTTP/1.1" 200 5351
+[15/Feb/2023 21:23:17] "GET /auth/code/ HTTP/1.1" 200 4817
+[15/Feb/2023 21:23:22] "POST /login/ HTTP/1.1" 302 0
+[15/Feb/2023 21:23:22] "GET /admin/ HTTP/1.1" 200 8588
+[15/Feb/2023 21:23:24] "GET /index/ HTTP/1.1" 200 7227
+[15/Feb/2023 21:23:26] "GET /learn/bootstrap/03/ HTTP/1.1" 200 2535
+[15/Feb/2023 21:23:28] "GET /learn/bootstrap/02/ HTTP/1.1" 200 7184
+[15/Feb/2023 21:24:12] "GET /login/ HTTP/1.1" 200 5354
+[15/Feb/2023 21:24:12] "GET /auth/code/ HTTP/1.1" 200 5475
+[15/Feb/2023 21:24:13] "GET /login/ HTTP/1.1" 200 5354
+[15/Feb/2023 21:24:13] "GET /auth/code/ HTTP/1.1" 200 4643
+[15/Feb/2023 21:24:18] "GET /login/ HTTP/1.1" 200 5355
+[15/Feb/2023 21:24:19] "GET /auth/code/ HTTP/1.1" 200 4717
+[15/Feb/2023 21:24:24] "GET /login/ HTTP/1.1" 200 5353
+[15/Feb/2023 21:24:24] "GET /auth/code/ HTTP/1.1" 200 4567
+[15/Feb/2023 21:24:25] "GET /login/ HTTP/1.1" 200 5353
+[15/Feb/2023 21:24:25] "GET /auth/code/ HTTP/1.1" 200 4555
+[15/Feb/2023 21:24:29] "GET /login/ HTTP/1.1" 200 5351
+[15/Feb/2023 21:24:29] "GET /auth/code/ HTTP/1.1" 200 4453
+[15/Feb/2023 21:26:49] "GET /login/ HTTP/1.1" 200 5359
+[15/Feb/2023 21:26:49] "GET /auth/code/ HTTP/1.1" 200 4360
+[15/Feb/2023 21:28:20] "GET /login/ HTTP/1.1" 200 5356
+[15/Feb/2023 21:28:20] "GET /auth/code/ HTTP/1.1" 200 4831
+[15/Feb/2023 21:28:31] "GET /login/ HTTP/1.1" 200 5352
+[15/Feb/2023 21:28:32] "GET /auth/code/ HTTP/1.1" 200 4912
+[15/Feb/2023 21:28:55] "GET /login/ HTTP/1.1" 200 5362
+[15/Feb/2023 21:28:55] "GET /auth/code/ HTTP/1.1" 200 5486
+[15/Feb/2023 21:29:13] "GET /login/ HTTP/1.1" 200 5367
+[15/Feb/2023 21:29:13] "GET /auth/code/ HTTP/1.1" 200 4603
+[15/Feb/2023 21:29:18] "GET /login/ HTTP/1.1" 200 5341
+[15/Feb/2023 21:29:19] "GET /auth/code/ HTTP/1.1" 200 4398
+[15/Feb/2023 21:29:27] "GET /login/ HTTP/1.1" 200 5351
+[15/Feb/2023 21:29:27] "GET /auth/code/ HTTP/1.1" 200 4761
+[15/Feb/2023 21:45:51] "GET /lifelog/ HTTP/1.1" 302 0
+[15/Feb/2023 21:45:51] "GET /login/ HTTP/1.1" 200 5351
+[15/Feb/2023 21:45:52] "GET /auth/code/ HTTP/1.1" 200 4896
+[15/Feb/2023 21:46:06] "POST /login/ HTTP/1.1" 302 0
+[15/Feb/2023 21:46:06] "GET /admin/ HTTP/1.1" 200 8592
+[15/Feb/2023 21:46:11] "GET /index/ HTTP/1.1" 200 7231
+[15/Feb/2023 21:46:18] "GET /lifelog/ HTTP/1.1" 200 12883
+[15/Feb/2023 21:46:20] "GET /lifelog/log/ HTTP/1.1" 200 5523
+[15/Feb/2023 21:46:58] "POST /lifelog/log/ HTTP/1.1" 302 0
+[15/Feb/2023 21:46:58] "GET /lifelog/ HTTP/1.1" 200 12901
+[15/Feb/2023 21:51:18] "GET /lifelog/edit/7031534899999936512/ HTTP/1.1" 200 8105
+[15/Feb/2023 21:51:59] "POST /lifelog/edit/7031534899999936512/ HTTP/1.1" 302 0
+[15/Feb/2023 21:51:59] "GET /lifelog/ HTTP/1.1" 200 12921
+[15/Feb/2023 21:52:07] "GET /lifelog/edit/7031534899999936512/ HTTP/1.1" 200 8125
+[15/Feb/2023 21:53:19] "POST /lifelog/edit/7031534899999936512/ HTTP/1.1" 302 0
+[15/Feb/2023 21:53:20] "GET /lifelog/ HTTP/1.1" 200 12938
+[15/Feb/2023 21:55:05] "GET /lifelog/log/ HTTP/1.1" 200 5523
+[15/Feb/2023 21:55:38] "POST /lifelog/log/ HTTP/1.1" 302 0
+[15/Feb/2023 21:55:38] "GET /lifelog/ HTTP/1.1" 200 12715
+[15/Feb/2023 21:57:01] "GET /lifelog/log/ HTTP/1.1" 200 5523
+[15/Feb/2023 21:57:06] "GET /lifelog/edit/7031534899999936512/ HTTP/1.1" 200 8142
+[15/Feb/2023 21:57:19] "POST /lifelog/edit/7031534899999936512/ HTTP/1.1" 302 0
+[15/Feb/2023 21:57:19] "GET /lifelog/ HTTP/1.1" 200 12735
+[15/Feb/2023 22:08:06] "GET /lifelog/log/ HTTP/1.1" 200 5523
+[15/Feb/2023 22:08:15] "POST /lifelog/log/ HTTP/1.1" 302 0
+[15/Feb/2023 22:08:15] "GET /lifelog/ HTTP/1.1" 200 12696
+[15/Feb/2023 22:25:50] "POST /login/ HTTP/1.1" 200 5389
+[15/Feb/2023 22:25:50] "GET /static/img/%E6%9D%BE%E6%A0%91.svg HTTP/1.1" 304 0
+[15/Feb/2023 22:25:51] "GET /auth/code/ HTTP/1.1" 200 5175
+[15/Feb/2023 22:25:56] "POST /login/ HTTP/1.1" 200 5389
+[15/Feb/2023 22:25:56] "GET /auth/code/ HTTP/1.1" 200 4710
+[15/Feb/2023 22:25:58] "POST /login/ HTTP/1.1" 200 5389
+[15/Feb/2023 22:25:58] "GET /auth/code/ HTTP/1.1" 200 4818
+[15/Feb/2023 22:26:04] "POST /login/ HTTP/1.1" 302 0
+[15/Feb/2023 22:26:04] "GET /admin/ HTTP/1.1" 200 8588
+[15/Feb/2023 22:26:06] "GET /index/ HTTP/1.1" 200 7227
+[15/Feb/2023 22:26:07] "GET /admin/ HTTP/1.1" 200 8588
+[15/Feb/2023 22:26:13] "GET /learn/bootstrap/05/ HTTP/1.1" 200 3957
+Not Found: /learn/bootstrap/assets/brand/bootstrap-logo.svg
+[15/Feb/2023 22:26:13] "GET /learn/bootstrap/assets/brand/bootstrap-logo.svg HTTP/1.1" 404 6630
+[15/Feb/2023 22:26:15] "GET /learn/bootstrap/05/ HTTP/1.1" 200 3957
+Not Found: /learn/bootstrap/assets/brand/bootstrap-logo.svg
+[15/Feb/2023 22:26:15] "GET /learn/bootstrap/assets/brand/bootstrap-logo.svg HTTP/1.1" 404 6630
+[15/Feb/2023 22:26:32] "GET /learn/bootstrap/05/ HTTP/1.1" 200 3130
+[15/Feb/2023 22:31:23] "GET /index/ HTTP/1.1" 200 7227
+[15/Feb/2023 22:31:24] "GET /index/ HTTP/1.1" 200 7227
+[15/Feb/2023 22:31:26] "GET /music/list/ HTTP/1.1" 200 13074
+[15/Feb/2023 22:38:06] "GET /lifelog/ HTTP/1.1" 200 12692
+[15/Feb/2023 22:38:07] "GET /lifelog/log/ HTTP/1.1" 200 5523
+[15/Feb/2023 22:38:37] "POST /lifelog/log/ HTTP/1.1" 302 0
+[15/Feb/2023 22:38:37] "GET /lifelog/ HTTP/1.1" 200 12650
+[15/Feb/2023 22:38:38] "GET /lifelog/edit/7031547929068441600/ HTTP/1.1" 200 8087
+[15/Feb/2023 22:38:42] "GET /lifelog/log/ HTTP/1.1" 200 5523
+[15/Feb/2023 22:39:04] "POST /lifelog/log/ HTTP/1.1" 302 0
+[15/Feb/2023 22:39:04] "GET /lifelog/ HTTP/1.1" 200 12647
+[15/Feb/2023 22:39:12] "GET /lifelog/log/ HTTP/1.1" 200 5523
+[15/Feb/2023 22:39:24] "POST /lifelog/log/ HTTP/1.1" 302 0
+[15/Feb/2023 22:39:24] "GET /lifelog/ HTTP/1.1" 200 12573
+nohup: ignoring input
+Watching for file changes with StatReloader
+[16/Feb/2023 12:44:33] "GET /index/ HTTP/1.1" 200 7227
+[16/Feb/2023 12:44:33] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[16/Feb/2023 12:44:33] "GET /favicon.ico HTTP/1.1" 404 6522
+[16/Feb/2023 12:44:35] "GET /lifelog/ HTTP/1.1" 200 12573
+[16/Feb/2023 12:44:36] "GET /lifelog/log/ HTTP/1.1" 200 5523
+[16/Feb/2023 12:45:31] "POST /lifelog/log/ HTTP/1.1" 302 0
+[16/Feb/2023 12:45:32] "GET /lifelog/ HTTP/1.1" 200 12585
+[16/Feb/2023 13:23:45] "GET /logout/ HTTP/1.1" 302 0
+[16/Feb/2023 13:23:45] "GET /login/ HTTP/1.1" 200 5351
+[16/Feb/2023 13:23:45] "GET /static/img/%E6%9D%BE%E6%A0%91.svg HTTP/1.1" 304 0
+[16/Feb/2023 13:23:46] "GET /auth/code/ HTTP/1.1" 200 5155
+[16/Feb/2023 13:23:53] "POST /login/ HTTP/1.1" 200 5395
+[16/Feb/2023 13:23:53] "GET /auth/code/ HTTP/1.1" 200 5214
+[16/Feb/2023 13:23:58] "POST /login/ HTTP/1.1" 302 0
+[16/Feb/2023 13:23:58] "GET /admin/ HTTP/1.1" 200 8592
+[16/Feb/2023 13:24:20] "GET /admin/ HTTP/1.1" 200 8592
+[16/Feb/2023 13:24:21] "GET /lifelog/ HTTP/1.1" 200 12589
+[16/Feb/2023 13:24:22] "GET /music/list/ HTTP/1.1" 200 13078
+[16/Feb/2023 13:24:22] "GET /lifelog/ HTTP/1.1" 200 12589
+[16/Feb/2023 13:24:23] "GET /admin/ HTTP/1.1" 200 8592
+[16/Feb/2023 13:24:24] "GET /admin/ HTTP/1.1" 200 8592
+[16/Feb/2023 13:24:24] "GET /lifelog/ HTTP/1.1" 200 12589
+[16/Feb/2023 13:24:25] "GET /music/list/ HTTP/1.1" 200 13078
+[16/Feb/2023 13:24:26] "GET /logout/ HTTP/1.1" 302 0
+[16/Feb/2023 13:24:26] "GET /login/ HTTP/1.1" 200 5351
+[16/Feb/2023 13:24:26] "GET /auth/code/ HTTP/1.1" 200 4384
+[16/Feb/2023 13:24:28] "GET /music/list/ HTTP/1.1" 302 0
+[16/Feb/2023 13:24:28] "GET /login/ HTTP/1.1" 200 5351
+[16/Feb/2023 13:24:28] "GET /auth/code/ HTTP/1.1" 200 4683
+[16/Feb/2023 13:24:36] "POST /login/ HTTP/1.1" 302 0
+[16/Feb/2023 13:24:36] "GET /admin/ HTTP/1.1" 200 8592
+[16/Feb/2023 13:24:39] "GET /admin/ HTTP/1.1" 200 8592
+[16/Feb/2023 13:24:45] "GET /index/ HTTP/1.1" 200 7231
+[16/Feb/2023 13:24:47] "GET /admin/ HTTP/1.1" 200 8592
+[16/Feb/2023 13:24:48] "GET /lifelog/ HTTP/1.1" 200 12589
+[16/Feb/2023 13:24:49] "GET /admin/ HTTP/1.1" 200 8592
+[16/Feb/2023 13:24:49] "GET /lifelog/ HTTP/1.1" 200 12589
+[16/Feb/2023 13:24:50] "GET /admin/ HTTP/1.1" 200 8592
+[16/Feb/2023 13:24:52] "GET /admin/ HTTP/1.1" 200 8592
+[16/Feb/2023 13:24:53] "GET /lifelog/ HTTP/1.1" 200 12589
+[16/Feb/2023 13:24:54] "GET /admin/ HTTP/1.1" 200 8592
+[16/Feb/2023 13:24:58] "GET /lifelog/ HTTP/1.1" 200 12589
+/www/django_www/app01/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 06:10:37
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+request <WSGIRequest: GET '/admin/'>
+request.session <django.contrib.sessions.backends.db.SessionStore object at 0x7f03207d41c0>
+request <WSGIRequest: GET '/admin/'>
+request.session <django.contrib.sessions.backends.db.SessionStore object at 0x7f03207200d0>
+request <WSGIRequest: GET '/admin/'>
+request.session <django.contrib.sessions.backends.db.SessionStore object at 0x7f032087f5e0>
+request <WSGIRequest: GET '/admin/'>
+request.session <django.contrib.sessions.backends.db.SessionStore object at 0x7f0320875c70>
+request <WSGIRequest: GET '/admin/'>
+request.session <django.contrib.sessions.backends.db.SessionStore object at 0x7f03207dc760>
+request <WSGIRequest: GET '/admin/'>
+request.session <django.contrib.sessions.backends.db.SessionStore object at 0x7f032058a970>
+request <WSGIRequest: GET '/admin/'>
+request.session <django.contrib.sessions.backends.db.SessionStore object at 0x7f0320599c70>
+request <WSGIRequest: GET '/admin/'>
+request.session <django.contrib.sessions.backends.db.SessionStore object at 0x7f03205920d0>
+request <WSGIRequest: GET '/admin/'>
+request.session <django.contrib.sessions.backends.db.SessionStore object at 0x7f03207ee2b0>
+request <WSGIRequest: GET '/admin/'>
+request.session <django.contrib.sessions.backends.db.SessionStore object at 0x7f03205be6a0>
+request <WSGIRequest: GET '/admin/'>
+request.session <django.contrib.sessions.backends.db.SessionStore object at 0x7f03205b5220>
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/base.py", line 469, in check
+    raise SystemCheckError(msg)
+django.core.management.base.SystemCheckError: SystemCheckError: System check identified some issues:
+
+ERRORS:
+app01.Task.title: (fields.E120) CharFields must define a 'max_length' attribute.
+
+System check identified 1 issue (0 silenced).
+/www/django_www/app01/models.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+[16/Feb/2023 13:51:53] "GET /lifelog/ HTTP/1.1" 200 12589
+[16/Feb/2023 13:51:59] "GET /logout/ HTTP/1.1" 302 0
+[16/Feb/2023 13:51:59] "GET /login/ HTTP/1.1" 200 5351
+[16/Feb/2023 13:51:59] "GET /auth/code/ HTTP/1.1" 200 5188
+[16/Feb/2023 13:52:14] "POST /login/ HTTP/1.1" 302 0
+[16/Feb/2023 13:52:14] "GET /admin/ HTTP/1.1" 200 8592
+/www/django_www/app01/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 13:51:44
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+request <WSGIRequest: GET '/admin/'>
+request.session <django.contrib.sessions.backends.db.SessionStore object at 0x7fbaa6c25730>
+Watching for file changes with StatReloader
+/www/django_www/app01/views/admin.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 13:52:25
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/www/django_www/app01/utils/form.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 13:53:30
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/www/django_www/app01/utils/form.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 13:58:02
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/www/django_www/django_www/urls.py", line 3, in <module>
+    from app01.views import index, learn_bootstrap, learn_js, learn_react, lifelog, music, admin
+  File "/www/django_www/app01/views/lifelog.py", line 4, in <module>
+    from app01.utils.form import LogModeForm, LifeLogEdit
+  File "/www/django_www/app01/utils/form.py", line 76, in <module>
+    class Task_ModeForm(BootstrapModelForm):   
+  File "/usr/local/lib/python3.8/dist-packages/django/forms/models.py", line 276, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (username, verify_password, password) specified for Task
+/www/django_www/app01/models.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/www/django_www/django_www/urls.py", line 44, in <module>
+    path('task/', views.task.task),
+AttributeError: module 'app01.views' has no attribute 'task'
+/www/django_www/app01/models.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/www/django_www/django_www/urls.py", line 44, in <module>
+    path('task/', views.task.task),
+AttributeError: module 'app01.views' has no attribute 'task'
+/www/django_www/django_www/urls.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+/www/django_www/django_www/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 14:14:37
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[16/Feb/2023 14:14:45] "GET /admin/ HTTP/1.1" 200 8828
+Internal Server Error: /task/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/www/django_www/app01/views/task.py", line 20, in task
+    return render(request, 'Task.html', {
+  File "/usr/local/lib/python3.8/dist-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: Task.html
+[16/Feb/2023 14:14:48] "GET /task/ HTTP/1.1" 500 72086
+/www/django_www/app01/views/task.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 14:14:40
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[16/Feb/2023 14:15:01] "GET /task/ HTTP/1.1" 200 7858
+/www/django_www/django_www/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 14:15:00
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/www/django_www/django_www/urls.py", line 45, in <module>
+    path('admin/add/', task.admin_add),
+AttributeError: module 'app01.views.task' has no attribute 'admin_add'
+/www/django_www/django_www/urls.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/www/django_www/django_www/urls.py", line 45, in <module>
+    path('admin/add/', task.admin_add),
+AttributeError: module 'app01.views.task' has no attribute 'admin_add'
+/www/django_www/app01/views/task.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/www/django_www/django_www/urls.py", line 4, in <module>
+    from app01.views import login, task
+  File "/www/django_www/app01/views/task.py", line 5, in <module>
+    from app01.utils.form import Task_add_ModeForm
+ImportError: cannot import name 'Task_add_ModeForm' from 'app01.utils.form' (/www/django_www/app01/utils/form.py)
+/www/django_www/app01/utils/form.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/www/django_www/django_www/urls.py", line 45, in <module>
+    path('admin/add/', task.admin_add),
+AttributeError: module 'app01.views.task' has no attribute 'admin_add'
+/www/django_www/app01/utils/form.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/www/django_www/django_www/urls.py", line 45, in <module>
+    path('admin/add/', task.admin_add),
+AttributeError: module 'app01.views.task' has no attribute 'admin_add'
+/www/django_www/app01/utils/form.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/www/django_www/django_www/urls.py", line 45, in <module>
+    path('admin/add/', task.admin_add),
+AttributeError: module 'app01.views.task' has no attribute 'admin_add'
+/www/django_www/django_www/urls.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+[16/Feb/2023 14:19:21] "GET /task/ HTTP/1.1" 200 7855
+[16/Feb/2023 14:19:22] "GET /task/add/ HTTP/1.1" 200 5389
+/www/django_www/app01/views/task.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 14:19:14
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[16/Feb/2023 14:20:00] "GET /task/add/ HTTP/1.1" 200 5389
+[16/Feb/2023 14:20:01] "GET /task/add/ HTTP/1.1" 200 5389
+[16/Feb/2023 14:20:01] "GET /task/add/ HTTP/1.1" 200 5389
+/www/django_www/app01/views/task.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 14:19:59
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[16/Feb/2023 14:20:19] "GET /task/add/ HTTP/1.1" 200 5389
+[16/Feb/2023 14:20:19] "GET /task/add/ HTTP/1.1" 200 5389
+[16/Feb/2023 14:20:20] "GET /task/add/ HTTP/1.1" 200 5389
+[16/Feb/2023 14:20:20] "GET /task/add/ HTTP/1.1" 200 5389
+[16/Feb/2023 14:20:20] "GET /task/add/ HTTP/1.1" 200 5389
+/www/django_www/app01/views/task.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 14:20:19
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[16/Feb/2023 14:20:30] "GET /task/add/ HTTP/1.1" 200 5389
+[16/Feb/2023 14:20:30] "GET /task/add/ HTTP/1.1" 200 5389
+[16/Feb/2023 14:20:40] "GET /task/add/ HTTP/1.1" 200 5389
+[16/Feb/2023 14:20:41] "GET /task/add/ HTTP/1.1" 200 5389
+/www/django_www/app01/views/task.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 14:20:29
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[16/Feb/2023 14:21:27] "GET /task/add/ HTTP/1.1" 200 5389
+/www/django_www/app01/views/task.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 14:21:26
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[16/Feb/2023 14:22:04] "GET /task/add/ HTTP/1.1" 200 5386
+[16/Feb/2023 14:22:12] "GET /task/add/ HTTP/1.1" 200 5386
+[16/Feb/2023 14:23:02] "POST /task/add/ HTTP/1.1" 302 0
+[16/Feb/2023 14:23:02] "GET /admin/ HTTP/1.1" 200 8828
+[16/Feb/2023 14:23:07] "GET /task/ HTTP/1.1" 200 8495
+/www/django_www/app01/views/task.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 14:22:03
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[16/Feb/2023 14:23:21] "GET /task/ HTTP/1.1" 200 8495
+/www/django_www/app01/views/task.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 14:23:19
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/www/django_www/django_www/urls.py", line 4, in <module>
+    from app01.views import login, task
+  File "/www/django_www/app01/views/task.py", line 21
+    return render(request, 'task.html', {"title"：title
+                                                     ^
+SyntaxError: invalid character in identifier
+/www/django_www/app01/views/task.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/www/django_www/django_www/urls.py", line 4, in <module>
+    from app01.views import login, task
+  File "/www/django_www/app01/views/task.py", line 22
+    'queryset':obj_page.one_page_queryset,
+    ^
+SyntaxError: invalid syntax
+/www/django_www/app01/views/task.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+[16/Feb/2023 14:25:01] "GET /task/ HTTP/1.1" 200 8507
+/www/django_www/app01/views/task.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 14:24:54
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[16/Feb/2023 14:25:39] "GET /task/ HTTP/1.1" 200 8507
+[16/Feb/2023 14:25:40] "GET /task/add/ HTTP/1.1" 200 5386
+[16/Feb/2023 14:25:47] "GET /task/edit/1/ HTTP/1.1" 200 8301
+[16/Feb/2023 14:26:06] "GET /lifelog/ HTTP/1.1" 200 12825
+[16/Feb/2023 14:26:07] "GET /music/list/ HTTP/1.1" 200 13314
+[16/Feb/2023 14:26:07] "GET /task/ HTTP/1.1" 200 8507
+[16/Feb/2023 14:26:08] "GET /logout/ HTTP/1.1" 302 0
+[16/Feb/2023 14:26:08] "GET /login/ HTTP/1.1" 200 5351
+[16/Feb/2023 14:26:08] "GET /auth/code/ HTTP/1.1" 200 4545
+[16/Feb/2023 14:26:10] "GET /task/add/ HTTP/1.1" 302 0
+[16/Feb/2023 14:26:10] "GET /login/ HTTP/1.1" 200 5351
+[16/Feb/2023 14:26:10] "GET /auth/code/ HTTP/1.1" 200 4825
+[16/Feb/2023 14:26:17] "POST /login/ HTTP/1.1" 302 0
+[16/Feb/2023 14:26:18] "GET /admin/ HTTP/1.1" 200 8824
+[16/Feb/2023 14:26:19] "GET /task/ HTTP/1.1" 200 8503
+[16/Feb/2023 14:33:33] "GET /task/add/ HTTP/1.1" 200 5386
+[16/Feb/2023 14:36:20] "GET /task/add/ HTTP/1.1" 200 5386
+[16/Feb/2023 14:36:20] "GET /task/add/ HTTP/1.1" 200 5386
+[16/Feb/2023 14:36:38] "GET /task/add/ HTTP/1.1" 200 5386
+[16/Feb/2023 14:36:52] "GET /task/add/ HTTP/1.1" 200 5386
+[16/Feb/2023 14:36:52] "GET /task/add/ HTTP/1.1" 200 5386
+[16/Feb/2023 14:36:59] "GET /task/add/ HTTP/1.1" 200 5386
+[16/Feb/2023 14:36:59] "GET /task/add/ HTTP/1.1" 200 5386
+[16/Feb/2023 14:37:00] "GET /task/add/ HTTP/1.1" 200 5386
+[16/Feb/2023 14:37:02] "GET /task/add/ HTTP/1.1" 200 5386
+[16/Feb/2023 14:37:15] "GET /task/add/ HTTP/1.1" 200 5386
+[16/Feb/2023 14:37:16] "GET /task/add/ HTTP/1.1" 200 5386
+[16/Feb/2023 14:37:16] "GET /task/add/ HTTP/1.1" 200 5386
+[16/Feb/2023 14:37:16] "GET /task/add/ HTTP/1.1" 200 5386
+/www/django_www/app01/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 14:25:33
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/www/django_www/app01/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 14:38:34
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Internal Server Error: /task/add/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/www/django_www/app01/views/task.py", line 36, in task_add
+    return render(request, 'form_add.html',{"form":form, 'form_title':form_title})  # 传到模板中
+  File "/usr/local/lib/python3.8/dist-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 994, in render
+    return render_value_in_context(output, context)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 973, in render_value_in_context
+    value = str(value)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/html.py", line 376, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "/usr/local/lib/python3.8/dist-packages/django/forms/boundfield.py", line 34, in __str__
+    return self.as_widget()
+  File "/usr/local/lib/python3.8/dist-packages/django/forms/boundfield.py", line 93, in as_widget
+    return widget.render(
+  File "/usr/local/lib/python3.8/dist-packages/django/forms/widgets.py", line 246, in render
+    context = self.get_context(name, value, attrs)
+  File "/usr/local/lib/python3.8/dist-packages/django/forms/widgets.py", line 683, in get_context
+    context = super().get_context(name, value, attrs)
+  File "/usr/local/lib/python3.8/dist-packages/django/forms/widgets.py", line 644, in get_context
+    context['widget']['optgroups'] = self.optgroups(name, context['widget']['value'], attrs)
+  File "/usr/local/lib/python3.8/dist-packages/django/forms/widgets.py", line 592, in optgroups
+    for index, (option_value, option_label) in enumerate(self.choices):
+  File "/usr/local/lib/python3.8/dist-packages/django/forms/models.py", line 1170, in __iter__
+    yield self.choice(obj)
+  File "/usr/local/lib/python3.8/dist-packages/django/forms/models.py", line 1184, in choice
+    self.field.label_from_instance(obj),
+  File "/usr/local/lib/python3.8/dist-packages/django/forms/models.py", line 1253, in label_from_instance
+    return str(obj)
+  File "/www/django_www/app01/models.py", line 33, in __str__
+    return self.usernaame
+AttributeError: 'Admin' object has no attribute 'usernaame'
+[16/Feb/2023 14:38:39] "GET /task/add/ HTTP/1.1" 500 198067
+/www/django_www/app01/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 14:38:38
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Exception ignored in: <generator object cursor_iter at 0x7fc4fb2bb200>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/db/models/sql/compiler.py", line 1625, in cursor_iter
+    cursor.close()
+  File "/usr/local/lib/python3.8/dist-packages/MySQLdb/cursors.py", line 83, in close
+    while self.nextset():
+  File "/usr/local/lib/python3.8/dist-packages/MySQLdb/cursors.py", line 137, in nextset
+    nr = db.next_result()
+MySQLdb.OperationalError: (2006, '')
+Watching for file changes with StatReloader
+[16/Feb/2023 14:38:47] "GET /task/add/ HTTP/1.1" 200 5358
+/www/django_www/app01/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 14:38:46
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[16/Feb/2023 14:40:51] "GET /task/add/ HTTP/1.1" 200 5386
+/www/django_www/app01/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 14:40:50
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[16/Feb/2023 14:44:14] "GET /task/add/ HTTP/1.1" 200 5358
+[16/Feb/2023 15:46:55] "GET /lifelog/ HTTP/1.1" 200 12825
+[16/Feb/2023 15:46:55] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 304 0
+[16/Feb/2023 15:46:56] "GET /lifelog/log/ HTTP/1.1" 200 5523
+[16/Feb/2023 15:47:04] "POST /lifelog/log/ HTTP/1.1" 302 0
+[16/Feb/2023 15:47:04] "GET /lifelog/ HTTP/1.1" 200 12828
+[16/Feb/2023 15:47:11] "GET /lifelog/ HTTP/1.1" 200 12824
+[16/Feb/2023 16:16:39] "GET /lifelog/del/7031806842141544448/ HTTP/1.1" 302 0
+[16/Feb/2023 16:16:39] "GET /lifelog/ HTTP/1.1" 200 12821
+/www/django_www/app01/views/task.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 14:44:13
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[16/Feb/2023 16:30:07] "GET /task/ HTTP/1.1" 200 8491
+[16/Feb/2023 16:30:10] "GET /task/add/ HTTP/1.1" 200 5358
+[16/Feb/2023 16:31:01] "GET /task/add/ HTTP/1.1" 200 5667
+[16/Feb/2023 16:31:02] "GET /task/add/ HTTP/1.1" 200 5667
+[16/Feb/2023 16:33:21] "GET /task/add/ HTTP/1.1" 200 7411
+[16/Feb/2023 16:33:21] "GET /task/add/ HTTP/1.1" 200 7411
+/www/django_www/django_www/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 16:30:06
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/www/django_www/app01/views/task.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 16:44:27
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/www/django_www/django_www/urls.py", line 45, in <module>
+    path('task/add/', task.task_add),
+AttributeError: module 'app01.views.task' has no attribute 'task_add'
+/www/django_www/django_www/urls.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+[16/Feb/2023 16:44:59] "GET /task/add/ HTTP/1.1" 200 8317
+/www/django_www/app01/views/task.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 16:44:50
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/www/django_www/django_www/urls.py", line 4, in <module>
+    from app01.views import login, task
+  File "/www/django_www/app01/views/task.py", line 10, in <module>
+    @csrf_execmpt
+NameError: name 'csrf_execmpt' is not defined
+/www/django_www/app01/views/task.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/www/django_www/django_www/urls.py", line 4, in <module>
+    from app01.views import login, task
+  File "/www/django_www/app01/views/task.py", line 10, in <module>
+    @csrf_exempt
+NameError: name 'csrf_exempt' is not defined
+/www/django_www/app01/views/task.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+/www/django_www/app01/views/task.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 16:47:19
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[16/Feb/2023 16:51:17] "GET /task/ HTTP/1.1" 200 8495
+[16/Feb/2023 16:51:17] "GET /task/ HTTP/1.1" 200 8495
+[16/Feb/2023 16:51:18] "GET /task/ HTTP/1.1" 200 8495
+[16/Feb/2023 16:51:18] "GET /task/ HTTP/1.1" 200 8495
+[16/Feb/2023 16:51:18] "GET /task/ HTTP/1.1" 200 8495
+[16/Feb/2023 16:51:18] "GET /task/add/ HTTP/1.1" 200 8317
+/www/django_www/app01/views/task.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 16:48:18
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/www/django_www/app01/views/task.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 16:52:02
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/www/django_www/app01/views/task.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 16:52:19
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/www/django_www/app01/views/task.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 16:53:50
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[16/Feb/2023 16:55:02] "GET /task/add/ HTTP/1.1" 200 33
+[16/Feb/2023 16:55:06] "GET /task/add/ HTTP/1.1" 200 33
+/www/django_www/app01/views/task.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 16:54:34
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+<QueryDict: {}>
+<QueryDict: {}>
+Watching for file changes with StatReloader
+/www/django_www/app01/views/task.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 16:55:22
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/www/django_www/app01/views/task.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 16:57:41
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[16/Feb/2023 16:57:47] "GET /task/add/ HTTP/1.1" 200 8317
+Not Found: /task/ajax/
+[16/Feb/2023 16:58:25] "POST /task/ajax/ HTTP/1.1" 404 6859
+Not Found: /task/ajax/
+[16/Feb/2023 16:58:25] "POST /task/ajax/ HTTP/1.1" 404 6859
+Not Found: /task/ajax/
+[16/Feb/2023 16:58:27] "POST /task/ajax/ HTTP/1.1" 404 6859
+Not Found: /task/ajax/
+[16/Feb/2023 16:58:27] "POST /task/ajax/ HTTP/1.1" 404 6859
+Not Found: /task/ajax/
+[16/Feb/2023 16:58:27] "POST /task/ajax/ HTTP/1.1" 404 6859
+Not Found: /task/ajax/
+[16/Feb/2023 16:58:27] "POST /task/ajax/ HTTP/1.1" 404 6859
+Not Found: /task/ajax/
+[16/Feb/2023 16:58:28] "POST /task/ajax/ HTTP/1.1" 404 6859
+Not Found: /task/ajax/
+[16/Feb/2023 16:58:28] "POST /task/ajax/ HTTP/1.1" 404 6859
+Not Found: /task/ajax/
+[16/Feb/2023 16:58:28] "POST /task/ajax/ HTTP/1.1" 404 6859
+Not Found: /task/ajax/
+[16/Feb/2023 16:58:28] "POST /task/ajax/ HTTP/1.1" 404 6859
+Not Found: /task/ajax/
+[16/Feb/2023 16:58:30] "POST /task/ajax/ HTTP/1.1" 404 6859
+Not Found: /task/ajax/
+[16/Feb/2023 16:58:30] "POST /task/ajax/ HTTP/1.1" 404 6859
+Not Found: /task/ajax/
+[16/Feb/2023 16:58:31] "POST /task/ajax/ HTTP/1.1" 404 6859
+Not Found: /task/ajax/
+[16/Feb/2023 16:58:31] "POST /task/ajax/ HTTP/1.1" 404 6859
+Not Found: /task/ajax/
+[16/Feb/2023 16:58:31] "POST /task/ajax/ HTTP/1.1" 404 6859
+Not Found: /task/ajax/
+[16/Feb/2023 16:58:31] "POST /task/ajax/ HTTP/1.1" 404 6859
+Not Found: /task/ajax/
+[16/Feb/2023 16:58:31] "POST /task/ajax/ HTTP/1.1" 404 6859
+Not Found: /task/ajax/
+[16/Feb/2023 16:58:31] "POST /task/ajax/ HTTP/1.1" 404 6859
+Not Found: /task/ajax/
+[16/Feb/2023 16:58:31] "POST /task/ajax/ HTTP/1.1" 404 6859
+Not Found: /task/ajax/
+[16/Feb/2023 16:58:31] "POST /task/ajax/ HTTP/1.1" 404 6859
+Not Found: /task/ajax/
+[16/Feb/2023 16:58:31] "POST /task/ajax/ HTTP/1.1" 404 6859
+Not Found: /task/ajax/
+[16/Feb/2023 16:58:31] "POST /task/ajax/ HTTP/1.1" 404 6859
+Not Found: /task/ajax/
+[16/Feb/2023 16:58:31] "POST /task/ajax/ HTTP/1.1" 404 6859
+Not Found: /task/ajax/
+[16/Feb/2023 16:58:32] "POST /task/ajax/ HTTP/1.1" 404 6859
+Not Found: /task/ajax/
+Not Found: /task/ajax/
+[16/Feb/2023 16:58:32] "POST /task/ajax/ HTTP/1.1" 404 6859
+[16/Feb/2023 16:58:32] "POST /task/ajax/ HTTP/1.1" 404 6859
+Not Found: /task/ajax/
+[16/Feb/2023 16:58:32] "POST /task/ajax/ HTTP/1.1" 404 6859
+Not Found: /task/ajax/
+[16/Feb/2023 16:58:32] "POST /task/ajax/ HTTP/1.1" 404 6859
+/www/django_www/app01/views/task.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 16:57:44
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[16/Feb/2023 17:02:30] "GET /task/ HTTP/1.1" 200 8495
+[16/Feb/2023 17:02:31] "GET /task/ HTTP/1.1" 200 8495
+[16/Feb/2023 17:03:48] "GET /task/ HTTP/1.1" 200 9691
+[16/Feb/2023 17:04:12] "GET /index/ HTTP/1.1" 200 7467
+[16/Feb/2023 17:04:16] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+/www/django_www/app01/utils/form.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 17:02:30
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[16/Feb/2023 17:07:50] "GET /task/ HTTP/1.1" 200 9668
+[16/Feb/2023 17:08:29] "GET /task/ HTTP/1.1" 200 9720
+[16/Feb/2023 17:13:33] "GET /index/ HTTP/1.1" 200 7467
+Internal Server Error: /task/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/www/django_www/app01/views/task.py", line 30, in task_ajax
+    return render(request, 'task.html', {"form_title":form_title,
+  File "/usr/local/lib/python3.8/dist-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader_tags.py", line 278, in do_extends
+    nodelist = parser.parse()
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader_tags.py", line 216, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/defaulttags.py", line 797, in do_for
+    raise TemplateSyntaxError("'for' statements should have at least four"
+django.template.exceptions.TemplateSyntaxError: 'for' statements should have at least four words: for field form
+[16/Feb/2023 17:13:36] "GET /task/ HTTP/1.1" 500 165159
+Internal Server Error: /task/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'enffor'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/www/django_www/app01/views/task.py", line 30, in task_ajax
+    return render(request, 'task.html', {"form_title":form_title,
+  File "/usr/local/lib/python3.8/dist-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader_tags.py", line 278, in do_extends
+    nodelist = parser.parse()
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader_tags.py", line 216, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/defaulttags.py", line 814, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 522, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 26: 'enffor', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+[16/Feb/2023 17:13:45] "GET /task/ HTTP/1.1" 500 182043
+Internal Server Error: /task/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'enffor'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/www/django_www/app01/views/task.py", line 30, in task_ajax
+    return render(request, 'task.html', {"form_title":form_title,
+  File "/usr/local/lib/python3.8/dist-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader_tags.py", line 278, in do_extends
+    nodelist = parser.parse()
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader_tags.py", line 216, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/defaulttags.py", line 814, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 522, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 26: 'enffor', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+[16/Feb/2023 17:13:46] "GET /task/ HTTP/1.1" 500 182043
+[16/Feb/2023 17:14:39] "GET /task/ HTTP/1.1" 200 9847
+[16/Feb/2023 17:17:25] "GET /task/ HTTP/1.1" 200 10019
+[16/Feb/2023 17:18:05] "GET /task/ HTTP/1.1" 200 9952
+[16/Feb/2023 17:18:06] "GET /task/ HTTP/1.1" 200 9952
+[16/Feb/2023 17:18:17] "GET /task/ HTTP/1.1" 200 9652
+[16/Feb/2023 17:19:37] "GET /task/ HTTP/1.1" 200 9731
+[16/Feb/2023 17:19:37] "GET /task/ HTTP/1.1" 200 9731
+[16/Feb/2023 17:20:23] "GET /task/ HTTP/1.1" 200 10447
+[16/Feb/2023 17:20:54] "GET /task/ HTTP/1.1" 200 10447
+[16/Feb/2023 17:20:55] "GET /task/ HTTP/1.1" 200 10447
+[16/Feb/2023 17:21:01] "GET /task/ HTTP/1.1" 200 10447
+[16/Feb/2023 17:21:50] "GET /task/ HTTP/1.1" 200 10932
+[16/Feb/2023 17:21:51] "GET /task/ HTTP/1.1" 200 10932
+[16/Feb/2023 17:21:51] "GET /task/ HTTP/1.1" 200 10932
+[16/Feb/2023 17:21:51] "GET /task/ HTTP/1.1" 200 10932
+[16/Feb/2023 17:21:51] "GET /task/ HTTP/1.1" 200 10932
+[16/Feb/2023 17:22:31] "GET /task/ HTTP/1.1" 200 10927
+[16/Feb/2023 17:22:32] "GET /task/ HTTP/1.1" 200 10927
+[16/Feb/2023 17:22:32] "GET /task/ HTTP/1.1" 200 10927
+[16/Feb/2023 17:22:32] "GET /task/ HTTP/1.1" 200 10927
+[16/Feb/2023 19:06:07] "GET /task/ HTTP/1.1" 200 10909
+[16/Feb/2023 19:06:27] "GET /task/ HTTP/1.1" 200 10921
+[16/Feb/2023 19:06:28] "GET /task/ HTTP/1.1" 200 10921
+[16/Feb/2023 19:06:28] "GET /task/ HTTP/1.1" 200 10921
+[16/Feb/2023 19:12:06] "GET /task/ HTTP/1.1" 200 11007
+[16/Feb/2023 19:12:38] "GET /admin/ HTTP/1.1" 200 8827
+[16/Feb/2023 19:12:39] "GET /admin/add/ HTTP/1.1" 200 4507
+[16/Feb/2023 19:13:24] "GET /task/ HTTP/1.1" 200 11023
+/www/django_www/app01/views/task.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 17:07:48
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/www/django_www/app01/views/task.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 19:19:30
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[16/Feb/2023 19:19:57] "GET /task/ HTTP/1.1" 200 11614
+/www/django_www/app01/views/task.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 19:19:53
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[16/Feb/2023 19:21:01] "GET /task/ HTTP/1.1" 200 11618
+[16/Feb/2023 19:21:26] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 19:21:26] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 19:22:40] "GET /task/ HTTP/1.1" 200 11605
+[16/Feb/2023 22:15:23] "GET /index/ HTTP/1.1" 200 7467
+[16/Feb/2023 22:15:26] "GET /learn/bootstrap/01/ HTTP/1.1" 200 4829
+[16/Feb/2023 22:15:30] "GET /learn/bootstrap/02/ HTTP/1.1" 200 7184
+[16/Feb/2023 22:15:40] "GET /learn/bootstrap/03/ HTTP/1.1" 200 2539
+[16/Feb/2023 22:15:42] "GET /learn/bootstrap/02/ HTTP/1.1" 200 7184
+[16/Feb/2023 22:16:24] "GET /learn/bootstrap/02/ HTTP/1.1" 200 7184
+[16/Feb/2023 22:17:06] "GET /index/ HTTP/1.1" 200 7518
+[16/Feb/2023 22:17:14] "GET /learn/bootstrap/03/ HTTP/1.1" 200 2539
+[16/Feb/2023 22:17:30] "GET /learn/bootstrap/03/ HTTP/1.1" 200 2539
+[16/Feb/2023 22:17:44] "GET /index/ HTTP/1.1" 200 7542
+[16/Feb/2023 22:17:47] "GET /learn/bootstrap/05/ HTTP/1.1" 200 3134
+[16/Feb/2023 22:18:16] "GET /index/ HTTP/1.1" 200 7546
+[16/Feb/2023 22:18:17] "GET /learn/bootstrap/05/ HTTP/1.1" 200 3134
+[16/Feb/2023 22:19:37] "GET /learn/bootstrap/05/ HTTP/1.1" 200 1349
+[16/Feb/2023 22:21:40] "GET /learn/bootstrap/05/ HTTP/1.1" 200 1719
+[16/Feb/2023 22:21:53] "GET /learn/bootstrap/05/ HTTP/1.1" 200 2535
+[16/Feb/2023 22:22:55] "GET /learn/bootstrap/05/ HTTP/1.1" 200 2543
+[16/Feb/2023 22:23:07] "GET /learn/bootstrap/05/ HTTP/1.1" 200 2552
+[16/Feb/2023 22:23:21] "GET /learn/bootstrap/05/ HTTP/1.1" 200 2554
+[16/Feb/2023 22:24:42] "GET /learn/bootstrap/05/ HTTP/1.1" 200 1730
+[16/Feb/2023 22:25:04] "GET /learn/bootstrap/05/ HTTP/1.1" 200 2281
+[16/Feb/2023 22:25:20] "GET /learn/bootstrap/05/ HTTP/1.1" 200 2271
+[16/Feb/2023 22:28:19] "GET /learn/bootstrap/05/ HTTP/1.1" 200 2270
+[16/Feb/2023 22:28:19] "GET /learn/bootstrap/05/ HTTP/1.1" 200 2270
+[16/Feb/2023 22:28:19] "GET /learn/bootstrap/05/ HTTP/1.1" 200 2270
+[16/Feb/2023 22:28:26] "GET /learn/bootstrap/05/ HTTP/1.1" 200 2262
+[16/Feb/2023 22:28:27] "GET /learn/bootstrap/05/ HTTP/1.1" 200 2262
+[16/Feb/2023 22:28:27] "GET /learn/bootstrap/05/ HTTP/1.1" 200 2262
+[16/Feb/2023 22:29:51] "GET /learn/bootstrap/05/ HTTP/1.1" 200 2310
+[16/Feb/2023 22:29:52] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2310
+[16/Feb/2023 22:30:13] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2334
+[16/Feb/2023 22:30:20] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2326
+[16/Feb/2023 22:30:21] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2326
+[16/Feb/2023 22:30:21] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2326
+[16/Feb/2023 22:30:21] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2326
+[16/Feb/2023 22:30:21] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2326
+[16/Feb/2023 22:30:21] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2326
+[16/Feb/2023 22:31:34] "GET /learn/bootstrap/05/? HTTP/1.1" 200 1251
+[16/Feb/2023 22:31:52] "GET /learn/bootstrap/05/? HTTP/1.1" 200 1292
+[16/Feb/2023 22:32:08] "GET /learn/bootstrap/05/? HTTP/1.1" 200 1348
+[16/Feb/2023 22:32:20] "GET /learn/bootstrap/05/? HTTP/1.1" 200 1346
+[16/Feb/2023 22:32:47] "GET /learn/bootstrap/05/? HTTP/1.1" 200 1361
+[16/Feb/2023 22:32:47] "GET /learn/bootstrap/05/? HTTP/1.1" 200 1361
+[16/Feb/2023 22:32:47] "GET /learn/bootstrap/05/? HTTP/1.1" 200 1361
+[16/Feb/2023 22:32:56] "GET /learn/bootstrap/05/? HTTP/1.1" 200 1362
+[16/Feb/2023 22:32:57] "GET /learn/bootstrap/05/? HTTP/1.1" 200 1362
+[16/Feb/2023 22:32:57] "GET /learn/bootstrap/05/? HTTP/1.1" 200 1362
+[16/Feb/2023 22:32:59] "GET /learn/bootstrap/05/? HTTP/1.1" 200 1362
+[16/Feb/2023 22:33:57] "GET /learn/bootstrap/05/? HTTP/1.1" 200 1468
+[16/Feb/2023 22:34:34] "GET /learn/bootstrap/05/? HTTP/1.1" 200 1460
+[16/Feb/2023 22:34:47] "GET /learn/bootstrap/05/? HTTP/1.1" 200 1468
+[16/Feb/2023 22:35:18] "GET /learn/bootstrap/05/? HTTP/1.1" 200 1460
+[16/Feb/2023 22:35:25] "GET /learn/bootstrap/05/? HTTP/1.1" 200 1468
+[16/Feb/2023 22:41:54] "GET /admin/ HTTP/1.1" 200 8827
+[16/Feb/2023 22:41:57] "GET /admin/add/ HTTP/1.1" 200 4507
+[16/Feb/2023 22:41:59] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 22:41:59] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 22:42:32] "GET /learn/bootstrap/05/? HTTP/1.1" 200 1686
+[16/Feb/2023 22:42:57] "GET /learn/bootstrap/05/? HTTP/1.1" 200 1744
+[16/Feb/2023 22:43:25] "GET /learn/bootstrap/05/? HTTP/1.1" 200 1814
+[16/Feb/2023 22:44:19] "GET /learn/bootstrap/05/? HTTP/1.1" 200 1888
+[16/Feb/2023 22:44:20] "GET /learn/bootstrap/05/? HTTP/1.1" 200 1888
+[16/Feb/2023 22:44:20] "GET /learn/bootstrap/05/? HTTP/1.1" 200 1888
+[16/Feb/2023 22:45:24] "GET /learn/bootstrap/05/? HTTP/1.1" 200 1859
+[16/Feb/2023 22:45:29] "GET /learn/bootstrap/05/? HTTP/1.1" 200 1887
+[16/Feb/2023 22:45:57] "GET /learn/bootstrap/05/? HTTP/1.1" 200 1938
+[16/Feb/2023 22:45:58] "GET /learn/bootstrap/05/? HTTP/1.1" 200 1938
+[16/Feb/2023 22:45:58] "GET /learn/bootstrap/05/? HTTP/1.1" 200 1938
+[16/Feb/2023 22:46:06] "GET /learn/bootstrap/05/? HTTP/1.1" 200 1930
+[16/Feb/2023 22:46:06] "GET /learn/bootstrap/05/? HTTP/1.1" 200 1930
+[16/Feb/2023 22:46:07] "GET /learn/bootstrap/05/? HTTP/1.1" 200 1930
+[16/Feb/2023 22:46:09] "GET /learn/bootstrap/05/? HTTP/1.1" 200 1930
+[16/Feb/2023 22:46:09] "GET /learn/bootstrap/05/? HTTP/1.1" 200 1930
+[16/Feb/2023 22:46:09] "GET /learn/bootstrap/05/? HTTP/1.1" 200 1930
+[16/Feb/2023 22:46:09] "GET /learn/bootstrap/05/? HTTP/1.1" 200 1930
+[16/Feb/2023 22:46:10] "GET /learn/bootstrap/05/? HTTP/1.1" 200 1930
+[16/Feb/2023 22:46:13] "GET /learn/bootstrap/05/? HTTP/1.1" 200 1938
+[16/Feb/2023 22:46:13] "GET /learn/bootstrap/05/? HTTP/1.1" 200 1938
+[16/Feb/2023 22:46:13] "GET /learn/bootstrap/05/? HTTP/1.1" 200 1938
+[16/Feb/2023 22:48:26] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2153
+[16/Feb/2023 22:49:23] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2155
+[16/Feb/2023 22:49:23] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2155
+[16/Feb/2023 22:49:23] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2155
+[16/Feb/2023 22:49:27] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2155
+[16/Feb/2023 22:49:28] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2155
+[16/Feb/2023 22:49:28] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2155
+[16/Feb/2023 22:49:34] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2154
+[16/Feb/2023 22:50:02] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2217
+[16/Feb/2023 22:50:12] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2226
+[16/Feb/2023 22:50:13] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2226
+[16/Feb/2023 22:50:13] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2226
+[16/Feb/2023 22:50:43] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2208
+[16/Feb/2023 22:50:44] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2208
+[16/Feb/2023 22:50:44] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2208
+[16/Feb/2023 22:50:44] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2208
+[16/Feb/2023 22:50:53] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2213
+[16/Feb/2023 22:50:54] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2213
+[16/Feb/2023 22:50:54] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2213
+[16/Feb/2023 22:51:22] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2230
+[16/Feb/2023 22:51:23] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2230
+[16/Feb/2023 22:51:23] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2230
+[16/Feb/2023 22:51:23] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2230
+[16/Feb/2023 22:51:28] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2231
+[16/Feb/2023 22:51:51] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2251
+[16/Feb/2023 22:52:13] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2243
+[16/Feb/2023 22:52:13] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2243
+[16/Feb/2023 22:52:13] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2243
+[16/Feb/2023 22:52:14] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2243
+[16/Feb/2023 22:52:20] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2251
+[16/Feb/2023 22:52:32] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2247
+[16/Feb/2023 22:52:33] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2247
+[16/Feb/2023 22:52:36] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2247
+[16/Feb/2023 22:52:36] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2247
+[16/Feb/2023 22:52:37] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2247
+[16/Feb/2023 22:52:37] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2247
+[16/Feb/2023 22:52:47] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2267
+[16/Feb/2023 22:53:02] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2541
+[16/Feb/2023 22:53:06] "GET /learn/bootstrap/05/? HTTP/1.1" 200 3089
+[16/Feb/2023 22:53:18] "GET /learn/bootstrap/05/? HTTP/1.1" 200 3363
+[16/Feb/2023 22:53:22] "GET /learn/bootstrap/05/? HTTP/1.1" 200 3226
+[16/Feb/2023 22:53:31] "GET /learn/bootstrap/05/? HTTP/1.1" 200 3361
+[16/Feb/2023 22:53:43] "GET /learn/bootstrap/05/? HTTP/1.1" 200 3353
+[16/Feb/2023 22:53:43] "GET /learn/bootstrap/05/? HTTP/1.1" 200 3353
+[16/Feb/2023 22:53:43] "GET /learn/bootstrap/05/? HTTP/1.1" 200 3353
+[16/Feb/2023 22:53:43] "GET /learn/bootstrap/05/? HTTP/1.1" 200 3353
+[16/Feb/2023 22:53:58] "GET /learn/bootstrap/05/? HTTP/1.1" 200 3361
+[16/Feb/2023 22:53:58] "GET /learn/bootstrap/05/? HTTP/1.1" 200 3361
+[16/Feb/2023 22:53:58] "GET /learn/bootstrap/05/? HTTP/1.1" 200 3361
+[16/Feb/2023 22:53:58] "GET /learn/bootstrap/05/? HTTP/1.1" 200 3361
+[16/Feb/2023 22:54:23] "GET /learn/bootstrap/05/? HTTP/1.1" 200 3375
+[16/Feb/2023 22:54:41] "GET /learn/bootstrap/05/? HTTP/1.1" 200 3383
+[16/Feb/2023 22:54:46] "GET /learn/bootstrap/05/? HTTP/1.1" 200 3392
+[16/Feb/2023 22:54:47] "GET /learn/bootstrap/05/? HTTP/1.1" 200 3392
+[16/Feb/2023 22:54:47] "GET /learn/bootstrap/05/? HTTP/1.1" 200 3392
+[16/Feb/2023 22:54:54] "GET /learn/bootstrap/05/? HTTP/1.1" 200 3393
+[16/Feb/2023 22:54:54] "GET /learn/bootstrap/05/? HTTP/1.1" 200 3393
+[16/Feb/2023 22:54:54] "GET /learn/bootstrap/05/? HTTP/1.1" 200 3393
+[16/Feb/2023 22:55:18] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2159
+[16/Feb/2023 22:55:34] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2139
+[16/Feb/2023 22:55:44] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2139
+[16/Feb/2023 22:55:44] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2139
+[16/Feb/2023 22:55:45] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2139
+[16/Feb/2023 22:55:51] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2139
+[16/Feb/2023 22:57:45] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2305
+[16/Feb/2023 22:58:26] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2347
+[16/Feb/2023 22:58:49] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2372
+[16/Feb/2023 22:58:56] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2372
+[16/Feb/2023 22:59:21] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2400
+[16/Feb/2023 22:59:29] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2407
+[16/Feb/2023 23:00:09] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2473
+[16/Feb/2023 23:00:18] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2472
+[16/Feb/2023 23:08:40] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2469
+[16/Feb/2023 23:08:49] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2472
+[16/Feb/2023 23:08:52] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2469
+[16/Feb/2023 23:09:49] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:09:49] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:09:52] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2469
+[16/Feb/2023 23:09:52] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:09:52] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:09:52] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:09:52] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:09:52] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:12:30] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2637
+[16/Feb/2023 23:12:36] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2629
+[16/Feb/2023 23:12:37] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2629
+[16/Feb/2023 23:12:37] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2629
+[16/Feb/2023 23:12:37] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2629
+[16/Feb/2023 23:12:41] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2629
+[16/Feb/2023 23:12:42] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2629
+[16/Feb/2023 23:12:42] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2629
+[16/Feb/2023 23:12:42] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2629
+[16/Feb/2023 23:12:48] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2621
+[16/Feb/2023 23:12:48] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2621
+[16/Feb/2023 23:12:48] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2621
+[16/Feb/2023 23:12:48] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2621
+[16/Feb/2023 23:12:49] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2621
+[16/Feb/2023 23:12:49] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2621
+[16/Feb/2023 23:12:49] "GET /learn/bootstrap/05/? HTTP/1.1" 200 2621
+[16/Feb/2023 23:13:11] "GET /task/ HTTP/1.1" 200 11605
+[16/Feb/2023 23:13:25] "GET /task/ HTTP/1.1" 200 11590
+[16/Feb/2023 23:13:38] "GET /task/ HTTP/1.1" 200 11586
+/www/django_www/app01/utils/form.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 19:20:26
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/www/django_www/django_www/urls.py", line 3, in <module>
+    from app01.views import index, learn_bootstrap, learn_js, learn_react, lifelog, music, admin
+  File "/www/django_www/app01/views/lifelog.py", line 4, in <module>
+    from app01.utils.form import LogModeForm, LifeLogEdit
+  File "/www/django_www/app01/utils/form.py", line 76, in <module>
+    class Task_add_ModeForm(BootstrapModelForm):   
+  File "/www/django_www/app01/utils/form.py", line 80, in Task_add_ModeForm
+    detail.widget.attrs.update({'class': 'col-12'})
+NameError: name 'detail' is not defined
+/www/django_www/app01/utils/form.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/www/django_www/django_www/urls.py", line 3, in <module>
+    from app01.views import index, learn_bootstrap, learn_js, learn_react, lifelog, music, admin
+  File "/www/django_www/app01/views/lifelog.py", line 4, in <module>
+    from app01.utils.form import LogModeForm, LifeLogEdit
+  File "/www/django_www/app01/utils/form.py", line 76, in <module>
+    class Task_add_ModeForm(BootstrapModelForm):   
+  File "/www/django_www/app01/utils/form.py", line 81, in Task_add_ModeForm
+    class Meta:
+  File "/www/django_www/app01/utils/form.py", line 87, in Meta
+    detail.widget.attrs.update({'class': 'col-12'})
+NameError: name 'detail' is not defined
+/www/django_www/app01/utils/form.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/www/django_www/django_www/urls.py", line 3, in <module>
+    from app01.views import index, learn_bootstrap, learn_js, learn_react, lifelog, music, admin
+  File "/www/django_www/app01/views/lifelog.py", line 4, in <module>
+    from app01.utils.form import LogModeForm, LifeLogEdit
+  File "/www/django_www/app01/utils/form.py", line 76, in <module>
+    class Task_add_ModeForm(BootstrapModelForm):   
+  File "/www/django_www/app01/utils/form.py", line 80, in Task_add_ModeForm
+    detail.widget.attrs.update({'class': 'col-12'})
+AttributeError: 'TextInput' object has no attribute 'widget'
+/www/django_www/app01/utils/form.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/www/django_www/django_www/urls.py", line 3, in <module>
+    from app01.views import index, learn_bootstrap, learn_js, learn_react, lifelog, music, admin
+  File "/www/django_www/app01/views/lifelog.py", line 4, in <module>
+    from app01.utils.form import LogModeForm, LifeLogEdit
+  File "/www/django_www/app01/utils/form.py", line 76, in <module>
+    class Task_add_ModeForm(BootstrapModelForm):   
+  File "/www/django_www/app01/utils/form.py", line 80, in Task_add_ModeForm
+    detail.widget.attrs.update({'class': 'col-12'})
+AttributeError: 'TextInput' object has no attribute 'widget'
+/www/django_www/app01/utils/form.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/www/django_www/django_www/urls.py", line 3, in <module>
+    from app01.views import index, learn_bootstrap, learn_js, learn_react, lifelog, music, admin
+  File "/www/django_www/app01/views/lifelog.py", line 4, in <module>
+    from app01.utils.form import LogModeForm, LifeLogEdit
+  File "/www/django_www/app01/utils/form.py", line 76, in <module>
+    class Task_add_ModeForm(BootstrapModelForm):   
+  File "/www/django_www/app01/utils/form.py", line 80, in Task_add_ModeForm
+    detail.widget.attrs.update({'class': 'col-12'})
+AttributeError: 'TextInput' object has no attribute 'widget'
+/www/django_www/app01/utils/form.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+[16/Feb/2023 23:25:00] "GET /task/ HTTP/1.1" 200 11609
+/www/django_www/app01/utils/form.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 23:24:59
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[16/Feb/2023 23:25:16] "GET /task/ HTTP/1.1" 200 11609
+[16/Feb/2023 23:25:16] "GET /task/ HTTP/1.1" 200 11609
+[16/Feb/2023 23:25:18] "GET /task/ HTTP/1.1" 200 11609
+[16/Feb/2023 23:25:18] "GET /task/ HTTP/1.1" 200 11609
+[16/Feb/2023 23:25:18] "GET /task/ HTTP/1.1" 200 11609
+[16/Feb/2023 23:25:19] "GET /task/ HTTP/1.1" 200 11609
+/www/django_www/app01/utils/form.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 23:25:15
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/www/django_www/django_www/urls.py", line 3, in <module>
+    from app01.views import index, learn_bootstrap, learn_js, learn_react, lifelog, music, admin
+  File "/www/django_www/app01/views/lifelog.py", line 4, in <module>
+    from app01.utils.form import LogModeForm, LifeLogEdit
+  File "/www/django_www/app01/utils/form.py", line 76, in <module>
+    class Task_add_ModeForm(BootstrapModelForm):   
+  File "/www/django_www/app01/utils/form.py", line 81, in Task_add_ModeForm
+    detail.widget.attrs.update({'class':'col-12'})
+AttributeError: type object 'TextInput' has no attribute 'widget'
+/www/django_www/app01/utils/form.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/www/django_www/django_www/urls.py", line 3, in <module>
+    from app01.views import index, learn_bootstrap, learn_js, learn_react, lifelog, music, admin
+  File "/www/django_www/app01/views/lifelog.py", line 4, in <module>
+    from app01.utils.form import LogModeForm, LifeLogEdit
+  File "/www/django_www/app01/utils/form.py", line 76, in <module>
+    class Task_add_ModeForm(BootstrapModelForm):   
+  File "/www/django_www/app01/utils/form.py", line 81, in Task_add_ModeForm
+    detail.widget.attrs.update({'class':'col-12'})
+AttributeError: type object 'TextInput' has no attribute 'widget'
+/www/django_www/app01/utils/form.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+[16/Feb/2023 23:28:00] "GET /task/ HTTP/1.1" 200 11580
+[16/Feb/2023 23:28:07] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:28:07] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:28:19] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:28:19] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+/www/django_www/app01/utils/form.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 23:27:58
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[16/Feb/2023 23:29:04] "GET /task/ HTTP/1.1" 200 11593
+[16/Feb/2023 23:29:09] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:29:09] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:29:28] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:29:28] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:29:39] "GET /task/ HTTP/1.1" 200 11593
+[16/Feb/2023 23:29:39] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:29:39] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:29:39] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:29:39] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:29:39] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:30:23] "GET /learn/bootstrap/05/? HTTP/1.1" 200 5139
+[16/Feb/2023 23:31:13] "GET /learn/bootstrap/05/? HTTP/1.1" 200 5252
+[16/Feb/2023 23:31:23] "GET /learn/bootstrap/05/? HTTP/1.1" 200 5246
+[16/Feb/2023 23:31:57] "GET /learn/bootstrap/05/? HTTP/1.1" 200 5241
+[16/Feb/2023 23:32:38] "GET /task/ HTTP/1.1" 200 11282
+[16/Feb/2023 23:32:38] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:32:38] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:32:38] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:32:38] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:32:38] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:32:38] "GET /task/ HTTP/1.1" 200 11282
+[16/Feb/2023 23:32:38] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:32:38] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:32:38] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:32:38] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:32:38] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:32:39] "GET /task/ HTTP/1.1" 200 11282
+[16/Feb/2023 23:32:39] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:32:39] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:32:39] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:32:39] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:32:39] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:32:39] "GET /task/ HTTP/1.1" 200 11282
+[16/Feb/2023 23:32:39] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:32:39] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:32:39] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:32:39] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:32:39] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+/www/django_www/app01/utils/form.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 23:29:04
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[16/Feb/2023 23:33:02] "GET /task/ HTTP/1.1" 200 11275
+[16/Feb/2023 23:33:02] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:33:02] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:33:02] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:33:02] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:33:02] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:33:12] "GET /task/ HTTP/1.1" 200 11275
+[16/Feb/2023 23:33:12] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:33:12] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:33:12] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:33:12] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:33:12] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:33:13] "GET /task/ HTTP/1.1" 200 11275
+[16/Feb/2023 23:33:13] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:33:13] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:33:13] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:33:13] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:33:13] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:33:13] "GET /task/ HTTP/1.1" 200 11275
+[16/Feb/2023 23:33:13] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:33:13] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:33:13] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:33:13] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:33:13] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:34:03] "GET /task/ HTTP/1.1" 200 11275
+[16/Feb/2023 23:38:07] "GET /task/ HTTP/1.1" 200 11273
+/www/django_www/app01/utils/form.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 23:33:02
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Internal Server Error: /task/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/www/django_www/app01/views/task.py", line 28, in task_ajax
+    form = Task_add_ModeForm()  # 创建Task_add_ModeForm的实例对象
+  File "/www/django_www/app01/utils/form.py", line 94, in __init__
+    self.fields['comment'].widget.attrs.update(size='40')
+KeyError: 'comment'
+[16/Feb/2023 23:38:45] "GET /task/ HTTP/1.1" 500 64112
+/www/django_www/app01/utils/form.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 23:38:44
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[16/Feb/2023 23:38:51] "GET /task/ HTTP/1.1" 200 11292
+[16/Feb/2023 23:38:54] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:38:54] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+/www/django_www/app01/utils/form.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2023 - 23:38:51
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[16/Feb/2023 23:44:06] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:44:06] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:44:34] "GET /task/ HTTP/1.1" 200 11337
+[16/Feb/2023 23:44:34] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:44:34] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:44:34] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:44:34] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:44:34] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:44:35] "GET /task/ HTTP/1.1" 200 11337
+[16/Feb/2023 23:44:35] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:44:35] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:44:35] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:44:35] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:44:35] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:45:25] "GET /task/ HTTP/1.1" 200 11342
+[16/Feb/2023 23:45:25] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:45:25] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:45:25] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:45:25] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:45:25] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:45:26] "GET /task/ HTTP/1.1" 200 11342
+[16/Feb/2023 23:45:26] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:45:26] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:45:26] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:45:26] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:45:26] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:45:26] "GET /task/ HTTP/1.1" 200 11342
+[16/Feb/2023 23:45:26] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:45:26] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:45:26] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:45:26] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:45:26] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:45:59] "GET /task/ HTTP/1.1" 200 11338
+[16/Feb/2023 23:45:59] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:45:59] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:45:59] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:45:59] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:45:59] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:46:06] "GET /task/ HTTP/1.1" 200 11336
+[16/Feb/2023 23:46:06] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:46:06] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:46:06] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:46:06] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:46:06] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:46:07] "GET /task/ HTTP/1.1" 200 11336
+[16/Feb/2023 23:46:07] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:46:07] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:46:07] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:46:07] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:46:07] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:46:07] "GET /task/ HTTP/1.1" 200 11336
+[16/Feb/2023 23:46:07] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:46:07] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:46:07] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:46:07] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:46:07] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:46:52] "GET /task/ HTTP/1.1" 200 11339
+[16/Feb/2023 23:46:52] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:46:52] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:46:52] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:46:52] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:46:52] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:46:53] "GET /task/ HTTP/1.1" 200 11339
+[16/Feb/2023 23:46:53] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:46:53] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:46:53] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:46:53] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:46:53] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:46:53] "GET /task/ HTTP/1.1" 200 11339
+[16/Feb/2023 23:46:53] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:46:53] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:46:53] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:46:53] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:46:53] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:48:45] "GET /task/ HTTP/1.1" 200 11339
+[16/Feb/2023 23:48:45] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:48:45] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:48:45] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:48:45] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:48:45] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:48:46] "GET /task/ HTTP/1.1" 200 11339
+[16/Feb/2023 23:48:46] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:48:46] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:48:46] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:48:46] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:48:46] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:48:46] "GET /task/ HTTP/1.1" 200 11339
+[16/Feb/2023 23:48:46] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:48:46] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:48:46] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:48:46] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:48:46] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:48:50] "GET /task/ HTTP/1.1" 200 11339
+[16/Feb/2023 23:48:50] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:48:50] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:48:50] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:48:51] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:48:51] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:48:54] "GET /task/ HTTP/1.1" 200 11339
+[16/Feb/2023 23:48:54] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:48:54] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:48:54] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:48:54] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:48:54] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:48:55] "GET /task/ HTTP/1.1" 200 11339
+[16/Feb/2023 23:48:55] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:48:55] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:48:55] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:48:55] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:48:55] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:48:55] "GET /task/ HTTP/1.1" 200 11339
+[16/Feb/2023 23:48:55] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:48:55] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:48:55] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:48:55] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:48:55] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:49:28] "GET /task/ HTTP/1.1" 200 11344
+[16/Feb/2023 23:49:28] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:49:28] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:49:28] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:49:28] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:49:28] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:49:55] "GET /task/ HTTP/1.1" 200 11388
+[16/Feb/2023 23:49:55] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:49:55] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:49:55] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:49:55] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:49:55] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:49:55] "GET /task/ HTTP/1.1" 200 11388
+[16/Feb/2023 23:49:55] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:49:55] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:49:55] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:49:55] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:49:55] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:49:56] "GET /task/ HTTP/1.1" 200 11388
+[16/Feb/2023 23:49:56] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:49:56] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:49:56] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:49:56] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:49:56] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:49:56] "GET /task/ HTTP/1.1" 200 11388
+[16/Feb/2023 23:49:56] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:49:56] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:49:56] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:49:56] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:49:56] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:50:26] "GET /task/ HTTP/1.1" 200 11400
+[16/Feb/2023 23:50:26] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:50:26] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:50:26] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:50:26] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:50:26] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:50:26] "GET /task/ HTTP/1.1" 200 11400
+[16/Feb/2023 23:50:26] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:50:26] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:50:27] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:50:27] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:50:27] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:50:27] "GET /task/ HTTP/1.1" 200 11400
+[16/Feb/2023 23:50:27] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:50:27] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:50:27] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:50:27] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:50:27] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:50:27] "GET /task/ HTTP/1.1" 200 11400
+[16/Feb/2023 23:50:27] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:50:27] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:50:27] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:50:27] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:50:27] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:50:30] "GET /task/ HTTP/1.1" 200 11406
+[16/Feb/2023 23:50:30] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:50:30] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:50:30] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:50:30] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:50:30] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:50:34] "GET /task/ HTTP/1.1" 200 11400
+[16/Feb/2023 23:50:34] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:50:34] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:50:34] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:50:34] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[16/Feb/2023 23:50:34] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:50:50] "GET /learn/bootstrap/05/? HTTP/1.1" 200 5241
+[16/Feb/2023 23:51:02] "GET /learn/bootstrap/05/? HTTP/1.1" 200 5290
+[16/Feb/2023 23:51:52] "GET /learn/bootstrap/05/? HTTP/1.1" 200 5352
+[16/Feb/2023 23:52:58] "GET /learn/bootstrap/05/? HTTP/1.1" 200 5475
+[16/Feb/2023 23:53:07] "GET /learn/bootstrap/05/? HTTP/1.1" 200 5474
+[16/Feb/2023 23:53:15] "GET /learn/bootstrap/05/? HTTP/1.1" 200 5474
+[16/Feb/2023 23:53:21] "GET /learn/bootstrap/05/? HTTP/1.1" 200 5474
+[16/Feb/2023 23:53:32] "GET /learn/bootstrap/05/? HTTP/1.1" 200 5465
+[16/Feb/2023 23:53:37] "GET /learn/bootstrap/05/? HTTP/1.1" 200 5474
+[16/Feb/2023 23:53:45] "GET /learn/bootstrap/05/? HTTP/1.1" 200 5474
+[16/Feb/2023 23:53:50] "GET /learn/bootstrap/05/? HTTP/1.1" 200 5474
+[16/Feb/2023 23:54:15] "GET /learn/bootstrap/05/? HTTP/1.1" 200 5586
+[16/Feb/2023 23:54:17] "GET /learn/bootstrap/05/? HTTP/1.1" 200 5586
+[16/Feb/2023 23:54:17] "GET /learn/bootstrap/05/? HTTP/1.1" 200 5586
+[16/Feb/2023 23:54:17] "GET /learn/bootstrap/05/? HTTP/1.1" 200 5586
+[16/Feb/2023 23:54:29] "GET /learn/bootstrap/05/? HTTP/1.1" 200 5577
+[16/Feb/2023 23:55:00] "GET /learn/bootstrap/05/? HTTP/1.1" 200 5558
+[16/Feb/2023 23:57:06] "GET /learn/bootstrap/05/? HTTP/1.1" 200 5911
+[16/Feb/2023 23:57:15] "GET /learn/bootstrap/05/? HTTP/1.1" 200 5909
+[16/Feb/2023 23:57:26] "GET /learn/bootstrap/05/? HTTP/1.1" 200 5918
+[16/Feb/2023 23:57:57] "GET /learn/bootstrap/05/? HTTP/1.1" 200 5918
+[16/Feb/2023 23:58:18] "GET /task/ HTTP/1.1" 200 11343
+[16/Feb/2023 23:58:18] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[16/Feb/2023 23:58:18] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[16/Feb/2023 23:58:18] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[16/Feb/2023 23:58:18] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[16/Feb/2023 23:58:18] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
