@@ -12,18 +12,18 @@
 </style>
 {% endblock%}
 
-{% block js %}
+{%block js%}
 <script type="text/javascript">
     $(function () {
         bindBtnAddEvent();
     })
-
+    
     function bindBtnAddEvent() {
-        $("#but_add").click(function () {
+        $("#btnAdd").click(function () {
             $.ajax({
                 url: '/task/add/',
                 type: "post",
-                date: $("#form_add").serialize(),
+                data: $("#formAdd").serialize(),
                 dataType: "JSON",    // 将接收到的字符串类型的JSON数据 转换成 JSON数据类型
                 success: function (res) {
                     console.log(res);
@@ -33,7 +33,8 @@
         })
     }
 </script>
-{% endblock %}
+{%endblock%}
+
 
 <!-- #body内容 -->
 {%block bodyContent%}
@@ -43,7 +44,7 @@
 
 <div class="container">
     <div class="row">
-        <form action="" id="form_add">
+        <form action="" id="formAdd">
             <div class="row">
                 {% for field in form %}
                 <div class="col-6">
@@ -54,7 +55,7 @@
                 </div>
                 {% endfor %}
             </div>
-            <button form="but_add" class="btn btn-primary mt-4">Submit</button>
+            <button type="button" form="form_add" id="btnAdd" class="btn btn-primary mt-4">Submit</button>
         </form>
     </div>
 </div>

@@ -39,7 +39,10 @@ def task_ajax(request):
 
 @csrf_exempt
 def task_ajax_add(request):
-    print(request.POST)
+    print('通过ajsx发送过来的post信息:', request.POST)
+    data_dict = {'status': True, 'info':'123'}
+    return HttpResponse(json.dumps(data_dict))
+
     
     # form_title = "新建任务"
     # if request.method == "GET":

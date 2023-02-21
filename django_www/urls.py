@@ -45,7 +45,6 @@ urlpatterns = [
     path('task/add/', task.task_ajax_add),
     path('task/edit/<int:id>/', task.task_edit),
 
-
     # Admin
     path('admin/', admin.admin),
     path('admin/add/', admin.admin_add),

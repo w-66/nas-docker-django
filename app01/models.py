@@ -36,7 +36,7 @@ class Admin(models.Model):
 class App01Lifelog(models.Model):
     global_id = models.PositiveBigIntegerField(verbose_name="ID", primary_key=True)
     addtime = models.DateTimeField(verbose_name="添加时间")
-    tag = models.CharField(verbose_name="分类", max_length=128, blank=False, null=False)
+    tag = models.CharField(verbose_name="分类", default="日常", max_length=128, blank=False, null=False)
     content = models.TextField(verbose_name="内容")
     weather = models.CharField(verbose_name="天气", max_length=64, null=True, default='')
 
