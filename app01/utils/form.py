@@ -73,6 +73,9 @@ class Admin_add_ModeForm(BootstrapModelForm):
         return verify_password
 
 
+# class Task_ModeForm(BootstrapModelForm):
+
+
 class Task_add_ModeForm(BootstrapModelForm):   
     # forms.PasswordInput 输入框密码不因错误而清空
     # verify_password = forms.CharField(label='确认密码', widget=forms.PasswordInput)   

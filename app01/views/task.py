@@ -39,11 +39,17 @@ def task_ajax(request):
 
 @csrf_exempt
 def task_ajax_add(request):
-    print('通过ajsx发送过来的post信息:', request.POST)
-    data_dict = {'status': True, 'info':'123'}
+    form =  form = Task_add_ModeForm(data=request.POST)  # 创建Task_add_ModeForm的实例对象
+    if form.is_valid():
+        form.save()
+        data_dict = {'status': True}
+        return HttpResponse(json.dumps(data_dict))
+    data_dict = {'status': False, 'errors':form.errors}
+    # print('通过ajsx发送过来的post信息:', request.POST)
+    # print('表单错误信息:',form.errors.as_json())
     return HttpResponse(json.dumps(data_dict))
-
     
+
     # form_title = "新建任务"
     # if request.method == "GET":
     #     form = Task_add_ModeForm()  # 创建Task_add_ModeForm的实例对象

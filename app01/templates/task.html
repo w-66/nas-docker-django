@@ -6,7 +6,8 @@
     a {
         text-decoration: none
     }
-    #form_add>.row>div:nth-last-child(1) {
+
+    #formAdd>.row>div:nth-last-child(1) {
         width: 100%;
     }
 </style>
@@ -17,17 +18,29 @@
     $(function () {
         bindBtnAddEvent();
     })
-    
+
     function bindBtnAddEvent() {
         $("#btnAdd").click(function () {
+            // 修改内容之后，重置错误提示
+            $(".error-status-false").empty()
+
             $.ajax({
                 url: '/task/add/',
                 type: "post",
                 data: $("#formAdd").serialize(),
                 dataType: "JSON",    // 将接收到的字符串类型的JSON数据 转换成 JSON数据类型
                 success: function (res) {
-                    console.log(res);
-                    console.log(res.status);
+                    // console.log(res);
+                    // console.log(res.status);
+                    if (res.status) {
+                        alert("添加成功")
+                    } else {
+                        // alert("添加失败")
+                        $.each(res.errors, function (name, error) {
+                            // console.log(name, error)
+                            $("#id_" + name).next().text(error[0]);
+                        })
+                    }
                 }
             })
         })
@@ -48,9 +61,10 @@
             <div class="row">
                 {% for field in form %}
                 <div class="col-6">
-                    <div class="form-group">
+                    <div class="form-group" style="position: relative; margin-top: 20px;">
                         <label for="">{{field.label}}</label>
                         {{field}}
+                        <span class="error-status-false" style="position: absolute; color: rgb(250, 45, 45);"></span>
                     </div>
                 </div>
                 {% endfor %}
