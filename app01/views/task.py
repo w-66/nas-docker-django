@@ -87,3 +87,6 @@ def task_edit(request, id):
         form.save()        # 如果数据是有效的，存入之前获取的表中
         return redirect('/admin/')
     return render(request, 'ajax_form_add.html',{"form":form, 'form_title':'新建管理员'})  # 传到模板中
+def task_del(request, id):
+    Task.objects.filter(id=id).delete()
+    return redirect('/task/')

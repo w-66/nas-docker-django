@@ -1266,3 +1266,154 @@ Watching for file changes with StatReloader
 [21/Feb/2023 15:35:59] "POST /task/add/ HTTP/1.1" 200 97
 [21/Feb/2023 15:36:51] "POST /task/add/ HTTP/1.1" 200 97
 [21/Feb/2023 15:36:55] "POST /task/add/ HTTP/1.1" 200 98
+[21/Feb/2023 15:44:56] "GET /task/add/ HTTP/1.1" 200 381
+[21/Feb/2023 15:44:59] "GET /task/add/ HTTP/1.1" 200 381
+[21/Feb/2023 15:45:00] "GET /task/add/ HTTP/1.1" 200 381
+[21/Feb/2023 15:45:01] "GET /task/add/ HTTP/1.1" 200 381
+[21/Feb/2023 15:45:01] "GET /task/add/ HTTP/1.1" 200 381
+[21/Feb/2023 15:45:04] "GET /music/list/ HTTP/1.1" 200 13238
+[21/Feb/2023 15:45:09] "GET /task/ HTTP/1.1" 200 15422
+[21/Feb/2023 15:45:12] "GET /lifelog/ HTTP/1.1" 200 13062
+[21/Feb/2023 15:45:15] "GET /lifelog/log/ HTTP/1.1" 200 5542
+[21/Feb/2023 15:49:15] "POST /lifelog/log/ HTTP/1.1" 302 0
+[21/Feb/2023 15:49:15] "GET /lifelog/ HTTP/1.1" 200 13283
+[21/Feb/2023 15:52:17] "GET /task/ HTTP/1.1" 200 15422
+[21/Feb/2023 15:52:43] "GET /lifelog/ HTTP/1.1" 200 13283
+[21/Feb/2023 15:52:46] "GET /admin/ HTTP/1.1" 200 8827
+/www/django_www/django_www/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 21, 2023 - 12:24:58
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/www/django_www/django_www/urls.py", line 47, in <module>
+    path('task/del/<int:id>/', task.task_del),
+AttributeError: module 'app01.views.task' has no attribute 'task_del'
+/www/django_www/app01/views/task.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+[21/Feb/2023 15:55:44] "GET /task/ HTTP/1.1" 200 15422
+[21/Feb/2023 15:57:04] "GET /task/ HTTP/1.1" 200 15434
+Internal Server Error: /task/del/3/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/www/django_www/app01/views/task.py", line 91, in task_del
+    Task.objects.filter(id=id).delelt()
+AttributeError: 'QuerySet' object has no attribute 'delelt'
+[21/Feb/2023 15:57:06] "GET /task/del/3/ HTTP/1.1" 500 55774
+/www/django_www/app01/views/task.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 21, 2023 - 15:55:22
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[21/Feb/2023 15:57:22] "GET /task/ HTTP/1.1" 200 15434
+[21/Feb/2023 15:57:23] "GET /task/del/3/ HTTP/1.1" 302 0
+[21/Feb/2023 15:57:23] "GET /task/ HTTP/1.1" 200 15439
+[21/Feb/2023 15:57:25] "GET /task/del/6/ HTTP/1.1" 302 0
+[21/Feb/2023 15:57:25] "GET /task/ HTTP/1.1" 200 15376
+[21/Feb/2023 15:57:26] "GET /task/del/5/ HTTP/1.1" 302 0
+[21/Feb/2023 15:57:26] "GET /task/ HTTP/1.1" 200 14844
+[21/Feb/2023 15:57:27] "GET /task/del/7/ HTTP/1.1" 302 0
+[21/Feb/2023 15:57:27] "GET /task/ HTTP/1.1" 200 14307
+[21/Feb/2023 15:57:28] "GET /task/del/8/ HTTP/1.1" 302 0
+[21/Feb/2023 15:57:28] "GET /task/ HTTP/1.1" 200 13770
+[21/Feb/2023 15:57:29] "GET /task/del/4/ HTTP/1.1" 302 0
+[21/Feb/2023 15:57:29] "GET /task/ HTTP/1.1" 200 13238
+[21/Feb/2023 15:57:30] "GET /task/del/2/ HTTP/1.1" 302 0
+[21/Feb/2023 15:57:30] "GET /task/ HTTP/1.1" 200 12699
+[21/Feb/2023 15:57:40] "POST /task/add/ HTTP/1.1" 200 16
+[21/Feb/2023 15:57:42] "GET /task/?page=2 HTTP/1.1" 200 12126
+[21/Feb/2023 15:57:43] "GET /task/?page=1 HTTP/1.1" 200 13240
+[21/Feb/2023 15:57:46] "GET /task/?page=2 HTTP/1.1" 200 12126
+[21/Feb/2023 15:57:47] "GET /task/?page=3 HTTP/1.1" 200 12126
+[21/Feb/2023 15:57:47] "GET /task/?page=4 HTTP/1.1" 200 12126
+[21/Feb/2023 15:57:48] "GET /task/?page=5 HTTP/1.1" 200 12126
+[21/Feb/2023 15:57:48] "GET /task/?page=6 HTTP/1.1" 200 12126
+[21/Feb/2023 15:57:49] "GET /task/?page=7 HTTP/1.1" 200 12126
+[21/Feb/2023 15:57:49] "GET /task/?page=8 HTTP/1.1" 200 12126
+[21/Feb/2023 15:57:49] "GET /task/?page=9 HTTP/1.1" 200 12127
+[21/Feb/2023 15:57:49] "GET /task/?page=10 HTTP/1.1" 200 12127
+[21/Feb/2023 15:57:50] "GET /task/?page=11 HTTP/1.1" 200 12128
+[21/Feb/2023 15:57:50] "GET /task/?page=12 HTTP/1.1" 200 12128
+[21/Feb/2023 15:57:51] "GET /task/?page=1 HTTP/1.1" 200 13240
+[21/Feb/2023 15:57:52] "GET /task/?page=1 HTTP/1.1" 200 13240
+Internal Server Error: /task/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/www/django_www/app01/views/task.py", line 25, in task_ajax
+    obj_page = Pagination(request, queryset, subsection=3, page_limit=6)     #创建对象实例
+  File "/www/django_www/app01/utils/pagination.py", line 22, in __init__
+    self.one_page_queryset = queryset[self.start:self.end]         # 每页显示固定数量的内容; 数据库返回的 内容 进行分页|分段
+  File "/usr/local/lib/python3.8/dist-packages/django/db/models/query.py", line 294, in __getitem__
+    assert ((not isinstance(k, slice) and (k >= 0)) or
+AssertionError: Negative indexing is not supported.
+[21/Feb/2023 15:57:53] "GET /task/?page=0 HTTP/1.1" 500 70042
+Internal Server Error: /task/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/www/django_www/app01/views/task.py", line 25, in task_ajax
+    obj_page = Pagination(request, queryset, subsection=3, page_limit=6)     #创建对象实例
+  File "/www/django_www/app01/utils/pagination.py", line 22, in __init__
+    self.one_page_queryset = queryset[self.start:self.end]         # 每页显示固定数量的内容; 数据库返回的 内容 进行分页|分段
+  File "/usr/local/lib/python3.8/dist-packages/django/db/models/query.py", line 294, in __getitem__
+    assert ((not isinstance(k, slice) and (k >= 0)) or
+AssertionError: Negative indexing is not supported.
+[21/Feb/2023 15:57:55] "GET /task/?page=0 HTTP/1.1" 500 70042
+[21/Feb/2023 16:00:07] "GET /task/ HTTP/1.1" 200 13240
