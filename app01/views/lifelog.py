@@ -22,7 +22,12 @@ def lifelog(request):
     obj_page = Pagination(request, queryset, subsection=3, page_limit=6)     #创建对象实例 
 
     return render(request, 'lifelog.html', 
-                  {'queryset':obj_page.one_page_queryset , 'page_count':obj_page.page_count, 'page_up':obj_page.page-1, 'page_down':obj_page.page+1, 'search_data':search_data, 'page_Num_HTML':obj_page.page_num_html()})
+                  {'queryset':obj_page.one_page_queryset , 
+                   'page_count':obj_page.page_count, 
+                   'page_up':obj_page.page-1, 
+                   'page_down':obj_page.page+1, 
+                   'search_data':search_data, 
+                   'page_Num_HTML':obj_page.page_num_html()})
 
 
 

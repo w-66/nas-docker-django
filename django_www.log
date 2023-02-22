@@ -1,855 +1,189 @@
 
-[19/Feb/2023 21:39:02] "GET /task/?title=1&user=13&urgency=1&importance=1&detail=1 HTTP/1.1" 200 11361
-[19/Feb/2023 21:39:02] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[19/Feb/2023 21:39:02] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[19/Feb/2023 21:39:02] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[19/Feb/2023 21:39:02] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[19/Feb/2023 21:39:02] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[19/Feb/2023 21:39:06] "GET /task/?title=1&user=13&urgency=1&importance=1&detail=1 HTTP/1.1" 200 11361
-[19/Feb/2023 21:39:06] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[19/Feb/2023 21:39:06] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[19/Feb/2023 21:39:06] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[19/Feb/2023 21:39:07] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[19/Feb/2023 21:39:07] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[19/Feb/2023 21:39:12] "GET /task/?title=1&user=13&urgency=1&importance=1&detail=1 HTTP/1.1" 200 11361
-[19/Feb/2023 21:39:13] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[19/Feb/2023 21:39:13] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[19/Feb/2023 21:39:13] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[19/Feb/2023 21:39:13] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[19/Feb/2023 21:39:13] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[19/Feb/2023 22:51:08] "GET /lifelog/ HTTP/1.1" 200 13258
-[20/Feb/2023 00:48:19] "GET / HTTP/1.1" 302 0
-[20/Feb/2023 00:48:45] "GET / HTTP/1.1" 302 0
-[20/Feb/2023 00:49:13] "GET / HTTP/1.1" 302 0
-[20/Feb/2023 00:49:41] "GET / HTTP/1.1" 302 0
-[20/Feb/2023 00:50:10] "GET / HTTP/1.1" 302 0
-[20/Feb/2023 00:50:38] "GET / HTTP/1.1" 302 0
-[20/Feb/2023 21:49:08] "GET /lifelog/ HTTP/1.1" 200 13258
-[20/Feb/2023 21:49:09] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 304 0
-[20/Feb/2023 21:50:48] "GET /lifelog/log/ HTTP/1.1" 200 5542
-[20/Feb/2023 21:51:27] "POST /lifelog/log/ HTTP/1.1" 302 0
-[20/Feb/2023 21:51:27] "GET /lifelog/ HTTP/1.1" 200 13307
-[20/Feb/2023 21:51:44] "GET /lifelog/log/ HTTP/1.1" 200 5542
-[20/Feb/2023 21:51:51] "POST /lifelog/log/ HTTP/1.1" 302 0
-[20/Feb/2023 21:51:51] "GET /lifelog/ HTTP/1.1" 200 13053
-[20/Feb/2023 22:38:51] "GET /lifelog/log/ HTTP/1.1" 200 5542
-[20/Feb/2023 22:39:01] "POST /lifelog/log/ HTTP/1.1" 302 0
-[20/Feb/2023 22:39:01] "GET /lifelog/ HTTP/1.1" 200 13066
-[21/Feb/2023 11:23:59] "GET /index/ HTTP/1.1" 200 7546
-[21/Feb/2023 11:24:00] "GET /index/ HTTP/1.1" 200 7546
-[21/Feb/2023 11:24:00] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 304 0
-Not Found: /favicon.ico
-[21/Feb/2023 11:24:02] "GET /favicon.ico HTTP/1.1" 404 6861
-[21/Feb/2023 11:32:21] "GET /admin/ HTTP/1.1" 200 8827
-[21/Feb/2023 11:32:22] "GET /task/ HTTP/1.1" 200 11361
-[21/Feb/2023 11:34:21] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 11:34:21] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 11:34:25] "POST /task/add/ HTTP/1.1" 200 16
-[21/Feb/2023 11:34:28] "POST /task/add/ HTTP/1.1" 200 16
-[21/Feb/2023 11:34:28] "GET /task/?title=1&user=13&urgency=1&importance=1&detail=1 HTTP/1.1" 200 11361
-[21/Feb/2023 11:34:28] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 11:34:28] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 11:34:28] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 11:34:28] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 11:34:28] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 11:34:31] "POST /task/add/ HTTP/1.1" 200 16
-[21/Feb/2023 11:34:35] "POST /task/add/ HTTP/1.1" 200 16
-[21/Feb/2023 11:34:35] "POST /task/add/ HTTP/1.1" 200 16
-[21/Feb/2023 11:34:39] "POST /task/add/ HTTP/1.1" 200 16
-[21/Feb/2023 11:34:39] "GET /task/?title=11&user=13&urgency=1&importance=1&detail=1 HTTP/1.1" 200 11361
-[21/Feb/2023 11:34:39] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 11:34:39] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 11:34:39] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 11:34:39] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 11:34:39] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 11:34:48] "POST /task/add/ HTTP/1.1" 200 16
-[21/Feb/2023 11:37:37] "GET /task/?title=11&user=13&urgency=1&importance=1&detail=1 HTTP/1.1" 200 11375
-[21/Feb/2023 11:37:37] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 11:37:37] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 11:37:37] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 11:37:37] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 11:37:37] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 11:37:37] "GET /task/?title=11&user=13&urgency=1&importance=1&detail=1 HTTP/1.1" 200 11375
-[21/Feb/2023 11:37:38] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 11:37:38] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 11:37:38] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 11:37:38] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 11:37:38] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 11:37:39] "POST /task/add/ HTTP/1.1" 200 16
-/www/django_www/app01/views/task.py changed, reloading.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-February 19, 2023 - 21:13:56
-Django version 3.2, using settings 'django_www.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-通过ajsx发送过来的post信息: <QueryDict: {'title': ['1'], 'user': ['13'], 'urgency': ['1'], 'importance': ['1'], 'detail': ['1']}>
-通过ajsx发送过来的post信息: <QueryDict: {'title': [''], 'user': [''], 'urgency': ['1'], 'importance': ['1'], 'detail': ['']}>
-通过ajsx发送过来的post信息: <QueryDict: {'title': ['1'], 'user': ['13'], 'urgency': ['1'], 'importance': ['1'], 'detail': ['1']}>
-通过ajsx发送过来的post信息: <QueryDict: {'title': [''], 'user': [''], 'urgency': ['1'], 'importance': ['1'], 'detail': ['']}>
-通过ajsx发送过来的post信息: <QueryDict: {'title': [''], 'user': [''], 'urgency': ['1'], 'importance': ['1'], 'detail': ['']}>
-通过ajsx发送过来的post信息: <QueryDict: {'title': [''], 'user': [''], 'urgency': ['1'], 'importance': ['1'], 'detail': ['']}>
-通过ajsx发送过来的post信息: <QueryDict: {'title': ['11'], 'user': ['13'], 'urgency': ['1'], 'importance': ['1'], 'detail': ['1']}>
-通过ajsx发送过来的post信息: <QueryDict: {'title': [''], 'user': [''], 'urgency': ['1'], 'importance': ['1'], 'detail': ['']}>
-通过ajsx发送过来的post信息: <QueryDict: {'title': [''], 'user': [''], 'urgency': ['1'], 'importance': ['1'], 'detail': ['']}>
+nohup: ignoring input
 Watching for file changes with StatReloader
-[21/Feb/2023 11:41:42] "POST /task/add/ HTTP/1.1" 200 31
-[21/Feb/2023 11:41:42] "POST /task/add/ HTTP/1.1" 200 31
-[21/Feb/2023 11:41:47] "POST /task/add/ HTTP/1.1" 200 31
-/www/django_www/app01/views/task.py changed, reloading.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-February 21, 2023 - 11:41:42
-Django version 3.2, using settings 'django_www.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-通过ajsx发送过来的post信息: <QueryDict: {'title': [''], 'user': [''], 'urgency': ['1'], 'importance': ['1'], 'detail': ['']}>
-通过ajsx发送过来的post信息: <QueryDict: {'title': [''], 'user': [''], 'urgency': ['1'], 'importance': ['1'], 'detail': ['']}>
-通过ajsx发送过来的post信息: <QueryDict: {'title': [''], 'user': [''], 'urgency': ['1'], 'importance': ['1'], 'detail': ['']}>
-Watching for file changes with StatReloader
-[21/Feb/2023 11:42:06] "POST /task/add/ HTTP/1.1" 200 10
-[21/Feb/2023 11:42:08] "GET /task/?title=11&user=13&urgency=1&importance=1&detail=1 HTTP/1.1" 200 11371
-[21/Feb/2023 11:42:08] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 11:42:08] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 11:42:08] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 11:42:08] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 11:42:08] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 11:42:09] "POST /task/add/ HTTP/1.1" 200 10
-[21/Feb/2023 11:42:11] "POST /task/add/ HTTP/1.1" 200 10
-[21/Feb/2023 11:42:13] "POST /task/add/ HTTP/1.1" 200 10
-[21/Feb/2023 11:42:13] "POST /task/add/ HTTP/1.1" 200 10
-[21/Feb/2023 11:42:13] "POST /task/add/ HTTP/1.1" 200 10
-[21/Feb/2023 11:42:13] "POST /task/add/ HTTP/1.1" 200 10
-[21/Feb/2023 11:42:15] "POST /task/add/ HTTP/1.1" 200 10
-[21/Feb/2023 11:42:15] "POST /task/add/ HTTP/1.1" 200 10
-[21/Feb/2023 11:42:18] "POST /task/add/ HTTP/1.1" 200 10
-[21/Feb/2023 11:42:18] "POST /task/add/ HTTP/1.1" 200 10
-[21/Feb/2023 11:42:18] "POST /task/add/ HTTP/1.1" 200 10
-/www/django_www/app01/views/task.py changed, reloading.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-February 21, 2023 - 11:42:05
-Django version 3.2, using settings 'django_www.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-通过ajsx发送过来的post信息: <QueryDict: {'title': [''], 'user': [''], 'urgency': ['1'], 'importance': ['1'], 'detail': ['']}>
-通过ajsx发送过来的post信息: <QueryDict: {'title': [''], 'user': [''], 'urgency': ['1'], 'importance': ['1'], 'detail': ['']}>
-通过ajsx发送过来的post信息: <QueryDict: {'title': [''], 'user': [''], 'urgency': ['1'], 'importance': ['1'], 'detail': ['']}>
-通过ajsx发送过来的post信息: <QueryDict: {'title': [''], 'user': [''], 'urgency': ['1'], 'importance': ['1'], 'detail': ['']}>
-通过ajsx发送过来的post信息: <QueryDict: {'title': [''], 'user': [''], 'urgency': ['1'], 'importance': ['1'], 'detail': ['']}>
-通过ajsx发送过来的post信息: <QueryDict: {'title': [''], 'user': [''], 'urgency': ['1'], 'importance': ['1'], 'detail': ['']}>
-通过ajsx发送过来的post信息: <QueryDict: {'title': [''], 'user': [''], 'urgency': ['1'], 'importance': ['1'], 'detail': ['']}>
-通过ajsx发送过来的post信息: <QueryDict: {'title': [''], 'user': [''], 'urgency': ['1'], 'importance': ['1'], 'detail': ['']}>
-通过ajsx发送过来的post信息: <QueryDict: {'title': [''], 'user': [''], 'urgency': ['1'], 'importance': ['1'], 'detail': ['']}>
-通过ajsx发送过来的post信息: <QueryDict: {'title': [''], 'user': [''], 'urgency': ['1'], 'importance': ['1'], 'detail': ['']}>
-通过ajsx发送过来的post信息: <QueryDict: {'title': [''], 'user': [''], 'urgency': ['1'], 'importance': ['1'], 'detail': ['']}>
-通过ajsx发送过来的post信息: <QueryDict: {'title': [''], 'user': [''], 'urgency': ['1'], 'importance': ['1'], 'detail': ['']}>
-Watching for file changes with StatReloader
-/www/django_www/app01/views/task.py changed, reloading.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-February 21, 2023 - 11:42:21
-Django version 3.2, using settings 'django_www.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Watching for file changes with StatReloader
-[21/Feb/2023 11:42:24] "GET /task/?title=11&user=13&urgency=1&importance=1&detail=1 HTTP/1.1" 200 11371
-[21/Feb/2023 11:42:24] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 11:42:24] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 11:42:24] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 11:42:24] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 11:42:24] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 11:42:24] "POST /task/add/ HTTP/1.1" 200 31
-[21/Feb/2023 11:42:55] "POST /task/add/ HTTP/1.1" 200 31
-[21/Feb/2023 11:43:08] "POST /task/add/ HTTP/1.1" 200 31
-/www/django_www/app01/views/task.py changed, reloading.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-February 21, 2023 - 11:42:24
-Django version 3.2, using settings 'django_www.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-通过ajsx发送过来的post信息: <QueryDict: {'title': [''], 'user': [''], 'urgency': ['1'], 'importance': ['1'], 'detail': ['']}>
-通过ajsx发送过来的post信息: <QueryDict: {'title': [''], 'user': [''], 'urgency': ['1'], 'importance': ['1'], 'detail': ['']}>
-通过ajsx发送过来的post信息: <QueryDict: {'title': ['test'], 'user': ['13'], 'urgency': ['1'], 'importance': ['1'], 'detail': ['test']}>
-Watching for file changes with StatReloader
-/www/django_www/app01/views/task.py changed, reloading.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-February 21, 2023 - 11:43:16
-Django version 3.2, using settings 'django_www.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Watching for file changes with StatReloader
-[21/Feb/2023 11:48:02] "GET /task/?title=11&user=13&urgency=1&importance=1&detail=1 HTTP/1.1" 200 11371
-[21/Feb/2023 11:48:02] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 11:48:02] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 11:48:02] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 11:48:02] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 11:48:02] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-Forbidden (CSRF token missing or incorrect.): /task/add/
-[21/Feb/2023 11:48:04] "POST /task/add/ HTTP/1.1" 403 2514
-/www/django_www/app01/views/task.py changed, reloading.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-February 21, 2023 - 11:48:02
-Django version 3.2, using settings 'django_www.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Watching for file changes with StatReloader
-[21/Feb/2023 11:48:26] "POST /task/add/ HTTP/1.1" 200 31
+[22/Feb/2023 16:54:10] "GET /lifelog/v2/ HTTP/1.1" 200 11743
+[22/Feb/2023 16:54:10] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[22/Feb/2023 16:54:10] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[22/Feb/2023 16:54:10] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[22/Feb/2023 16:54:10] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[22/Feb/2023 16:54:10] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[22/Feb/2023 16:54:17] "GET /lifelog/v2/ HTTP/1.1" 200 11743
+[22/Feb/2023 16:54:17] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[22/Feb/2023 16:54:17] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[22/Feb/2023 16:54:17] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[22/Feb/2023 16:54:17] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[22/Feb/2023 16:54:17] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[22/Feb/2023 16:54:27] "GET /lifelog/ HTTP/1.1" 200 13576
+[22/Feb/2023 16:54:28] "GET /lifelog/log/ HTTP/1.1" 200 5538
+[22/Feb/2023 16:54:55] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[22/Feb/2023 16:54:55] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
 /www/django_www/app01/utils/form.py changed, reloading.
 Performing system checks...
 
 System check identified no issues (0 silenced).
-February 21, 2023 - 11:48:21
-Django version 3.2, using settings 'django_www.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-通过ajsx发送过来的post信息: <QueryDict: {'title': [''], 'user': [''], 'urgency': ['1'], 'importance': ['1'], 'detail': ['']}>
-Watching for file changes with StatReloader
-/www/django_www/app01/views/task.py changed, reloading.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-February 21, 2023 - 12:01:34
+February 22, 2023 - 16:54:10
 Django version 3.2, using settings 'django_www.settings'
 Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
 Watching for file changes with StatReloader
-Internal Server Error: /task/add/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/usr/local/lib/python3.8/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/www/django_www/app01/views/task.py", line 44, in task_ajax_add
-    if form.is_vaild:
-AttributeError: 'Task_add_ModeForm' object has no attribute 'is_vaild'
-[21/Feb/2023 12:07:39] "POST /task/add/ HTTP/1.1" 500 61200
-[21/Feb/2023 12:07:40] "GET /task/?title=11&user=13&urgency=1&importance=1&detail=1 HTTP/1.1" 200 11371
-[21/Feb/2023 12:07:40] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 12:07:40] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 12:07:40] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 12:07:40] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 12:07:40] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-Internal Server Error: /task/add/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/usr/local/lib/python3.8/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/www/django_www/app01/views/task.py", line 44, in task_ajax_add
-    if form.is_vaild:
-AttributeError: 'Task_add_ModeForm' object has no attribute 'is_vaild'
-[21/Feb/2023 12:07:44] "POST /task/add/ HTTP/1.1" 500 61200
-Not Found: /ajax/add/
-[21/Feb/2023 12:08:26] "GET /ajax/add/ HTTP/1.1" 404 6855
-Not Found: /ajax/add/
-[21/Feb/2023 12:08:33] "GET /ajax/add/ HTTP/1.1" 404 6855
-Internal Server Error: /task/add/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/usr/local/lib/python3.8/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/www/django_www/app01/views/task.py", line 44, in task_ajax_add
-    if form.is_vaild:
-AttributeError: 'Task_add_ModeForm' object has no attribute 'is_vaild'
-[21/Feb/2023 12:08:46] "GET /task/add/ HTTP/1.1" 500 60080
-/www/django_www/app01/views/task.py changed, reloading.
+[22/Feb/2023 16:55:32] "GET /lifelog/v2/ HTTP/1.1" 200 11739
+/www/django_www/app01/utils/form.py changed, reloading.
 Performing system checks...
 
 System check identified no issues (0 silenced).
-February 21, 2023 - 12:07:38
-Django version 3.2, using settings 'django_www.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-通过ajsx发送过来的post信息: <QueryDict: {'title': [''], 'user': [''], 'urgency': ['1'], 'importance': ['1'], 'detail': ['']}>
-通过ajsx发送过来的post信息: <QueryDict: {'title': [''], 'user': [''], 'urgency': ['1'], 'importance': ['1'], 'detail': ['']}>
-通过ajsx发送过来的post信息: <QueryDict: {}>
-Watching for file changes with StatReloader
-Internal Server Error: /task/add/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/usr/local/lib/python3.8/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/www/django_www/app01/views/task.py", line 45, in task_ajax_add
-    form.save()
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/models.py", line 460, in save
-    raise ValueError(
-ValueError: The Task could not be created because the data didn't validate.
-[21/Feb/2023 12:09:09] "GET /task/add/ HTTP/1.1" 500 64086
-Internal Server Error: /task/add/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/usr/local/lib/python3.8/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/www/django_www/app01/views/task.py", line 45, in task_ajax_add
-    form.save()
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/models.py", line 460, in save
-    raise ValueError(
-ValueError: The Task could not be created because the data didn't validate.
-[21/Feb/2023 12:10:14] "POST /task/add/ HTTP/1.1" 500 65206
-/www/django_www/app01/views/task.py changed, reloading.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-February 21, 2023 - 12:09:08
-Django version 3.2, using settings 'django_www.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-通过ajsx发送过来的post信息: <QueryDict: {}>
-通过ajsx发送过来的post信息: <QueryDict: {'title': [''], 'user': [''], 'urgency': ['1'], 'importance': ['1'], 'detail': ['']}>
-Watching for file changes with StatReloader
-Internal Server Error: /task/add/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/usr/local/lib/python3.8/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/www/django_www/app01/views/task.py", line 45, in task_ajax_add
-    form.save()
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/models.py", line 460, in save
-    raise ValueError(
-ValueError: The Task could not be created because the data didn't validate.
-[21/Feb/2023 12:11:41] "GET /task/add/ HTTP/1.1" 500 64131
-Internal Server Error: /task/add/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/usr/local/lib/python3.8/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/www/django_www/app01/views/task.py", line 45, in task_ajax_add
-    form.save()
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/models.py", line 460, in save
-    raise ValueError(
-ValueError: The Task could not be created because the data didn't validate.
-[21/Feb/2023 12:11:44] "POST /task/add/ HTTP/1.1" 500 65251
-Internal Server Error: /task/add/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/usr/local/lib/python3.8/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/www/django_www/app01/views/task.py", line 45, in task_ajax_add
-    form.save()
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/models.py", line 460, in save
-    raise ValueError(
-ValueError: The Task could not be created because the data didn't validate.
-[21/Feb/2023 12:11:45] "POST /task/add/ HTTP/1.1" 500 65251
-[21/Feb/2023 12:11:47] "GET /task/?title=11&user=13&urgency=1&importance=1&detail=1 HTTP/1.1" 200 11371
-[21/Feb/2023 12:11:47] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 12:11:47] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 12:11:47] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 12:11:47] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 12:11:47] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-Internal Server Error: /task/add/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/usr/local/lib/python3.8/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/www/django_www/app01/views/task.py", line 45, in task_ajax_add
-    form.save()
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/models.py", line 460, in save
-    raise ValueError(
-ValueError: The Task could not be created because the data didn't validate.
-[21/Feb/2023 12:11:48] "POST /task/add/ HTTP/1.1" 500 65251
-Internal Server Error: /task/add/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/usr/local/lib/python3.8/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/www/django_www/app01/views/task.py", line 45, in task_ajax_add
-    form.save()
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/models.py", line 460, in save
-    raise ValueError(
-ValueError: The Task could not be created because the data didn't validate.
-[21/Feb/2023 12:11:59] "POST /task/add/ HTTP/1.1" 500 65251
-/www/django_www/app01/views/task.py changed, reloading.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-February 21, 2023 - 12:11:41
-Django version 3.2, using settings 'django_www.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-通过ajsx发送过来的post信息: <QueryDict: {}>
-通过ajsx发送过来的post信息: <QueryDict: {'title': [''], 'user': [''], 'urgency': ['1'], 'importance': ['1'], 'detail': ['']}>
-通过ajsx发送过来的post信息: <QueryDict: {'title': [''], 'user': [''], 'urgency': ['1'], 'importance': ['1'], 'detail': ['']}>
-通过ajsx发送过来的post信息: <QueryDict: {'title': [''], 'user': [''], 'urgency': ['1'], 'importance': ['1'], 'detail': ['']}>
-通过ajsx发送过来的post信息: <QueryDict: {'title': [''], 'user': [''], 'urgency': ['1'], 'importance': ['1'], 'detail': ['']}>
-Watching for file changes with StatReloader
-/www/django_www/app01/views/task.py changed, reloading.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-February 21, 2023 - 12:12:21
+February 22, 2023 - 16:55:30
 Django version 3.2, using settings 'django_www.settings'
 Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
 Watching for file changes with StatReloader
-Internal Server Error: /task/add/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/usr/local/lib/python3.8/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/www/django_www/app01/views/task.py", line 45, in task_ajax_add
-    form.save()
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/models.py", line 460, in save
-    raise ValueError(
-ValueError: The Task could not be created because the data didn't validate.
-[21/Feb/2023 12:12:30] "POST /task/add/ HTTP/1.1" 500 65240
-/www/django_www/app01/views/task.py changed, reloading.
+[22/Feb/2023 16:56:42] "GET /lifelog/log/ HTTP/1.1" 200 5538
+/www/django_www/app01/utils/form.py changed, reloading.
 Performing system checks...
 
 System check identified no issues (0 silenced).
-February 21, 2023 - 12:12:30
-Django version 3.2, using settings 'django_www.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-通过ajsx发送过来的post信息: <QueryDict: {'title': [''], 'user': [''], 'urgency': ['1'], 'importance': ['1'], 'detail': ['']}>
-Watching for file changes with StatReloader
-/www/django_www/app01/views/task.py changed, reloading.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-February 21, 2023 - 12:12:43
+February 22, 2023 - 16:56:40
 Django version 3.2, using settings 'django_www.settings'
 Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
 Watching for file changes with StatReloader
-Internal Server Error: /task/add/
+Exception in thread django-main-thread:
 Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/usr/local/lib/python3.8/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/www/django_www/app01/views/task.py", line 44, in task_ajax_add
-    form.save()
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/models.py", line 460, in save
-    raise ValueError(
-ValueError: The Task could not be created because the data didn't validate.
-[21/Feb/2023 12:13:26] "POST /task/add/ HTTP/1.1" 500 65297
-Internal Server Error: /task/add/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/usr/local/lib/python3.8/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/www/django_www/app01/views/task.py", line 44, in task_ajax_add
-    form.save()
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/models.py", line 460, in save
-    raise ValueError(
-ValueError: The Task could not be created because the data didn't validate.
-[21/Feb/2023 12:13:26] "POST /task/add/ HTTP/1.1" 500 65297
-Internal Server Error: /task/add/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/usr/local/lib/python3.8/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/www/django_www/app01/views/task.py", line 44, in task_ajax_add
-    form.save()
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/models.py", line 460, in save
-    raise ValueError(
-ValueError: The Task could not be created because the data didn't validate.
-[21/Feb/2023 12:13:26] "POST /task/add/ HTTP/1.1" 500 65297
-Internal Server Error: /task/add/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/usr/local/lib/python3.8/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/www/django_www/app01/views/task.py", line 44, in task_ajax_add
-    form.save()
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/models.py", line 460, in save
-    raise ValueError(
-ValueError: The Task could not be created because the data didn't validate.
-[21/Feb/2023 12:13:30] "POST /task/add/ HTTP/1.1" 500 65300
-/www/django_www/app01/views/task.py changed, reloading.
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/www/django_www/django_www/urls.py", line 3, in <module>
+    from app01.views import index, learn_bootstrap, learn_js, learn_react, lifelog, music, admin
+  File "/www/django_www/app01/views/lifelog.py", line 4, in <module>
+    from app01.utils.form import LogModeForm, LifeLogEdit
+  File "/www/django_www/app01/utils/form.py", line 14, in <module>
+    class LogModeForm(BootstrapModelForm):
+  File "/www/django_www/app01/utils/form.py", line 17, in LogModeForm
+    class Meta:
+  File "/www/django_www/app01/utils/form.py", line 24, in Meta
+    "weather": forms.CharField(attrs={"autocomplete": "off"}),
+  File "/usr/local/lib/python3.8/dist-packages/django/forms/fields.py", line 216, in __init__
+    super().__init__(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'attrs'
+nohup: ignoring input
+Watching for file changes with StatReloader
+/www/django_www/app01/utils/form.py changed, reloading.
 Performing system checks...
 
 System check identified no issues (0 silenced).
-February 21, 2023 - 12:13:25
+February 22, 2023 - 16:57:51
 Django version 3.2, using settings 'django_www.settings'
 Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
 Watching for file changes with StatReloader
-/www/django_www/app01/views/task.py changed, reloading.
+[22/Feb/2023 17:00:20] "GET /lifelog/log/ HTTP/1.1" 200 5557
+[22/Feb/2023 17:00:25] "GET /lifelog/v2/ HTTP/1.1" 200 11758
+/www/django_www/app01/views/login.py changed, reloading.
 Performing system checks...
 
 System check identified no issues (0 silenced).
-February 21, 2023 - 12:13:37
+February 22, 2023 - 17:00:20
 Django version 3.2, using settings 'django_www.settings'
 Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
 Watching for file changes with StatReloader
-Internal Server Error: /task/add/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/usr/local/lib/python3.8/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/www/django_www/app01/views/task.py", line 44, in task_ajax_add
-    form.save()
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/models.py", line 460, in save
-    raise ValueError(
-ValueError: The Task could not be created because the data didn't validate.
-[21/Feb/2023 12:14:15] "GET /task/add/ HTTP/1.1" 500 64179
-/www/django_www/app01/views/task.py changed, reloading.
+[22/Feb/2023 17:09:14] "POST /lifelog/v2/add/ajax/ HTTP/1.1" 200 100
+[22/Feb/2023 17:09:17] "POST /lifelog/v2/add/ajax/ HTTP/1.1" 200 16
+[22/Feb/2023 17:09:21] "GET /lifelog/v2/ HTTP/1.1" 200 11808
+[22/Feb/2023 17:09:23] "POST /lifelog/v2/add/ajax/ HTTP/1.1" 200 100
+[22/Feb/2023 17:09:25] "POST /lifelog/v2/add/ajax/ HTTP/1.1" 200 16
+[22/Feb/2023 17:09:39] "GET /lifelog/ HTTP/1.1" 200 13489
+[22/Feb/2023 17:09:40] "GET /lifelog/del/7034001924139651072/ HTTP/1.1" 302 0
+[22/Feb/2023 17:09:40] "GET /lifelog/ HTTP/1.1" 200 13489
+[22/Feb/2023 17:09:40] "GET /lifelog/del/7034001893219241984/ HTTP/1.1" 302 0
+[22/Feb/2023 17:09:41] "GET /lifelog/ HTTP/1.1" 200 13576
+[22/Feb/2023 17:09:49] "POST /lifelog/v2/add/ajax/ HTTP/1.1" 200 16
+[22/Feb/2023 17:13:34] "GET /lifelog/v2/ HTTP/1.1" 200 11986
+[22/Feb/2023 17:13:39] "POST /lifelog/v2/add/ajax/ HTTP/1.1" 200 16
+[22/Feb/2023 17:17:34] "GET /lifelog/v2/ HTTP/1.1" 200 11986
+[22/Feb/2023 17:17:38] "POST /lifelog/v2/add/ajax/ HTTP/1.1" 200 16
+[22/Feb/2023 17:17:58] "POST /lifelog/v2/add/ajax/ HTTP/1.1" 200 16
+[22/Feb/2023 17:20:36] "GET /lifelog/v2/ HTTP/1.1" 200 11987
+[22/Feb/2023 17:20:39] "POST /lifelog/v2/add/ajax/ HTTP/1.1" 200 16
+[22/Feb/2023 17:21:24] "GET /lifelog/v2/ HTTP/1.1" 200 12043
+[22/Feb/2023 17:21:27] "POST /lifelog/v2/add/ajax/ HTTP/1.1" 200 16
+[22/Feb/2023 17:22:18] "GET /lifelog/ HTTP/1.1" 200 13475
+[22/Feb/2023 17:22:20] "GET /lifelog/del/7034004951684747264/ HTTP/1.1" 302 0
+[22/Feb/2023 17:22:20] "GET /lifelog/ HTTP/1.1" 200 13481
+[22/Feb/2023 17:22:20] "GET /lifelog/del/7034004749670289408/ HTTP/1.1" 302 0
+[22/Feb/2023 17:22:20] "GET /lifelog/ HTTP/1.1" 200 13477
+[22/Feb/2023 17:22:21] "GET /lifelog/del/7034003991235268608/ HTTP/1.1" 302 0
+[22/Feb/2023 17:22:21] "GET /lifelog/ HTTP/1.1" 200 13490
+[22/Feb/2023 17:22:22] "GET /lifelog/del/7034004077474353152/ HTTP/1.1" 302 0
+[22/Feb/2023 17:22:22] "GET /lifelog/ HTTP/1.1" 200 13498
+[22/Feb/2023 17:22:23] "GET /lifelog/del/7034002989195071488/ HTTP/1.1" 302 0
+[22/Feb/2023 17:22:23] "GET /lifelog/ HTTP/1.1" 200 13498
+[22/Feb/2023 17:25:51] "GET /lifelog/v2/ HTTP/1.1" 200 12053
+[22/Feb/2023 17:29:27] "POST /lifelog/v2/add/ajax/ HTTP/1.1" 200 16
+[22/Feb/2023 17:29:33] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[22/Feb/2023 17:29:33] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[22/Feb/2023 17:29:37] "POST /lifelog/v2/add/ajax/ HTTP/1.1" 200 16
+[22/Feb/2023 17:29:56] "POST /lifelog/v2/add/ajax/ HTTP/1.1" 200 16
+[22/Feb/2023 17:30:51] "GET /lifelog/v2/ HTTP/1.1" 200 12136
+[22/Feb/2023 17:30:51] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[22/Feb/2023 17:30:51] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[22/Feb/2023 17:30:51] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[22/Feb/2023 17:30:51] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[22/Feb/2023 17:30:51] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[22/Feb/2023 17:33:03] "GET /admin/ HTTP/1.1" 200 9560
+/www/django_www/app01/views/lifelog_v2.py changed, reloading.
 Performing system checks...
 
 System check identified no issues (0 silenced).
-February 21, 2023 - 12:14:09
+February 22, 2023 - 17:04:45
 Django version 3.2, using settings 'django_www.settings'
 Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
 Watching for file changes with StatReloader
-Internal Server Error: /task/add/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/usr/local/lib/python3.8/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/www/django_www/app01/views/task.py", line 44, in task_ajax_add
-    form.save()
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/models.py", line 460, in save
-    raise ValueError(
-ValueError: The Task could not be created because the data didn't validate.
-[21/Feb/2023 12:14:56] "GET /task/add/ HTTP/1.1" 500 64140
-Internal Server Error: /task/add/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/usr/local/lib/python3.8/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/www/django_www/app01/views/task.py", line 44, in task_ajax_add
-    form.save()
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/models.py", line 460, in save
-    raise ValueError(
-ValueError: The Task could not be created because the data didn't validate.
-[21/Feb/2023 12:14:57] "GET /task/add/ HTTP/1.1" 500 64140
-Internal Server Error: /task/add/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/usr/local/lib/python3.8/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/www/django_www/app01/views/task.py", line 44, in task_ajax_add
-    form.save()
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/models.py", line 460, in save
-    raise ValueError(
-ValueError: The Task could not be created because the data didn't validate.
-[21/Feb/2023 12:14:58] "GET /task/add/ HTTP/1.1" 500 64140
-/www/django_www/app01/views/task.py changed, reloading.
+/www/django_www/app01/views/lifelog_v2.py changed, reloading.
 Performing system checks...
 
 System check identified no issues (0 silenced).
-February 21, 2023 - 12:14:55
+February 22, 2023 - 17:41:31
 Django version 3.2, using settings 'django_www.settings'
 Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
 Watching for file changes with StatReloader
-[21/Feb/2023 12:15:24] "GET /task/add/ HTTP/1.1" 200 16
-[21/Feb/2023 12:15:28] "GET /task/?title=11&user=13&urgency=1&importance=1&detail=1 HTTP/1.1" 200 11371
-[21/Feb/2023 12:15:28] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 12:15:28] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 12:15:28] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 12:15:28] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 12:15:28] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 12:15:29] "POST /task/add/ HTTP/1.1" 200 16
-/www/django_www/app01/views/task.py changed, reloading.
+/www/django_www/app01/views/lifelog_v2.py changed, reloading.
 Performing system checks...
 
 System check identified no issues (0 silenced).
-February 21, 2023 - 12:15:24
-Django version 3.2, using settings 'django_www.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Watching for file changes with StatReloader
-[21/Feb/2023 12:15:53] "GET /task/?title=11&user=13&urgency=1&importance=1&detail=1 HTTP/1.1" 200 11371
-[21/Feb/2023 12:15:53] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 12:15:53] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 12:15:53] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 12:15:53] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 12:15:53] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 12:16:04] "POST /task/add/ HTTP/1.1" 200 16
-/www/django_www/app01/views/task.py changed, reloading.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-February 21, 2023 - 12:15:49
-Django version 3.2, using settings 'django_www.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Watching for file changes with StatReloader
-[21/Feb/2023 12:16:20] "GET /task/?title=11&user=13&urgency=1&importance=1&detail=1 HTTP/1.1" 200 11908
-[21/Feb/2023 12:16:20] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 12:16:20] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 12:16:20] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 12:16:20] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 12:16:20] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-Internal Server Error: /task/add/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/usr/local/lib/python3.8/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/www/django_www/app01/views/task.py", line 44, in task_ajax_add
-    form.save()
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/models.py", line 460, in save
-    raise ValueError(
-ValueError: The Task could not be created because the data didn't validate.
-[21/Feb/2023 12:16:21] "POST /task/add/ HTTP/1.1" 500 65258
-/www/django_www/app01/views/task.py changed, reloading.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-February 21, 2023 - 12:16:19
-Django version 3.2, using settings 'django_www.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Watching for file changes with StatReloader
-Internal Server Error: /task/add/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/usr/local/lib/python3.8/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/www/django_www/app01/views/task.py", line 44, in task_ajax_add
-    form.save()
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/models.py", line 460, in save
-    raise ValueError(
-ValueError: The Task could not be created because the data didn't validate.
-[21/Feb/2023 12:16:33] "POST /task/add/ HTTP/1.1" 500 65260
-Internal Server Error: /task/add/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/usr/local/lib/python3.8/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/www/django_www/app01/views/task.py", line 44, in task_ajax_add
-    form.save()
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/models.py", line 460, in save
-    raise ValueError(
-ValueError: The Task could not be created because the data didn't validate.
-[21/Feb/2023 12:16:33] "POST /task/add/ HTTP/1.1" 500 65260
-[21/Feb/2023 12:16:33] "GET /task/?title=11&user=13&urgency=1&importance=1&detail=1 HTTP/1.1" 200 11908
-[21/Feb/2023 12:16:33] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 12:16:33] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 12:16:33] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 12:16:34] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 12:16:34] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-Internal Server Error: /task/add/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/usr/local/lib/python3.8/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/www/django_www/app01/views/task.py", line 44, in task_ajax_add
-    form.save()
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/models.py", line 460, in save
-    raise ValueError(
-ValueError: The Task could not be created because the data didn't validate.
-[21/Feb/2023 12:16:35] "POST /task/add/ HTTP/1.1" 500 65260
-Internal Server Error: /task/add/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/usr/local/lib/python3.8/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/www/django_www/app01/views/task.py", line 44, in task_ajax_add
-    form.save()
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/models.py", line 460, in save
-    raise ValueError(
-ValueError: The Task could not be created because the data didn't validate.
-[21/Feb/2023 12:16:35] "POST /task/add/ HTTP/1.1" 500 65260
-Internal Server Error: /task/add/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/usr/local/lib/python3.8/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/www/django_www/app01/views/task.py", line 44, in task_ajax_add
-    form.save()
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/models.py", line 460, in save
-    raise ValueError(
-ValueError: The Task could not be created because the data didn't validate.
-[21/Feb/2023 12:16:36] "POST /task/add/ HTTP/1.1" 500 65260
-Internal Server Error: /task/add/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/usr/local/lib/python3.8/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/www/django_www/app01/views/task.py", line 44, in task_ajax_add
-    form.save()
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/models.py", line 460, in save
-    raise ValueError(
-ValueError: The Task could not be created because the data didn't validate.
-[21/Feb/2023 12:16:36] "POST /task/add/ HTTP/1.1" 500 65260
-[21/Feb/2023 12:16:41] "POST /task/add/ HTTP/1.1" 200 16
-/www/django_www/app01/views/task.py changed, reloading.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-February 21, 2023 - 12:16:33
-Django version 3.2, using settings 'django_www.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Watching for file changes with StatReloader
-[21/Feb/2023 12:16:53] "POST /task/add/ HTTP/1.1" 200 16
-[21/Feb/2023 12:16:53] "POST /task/add/ HTTP/1.1" 200 16
-[21/Feb/2023 12:16:54] "POST /task/add/ HTTP/1.1" 200 16
-[21/Feb/2023 12:16:59] "GET /task/?title=11&user=13&urgency=1&importance=1&detail=1 HTTP/1.1" 200 14028
-[21/Feb/2023 12:16:59] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 12:16:59] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 12:16:59] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 12:16:59] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 12:16:59] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 12:17:07] "GET /task/edit/6/ HTTP/1.1" 200 8229
-[21/Feb/2023 12:17:07] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 12:17:07] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 12:17:07] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 12:17:07] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 12:17:07] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 12:17:09] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 12:17:09] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-Internal Server Error: /task/add/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/usr/local/lib/python3.8/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/www/django_www/app01/views/task.py", line 44, in task_ajax_add
-    form.save()
-  File "/usr/local/lib/python3.8/dist-packages/django/forms/models.py", line 460, in save
-    raise ValueError(
-ValueError: The Task could not be created because the data didn't validate.
-[21/Feb/2023 12:17:56] "POST /task/add/ HTTP/1.1" 500 65258
-/www/django_www/app01/views/task.py changed, reloading.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-February 21, 2023 - 12:16:53
-Django version 3.2, using settings 'django_www.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Watching for file changes with StatReloader
-[21/Feb/2023 12:19:45] "POST /task/add/ HTTP/1.1" 200 16
-[21/Feb/2023 12:19:46] "POST /task/add/ HTTP/1.1" 200 16
-[21/Feb/2023 12:19:46] "POST /task/add/ HTTP/1.1" 200 16
-[21/Feb/2023 12:19:50] "GET /task/?title=11&user=13&urgency=1&importance=1&detail=1 HTTP/1.1" 200 14028
-[21/Feb/2023 12:19:50] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 12:19:50] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 12:19:50] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 12:19:50] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 12:19:50] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 12:19:51] "POST /task/add/ HTTP/1.1" 200 16
-[21/Feb/2023 12:19:51] "POST /task/add/ HTTP/1.1" 200 16
-[21/Feb/2023 12:19:51] "POST /task/add/ HTTP/1.1" 200 16
-/www/django_www/app01/views/task.py changed, reloading.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-February 21, 2023 - 12:19:44
-Django version 3.2, using settings 'django_www.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-表单错误信息: {"title": [{"message": "\u8fd9\u4e2a\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "code": "required"}], "user": [{"message": "\u8fd9\u4e2a\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "code": "required"}], "detail": [{"message": "\u8fd9\u4e2a\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "code": "required"}]}
-表单错误信息: {"title": [{"message": "\u8fd9\u4e2a\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "code": "required"}], "user": [{"message": "\u8fd9\u4e2a\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "code": "required"}], "detail": [{"message": "\u8fd9\u4e2a\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "code": "required"}]}
-表单错误信息: {"title": [{"message": "\u8fd9\u4e2a\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "code": "required"}], "user": [{"message": "\u8fd9\u4e2a\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "code": "required"}], "detail": [{"message": "\u8fd9\u4e2a\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "code": "required"}]}
-表单错误信息: {"title": [{"message": "\u8fd9\u4e2a\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "code": "required"}], "user": [{"message": "\u8fd9\u4e2a\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "code": "required"}], "detail": [{"message": "\u8fd9\u4e2a\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "code": "required"}]}
-表单错误信息: {"title": [{"message": "\u8fd9\u4e2a\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "code": "required"}], "user": [{"message": "\u8fd9\u4e2a\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "code": "required"}], "detail": [{"message": "\u8fd9\u4e2a\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "code": "required"}]}
-表单错误信息: {"title": [{"message": "\u8fd9\u4e2a\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "code": "required"}], "user": [{"message": "\u8fd9\u4e2a\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "code": "required"}], "detail": [{"message": "\u8fd9\u4e2a\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "code": "required"}]}
-Watching for file changes with StatReloader
-[21/Feb/2023 12:20:39] "POST /task/add/ HTTP/1.1" 200 16
-[21/Feb/2023 12:21:20] "POST /task/add/ HTTP/1.1" 200 16
-/www/django_www/app01/views/task.py changed, reloading.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-February 21, 2023 - 12:20:39
-Django version 3.2, using settings 'django_www.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-通过ajsx发送过来的post信息: <QueryDict: {'title': [''], 'user': [''], 'urgency': ['1'], 'importance': ['1'], 'detail': ['']}>
-表单错误信息: {"title": [{"message": "\u8fd9\u4e2a\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "code": "required"}], "user": [{"message": "\u8fd9\u4e2a\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "code": "required"}], "detail": [{"message": "\u8fd9\u4e2a\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "code": "required"}]}
-通过ajsx发送过来的post信息: <QueryDict: {'title': [''], 'user': [''], 'urgency': ['1'], 'importance': ['1'], 'detail': ['2222nicg李沧']}>
-表单错误信息: {"title": [{"message": "\u8fd9\u4e2a\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "code": "required"}], "user": [{"message": "\u8fd9\u4e2a\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "code": "required"}]}
-Watching for file changes with StatReloader
-/www/django_www/app01/views/task.py changed, reloading.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-February 21, 2023 - 12:21:26
+February 22, 2023 - 17:41:46
 Django version 3.2, using settings 'django_www.settings'
 Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
@@ -891,529 +225,224 @@ Traceback (most recent call last):
   File "<frozen importlib._bootstrap_external>", line 848, in exec_module
   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
   File "/www/django_www/django_www/urls.py", line 4, in <module>
-    from app01.views import login, task
-  File "/www/django_www/app01/views/task.py", line 47
-    data_dict = {'status': True, form.errors.as_json()}
-                                                      ^
-SyntaxError: invalid syntax
-/www/django_www/app01/views/task.py changed, reloading.
+    from app01.views import login, task, lifelog_v2
+  File "/www/django_www/app01/views/lifelog_v2.py", line 33
+    'form_title':title，
+                      ^
+SyntaxError: invalid character in identifier
+/www/django_www/app01/views/lifelog_v2.py changed, reloading.
 Performing system checks...
 
 Watching for file changes with StatReloader
-/www/django_www/app01/views/task.py changed, reloading.
+[22/Feb/2023 17:45:54] "GET /lifelog/ HTTP/1.1" 200 13476
+Internal Server Error: /lifelog/v2/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/www/django_www/app01/views/lifelog_v2.py", line 31, in lifelog_v2
+    return render(request, 'lifelog_v2.html',
+  File "/usr/local/lib/python3.8/dist-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader_tags.py", line 278, in do_extends
+    nodelist = parser.parse()
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader_tags.py", line 212, in do_block
+    raise TemplateSyntaxError("'%s' tag with name '%s' appears more than once" % (bits[0], block_name))
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'css' appears more than once
+[22/Feb/2023 17:45:58] "GET /lifelog/v2/ HTTP/1.1" 500 151973
+/www/django_www/app01/views/lifelog.py changed, reloading.
 Performing system checks...
 
 System check identified no issues (0 silenced).
-February 21, 2023 - 12:22:02
+February 22, 2023 - 17:45:46
 Django version 3.2, using settings 'django_www.settings'
 Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
 Watching for file changes with StatReloader
-[21/Feb/2023 12:22:06] "POST /task/add/ HTTP/1.1" 200 271
-[21/Feb/2023 12:22:06] "POST /task/add/ HTTP/1.1" 200 271
-/www/django_www/app01/views/task.py changed, reloading.
+[22/Feb/2023 17:46:39] "GET /lifelog/ HTTP/1.1" 200 13476
+Internal Server Error: /lifelog/v2/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/www/django_www/app01/views/lifelog_v2.py", line 31, in lifelog_v2
+    return render(request, 'lifelog_v2.html',
+  File "/usr/local/lib/python3.8/dist-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader_tags.py", line 278, in do_extends
+    nodelist = parser.parse()
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader_tags.py", line 212, in do_block
+    raise TemplateSyntaxError("'%s' tag with name '%s' appears more than once" % (bits[0], block_name))
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'bodyContent' appears more than once
+[22/Feb/2023 17:47:17] "GET /lifelog/v2/ HTTP/1.1" 500 152692
+Internal Server Error: /lifelog/v2/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/www/django_www/app01/views/lifelog_v2.py", line 31, in lifelog_v2
+    return render(request, 'lifelog_v2.html',
+  File "/usr/local/lib/python3.8/dist-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader_tags.py", line 278, in do_extends
+    nodelist = parser.parse()
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader_tags.py", line 212, in do_block
+    raise TemplateSyntaxError("'%s' tag with name '%s' appears more than once" % (bits[0], block_name))
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'bodyContent' appears more than once
+[22/Feb/2023 17:48:02] "GET /lifelog/v2/ HTTP/1.1" 500 151520
+[22/Feb/2023 17:48:11] "GET /lifelog/v2/ HTTP/1.1" 200 20543
+[22/Feb/2023 17:48:15] "GET /lifelog/v2/?page=2 HTTP/1.1" 200 20802
+[22/Feb/2023 17:48:16] "GET /lifelog/v2/?page=1 HTTP/1.1" 200 20543
+[22/Feb/2023 17:48:19] "GET /lifelog/del/7034006965613367296/ HTTP/1.1" 302 0
+[22/Feb/2023 17:48:19] "GET /lifelog/ HTTP/1.1" 200 13501
+/www/django_www/app01/views/lifelog_v2.py changed, reloading.
 Performing system checks...
 
 System check identified no issues (0 silenced).
-February 21, 2023 - 12:22:06
+February 22, 2023 - 17:46:38
 Django version 3.2, using settings 'django_www.settings'
 Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
 Watching for file changes with StatReloader
-[21/Feb/2023 12:23:29] "GET /task/?title=11&user=13&urgency=1&importance=1&detail=1 HTTP/1.1" 200 14028
-[21/Feb/2023 12:23:29] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 12:23:29] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 12:23:29] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 12:23:29] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 12:23:29] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 12:23:30] "POST /task/add/ HTTP/1.1" 200 235
-/www/django_www/app01/views/task.py changed, reloading.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-February 21, 2023 - 12:23:29
-Django version 3.2, using settings 'django_www.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Watching for file changes with StatReloader
-[21/Feb/2023 12:24:58] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 12:25:27] "POST /task/add/ HTTP/1.1" 200 16
-[21/Feb/2023 12:25:29] "GET /task/?title=11&user=13&urgency=1&importance=1&detail=1 HTTP/1.1" 200 14096
-[21/Feb/2023 12:25:29] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 12:25:29] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 12:25:29] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 12:25:29] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 12:25:29] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 12:25:31] "GET /task/?page=2 HTTP/1.1" 200 11410
-[21/Feb/2023 12:25:32] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 12:25:32] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 12:25:32] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 12:25:32] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 12:25:32] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 12:25:35] "GET /task/?page=1 HTTP/1.1" 200 14096
-[21/Feb/2023 12:25:35] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 12:25:35] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 12:25:35] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 12:25:35] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 12:25:35] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 12:25:46] "GET /task/ HTTP/1.1" 200 14096
-[21/Feb/2023 12:26:07] "GET /task/ HTTP/1.1" 200 14096
-[21/Feb/2023 12:26:10] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 12:26:10] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 12:27:48] "GET /task/ HTTP/1.1" 200 14095
-[21/Feb/2023 12:28:44] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 12:28:44] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 12:28:47] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 12:41:52] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 12:41:53] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 12:41:55] "GET /task/ HTTP/1.1" 200 14279
-[21/Feb/2023 12:41:55] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 12:41:55] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 12:41:55] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 12:41:55] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 12:41:55] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 12:41:55] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 12:41:59] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 12:43:51] "GET /task/ HTTP/1.1" 200 14749
-[21/Feb/2023 12:43:51] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 12:43:51] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 12:43:51] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 12:43:51] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 12:43:51] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 12:43:52] "GET /task/ HTTP/1.1" 200 14749
-[21/Feb/2023 12:43:52] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 12:43:52] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 12:43:52] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 12:43:52] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 12:43:52] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 12:45:45] "GET /task/ HTTP/1.1" 200 14912
-[21/Feb/2023 12:45:45] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 12:45:45] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 12:45:45] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 12:45:45] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 12:45:45] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 12:45:46] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 12:45:46] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 12:45:47] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 12:45:47] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 12:45:47] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 12:45:48] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 12:45:48] "GET /task/ HTTP/1.1" 200 14912
-[21/Feb/2023 12:45:48] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 12:45:48] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 12:45:48] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 12:45:48] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 12:45:48] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 12:45:49] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 12:45:50] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 12:45:50] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 12:45:50] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 12:45:55] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 12:45:56] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 12:45:56] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 12:45:56] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 12:46:32] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 12:47:37] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 12:47:45] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 12:47:46] "GET /task/ HTTP/1.1" 200 14914
-[21/Feb/2023 12:47:47] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 12:47:58] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 12:47:58] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 12:48:00] "GET /task/ HTTP/1.1" 200 14913
-[21/Feb/2023 12:48:01] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 12:48:01] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 12:48:02] "POST /task/add/ HTTP/1.1" 200 166
-[21/Feb/2023 12:48:11] "GET /task/ HTTP/1.1" 200 14914
-[21/Feb/2023 12:48:12] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 12:48:13] "POST /task/add/ HTTP/1.1" 200 166
-[21/Feb/2023 12:48:14] "POST /task/add/ HTTP/1.1" 200 166
-[21/Feb/2023 12:48:14] "POST /task/add/ HTTP/1.1" 200 166
-[21/Feb/2023 12:49:25] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 12:49:25] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 12:49:26] "POST /task/add/ HTTP/1.1" 200 166
-[21/Feb/2023 12:49:28] "POST /task/add/ HTTP/1.1" 200 166
-[21/Feb/2023 12:49:29] "POST /task/add/ HTTP/1.1" 200 166
-[21/Feb/2023 12:49:29] "POST /task/add/ HTTP/1.1" 200 166
-[21/Feb/2023 12:49:29] "POST /task/add/ HTTP/1.1" 200 166
-[21/Feb/2023 12:49:29] "POST /task/add/ HTTP/1.1" 200 166
-[21/Feb/2023 12:49:30] "POST /task/add/ HTTP/1.1" 200 166
-[21/Feb/2023 12:49:39] "GET /task/ HTTP/1.1" 200 14967
-[21/Feb/2023 12:49:39] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 12:49:39] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 12:49:39] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 12:49:39] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 12:49:39] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 12:49:40] "GET /task/?page=2 HTTP/1.1" 200 12281
-[21/Feb/2023 12:49:40] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 12:49:40] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 12:49:40] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 12:49:40] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 12:49:40] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 12:49:41] "GET /task/?page=1 HTTP/1.1" 200 14967
-[21/Feb/2023 12:49:41] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 12:49:41] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 12:49:41] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 12:49:41] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 12:49:41] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 15:15:51] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 15:16:00] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 15:16:15] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 15:16:16] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 15:16:16] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 15:16:17] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 15:16:17] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 15:16:18] "GET /task/?page=1 HTTP/1.1" 200 14964
-[21/Feb/2023 15:16:18] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 15:16:18] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 15:16:18] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 15:16:18] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 15:16:18] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 15:16:19] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 15:16:28] "GET /task/?page=1 HTTP/1.1" 200 14964
-[21/Feb/2023 15:16:28] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 15:16:28] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 15:16:28] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 15:16:28] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 15:16:28] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 15:16:30] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 15:17:15] "GET /task/?page=1 HTTP/1.1" 200 15017
-[21/Feb/2023 15:17:15] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 15:17:15] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 15:17:15] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 15:17:15] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 15:17:15] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 15:17:17] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 15:21:31] "GET /task/?page=1 HTTP/1.1" 200 15018
-[21/Feb/2023 15:21:31] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 15:21:31] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 15:21:31] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 15:21:31] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 15:21:31] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 15:21:31] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 15:21:44] "GET /task/?page=1 HTTP/1.1" 200 15018
-[21/Feb/2023 15:21:44] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 15:21:44] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 15:21:44] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 15:21:44] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 15:21:44] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 15:21:45] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 15:22:32] "GET /task/?page=1 HTTP/1.1" 200 15078
-[21/Feb/2023 15:22:34] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 15:24:39] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 15:24:39] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 15:25:48] "GET /task/?page=1 HTTP/1.1" 200 15021
-[21/Feb/2023 15:25:48] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 15:25:48] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 15:25:48] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 15:25:49] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 15:25:49] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 15:25:54] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 15:27:55] "GET /task/?page=1 HTTP/1.1" 200 15073
-[21/Feb/2023 15:27:55] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 15:27:55] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 15:27:55] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 15:27:55] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 15:27:55] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 15:27:57] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 15:27:59] "GET /task/?page=1 HTTP/1.1" 200 15073
-[21/Feb/2023 15:27:59] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 15:27:59] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 15:27:59] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 15:27:59] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 15:27:59] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 15:27:59] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 15:28:09] "GET /task/?page=1 HTTP/1.1" 200 15076
-[21/Feb/2023 15:28:09] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 15:28:09] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 15:28:09] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 15:28:09] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 15:28:09] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 15:28:10] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 15:28:22] "GET /task/?page=1 HTTP/1.1" 200 15076
-[21/Feb/2023 15:28:22] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 15:28:22] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 15:28:22] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 15:28:22] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 15:28:22] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 15:28:23] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 15:28:25] "GET /task/?page=1 HTTP/1.1" 200 15076
-[21/Feb/2023 15:28:25] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 15:28:25] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 15:28:25] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 15:28:25] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 15:28:25] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 15:28:35] "GET /task/?page=1 HTTP/1.1" 200 15076
-[21/Feb/2023 15:28:35] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 15:28:35] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 15:28:35] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 15:28:35] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 15:28:35] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 15:28:36] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 15:28:48] "GET /task/?page=1 HTTP/1.1" 200 15061
-[21/Feb/2023 15:28:48] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 15:28:48] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 15:28:48] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 15:28:48] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 15:28:48] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 15:28:49] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 15:28:54] "GET /task/?page=1 HTTP/1.1" 200 15061
-[21/Feb/2023 15:28:54] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 15:28:54] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 15:28:54] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 15:28:54] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 15:28:54] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 15:28:55] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 15:29:20] "GET /task/?page=1 HTTP/1.1" 200 15131
-[21/Feb/2023 15:29:20] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 15:29:20] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 15:29:20] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 15:29:20] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 15:29:20] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 15:29:21] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 15:29:31] "GET /task/?page=1 HTTP/1.1" 200 15191
-[21/Feb/2023 15:29:31] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 15:29:31] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 15:29:31] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 15:29:31] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 15:29:31] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 15:29:31] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 15:29:43] "POST /task/add/ HTTP/1.1" 200 167
-[21/Feb/2023 15:29:44] "POST /task/add/ HTTP/1.1" 200 167
-[21/Feb/2023 15:29:44] "POST /task/add/ HTTP/1.1" 200 167
-[21/Feb/2023 15:29:44] "POST /task/add/ HTTP/1.1" 200 167
-[21/Feb/2023 15:29:45] "POST /task/add/ HTTP/1.1" 200 167
-[21/Feb/2023 15:29:45] "POST /task/add/ HTTP/1.1" 200 167
-[21/Feb/2023 15:29:45] "POST /task/add/ HTTP/1.1" 200 167
-[21/Feb/2023 15:29:46] "GET /task/?page=1 HTTP/1.1" 200 15191
-[21/Feb/2023 15:29:46] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 15:29:46] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 15:29:46] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 15:29:46] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 15:29:46] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 15:29:48] "POST /task/add/ HTTP/1.1" 200 167
-[21/Feb/2023 15:29:51] "POST /task/add/ HTTP/1.1" 200 97
-[21/Feb/2023 15:29:52] "POST /task/add/ HTTP/1.1" 200 97
-[21/Feb/2023 15:29:52] "POST /task/add/ HTTP/1.1" 200 97
-[21/Feb/2023 15:29:52] "POST /task/add/ HTTP/1.1" 200 97
-[21/Feb/2023 15:29:53] "POST /task/add/ HTTP/1.1" 200 97
-[21/Feb/2023 15:29:53] "POST /task/add/ HTTP/1.1" 200 97
-[21/Feb/2023 15:29:57] "POST /task/add/ HTTP/1.1" 200 99
-[21/Feb/2023 15:29:57] "POST /task/add/ HTTP/1.1" 200 99
-[21/Feb/2023 15:29:58] "POST /task/add/ HTTP/1.1" 200 99
-[21/Feb/2023 15:30:00] "POST /task/add/ HTTP/1.1" 200 16
-[21/Feb/2023 15:30:03] "GET /task/?page=1 HTTP/1.1" 200 15191
-[21/Feb/2023 15:30:03] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 15:30:03] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 15:30:03] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 15:30:03] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 15:30:03] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 15:30:09] "POST /task/add/ HTTP/1.1" 200 98
-[21/Feb/2023 15:30:15] "GET /task/?page=2 HTTP/1.1" 200 13040
-[21/Feb/2023 15:30:15] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 15:30:15] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 15:30:15] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 15:30:15] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 15:30:15] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 15:30:17] "GET /task/?page=1 HTTP/1.1" 200 15191
-[21/Feb/2023 15:30:17] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 15:30:17] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 15:30:17] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 15:30:17] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 15:30:17] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 15:33:52] "GET /task/?page=1 HTTP/1.1" 200 15141
-[21/Feb/2023 15:33:52] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 15:33:52] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 15:33:52] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 15:33:52] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 15:33:52] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 15:33:54] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 15:34:03] "GET /task/?page=1 HTTP/1.1" 200 15136
-[21/Feb/2023 15:34:03] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 15:34:03] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 15:34:03] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 15:34:03] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 15:34:03] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 15:34:04] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 15:34:17] "GET /task/?page=1 HTTP/1.1" 200 15201
-[21/Feb/2023 15:34:17] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 15:34:17] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 15:34:17] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 15:34:17] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 15:34:17] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 15:34:18] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 15:35:34] "POST /task/add/ HTTP/1.1" 200 236
-[21/Feb/2023 15:35:35] "POST /task/add/ HTTP/1.1" 200 167
-[21/Feb/2023 15:35:36] "POST /task/add/ HTTP/1.1" 200 167
-[21/Feb/2023 15:35:36] "POST /task/add/ HTTP/1.1" 200 167
-[21/Feb/2023 15:35:37] "GET /task/?page=1 HTTP/1.1" 200 15365
-[21/Feb/2023 15:35:37] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 15:35:37] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 15:35:37] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 15:35:37] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 15:35:37] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 15:35:39] "POST /task/add/ HTTP/1.1" 200 167
-[21/Feb/2023 15:35:41] "POST /task/add/ HTTP/1.1" 200 99
-[21/Feb/2023 15:35:41] "POST /task/add/ HTTP/1.1" 200 99
-[21/Feb/2023 15:35:41] "POST /task/add/ HTTP/1.1" 200 99
-[21/Feb/2023 15:35:42] "POST /task/add/ HTTP/1.1" 200 99
-[21/Feb/2023 15:35:55] "GET /task/?page=1 HTTP/1.1" 200 15367
-[21/Feb/2023 15:35:55] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
-[21/Feb/2023 15:35:55] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
-[21/Feb/2023 15:35:55] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
-[21/Feb/2023 15:35:55] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
-[21/Feb/2023 15:35:55] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
-[21/Feb/2023 15:35:57] "POST /task/add/ HTTP/1.1" 200 166
-[21/Feb/2023 15:35:59] "POST /task/add/ HTTP/1.1" 200 97
-[21/Feb/2023 15:36:51] "POST /task/add/ HTTP/1.1" 200 97
-[21/Feb/2023 15:36:55] "POST /task/add/ HTTP/1.1" 200 98
-[21/Feb/2023 15:44:56] "GET /task/add/ HTTP/1.1" 200 381
-[21/Feb/2023 15:44:59] "GET /task/add/ HTTP/1.1" 200 381
-[21/Feb/2023 15:45:00] "GET /task/add/ HTTP/1.1" 200 381
-[21/Feb/2023 15:45:01] "GET /task/add/ HTTP/1.1" 200 381
-[21/Feb/2023 15:45:01] "GET /task/add/ HTTP/1.1" 200 381
-[21/Feb/2023 15:45:04] "GET /music/list/ HTTP/1.1" 200 13238
-[21/Feb/2023 15:45:09] "GET /task/ HTTP/1.1" 200 15422
-[21/Feb/2023 15:45:12] "GET /lifelog/ HTTP/1.1" 200 13062
-[21/Feb/2023 15:45:15] "GET /lifelog/log/ HTTP/1.1" 200 5542
-[21/Feb/2023 15:49:15] "POST /lifelog/log/ HTTP/1.1" 302 0
-[21/Feb/2023 15:49:15] "GET /lifelog/ HTTP/1.1" 200 13283
-[21/Feb/2023 15:52:17] "GET /task/ HTTP/1.1" 200 15422
-[21/Feb/2023 15:52:43] "GET /lifelog/ HTTP/1.1" 200 13283
-[21/Feb/2023 15:52:46] "GET /admin/ HTTP/1.1" 200 8827
 /www/django_www/django_www/urls.py changed, reloading.
 Performing system checks...
 
 System check identified no issues (0 silenced).
-February 21, 2023 - 12:24:58
+February 22, 2023 - 17:49:24
 Django version 3.2, using settings 'django_www.settings'
 Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
 Watching for file changes with StatReloader
-Exception in thread django-main-thread:
-Traceback (most recent call last):
-  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
-    self.run()
-  File "/usr/lib/python3.8/threading.py", line 870, in run
-    self._target(*self._args, **self._kwargs)
-  File "/usr/local/lib/python3.8/dist-packages/django/utils/autoreload.py", line 64, in wrapper
-    fn(*args, **kwargs)
-  File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/runserver.py", line 118, in inner_run
-    self.check(display_num_errors=True)
-  File "/usr/local/lib/python3.8/dist-packages/django/core/management/base.py", line 419, in check
-    all_issues = checks.run_checks(
-  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/registry.py", line 76, in run_checks
-    new_errors = check(app_configs=app_configs, databases=databases)
-  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 13, in check_url_config
-    return check_resolver(resolver)
-  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 23, in check_resolver
-    return check_method()
-  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 412, in check
-    for pattern in self.url_patterns:
-  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 598, in url_patterns
-    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
-  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 591, in urlconf_module
-    return import_module(self.urlconf_name)
-  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
-  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
-  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
-  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
-  File "/www/django_www/django_www/urls.py", line 47, in <module>
-    path('task/del/<int:id>/', task.task_del),
-AttributeError: module 'app01.views.task' has no attribute 'task_del'
-/www/django_www/app01/views/task.py changed, reloading.
-Performing system checks...
-
-Watching for file changes with StatReloader
-[21/Feb/2023 15:55:44] "GET /task/ HTTP/1.1" 200 15422
-[21/Feb/2023 15:57:04] "GET /task/ HTTP/1.1" 200 15434
-Internal Server Error: /task/del/3/
+[22/Feb/2023 17:50:46] "GET /lifelog/v2/ HTTP/1.1" 200 20586
+[22/Feb/2023 17:51:13] "GET /lifelog/v2/ HTTP/1.1" 200 20586
+[22/Feb/2023 17:51:14] "GET /lifelog/v2/ HTTP/1.1" 200 20586
+[22/Feb/2023 17:51:33] "GET /lifelog/v2/ HTTP/1.1" 200 20619
+[22/Feb/2023 17:51:52] "GET /lifelog/v2/ HTTP/1.1" 200 20616
+[22/Feb/2023 17:52:25] "GET /lifelog/v2/ HTTP/1.1" 200 20445
+[22/Feb/2023 17:52:31] "POST /lifelog/v2/add/ajax/ HTTP/1.1" 200 16
+[22/Feb/2023 17:52:32] "GET /lifelog/v2/ HTTP/1.1" 200 20420
+[22/Feb/2023 17:52:34] "GET /lifelog/v2/ HTTP/1.1" 200 20420
+[22/Feb/2023 17:52:35] "GET /lifelog/v2/ HTTP/1.1" 200 20420
+[22/Feb/2023 17:52:35] "GET /lifelog/v2/ HTTP/1.1" 200 20420
+[22/Feb/2023 17:52:35] "GET /lifelog/v2/ HTTP/1.1" 200 20420
+[22/Feb/2023 17:52:36] "GET /lifelog/v2/ HTTP/1.1" 200 20420
+Internal Server Error: /lifelog/v2/del/7034012769859014656/
 Traceback (most recent call last):
   File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
     response = get_response(request)
   File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/www/django_www/app01/views/task.py", line 91, in task_del
-    Task.objects.filter(id=id).delelt()
-AttributeError: 'QuerySet' object has no attribute 'delelt'
-[21/Feb/2023 15:57:06] "GET /task/del/3/ HTTP/1.1" 500 55774
-/www/django_www/app01/views/task.py changed, reloading.
+TypeError: lifelog_v2_del() got an unexpected keyword argument 'id'
+[22/Feb/2023 17:52:38] "GET /lifelog/v2/del/7034012769859014656/ HTTP/1.1" 500 52829
+/www/django_www/django_www/urls.py changed, reloading.
 Performing system checks...
 
 System check identified no issues (0 silenced).
-February 21, 2023 - 15:55:22
+February 22, 2023 - 17:50:11
 Django version 3.2, using settings 'django_www.settings'
 Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
 Watching for file changes with StatReloader
-[21/Feb/2023 15:57:22] "GET /task/ HTTP/1.1" 200 15434
-[21/Feb/2023 15:57:23] "GET /task/del/3/ HTTP/1.1" 302 0
-[21/Feb/2023 15:57:23] "GET /task/ HTTP/1.1" 200 15439
-[21/Feb/2023 15:57:25] "GET /task/del/6/ HTTP/1.1" 302 0
-[21/Feb/2023 15:57:25] "GET /task/ HTTP/1.1" 200 15376
-[21/Feb/2023 15:57:26] "GET /task/del/5/ HTTP/1.1" 302 0
-[21/Feb/2023 15:57:26] "GET /task/ HTTP/1.1" 200 14844
-[21/Feb/2023 15:57:27] "GET /task/del/7/ HTTP/1.1" 302 0
-[21/Feb/2023 15:57:27] "GET /task/ HTTP/1.1" 200 14307
-[21/Feb/2023 15:57:28] "GET /task/del/8/ HTTP/1.1" 302 0
-[21/Feb/2023 15:57:28] "GET /task/ HTTP/1.1" 200 13770
-[21/Feb/2023 15:57:29] "GET /task/del/4/ HTTP/1.1" 302 0
-[21/Feb/2023 15:57:29] "GET /task/ HTTP/1.1" 200 13238
-[21/Feb/2023 15:57:30] "GET /task/del/2/ HTTP/1.1" 302 0
-[21/Feb/2023 15:57:30] "GET /task/ HTTP/1.1" 200 12699
-[21/Feb/2023 15:57:40] "POST /task/add/ HTTP/1.1" 200 16
-[21/Feb/2023 15:57:42] "GET /task/?page=2 HTTP/1.1" 200 12126
-[21/Feb/2023 15:57:43] "GET /task/?page=1 HTTP/1.1" 200 13240
-[21/Feb/2023 15:57:46] "GET /task/?page=2 HTTP/1.1" 200 12126
-[21/Feb/2023 15:57:47] "GET /task/?page=3 HTTP/1.1" 200 12126
-[21/Feb/2023 15:57:47] "GET /task/?page=4 HTTP/1.1" 200 12126
-[21/Feb/2023 15:57:48] "GET /task/?page=5 HTTP/1.1" 200 12126
-[21/Feb/2023 15:57:48] "GET /task/?page=6 HTTP/1.1" 200 12126
-[21/Feb/2023 15:57:49] "GET /task/?page=7 HTTP/1.1" 200 12126
-[21/Feb/2023 15:57:49] "GET /task/?page=8 HTTP/1.1" 200 12126
-[21/Feb/2023 15:57:49] "GET /task/?page=9 HTTP/1.1" 200 12127
-[21/Feb/2023 15:57:49] "GET /task/?page=10 HTTP/1.1" 200 12127
-[21/Feb/2023 15:57:50] "GET /task/?page=11 HTTP/1.1" 200 12128
-[21/Feb/2023 15:57:50] "GET /task/?page=12 HTTP/1.1" 200 12128
-[21/Feb/2023 15:57:51] "GET /task/?page=1 HTTP/1.1" 200 13240
-[21/Feb/2023 15:57:52] "GET /task/?page=1 HTTP/1.1" 200 13240
-Internal Server Error: /task/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/usr/local/lib/python3.8/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/www/django_www/app01/views/task.py", line 25, in task_ajax
-    obj_page = Pagination(request, queryset, subsection=3, page_limit=6)     #创建对象实例
-  File "/www/django_www/app01/utils/pagination.py", line 22, in __init__
-    self.one_page_queryset = queryset[self.start:self.end]         # 每页显示固定数量的内容; 数据库返回的 内容 进行分页|分段
-  File "/usr/local/lib/python3.8/dist-packages/django/db/models/query.py", line 294, in __getitem__
-    assert ((not isinstance(k, slice) and (k >= 0)) or
-AssertionError: Negative indexing is not supported.
-[21/Feb/2023 15:57:53] "GET /task/?page=0 HTTP/1.1" 500 70042
-Internal Server Error: /task/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/usr/local/lib/python3.8/dist-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/www/django_www/app01/views/task.py", line 25, in task_ajax
-    obj_page = Pagination(request, queryset, subsection=3, page_limit=6)     #创建对象实例
-  File "/www/django_www/app01/utils/pagination.py", line 22, in __init__
-    self.one_page_queryset = queryset[self.start:self.end]         # 每页显示固定数量的内容; 数据库返回的 内容 进行分页|分段
-  File "/usr/local/lib/python3.8/dist-packages/django/db/models/query.py", line 294, in __getitem__
-    assert ((not isinstance(k, slice) and (k >= 0)) or
-AssertionError: Negative indexing is not supported.
-[21/Feb/2023 15:57:55] "GET /task/?page=0 HTTP/1.1" 500 70042
-[21/Feb/2023 16:00:07] "GET /task/ HTTP/1.1" 200 13240
+[22/Feb/2023 17:52:58] "GET /lifelog/v2/ HTTP/1.1" 200 20420
+[22/Feb/2023 17:53:00] "GET /lifelog/v2/del/7034012769859014656/ HTTP/1.1" 302 0
+[22/Feb/2023 17:53:00] "GET /lifelog/v2/ HTTP/1.1" 200 20445
+[22/Feb/2023 17:53:01] "GET /lifelog/v2/del/7034007008617566208/ HTTP/1.1" 302 0
+[22/Feb/2023 17:53:01] "GET /lifelog/v2/ HTTP/1.1" 200 20462
+[22/Feb/2023 17:53:03] "GET /lifelog/v2/del/7034007089399861248/ HTTP/1.1" 302 0
+[22/Feb/2023 17:53:03] "GET /lifelog/v2/ HTTP/1.1" 200 20457
+[22/Feb/2023 17:53:06] "POST /lifelog/v2/add/ajax/ HTTP/1.1" 200 16
+[22/Feb/2023 17:53:07] "GET /lifelog/v2/ HTTP/1.1" 200 20457
+[22/Feb/2023 17:53:10] "GET /lifelog/v2/del/7034012917175554048/ HTTP/1.1" 302 0
+[22/Feb/2023 17:53:10] "GET /lifelog/v2/ HTTP/1.1" 200 20457
+[22/Feb/2023 17:53:13] "POST /lifelog/v2/add/ajax/ HTTP/1.1" 200 16
+[22/Feb/2023 17:53:14] "GET /lifelog/v2/ HTTP/1.1" 200 20457
+[22/Feb/2023 17:53:37] "POST /lifelog/v2/add/ajax/ HTTP/1.1" 200 16
+[22/Feb/2023 17:53:38] "GET /lifelog/v2/ HTTP/1.1" 200 20444
+[22/Feb/2023 17:53:39] "GET /lifelog/v2/ HTTP/1.1" 200 20444
+[22/Feb/2023 17:53:41] "POST /lifelog/v2/add/ajax/ HTTP/1.1" 200 16
+[22/Feb/2023 17:53:41] "GET /lifelog/v2/ HTTP/1.1" 200 20419
+[22/Feb/2023 17:53:45] "POST /lifelog/v2/add/ajax/ HTTP/1.1" 200 16
+[22/Feb/2023 17:53:45] "GET /lifelog/v2/ HTTP/1.1" 200 20426
+[22/Feb/2023 17:53:46] "GET /lifelog/v2/del/7034013080820518912/ HTTP/1.1" 302 0
+[22/Feb/2023 17:53:46] "GET /lifelog/v2/ HTTP/1.1" 200 20419
+[22/Feb/2023 17:53:47] "GET /lifelog/v2/del/7034013065200930816/ HTTP/1.1" 302 0
+[22/Feb/2023 17:53:47] "GET /lifelog/v2/ HTTP/1.1" 200 20444
+[22/Feb/2023 17:53:48] "GET /lifelog/v2/del/7034013048637624320/ HTTP/1.1" 302 0
+[22/Feb/2023 17:53:48] "GET /lifelog/v2/ HTTP/1.1" 200 20460
+[22/Feb/2023 17:53:49] "GET /lifelog/v2/del/7034012946766368768/ HTTP/1.1" 302 0
+[22/Feb/2023 17:53:50] "GET /lifelog/v2/ HTTP/1.1" 200 20460

@@ -1,17 +1,5 @@
 {% extends 'tplt_init_bootstrap.html'%}
 {% load static %}
-{% block css %}
-
-<style>
-    a {
-        text-decoration: none
-    }
-
-    #formAdd>.row>div:nth-last-child(1) {
-        width: 100%;
-    }
-</style>
-{% endblock%}
 
 {%block js%}
 <script type="text/javascript">
@@ -25,7 +13,7 @@
             $(".error-status-false").empty()
 
             $.ajax({
-                url: '/task/add/',
+                url: '/lifelog/v2/add/ajax/',
                 type: "post",
                 data: $("#formAdd").serialize(),
                 dataType: "JSON",    // 将接收到的字符串类型的JSON数据 转换成 JSON数据类型
@@ -33,7 +21,13 @@
                     // console.log(res);
                     // console.log(res.status);
                     if (res.status) {
-                        alert("添加成功")
+                        // alert("添加成功")
+                        // 添加成功之后 清除已输入的信息;$("#formAdd")是jquary对象; $("#formAdd")[0]是DOM对象，
+                        $("#formAdd")[0].reset();
+                        // 添加成功之后 关闭弹窗
+                        $("#modalId").modal('hide');
+                        // 刷新页面
+                        location.reload();
                     } else {
                         // alert("添加失败")
                         $.each(res.errors, function (name, error) {
@@ -49,39 +43,86 @@
 {%endblock%}
 
 
+{% block css %}
+<style>
+
+    a {
+        text-decoration: none
+    }
+    </style>
+{% endblock %}
+
 <!-- #body内容 -->
 {%block bodyContent%}
-<title>admin</title>
+
+<title>lifelog v2</title>
+
+
 <!-- Navbar -->
 {% include "tplt_navbar.html" %}
 
 <div class="container">
     <div class="row">
-        <form action="" id="formAdd">
-            <div class="row">
-                {% for field in form %}
-                <div class="col-6">
-                    <div class="form-group" style="position: relative; margin-top: 10px; ">
-                        <label for="">{{field.label}}</label>
-                        {{field}}
-                        <span class="error-status-false form-text text-muted" style="position: absolute;right: 0px; top: 29px;"></span>
+        <div class="col-md-12">
+            <!-- modal弹窗按钮 -->
+            <div>
+                <!-- start -->
+                <!-- Modal trigger button -->
+                <!-- 按钮 -->
+                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
+                    按钮(modal)
+                </button>
+                <!-- 弹出的对话框 -->
+                <!-- Modal Body-->
+                <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-primary" id="modalTitleId">
+                                    {{form_title}}
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <form action="" id="formAdd">
+                                        <div class="row">
+                                            {% for field in form %}
+                                            <div class="col-6">
+                                                <div class="form-group" style="position: relative; margin-top: 10px; ">
+                                                    <label for="">{{field.label}}</label>
+                                                    {{field}}
+                                                    <span class="error-status-false form-text text-muted"
+                                                        style="position: absolute;right: 0px; top: 29px;"></span>
+                                                </div>
+                                            </div>
+                                            {% endfor %}
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" form="formAdd" id="btnAdd" class="btn btn-primary">Save</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                {% endfor %}
+                <!-- end -->
+
             </div>
-            <button type="button" form="form_add" id="btnAdd" class="btn btn-primary mt-4">Submit</button>
-        </form>
+
+        </div>
     </div>
 </div>
+
 
 <div class="container">
     <!-- 新建与搜索框 -->
     <div class="row pt-4">
-        <div class="col-md-9">
-            <button type="button" class="btn btn-primary"><a class="text-white"
-                    href="/task/add/">{{form_title}}</a></button>
 
-        </div>
         <div class="col-md-3">
             <!-- 搜索框 -->
             <form action="" method="get">
@@ -101,27 +142,27 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">任务标题</th>
-                    <th scope="col">负责人</th>
-                    <th scope="col">紧急程度</th>
-                    <th scope="col">重要程度</th>
-                    <th scope="col">详细内容</th>
+                    <!-- <th scope="col">#</th> -->
+                    <th scope="col">时间</th>
+                    <th scope="col">tag</th>
+                    <th scope="col">地点</th>
+                    <th scope="col">内容</th>
+                    <th scope="col">天气</th>
+                    <th scope="col">编辑</th>
                 </tr>
             </thead>
             <tbody>
                 {% for item in queryset%}
                 <tr>
-                    <th scope="row">{{ item.id }}</th>
-                    <th scope="row">{{ item.title }}</th>
-                    <td>{{ item.user }}</td>
-                    <td>{{ item.urgency }}</td>
-                    <td>{{ item.importance }}</td>
-                    <td>{{ item.detail }}</td>
-
+                    <!-- <th scope="row">{{ item.global_id }}</th> -->
+                    <td>{{ item.addtime }}</td>
+                    <td>{{ item.tag }}</td>
+                    <td>{{ item.location_id }}</td>
+                    <td>{{ item.content }}</td>
+                    <td>{{ item.weather }}</td>
                     <td>
-                        <a href="/task/edit/{{item.id}}/"><span class="badge bg-primary mx-1">Edit</span></a>
-                        <a href="/task/del/{{item.id}}/"> <span class="badge bg-warning text-dark mx-1">Del</span></a>
+                        <a href="/lifelog/edit/{{item.global_id}}/"><span class="badge bg-primary mx-1">Edit</span></a>
+                        <a href="/lifelog/v2/del/{{ item.global_id }}/">  <span class="badge bg-warning text-dark mx-1">Del</span></a>
                     </td>
                 </tr>
                 {% endfor %}

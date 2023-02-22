@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path
 from app01.views import index, learn_bootstrap, learn_js, learn_react, lifelog, music, admin
-from app01.views import login, task
+from app01.views import login, task, lifelog_v2
 
 
 urlpatterns = [
@@ -57,7 +57,12 @@ urlpatterns = [
     path('lifelog/edit/<int:id>/', lifelog.lifelog_edit),
     path('lifelog/log/', lifelog.lifelog_log),
     path('lifelog/del/<int:global_id>/', lifelog.lifelog_del),
-
+    
+    # 时间记录 v2
+    path('lifelog/v2/', lifelog_v2.lifelog_v2),
+    path("lifelog/v2/add/ajax/", lifelog_v2.lifelog_v2_add_ajax),
+    path('lifelog/v2/del/<int:global_id>/', lifelog_v2.lifelog_v2_del),
+    
 
     # 音乐列表
     path('music/list/', music.music_list),

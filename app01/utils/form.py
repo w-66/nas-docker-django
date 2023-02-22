@@ -12,15 +12,18 @@ from app01.utils.encrypt import md5
 from custom_modles import module_snowflake
 
 class LogModeForm(BootstrapModelForm):
-    weather = forms.CharField(required=False)              # 取消input标签的required属性(默认所有inpute标签带有required属性)
-
+    # weather = forms.CharField(required=False)              # 取消input标签的required属性(默认所有inpute标签带有required属性)
+    weather = forms.CharField(required=False, 
+                              widget=forms.TextInput(attrs={"autocomplete": "off"}))
     class Meta:
         model = models.App01Lifelog # 获取表 
         # fields = ["addtime", "tag", "content", "weather", "location_id"]  # 获取表中的列
         fields = "__all__"                                 # 获取表中的所有列
-        # widgets = {
-        #     "addtime": forms.TextInput(attrs={"value": "2020"}),
-        # }
+        # exclude = ["global_id"]                          # 排除列
+        widgets = {
+            "content": forms.TextInput(attrs={"autocomplete": "off"}),
+
+        }
     
     def __init__(self, *args, **kwargs):  # 定义input标签的class属性
         super().__init__(*args, **kwargs)
@@ -33,7 +36,15 @@ class LogModeForm(BootstrapModelForm):
             elif field_name == "global_id":
                 field.widget.attrs["value"] = module_snowflake.IdWorker(1, 1, 0).get_id()
 
-             
+class LogModeForm_exclude(LogModeForm):
+    class Meta:
+        model = models.App01Lifelog # 获取表 
+        # fields = "__all__"                                 # 获取表中的所有列
+        exclude = ["global_id"]     # 排除列
+        widgets = {
+            "content": forms.TextInput(attrs={"autocomplete": "off"}),
+        }
+
 
 class LifeLogEdit(BootstrapModelForm):                         # 专门针对编辑的页面，去除了ID和添加时间的修改，不使用所有字段
     global_id = forms.CharField(disabled=True, label='ID')     # 可看不能改

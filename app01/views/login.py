@@ -61,7 +61,7 @@ def login(request):
             form.add_error("password", "用户名或密码错误")
             return render(request, 'login.html', {'form':form})
     
-        # 密码正确时
+        # 密码正确时，将用户ID与用户名称写入到session的info 键中
         request.session["info"] = {'id':admin_object.id, 'username':admin_object.username}
         # 设置session超时时间为7天
         request.session.set_expiry(60 * 60 * 24 * 7)

@@ -39,7 +39,7 @@ def task_ajax(request):
 
 @csrf_exempt
 def task_ajax_add(request):
-    form =  form = Task_add_ModeForm(data=request.POST)  # 创建Task_add_ModeForm的实例对象
+    form = Task_add_ModeForm(data=request.POST)  # 创建Task_add_ModeForm的实例对象
     if form.is_valid():
         form.save()
         data_dict = {'status': True}
