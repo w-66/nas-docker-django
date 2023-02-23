@@ -446,3 +446,468 @@ Watching for file changes with StatReloader
 [22/Feb/2023 17:53:48] "GET /lifelog/v2/ HTTP/1.1" 200 20460
 [22/Feb/2023 17:53:49] "GET /lifelog/v2/del/7034012946766368768/ HTTP/1.1" 302 0
 [22/Feb/2023 17:53:50] "GET /lifelog/v2/ HTTP/1.1" 200 20460
+[22/Feb/2023 17:56:20] "GET /lifelog/v2/del/7033971868709294080/ HTTP/1.1" 302 0
+[22/Feb/2023 17:56:20] "GET /lifelog/v2/ HTTP/1.1" 200 20541
+[22/Feb/2023 18:02:02] "POST /lifelog/v2/add/ajax/ HTTP/1.1" 200 16
+[22/Feb/2023 18:02:02] "GET /lifelog/v2/ HTTP/1.1" 200 20455
+[22/Feb/2023 18:02:22] "GET /lifelog/v2/ HTTP/1.1" 200 21907
+[22/Feb/2023 18:02:26] "GET /lifelog/v2/del/7034015165087617024/ HTTP/1.1" 302 0
+[22/Feb/2023 18:02:26] "GET /lifelog/v2/ HTTP/1.1" 200 21993
+[22/Feb/2023 18:03:14] "POST /lifelog/v2/add/ajax/ HTTP/1.1" 200 16
+[22/Feb/2023 18:03:15] "GET /lifelog/v2/ HTTP/1.1" 200 21909
+[22/Feb/2023 18:03:17] "POST /lifelog/v2/add/ajax/ HTTP/1.1" 200 16
+[22/Feb/2023 18:03:17] "GET /lifelog/v2/ HTTP/1.1" 200 21912
+[22/Feb/2023 18:03:21] "GET /lifelog/v2/del/7034015481774346240/ HTTP/1.1" 302 0
+[22/Feb/2023 18:03:21] "GET /lifelog/v2/ HTTP/1.1" 200 21909
+[22/Feb/2023 18:03:23] "GET /lifelog/v2/del/7034015470269370368/ HTTP/1.1" 302 0
+[22/Feb/2023 18:03:23] "GET /lifelog/v2/ HTTP/1.1" 200 21993
+[22/Feb/2023 18:04:17] "GET /lifelog/v2/ HTTP/1.1" 200 21993
+[22/Feb/2023 18:04:20] "GET /lifelog/v2/ HTTP/1.1" 200 21993
+[22/Feb/2023 18:04:20] "GET /lifelog/ HTTP/1.1" 200 13594
+[22/Feb/2023 18:04:22] "GET /lifelog/v2/ HTTP/1.1" 200 21993
+/www/django_www/app01/views/lifelog_v2.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 22, 2023 - 17:52:57
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[22/Feb/2023 18:04:41] "GET /lifelog/v2/ HTTP/1.1" 200 23862
+[22/Feb/2023 18:04:54] "GET /lifelog/v2/?page=2 HTTP/1.1" 200 24155
+[22/Feb/2023 18:09:49] "GET /lifelog/v2/?page=2 HTTP/1.1" 200 24262
+[22/Feb/2023 18:09:57] "GET /lifelog/v2/?page=1 HTTP/1.1" 200 23969
+[22/Feb/2023 18:10:01] "POST /lifelog/v2/add/ajax/ HTTP/1.1" 200 16
+[22/Feb/2023 18:10:01] "GET /lifelog/v2/?page=1 HTTP/1.1" 200 23966
+[22/Feb/2023 18:10:06] "GET /lifelog/v2/del/7034017176474488832/ HTTP/1.1" 302 0
+[22/Feb/2023 18:10:06] "GET /lifelog/v2/ HTTP/1.1" 200 23969
+[22/Feb/2023 18:10:17] "GET /lifelog/v2/ HTTP/1.1" 200 23965
+[22/Feb/2023 18:10:17] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[22/Feb/2023 18:10:17] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[22/Feb/2023 18:10:17] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+Not Found: /favicon.ico
+[22/Feb/2023 18:10:18] "GET /favicon.ico HTTP/1.1" 404 7353
+[22/Feb/2023 18:10:20] "GET /logout/ HTTP/1.1" 302 0
+[22/Feb/2023 18:10:20] "GET /login/ HTTP/1.1" 200 5355
+[22/Feb/2023 18:10:20] "GET /static/img/%E6%9D%BE%E6%A0%91.svg HTTP/1.1" 200 4799
+[22/Feb/2023 18:10:20] "GET /auth/code/ HTTP/1.1" 200 4836
+[22/Feb/2023 18:10:23] "GET /task/ HTTP/1.1" 302 0
+[22/Feb/2023 18:10:24] "GET /login/ HTTP/1.1" 200 5355
+[22/Feb/2023 18:10:24] "GET /auth/code/ HTTP/1.1" 200 4469
+[22/Feb/2023 18:10:41] "POST /login/ HTTP/1.1" 200 5390
+[22/Feb/2023 18:10:41] "GET /auth/code/ HTTP/1.1" 200 4927
+[22/Feb/2023 18:10:47] "POST /login/ HTTP/1.1" 302 0
+[22/Feb/2023 18:10:48] "GET /admin/ HTTP/1.1" 200 9556
+[22/Feb/2023 18:10:51] "GET /music/list/ HTTP/1.1" 200 13934
+[22/Feb/2023 18:10:55] "GET /lifelog/ HTTP/1.1" 200 13590
+[22/Feb/2023 18:10:55] "GET /lifelog/v2/ HTTP/1.1" 200 23965
+[22/Feb/2023 18:17:50] "GET /lifelog/v2/ HTTP/1.1" 200 23965
+[22/Feb/2023 18:18:24] "GET /lifelog/v2/ HTTP/1.1" 200 23869
+[22/Feb/2023 18:18:25] "GET /lifelog/v2/ HTTP/1.1" 200 23869
+[22/Feb/2023 18:19:06] "GET /lifelog/v2/ HTTP/1.1" 200 23868
+[22/Feb/2023 18:19:19] "GET /lifelog/v2/ HTTP/1.1" 200 23868
+[22/Feb/2023 18:20:20] "GET /lifelog/v2/ HTTP/1.1" 200 23961
+[22/Feb/2023 18:20:33] "GET /lifelog/v2/ HTTP/1.1" 200 23961
+[22/Feb/2023 18:20:40] "POST /lifelog/v2/add/ajax/ HTTP/1.1" 200 16
+[22/Feb/2023 18:20:40] "GET /lifelog/v2/ HTTP/1.1" 200 23958
+[22/Feb/2023 18:20:42] "GET /lifelog/v2/del/7034019853774229504/ HTTP/1.1" 302 0
+[22/Feb/2023 18:20:42] "GET /lifelog/v2/ HTTP/1.1" 200 23961
+[22/Feb/2023 18:21:16] "GET /lifelog/v2/ HTTP/1.1" 200 23910
+[22/Feb/2023 18:27:23] "POST /lifelog/v2/add/ajax/ HTTP/1.1" 200 100
+[22/Feb/2023 22:08:21] "GET /index/ HTTP/1.1" 200 8279
+Not Found: /favicon.ico
+[22/Feb/2023 22:08:21] "GET /favicon.ico HTTP/1.1" 404 7353
+[22/Feb/2023 22:08:23] "GET /admin/ HTTP/1.1" 200 9560
+[22/Feb/2023 22:08:26] "GET /lifelog/v2/ HTTP/1.1" 200 23910
+[22/Feb/2023 22:09:26] "POST /lifelog/v2/add/ajax/ HTTP/1.1" 200 16
+[22/Feb/2023 22:09:26] "GET /lifelog/v2/ HTTP/1.1" 200 23994
+[22/Feb/2023 22:09:28] "GET /lifelog/edit/7034077424702853120/ HTTP/1.1" 200 9144
+[22/Feb/2023 22:17:20] "POST /lifelog/edit/7034077424702853120/ HTTP/1.1" 302 0
+[22/Feb/2023 22:17:20] "GET /lifelog/ HTTP/1.1" 200 14500
+[22/Feb/2023 22:17:24] "GET /lifelog/v2/ HTTP/1.1" 200 24900
+[22/Feb/2023 22:19:57] "GET /lifelog/edit/7034077424702853120/ HTTP/1.1" 200 10050
+[22/Feb/2023 22:29:01] "GET /music/list/ HTTP/1.1" 200 13938
+[22/Feb/2023 22:34:03] "GET /index/ HTTP/1.1" 200 8279
+[22/Feb/2023 23:23:20] "GET /index/ HTTP/1.1" 200 8279
+[22/Feb/2023 23:23:22] "GET /index/ HTTP/1.1" 200 8279
+[22/Feb/2023 23:23:23] "GET /learn/bootstrap/05/ HTTP/1.1" 200 6300
+[22/Feb/2023 23:23:51] "GET /learn/bootstrap/05/ HTTP/1.1" 200 6841
+[22/Feb/2023 23:24:35] "GET /learn/bootstrap/05/ HTTP/1.1" 200 6317
+[22/Feb/2023 23:25:00] "GET /learn/bootstrap/05/ HTTP/1.1" 200 6840
+[22/Feb/2023 23:26:05] "GET /learn/bootstrap/05/ HTTP/1.1" 200 6657
+[22/Feb/2023 23:26:08] "GET /learn/bootstrap/05/ HTTP/1.1" 200 6657
+[22/Feb/2023 23:26:16] "GET /learn/bootstrap/05/ HTTP/1.1" 200 6657
+[22/Feb/2023 23:26:18] "GET /learn/bootstrap/05/ HTTP/1.1" 200 6657
+[22/Feb/2023 23:26:19] "GET /learn/bootstrap/05/ HTTP/1.1" 200 6657
+[22/Feb/2023 23:26:21] "GET /learn/bootstrap/05/ HTTP/1.1" 200 6657
+[22/Feb/2023 23:26:55] "GET /learn/bootstrap/05/ HTTP/1.1" 200 7158
+[22/Feb/2023 23:27:53] "GET /learn/bootstrap/05/ HTTP/1.1" 200 7193
+[22/Feb/2023 23:29:03] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[22/Feb/2023 23:29:03] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[22/Feb/2023 23:29:06] "GET /learn/bootstrap/05/ HTTP/1.1" 200 7193
+[22/Feb/2023 23:29:06] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[22/Feb/2023 23:29:06] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[22/Feb/2023 23:29:06] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[22/Feb/2023 23:29:06] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[22/Feb/2023 23:29:06] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[22/Feb/2023 23:29:33] "GET /learn/bootstrap/05/ HTTP/1.1" 200 7193
+[22/Feb/2023 23:29:40] "GET /learn/bootstrap/05/ HTTP/1.1" 200 7193
+[22/Feb/2023 23:29:41] "GET /learn/bootstrap/05/ HTTP/1.1" 200 7193
+[22/Feb/2023 23:29:42] "GET /learn/bootstrap/05/ HTTP/1.1" 200 7193
+[22/Feb/2023 23:29:44] "GET /learn/bootstrap/05/ HTTP/1.1" 200 7193
+[22/Feb/2023 23:29:47] "GET /learn/bootstrap/05/ HTTP/1.1" 200 7193
+[22/Feb/2023 23:29:48] "GET /learn/bootstrap/05/ HTTP/1.1" 200 7193
+[22/Feb/2023 23:29:50] "GET /learn/bootstrap/05/ HTTP/1.1" 200 7193
+[22/Feb/2023 23:29:51] "GET /learn/bootstrap/05/ HTTP/1.1" 200 7193
+[22/Feb/2023 23:29:52] "GET /learn/bootstrap/05/ HTTP/1.1" 200 7193
+[22/Feb/2023 23:29:53] "GET /learn/bootstrap/05/ HTTP/1.1" 200 7193
+[22/Feb/2023 23:29:54] "GET /learn/bootstrap/05/ HTTP/1.1" 200 7193
+[22/Feb/2023 23:31:06] "GET /learn/bootstrap/05/ HTTP/1.1" 200 7283
+[22/Feb/2023 23:31:32] "GET /learn/bootstrap/05/ HTTP/1.1" 200 7283
+[22/Feb/2023 23:32:05] "GET /learn/bootstrap/05/ HTTP/1.1" 200 7282
+[22/Feb/2023 23:33:23] "GET /learn/bootstrap/05/ HTTP/1.1" 200 7540
+[22/Feb/2023 23:38:02] "GET /learn/bootstrap/05/ HTTP/1.1" 200 7293
+[22/Feb/2023 23:38:11] "GET /learn/bootstrap/05/ HTTP/1.1" 200 7293
+[22/Feb/2023 23:38:11] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[22/Feb/2023 23:38:17] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[22/Feb/2023 23:38:17] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[22/Feb/2023 23:38:49] "GET /learn/bootstrap/05/ HTTP/1.1" 200 7293
+[22/Feb/2023 23:38:49] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[22/Feb/2023 23:38:49] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[22/Feb/2023 23:38:49] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+Not Found: /favicon.ico
+[22/Feb/2023 23:38:49] "GET /favicon.ico HTTP/1.1" 404 7353
+[22/Feb/2023 23:40:52] "GET /learn/bootstrap/05/ HTTP/1.1" 200 7302
+[22/Feb/2023 23:41:20] "GET /lifelog/v2/ HTTP/1.1" 200 24901
+[22/Feb/2023 23:41:23] "GET /lifelog/v2/ HTTP/1.1" 200 24901
+[22/Feb/2023 23:41:26] "GET /lifelog/v2/?page=2 HTTP/1.1" 200 24201
+[22/Feb/2023 23:41:28] "GET /lifelog/v2/?page=4 HTTP/1.1" 200 24235
+[22/Feb/2023 23:41:32] "GET /lifelog/ HTTP/1.1" 200 14501
+[22/Feb/2023 23:41:32] "GET /index/ HTTP/1.1" 200 8280
+[22/Feb/2023 23:41:33] "GET /admin/ HTTP/1.1" 200 9561
+[22/Feb/2023 23:41:36] "GET /logout/ HTTP/1.1" 302 0
+[22/Feb/2023 23:41:36] "GET /login/ HTTP/1.1" 200 5356
+[22/Feb/2023 23:41:36] "GET /static/img/%E6%9D%BE%E6%A0%91.svg HTTP/1.1" 304 0
+[22/Feb/2023 23:41:36] "GET /auth/code/ HTTP/1.1" 200 4761
+[22/Feb/2023 23:41:44] "POST /login/ HTTP/1.1" 200 5394
+[22/Feb/2023 23:41:44] "GET /auth/code/ HTTP/1.1" 200 4823
+[22/Feb/2023 23:41:49] "POST /login/ HTTP/1.1" 200 5394
+[22/Feb/2023 23:41:49] "GET /auth/code/ HTTP/1.1" 200 4910
+[22/Feb/2023 23:41:54] "POST /login/ HTTP/1.1" 200 5394
+[22/Feb/2023 23:41:54] "GET /auth/code/ HTTP/1.1" 200 4515
+[22/Feb/2023 23:42:00] "POST /login/ HTTP/1.1" 200 5394
+[22/Feb/2023 23:42:00] "GET /auth/code/ HTTP/1.1" 200 4740
+[22/Feb/2023 23:42:04] "POST /login/ HTTP/1.1" 302 0
+[22/Feb/2023 23:42:04] "GET /admin/ HTTP/1.1" 200 9557
+[22/Feb/2023 23:42:07] "GET /music/list/ HTTP/1.1" 200 13935
+[22/Feb/2023 23:42:08] "GET /lifelog/v2/ HTTP/1.1" 200 24897
+[22/Feb/2023 23:42:10] "GET /lifelog/ HTTP/1.1" 200 14497
+[22/Feb/2023 23:42:11] "GET /lifelog/v2/ HTTP/1.1" 200 24897
+[22/Feb/2023 23:42:15] "GET /task/ HTTP/1.1" 200 13524
+nohup: ignoring input
+Watching for file changes with StatReloader
+/www/django_www/django_www/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 23, 2023 - 06:09:48
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[23/Feb/2023 13:22:16] "GET /index/ HTTP/1.1" 200 8276
+Not Found: /favicon.ico
+[23/Feb/2023 13:22:16] "GET /favicon.ico HTTP/1.1" 404 7464
+[23/Feb/2023 13:22:40] "GET /index/ HTTP/1.1" 200 8276
+[23/Feb/2023 13:22:42] "GET /learn/bootstrap/05/ HTTP/1.1" 200 7294
+[23/Feb/2023 13:23:45] "GET /index/ HTTP/1.1" 200 8368
+Not Found: /learn/bootstrap/06/
+[23/Feb/2023 13:23:46] "GET /learn/bootstrap/06/ HTTP/1.1" 404 7488
+/www/django_www/django_www/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 23, 2023 - 13:22:00
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/www/django_www/django_www/urls.py", line 14, in <module>
+    path('learn/bootstrap/06/', learn_bootstrap.learn_bootstrap_06),
+AttributeError: module 'app01.views.learn_bootstrap' has no attribute 'learn_bootstrap_06'
+/www/django_www/app01/views/learn_bootstrap.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+[23/Feb/2023 13:24:46] "GET /learn/bootstrap/06/ HTTP/1.1" 200 1160
+[23/Feb/2023 13:25:11] "GET /learn/bootstrap/05/ HTTP/1.1" 200 6664
+[23/Feb/2023 13:27:58] "GET /learn/bootstrap/06/ HTTP/1.1" 200 1651
+[23/Feb/2023 13:28:18] "GET /learn/bootstrap/06/ HTTP/1.1" 200 1729
+[23/Feb/2023 13:28:23] "GET /learn/bootstrap/06/ HTTP/1.1" 200 1821
+[23/Feb/2023 13:29:15] "GET /learn/bootstrap/06/ HTTP/1.1" 200 1094
+Not Found: /learn/bootstrap/libs/bootstrap-3.3.7/css/bootstrap.css
+[23/Feb/2023 13:29:15] "GET /learn/bootstrap/libs/bootstrap-3.3.7/css/bootstrap.css HTTP/1.1" 404 7712
+Not Found: /learn/bootstrap/libs/bootstrap-3.3.7/js/bootstrap.js
+Not Found: /learn/bootstrap/libs/jquery-3.1.1.js
+[23/Feb/2023 13:29:15] "GET /learn/bootstrap/libs/jquery-3.1.1.js HTTP/1.1" 404 7658
+[23/Feb/2023 13:29:15] "GET /learn/bootstrap/libs/bootstrap-3.3.7/js/bootstrap.js HTTP/1.1" 404 7706
+Not Found: /learn/bootstrap/libs/bootstrap-3.3.7/css/bootstrap.css
+[23/Feb/2023 13:29:24] "GET /learn/bootstrap/libs/bootstrap-3.3.7/css/bootstrap.css HTTP/1.1" 404 7712
+[23/Feb/2023 13:29:28] "GET /learn/bootstrap/06/ HTTP/1.1" 200 1094
+Not Found: /learn/bootstrap/libs/jquery-3.1.1.js
+[23/Feb/2023 13:29:28] "GET /learn/bootstrap/libs/jquery-3.1.1.js HTTP/1.1" 404 7658
+Not Found: /learn/bootstrap/libs/bootstrap-3.3.7/js/bootstrap.js
+[23/Feb/2023 13:29:29] "GET /learn/bootstrap/libs/bootstrap-3.3.7/js/bootstrap.js HTTP/1.1" 404 7706
+Not Found: /learn/bootstrap/libs/bootstrap-3.3.7/css/bootstrap.css
+[23/Feb/2023 13:29:29] "GET /learn/bootstrap/libs/bootstrap-3.3.7/css/bootstrap.css HTTP/1.1" 404 7712
+[23/Feb/2023 13:30:21] "GET /learn/bootstrap/06/ HTTP/1.1" 200 1056
+[23/Feb/2023 13:30:49] "GET /learn/bootstrap/06/ HTTP/1.1" 200 1821
+[23/Feb/2023 13:30:53] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[23/Feb/2023 13:30:53] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[23/Feb/2023 13:30:59] "GET /learn/bootstrap/06/ HTTP/1.1" 200 1821
+[23/Feb/2023 13:30:59] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[23/Feb/2023 13:30:59] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[23/Feb/2023 13:30:59] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[23/Feb/2023 13:30:59] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[23/Feb/2023 13:31:00] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[23/Feb/2023 13:36:16] "GET /learn/bootstrap/06/ HTTP/1.1" 200 2237
+[23/Feb/2023 13:36:16] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[23/Feb/2023 13:36:16] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[23/Feb/2023 13:36:16] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[23/Feb/2023 13:36:16] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[23/Feb/2023 13:36:17] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[23/Feb/2023 13:41:32] "GET /learn/bootstrap/06/ HTTP/1.1" 200 2311
+[23/Feb/2023 13:41:33] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[23/Feb/2023 13:41:33] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[23/Feb/2023 13:41:33] "GET /static/bootstrap/js/bootstrap.bundle.js HTTP/1.1" 200 207989
+[23/Feb/2023 13:41:33] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[23/Feb/2023 13:41:35] "GET /static/bootstrap/js/bootstrap.bundle.js.map HTTP/1.1" 200 451770
+[23/Feb/2023 13:41:39] "GET /index/ HTTP/1.1" 200 8442
+[23/Feb/2023 13:41:41] "GET /lifelog/ HTTP/1.1" 200 14571
+[23/Feb/2023 13:41:43] "GET /lifelog/log/ HTTP/1.1" 200 5632
+[23/Feb/2023 13:41:46] "GET /lifelog/v2/ HTTP/1.1" 200 24971
+[23/Feb/2023 13:41:49] "GET /music/list/ HTTP/1.1" 200 14009
+[23/Feb/2023 13:41:50] "GET /task/ HTTP/1.1" 200 13598
+[23/Feb/2023 13:41:50] "GET /admin/ HTTP/1.1" 200 9631
+[23/Feb/2023 13:41:54] "GET /logout/ HTTP/1.1" 302 0
+[23/Feb/2023 13:41:55] "GET /login/ HTTP/1.1" 200 5430
+[23/Feb/2023 13:41:55] "GET /auth/code/ HTTP/1.1" 200 4474
+[23/Feb/2023 13:42:02] "POST /login/ HTTP/1.1" 302 0
+[23/Feb/2023 13:42:02] "GET /admin/ HTTP/1.1" 200 9631
+[23/Feb/2023 13:46:52] "GET /learn/bootstrap/06/ HTTP/1.1" 200 1910
+[23/Feb/2023 13:46:52] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[23/Feb/2023 13:46:52] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[23/Feb/2023 13:46:52] "GET /static/bootstrap/js/bootstrap.bundle.js HTTP/1.1" 200 207989
+[23/Feb/2023 13:46:52] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[23/Feb/2023 13:46:52] "GET /static/bootstrap/js/bootstrap.bundle.js.map HTTP/1.1" 200 451770
+[23/Feb/2023 13:47:18] "GET /learn/bootstrap/06/ HTTP/1.1" 200 1940
+[23/Feb/2023 13:47:18] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[23/Feb/2023 13:47:18] "GET /static/bootstrap/js/bootstrap.bundle.js HTTP/1.1" 200 207989
+[23/Feb/2023 13:47:18] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[23/Feb/2023 13:47:18] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[23/Feb/2023 13:47:18] "GET /static/bootstrap/js/bootstrap.bundle.js.map HTTP/1.1" 200 451770
+[23/Feb/2023 13:47:23] "GET /learn/bootstrap/06/ HTTP/1.1" 200 1940
+[23/Feb/2023 13:47:23] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[23/Feb/2023 13:47:23] "GET /static/bootstrap/js/bootstrap.bundle.js HTTP/1.1" 200 207989
+[23/Feb/2023 13:47:23] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[23/Feb/2023 13:47:23] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[23/Feb/2023 13:47:23] "GET /static/bootstrap/js/bootstrap.bundle.js.map HTTP/1.1" 200 451770
+Internal Server Error: /learn/bootstrap/06/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/www/django_www/app01/views/learn_bootstrap.py", line 14, in learn_bootstrap_06
+    return render(request, 'learn_bootstrap_06.html')
+  File "/usr/local/lib/python3.8/dist-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader_tags.py", line 278, in do_extends
+    nodelist = parser.parse()
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader_tags.py", line 216, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 449, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 447, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 662, in __init__
+    raise TemplateSyntaxError("Could not parse the remainder: '%s' "
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ' 'popper/popper2.11.6.js'' from 'static 'popper/popper2.11.6.js''
+[23/Feb/2023 13:53:52] "GET /learn/bootstrap/06/ HTTP/1.1" 500 149801
+Internal Server Error: /learn/bootstrap/06/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/www/django_www/app01/views/learn_bootstrap.py", line 14, in learn_bootstrap_06
+    return render(request, 'learn_bootstrap_06.html')
+  File "/usr/local/lib/python3.8/dist-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader_tags.py", line 278, in do_extends
+    nodelist = parser.parse()
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader_tags.py", line 216, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 449, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 447, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 662, in __init__
+    raise TemplateSyntaxError("Could not parse the remainder: '%s' "
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ' '/popper/popper2.11.6.js'' from 'static '/popper/popper2.11.6.js''
+[23/Feb/2023 13:54:02] "GET /learn/bootstrap/06/ HTTP/1.1" 500 149819
+Internal Server Error: /learn/bootstrap/06/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/www/django_www/app01/views/learn_bootstrap.py", line 14, in learn_bootstrap_06
+    return render(request, 'learn_bootstrap_06.html')
+  File "/usr/local/lib/python3.8/dist-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader_tags.py", line 278, in do_extends
+    nodelist = parser.parse()
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader_tags.py", line 216, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 449, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 447, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 662, in __init__
+    raise TemplateSyntaxError("Could not parse the remainder: '%s' "
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ' '/popper/popper2.11.6.js'' from 'static '/popper/popper2.11.6.js''
+[23/Feb/2023 13:54:26] "GET /learn/bootstrap/06/ HTTP/1.1" 500 150001
+[23/Feb/2023 13:55:38] "GET /learn/bootstrap/06/ HTTP/1.1" 200 2019
+[23/Feb/2023 13:55:38] "GET /static/popper/popper2.11.6.js HTTP/1.1" 200 20101
+[23/Feb/2023 13:55:38] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[23/Feb/2023 13:55:38] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[23/Feb/2023 13:55:38] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[23/Feb/2023 13:55:38] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[23/Feb/2023 13:55:38] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[23/Feb/2023 13:55:39] "GET /static/popper/popper.min.js.map HTTP/1.1" 404 1704
+[23/Feb/2023 13:55:44] "GET /learn/bootstrap/06/ HTTP/1.1" 200 2019
+[23/Feb/2023 13:55:44] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 60404
+[23/Feb/2023 13:55:44] "GET /static/jquery-3.5.1/jquery.min.js HTTP/1.1" 200 89476
+[23/Feb/2023 13:55:44] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+[23/Feb/2023 13:55:44] "GET /static/popper/popper2.11.6.js HTTP/1.1" 200 20101
+[23/Feb/2023 13:55:44] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[23/Feb/2023 13:55:44] "GET /static/popper/popper.min.js.map HTTP/1.1" 404 1704
+[23/Feb/2023 13:55:44] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[23/Feb/2023 13:56:36] "GET /learn/bootstrap/06/ HTTP/1.1" 200 2092
+[23/Feb/2023 13:56:36] "GET /static/popper/popper2.11.6.js HTTP/1.1" 304 0

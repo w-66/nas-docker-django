@@ -1,0 +1,31 @@
+{%extends 'tplt_init_bootstrap.html'%}
+{% load static %}
+{% block js %}
+<!-- 单独加载插件popper.js文件，用于下拉菜单的定位 -->
+<script type="text/javascript" src="{% static 'popper/popper2.11.6.js' %}" ></script>
+{% endblock %}
+
+{% block css %}
+{% endblock %}
+
+{% block bodyContent %}
+
+<div class="container">
+    <hr>
+    <div class="col-md-12">
+        <h4>下拉菜单</h4>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown button
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+</div>
+{% endblock %}

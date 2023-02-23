@@ -23,7 +23,7 @@ def lifelog_v2(request):
     ### 分页操作
     #### 通过字典的内容进行数据库查询
     queryset = models.App01Lifelog.objects.filter(**data_dict).order_by("-addtime")
-    obj_page = Pagination(request, queryset, subsection=3, page_limit=6)     #创建对象实例 
+    obj_page = Pagination(request, queryset, subsection=3, page_limit=8)     #创建对象实例 
 
 
     if request.method == "GET":

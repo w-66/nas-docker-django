@@ -4,20 +4,10 @@
 {% endblock %}
 
 {% block css %}
-<div class="alert alert-primary alert-dismissible fade show" role="alert">
-  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-  <strong>Alert Heading</strong> Alert Content
-</div>
-
-<script>
-  var alertList = document.querySelectorAll('.alert');
-  alertList.forEach(function (alert) {
-    new bootstrap.Alert(alert)
-  })
-</script>
 
 
-<hr>
+
+
 
 <style>
     .container {
@@ -45,6 +35,37 @@
 {% block bodyContent %}
 
 <div class="container">
+    <hr>
+
+
+
+    <hr>
+    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+    </select>
+
+    <hr>
+
+
+    <div class="alert alert-primary alert-dismissible fade show" role="alert">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <strong>Alert Heading</strong> Alert Content
+    </div>
+
+    <script>
+        var alertList = document.querySelectorAll('.alert');
+        alertList.forEach(function (alert) {
+            new bootstrap.Alert(alert)
+        })
+    </script>
+
+
+    <hr>
+
+
     <h3>clearfix示例1</h3>
     <div class="bg-info" style="height: 100px;">
         <div class="row ">
@@ -92,8 +113,8 @@
         #form_add>.row>div:nth-last-child(1) {
             width: 100%;
         }</code></pre>
-      </div>
-      
+    </div>
+
     <style>
         #form_add>.row>div:nth-last-child(1) {
             width: 100%;
@@ -168,4 +189,3 @@
     </div>
 </div>
 {% endblock %}
-

@@ -45,11 +45,12 @@
 
 {% block css %}
 <style>
-
     a {
         text-decoration: none
     }
-    </style>
+</style>
+
+</style>
 {% endblock %}
 
 <!-- #body内容 -->
@@ -61,6 +62,7 @@
 <!-- Navbar -->
 {% include "tplt_navbar.html" %}
 
+<!-- 弹出的输入窗口 -->
 <div class="container">
     <div class="row">
         <div class="col-md-12">
@@ -68,10 +70,6 @@
             <div>
                 <!-- start -->
                 <!-- Modal trigger button -->
-                <!-- 按钮 -->
-                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
-                    按钮(modal)
-                </button>
                 <!-- 弹出的对话框 -->
                 <!-- Modal Body-->
                 <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId"
@@ -122,7 +120,12 @@
 <div class="container">
     <!-- 新建与搜索框 -->
     <div class="row pt-4">
-
+        <div class="col-md-9">
+            <!-- 按钮 -->
+            <button type="button" class="btn btn-primary btn-ms" data-bs-toggle="modal" data-bs-target="#modalId">
+                {{form_title}}
+            </button>
+        </div>
         <div class="col-md-3">
             <!-- 搜索框 -->
             <form action="" method="get">
@@ -162,7 +165,10 @@
                     <td>{{ item.weather }}</td>
                     <td>
                         <a href="/lifelog/edit/{{item.global_id}}/"><span class="badge bg-primary mx-1">Edit</span></a>
-                        <a href="/lifelog/v2/del/{{ item.global_id }}/">  <span class="badge bg-warning text-dark mx-1">Del</span></a>
+                        <!-- <a href="/lifelog/v2/del/{{ item.global_id }}/">  <span class="badge bg-warning text-dark mx-1">Del</span></a> -->
+                        <a href="/lifelog/v2/del/{{ item.global_id }}/" onclick="return confirm('确认删除吗?')">
+                            <span class="badge bg-warning text-dark mx-1">Del</span>
+                        </a>
                     </td>
                 </tr>
                 {% endfor %}

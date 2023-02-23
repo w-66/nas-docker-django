@@ -10,3 +10,5 @@ def learn_bootstrap_04(request):
     return render(request, 'learn_bootstrap_04.html')
 def learn_bootstrap_05(request):
     return render(request, 'learn_bootstrap_05.html')
+def learn_bootstrap_06(request):
+    return render(request, 'learn_bootstrap_06.html')

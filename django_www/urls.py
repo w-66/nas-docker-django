@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path
 from app01.views import index, learn_bootstrap, learn_js, learn_react, lifelog, music, admin
-from app01.views import login, task, lifelog_v2
+from app01.views import login, task, lifelog_v2, chart
 
 
 urlpatterns = [
@@ -11,6 +11,7 @@ urlpatterns = [
     path('learn/bootstrap/03/', learn_bootstrap.learn_bootstrap_03),
     path('learn/bootstrap/04/', learn_bootstrap.learn_bootstrap_04),
     path('learn/bootstrap/05/', learn_bootstrap.learn_bootstrap_05),
+    path('learn/bootstrap/06/', learn_bootstrap.learn_bootstrap_06),
     # React learn
     path('learn/react/17/', learn_react.learn_react_17),
     path('learn/react/16/', learn_react.learn_react_16),
@@ -34,6 +35,9 @@ urlpatterns = [
     path('learn/js/03/', learn_js.learn_js_03),
     path('learn/js/02/', learn_js.learn_js_02),
     path('learn/js/01/', learn_js.learn_js_01),
+
+    # 图表
+    path('chart/list/', chart.chart_list),
     
     # 登录
     path('login/', login.login),
