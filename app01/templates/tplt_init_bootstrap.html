@@ -27,14 +27,22 @@
 
 </head>
 <body>
+
    {% block bodyContent %}{% endblock %}
    {% block js %}{% endblock %}
 
 <!-- 引入JQeruy 因为jquery需要生成HTML所以需要优先执行，不能加defer -->
 <script  src="{% static 'jquery-3.5.1/jquery.min.js' %}"></script>
+
+<!-- 单独加载插件popper.js文件，用于下拉菜单的定位 -->
+<script type="text/javascript" src="{% static 'popper/popper2.11.6.js' %}" ></script>
+
 <!-- 引入Bootstrap -->
 <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+
+<!-- 包含了popper.js的Bootstrap文件，但是体积较大，暂时不使用 -->
 <!-- <script src="{% static 'bootstrap/js/bootstrap.bundle.js' %}"></script> -->
+
 <!-- 阿里图标库 -->
 <script defer src="//at.alicdn.com/t/c/font_3883106_hyv0s53g24l.js"></script>
 </body>
