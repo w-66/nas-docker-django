@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path
 from app01.views import index, learn_bootstrap, learn_js, learn_react, lifelog, music, admin
-from app01.views import login, task, lifelog_v2, chart
+from app01.views import login, task, lifelog_v2, chart, demo
 
 
 urlpatterns = [
@@ -35,6 +35,8 @@ urlpatterns = [
     path('learn/js/03/', learn_js.learn_js_03),
     path('learn/js/02/', learn_js.learn_js_02),
     path('learn/js/01/', learn_js.learn_js_01),
+    # Demo
+    path("demo/uploadfile/", demo.demo_uploadfile),
 
     # 图表
     path('chart/list/', chart.chart_list),
