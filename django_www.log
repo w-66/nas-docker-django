@@ -269,3 +269,74 @@ Quit the server with CONTROL-C.
 <QueryDict: {'csrfmiddlewaretoken': ['IE9yNhZAJZCmJYo98Fqe8btTPsHZyIOrgPas6aF14pmO9NItDLQT7idJBZn8O8tO'], 'file_info': ['test']}>
 <MultiValueDict: {'file': [<InMemoryUploadedFile: 0.png (image/png)>]}>
 Watching for file changes with StatReloader
+[24/Feb/2023 14:10:29] "GET /index/ HTTP/1.1" 200 10143
+[24/Feb/2023 14:10:31] "GET /lifelog/v2/ HTTP/1.1" 200 27111
+[24/Feb/2023 14:11:34] "POST /lifelog/v2/add/ajax/ HTTP/1.1" 200 16
+[24/Feb/2023 14:11:35] "GET /lifelog/v2/ HTTP/1.1" 200 27235
+[24/Feb/2023 14:11:43] "GET /lifelog/edit/7034681942901657600/ HTTP/1.1" 200 10951
+[24/Feb/2023 14:12:04] "GET /lifelog/v2/ HTTP/1.1" 200 27235
+[24/Feb/2023 14:12:08] "GET /lifelog/edit/7034681942901657600/ HTTP/1.1" 200 6393
+[24/Feb/2023 15:36:46] "GET /index/ HTTP/1.1" 200 10143
+[24/Feb/2023 15:36:47] "GET /lifelog/v2/ HTTP/1.1" 200 27235
+[24/Feb/2023 15:37:27] "POST /lifelog/v2/add/ajax/ HTTP/1.1" 200 16
+[24/Feb/2023 15:37:28] "GET /lifelog/v2/ HTTP/1.1" 200 27316
+[24/Feb/2023 15:37:31] "GET /demo/uploadfile/ HTTP/1.1" 200 7233
+[24/Feb/2023 15:37:36] "POST /demo/uploadfile/ HTTP/1.1" 200 3
+[24/Feb/2023 15:39:49] "GET /demo/uploadfile/ HTTP/1.1" 200 7233
+[24/Feb/2023 15:40:01] "POST /demo/uploadfile/ HTTP/1.1" 200 3
+[24/Feb/2023 15:40:34] "GET /demo/uploadfile/ HTTP/1.1" 200 7233
+[24/Feb/2023 15:41:17] "GET /demo/uploadfile/ HTTP/1.1" 200 7251
+[24/Feb/2023 15:41:31] "GET /demo/uploadfile/ HTTP/1.1" 200 7281
+[24/Feb/2023 15:41:47] "GET /demo/uploadfile/ HTTP/1.1" 200 7286
+[24/Feb/2023 15:41:47] "GET /demo/uploadfile/ HTTP/1.1" 200 7286
+[24/Feb/2023 15:41:52] "GET /demo/uploadfile/ HTTP/1.1" 200 7286
+[24/Feb/2023 15:41:52] "GET /demo/uploadfile/ HTTP/1.1" 200 7286
+[24/Feb/2023 15:41:52] "GET /demo/uploadfile/ HTTP/1.1" 200 7286
+[24/Feb/2023 15:41:54] "GET /static/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+[24/Feb/2023 15:41:54] "GET /static/bootstrap/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+[24/Feb/2023 15:41:54] "GET /static/popper/popper.min.js.map HTTP/1.1" 404 1704
+[24/Feb/2023 15:42:27] "GET /demo/uploadfile/ HTTP/1.1" 200 7286
+[24/Feb/2023 15:42:37] "GET /demo/uploadfile/ HTTP/1.1" 200 7295
+[24/Feb/2023 15:42:48] "GET /demo/uploadfile/ HTTP/1.1" 200 7294
+[24/Feb/2023 15:43:04] "GET /demo/uploadfile/ HTTP/1.1" 200 7298
+[24/Feb/2023 15:43:09] "GET /demo/uploadfile/ HTTP/1.1" 200 7299
+[24/Feb/2023 15:43:17] "GET /demo/uploadfile/ HTTP/1.1" 200 7299
+[24/Feb/2023 15:43:23] "GET /demo/uploadfile/ HTTP/1.1" 200 7299
+[24/Feb/2023 15:43:37] "POST /demo/uploadfile/ HTTP/1.1" 200 3
+[24/Feb/2023 15:43:45] "GET /demo/uploadfile/ HTTP/1.1" 200 7299
+/www/django_www/app01/views/demo.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 24, 2023 - 14:08:02
+Django version 3.2, using settings 'django_www.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+<QueryDict: {'csrfmiddlewaretoken': ['xiNSjy0d7i2U9XCLrzbOtVS3yhyHYpCK5tOMCrGEsIMmzMW5WFBts2CTkOeQePh7'], 'file_info': ['test']}>
+<MultiValueDict: {'file': [<InMemoryUploadedFile: 00007-1477515071-1girl, head, .png (image/png)>]}>
+<QueryDict: {'csrfmiddlewaretoken': ['z5EV5wUYWy26baFlYz0cZHsMUKMOBETB7gFPopAphYMyBZZFtFqRYOcCGhsXR4yY'], 'file_info': ['test']}>
+<MultiValueDict: {'file': [<TemporaryUploadedFile: v2rayN.zip (application/x-zip-compressed)>]}>
+<QueryDict: {'csrfmiddlewaretoken': ['P2BjwDKoJG63VfALrQrQHrrPdsfUEpSmndCdPwqP46Qvl4U5WWRvGybFZZV3UPxJ']}>
+<MultiValueDict: {'file': [<TemporaryUploadedFile: v2rayN.exe (application/octet-stream)>]}>
+Watching for file changes with StatReloader
+[24/Feb/2023 15:44:23] "GET /demo/uploadfile/ HTTP/1.1" 200 7299
+[24/Feb/2023 15:44:27] "POST /demo/uploadfile/ HTTP/1.1" 302 0
+[24/Feb/2023 15:44:27] "GET /demo/uploadfile/ HTTP/1.1" 200 7299
+Internal Server Error: /demo/uploadfile/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/www/django_www/app01/views/demo.py", line 15, in demo_uploadfile
+    for chunk in obj_file.chunks():
+AttributeError: 'NoneType' object has no attribute 'chunks'
+[24/Feb/2023 15:44:37] "POST /demo/uploadfile/ HTTP/1.1" 500 57791
+[24/Feb/2023 15:44:41] "POST /demo/uploadfile/ HTTP/1.1" 302 0
+[24/Feb/2023 15:44:41] "GET /demo/uploadfile/ HTTP/1.1" 200 7299
+[24/Feb/2023 15:44:45] "POST /demo/uploadfile/ HTTP/1.1" 302 0
+[24/Feb/2023 15:44:45] "GET /demo/uploadfile/ HTTP/1.1" 200 7299
+[24/Feb/2023 15:45:00] "POST /demo/uploadfile/ HTTP/1.1" 302 0
+[24/Feb/2023 15:45:00] "GET /demo/uploadfile/ HTTP/1.1" 200 7299
+[24/Feb/2023 15:46:29] "GET /demo/uploadfile/ HTTP/1.1" 200 7304
+[24/Feb/2023 15:46:34] "GET /demo/uploadfile/ HTTP/1.1" 200 7304

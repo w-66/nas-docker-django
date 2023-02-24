@@ -14,7 +14,7 @@ def demo_uploadfile(request):
         with open(path, mode='wb') as f:  
             for chunk in obj_file.chunks():  
                 f.write(chunk) 
-        return HttpResponse('123')
+        return redirect("/demo/uploadfile/")
     
 
 
