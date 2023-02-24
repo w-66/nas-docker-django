@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-md-12">
             <!-- Navbar Transparent -->
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="/index/">Index</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -27,36 +27,42 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="/admin/">manager</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown
-                            </a>
+                            <li class="nav-item dropdown btn-group">
+                                <button type="button" class="btn  btn-sm">
+                                    <a href="/chart/list/">Chart</a>
+                                </button>
+                                <button type="button" class="btn btn-sm dropdown-toggle dropdown-toggle-split"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+
+                                <!-- 下方<span> 元素包含了文本 “Toggle Dropdown”，这个文本可以被屏幕阅读器读取，使得
+                                    用户知道这个按钮的作用是展开/收起下拉菜单。同时，visually-hidden 类也确保了这个文
+                                    本内容不会在屏幕上显示，只有在被读取时才会被展示。这种做法可以提高页面的可访问性，
+                                    使得所有用户都可以方便地使用这个下拉菜单。 -->
+                                <span class="visually-hidden">Toggle Dropdown</span>
+                                </button>
+                            
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">图表</a></li>
                                     <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
+                                    <li><hr class="dropdown-divider m-0 h-0"></li>
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
                                 <!-- <a class="nav-link disabled">Disabled</a> -->
                             </li>
-                            <!-- <li class="nav-item">
-                                <a class="nav-link" href="/logout/">Logout</a>
-                            </li> -->
                         </ul>
+
                         <ul class="navbar-nav ms-auto">
                             <div class="dropdown dropstart">
                                 <button class="btn  btn-white  mb-0 dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                     {{request.session.info.username}}
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" >
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#">占位</a></li>
+                                    <li><a class="dropdown-item" href="#">占位</a></li>
+                                    <li><hr class="dropdown-divider m-0 h-0"></li>
+                                    <li><a class="dropdown-item text-danger" href="/logout/">Logout</a></li>
                                 </ul>
                             </div>
                         </ul>

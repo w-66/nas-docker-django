@@ -1,191 +1,54 @@
-{%extends 'tplt_init_bootstrap.html'%}
-{% block js %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% endblock %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.1/dist/echarts.js"></script> -->
+    <script src="{% static '/echarts/echarts5.4.1.js' %}"></script>
+    
+</head>
 
-{% block css %}
-
-
-
-
-
-<style>
-    .container {
-        margin-top: 2em;
-    }
-</style>
-<style>
-    /* 代码样式的框框 */
-    .code-box {
-        background-color: #f8f8f8;
-        border: 1px solid #ddd;
-        border-radius: 3px;
-        margin: 1em 0;
-        padding: 1em;
-    }
-
-    .code-box pre {
-        font-size: 1em;
-        line-height: 1.5;
-    }
-</style>
-
-{% endblock %}
-
-{% block bodyContent %}
-
-<div class="container">
-    <hr>
+<body>
+    <!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+    <div id="main" style="width: 600px;height:400px;"></div>
 
 
 
-    <hr>
-    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-        <option selected>Open this select menu</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
-    </select>
 
-    <hr>
+    
+</body>
 
+</html>
+<script type="text/javascript">
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('main'));
 
-    <div class="alert alert-primary alert-dismissible fade show" role="alert">
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        <strong>Alert Heading</strong> Alert Content
-    </div>
+    // 指定图表的配置项和数据
+    var option = {
+        title: {
+            text: 'ECharts 入门示例'
+        },
+        tooltip: {},
+        legend: {
+            data: ['销量']
+        },
+        xAxis: {
+            data: ['衬衫', '羊毛衫', '雪纺衫', '裤子', '高跟鞋', '袜子']
+        },
+        yAxis: {},
+        series: [
+            {
+                name: '销量',
+                type: 'bar',
+                data: [5, 20, 36, 10, 10, 20]
+            }
+        ]
+    };
 
-    <script>
-        var alertList = document.querySelectorAll('.alert');
-        alertList.forEach(function (alert) {
-            new bootstrap.Alert(alert)
-        })
-    </script>
-
-
-    <hr>
-
-
-    <h3>clearfix示例1</h3>
-    <div class="bg-info" style="height: 100px;">
-        <div class="row ">
-            <div class="col-6">
-                <input type="text" name="username" maxlength="32" class="form-control" required="" id="id_username">
-            </div>
-            <div class="col-6">
-                <input type="text" name="username" maxlength="32" class="form-control" required="" id="id_username">
-            </div>
-            <div class="col-xs-6">
-                <div class="form-group">
-                </div>
-                <button type="button" class="btn btn-secondary float-start">向左浮动（float）的示例按钮</button>
-                <button type="button" class="btn btn-secondary float-end">向右浮动（float）的示例按钮</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <h3>clearfix示例2</h3>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="float-left">左侧浮动元素</div>
-            <div class="float-right">右侧浮动元素</div>
-            <div class=""></div>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <h3>placeholder</h3>
-    <p class="placeholder-glow">
-        <span class="placeholder col-12"></span>
-    </p>
-    <p class="placeholder-wave">
-        <span class="placeholder col-12"></span>
-    </p>
-</div>
-
-<div class="container">
-    <h3>CSS选择器:对最后一行输入框修改成占100%</h3>
-    <div class="code-box">
-        <pre><code>         
-        #form_add>.row>div:nth-last-child(1) {
-            width: 100%;
-        }</code></pre>
-    </div>
-
-    <style>
-        #form_add>.row>div:nth-last-child(1) {
-            width: 100%;
-        }
-    </style>
-    <div class="row">
-        <div class="col-md-12">
-            <form action="" id="form_add">
-                <div class="row">
-
-                    <div class="col-6">
-                        <div class="form-group">
-                            <label for="">标题</label>
-                            <input type="text" name="title" maxlength="120" class="form-control" required=""
-                                id="id_title">
-                        </div>
-                    </div>
-
-                    <div class="col-6">
-                        <div class="form-group">
-                            <label for="">负责人</label>
-                            <select name="user" class="form-control" required="" id="id_user">
-                                <option value="" selected="">---------</option>
-
-                                <option value="13">qusay</option>
-
-                                <option value="14">1</option>
-
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="col-6">
-                        <div class="form-group">
-                            <label for="">紧急程度</label>
-                            <select name="urgency" class="form-control" id="id_urgency">
-                                <option value="3">紧急</option>
-
-                                <option value="2">一般</option>
-
-                                <option value="1" selected="">松弛</option>
-
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="col-6">
-                        <div class="form-group">
-                            <label for="">重要程度</label>
-                            <select name="importance" class="form-control" id="id_importance">
-                                <option value="3">重要</option>
-
-                                <option value="2">一般</option>
-
-                                <option value="1" selected="">次要</option>
-
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="col-6">
-                        <div class="form-group">
-                            <label for="">详细信息</label>
-                            <input type="text" name="detail" class="col-12 form-control" required="" id="id_detail">
-                        </div>
-                    </div>
-
-                </div>
-                <button form="but_add" class="btn btn-primary mt-4">Submit</button>
-            </form>
-        </div>
-    </div>
-</div>
-{% endblock %}
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+</script>

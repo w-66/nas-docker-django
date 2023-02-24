@@ -38,6 +38,7 @@ urlpatterns = [
 
     # 图表
     path('chart/list/', chart.chart_list),
+    path('chart/bar/ajax/', chart.chart_bar_ajax),
     
     # 登录
     path('login/', login.login),

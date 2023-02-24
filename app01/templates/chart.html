@@ -1,6 +1,244 @@
-{%extends 'tplt_init_bootstrap.html'%}
+{% extends 'tplt_init_bootstrap.html' %}
+{% load static %}
 {% block js %}
+<script src="{% static '/echarts/echarts5.4.1.js' %}"></script>
+<!-- 图表1 柱状图示例 -->
+<script type="text/javascript">
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('main1'));
+
+    // 指定图表的配置项和数据
+    var option = {
+        title: {
+            text: 'ECharts 入门示例1',
+            left: "center",
+            top: '2%'
+        },
+        tooltip: {},
+        legend: {                   // 图例
+            bottom: "4%",           // 设置图例的位置位于底部4%的位置
+            data: ['销量', '毛利']
+        },
+        xAxis: {
+            data: ['衬衫', '羊毛衫', '雪纺衫', '裤子', '高跟鞋', '袜子']
+        },
+        yAxis: {},
+        series: [
+            {
+                name: '销量',
+                type: 'bar',
+                data: [5, 20, 36, 10, 10, 20]
+            },
+            {
+                name: '毛利',
+                type: 'bar',
+                data: [22, 2, 36, 10, 40, 2]
+            }
+        ]
+    };
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+</script>
+<!-- 图表2 环形图示例 -->
+<script>
+    // require语句引入了ECharts库。这段代码看起来像Node.js中的
+    // CommonJS模块加载语法，但实际上在浏览器中是不支持的，如果要
+    // 在浏览器中使用ECharts，可以通过使用ES Modules语法来实现。
+    // var echarts = require('echarts');
+    // 定义一个chartDom变量，它通过document.getElementById方法获取了
+    // 一个DOM元素，其id属性为"main2"，这个DOM元素将用来展示饼图。
+    var chartDom = document.getElementById('main2');
+    // 创建了一个ECharts实例对象myChart2，并将其与上面获取到的DOM元素关联。
+    // 第二个参数'light'指定了使用默认的浅色主题。通过初始化myChart2对象后，就可以配置图表的属性和数据。
+    var myChart2 = echarts.init(chartDom, 'light');
+    // option中定义了饼图的各种属性和数据
+    var option;
+    option = {
+        title: {
+            text: 'ECharts 入门示例2',
+            left: 'center',
+            top: '2%'
+        },
+        tooltip: {
+            trigger: 'item'
+        },
+        // 图例（legend）
+        legend: {
+            top: '13%',           // 设置图例的位置位于顶部5%的位置
+            left: 'center',
+        },
+        series: [
+            {
+                name: 'Access From',
+                type: 'pie',
+                radius: ['40%', '70%'],    // 饼图半径（radius）
+                avoidLabelOverlap: false,  // 避免标签重叠
+                bottom: "-30%",            // 拼图与底部的距离
+                itemStyle: {               // 设置边框
+                    borderRadius: 10,
+                    borderColor: '#fff',
+                    borderWidth: 2
+                },
+                label: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {                 // 鼠标hover时的效果（emphasis）
+                    label: {
+                        show: true,
+                        fontSize: 40,
+                        fontWeight: 'bold'
+                    }
+                },
+                labelLine: {
+                    show: false
+                },
+                data: [       // 数据项
+                    { value: 1048, name: 'Search Engine' },
+                    { value: 735, name: 'Direct' },
+                    { value: 580, name: 'Email' },
+                    { value: 484, name: 'Union Ads' },
+                    { value: 300, name: 'Video Ads' }
+                ]
+            }
+        ]
+    };
+    // 使用if语句检查option是否有定义，如果有定义，则使用myChart2对象
+    // 的setOption方法来将option应用到饼图中。如果option没有定义，
+    // 则不会执行setOption方法。
+    option && myChart2.setOption(option);
+    // 上方代码等同于下方代码
+    // if (option) {
+    //     myChart2.setOption(option);
+    // }
+    // 在这段代码中，当 option 不为 null 或 undefined 时，
+    // option && myChart2.setOption(option) 的执行结果是
+    // myChart2.setOption(option)；否则，它的执行结果是 false。
+    // 这样做的好处是，当 option 为 null 或 undefined 时，
+    // 可以避免执行 setOption 方法，从而避免可能出现的错误。
+
+</script>
+<!-- 图表3 柱状图 ajax接收后端数据并显示在图表中 -->
+<script>
+    $(function () {
+        iniBar();
+    })
+
+    function iniBar() {
+        var chartDom3 = document.getElementById('main3');
+        var myChart3 = echarts.init(chartDom3);
+        var option3;
+
+        option3 = {
+            title: {
+                // text: 'ECharts 入门示例3',
+                left: "center",
+                top: '2%'
+            },
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'shadow'
+                }
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+            xAxis: [
+                // {
+                //     type: 'category',
+                //     data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+                //     axisTick: {
+                //         alignWithLabel: true
+                //     }
+                // }
+            ],
+            yAxis: [
+                {
+                    type: 'value'
+                }
+            ],
+            series: [
+                // {
+                //     name: 'Direct',
+                //     type: 'bar',
+                //     barWidth: '60%',
+                //     data: [100, 52, 200, 334, 390, 330, 220]
+                // }
+            ]
+        };
+
+        $.ajax({
+            url: "/chart/bar/ajax/",
+            type: "get",
+            dataType: "JSON",
+            success:function(res){
+                // 将后台的数据更新到option中 
+                if (res.status){
+                    console.log(res.data.title[0].text)
+                    option3.title.text = res.data.title[0].text
+                    option3.xAxis = res.data.xAxis
+                    option3.series = res.data.series
+                    option3 && myChart3.setOption(option3);
+                }
+                // 正常情况 将执行数据展示
+            }
+        })
+    }
+</script>
+
+<!-- 图表4 -->
 {% endblock %}
 
 {% block css %}
+{% endblock %}
+
+{% block bodyContent %}
+{% include "tplt_navbar.html" %}
+<!-- 分隔 -->
+<div class="container">
+    <div class="row mt-3">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    图表1
+                </div>
+                <div id="main1" style="width: 600px;height:350px;" class="list-group list-group-flush">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    图表2
+                </div>
+                <div id="main2" style="width: 295px;height:350px;" class="list-group list-group-flush">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-2">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    图表3
+                </div>
+                <div id="main3" style="width: 430px;height:300px;" class="list-group list-group-flush">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    图表4
+                </div>
+                <div id="main4" style="width: 295px;height:300px;" class="list-group list-group-flush">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

@@ -21,7 +21,7 @@
                     // console.log(res);
                     // console.log(res.status);
                     if (res.status) {
-                        // alert("添加成功")
+                        alert("添加成功")
                         // 添加成功之后 清除已输入的信息;$("#formAdd")是jquary对象; $("#formAdd")[0]是DOM对象，
                         $("#formAdd")[0].reset();
                         // 添加成功之后 关闭弹窗
@@ -29,7 +29,7 @@
                         // 刷新页面
                         location.reload();
                     } else {
-                        // alert("添加失败")
+                        alert("添加失败")
                         $.each(res.errors, function (name, error) {
                             // console.log(name, error)
                             $("#id_" + name).next().text(error[0]);
