@@ -9,7 +9,6 @@ from app01.views import login, task, lifelog_v2, chart, demo
 urlpatterns = [
     re_path(r'^media/(?P<path>.*)$', serve, {'document_root':settings.MEDIA_ROOT}, name='media'),
 
-
     # 
     path("app01/", include('app01.urls')),
 
