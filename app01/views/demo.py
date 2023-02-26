@@ -15,7 +15,12 @@ def demo_uploadfile(request):
             for chunk in obj_file.chunks():  
                 f.write(chunk) 
         return redirect("/demo/uploadfile/")
-    
+
+def demo_1(reqeust):
+    from django.conf import settings 
+    print(settings.MEDIA_ROOT)  
+    return HttpResponse('123')
+
 
 
     

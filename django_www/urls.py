@@ -1,10 +1,18 @@
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, re_path, include
+from django.views.static import serve
+from django.conf import settings
 from app01.views import index, learn_bootstrap, learn_js, learn_react, lifelog, music, admin
 from app01.views import login, task, lifelog_v2, chart, demo
 
 
 urlpatterns = [
+    re_path(r'^media/(?P<path>.*)$', serve, {'document_root':settings.MEDIA_ROOT}, name='media'),
+
+
+    # 
+    path("app01/", include('app01.urls')),
+
     # Bootstrap
     path('learn/bootstrap/01/', learn_bootstrap.learn_bootstrap_01),
     path('learn/bootstrap/02/', learn_bootstrap.learn_bootstrap_02),
@@ -37,6 +45,7 @@ urlpatterns = [
     path('learn/js/01/', learn_js.learn_js_01),
     # Demo
     path("demo/uploadfile/", demo.demo_uploadfile),
+    path("demo/1/", demo.demo_1),
 
     # 图表
     path('chart/list/', chart.chart_list),
