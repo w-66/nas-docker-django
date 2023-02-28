@@ -1,16 +1,20 @@
 from django.contrib import admin
+
 from django.urls import path, re_path, include
 from django.views.static import serve
 from django.conf import settings
-from app01.views import index, learn_bootstrap, learn_js, learn_react, lifelog, music, admin
+from app01.views import index, learn_bootstrap, learn_js, learn_react, lifelog, music
 from app01.views import login, task, lifelog_v2, chart, demo
 
 
 urlpatterns = [
-    re_path(r'^media/(?P<path>.*)$', serve, {'document_root':settings.MEDIA_ROOT}, name='media'),
+    # Django 自带 admin管理页面
+    path('admin/', admin.site.urls),
 
-    # 
-    path("app01/", include('app01.urls')),
+    path("app02/", include('app02.urls')),
+    path('polls/', include('polls.urls')),
+    
+    re_path(r'^media/(?P<path>.*)$', serve, {'document_root':settings.MEDIA_ROOT}, name='media'),
 
     # Bootstrap
     path('learn/bootstrap/01/', learn_bootstrap.learn_bootstrap_01),
@@ -61,11 +65,11 @@ urlpatterns = [
     path('task/edit/<int:id>/', task.task_edit),
     path('task/del/<int:id>/', task.task_del),
 
-    # Admin
-    path('admin/', admin.admin),
-    path('admin/add/', admin.admin_add),
-    path('admin/edit/<int:id>/', admin.admin_edit),
-    path('admin/del/<int:id>/', admin.admin_del),
+    # 自建 Admin
+    # path('admin/', admin.admin),
+    # path('admin/add/', admin.admin_add),
+    # path('admin/edit/<int:id>/', admin.admin_edit),
+    # path('admin/del/<int:id>/', admin.admin_del),
 
     # 时间记录
     path('lifelog/', lifelog.lifelog),
@@ -86,5 +90,4 @@ urlpatterns = [
 
     # index
     path('index/', index.index),
-    # path('admin/', admin.site.urls),
 ]

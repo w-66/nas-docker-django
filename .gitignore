@@ -2,3 +2,11 @@ crawler/
 django_www.log
 django_www/__pycache__/
 __pycache__
+.vscode-server/
+.bash_history
+.cache/
+.gitconfig
+.local/
+.pki/
+.viminfo
+.wget-hsts

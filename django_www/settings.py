@@ -31,15 +31,17 @@ ALLOWED_HOSTS = ['*']
 
 
 # Application definition
-
+# 这里包括了会在你项目中启用的所有 Django 应用
 INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'app01',
+    'django.contrib.admin',        # 自带应用 自带的admin管理
+    'django.contrib.auth',         # 自带应用 认证授权系统 admin管理 依赖
+    'django.contrib.contenttypes', # 自带应用 内容类型框架 admin管理 依赖
+    'django.contrib.sessions',     # 自带应用 会话框架 admin管理 依赖
+    'django.contrib.messages',     # 自带应用 消息框架 admin管理 依赖
+    'django.contrib.staticfiles',  # 自带应用 管理静态文件的框架
+    'app01',                       # 自建的app01 入门学习
+    'app02',                       # 自建的app02 学习
+    'polls',                       # Django官方文档入门学习教程案例
 ]
 
 MIDDLEWARE = [
@@ -47,10 +49,10 @@ MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',  # 自带admin管理 相关
+    'django.contrib.messages.middleware.MessageMiddleware',     # 自带admin管理 相关
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'app01.middleware.auth.Auth',
+    # 'app01.middleware.auth.Auth',                      # 自建的admin管理页面，暂时弃用
     # 'app01.middleware.auth.AuthenticationMiddleware',
 ]
 
@@ -63,10 +65,10 @@ TEMPLATES = [
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
-                'django.template.context_processors.debug',
-                'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.debug',             
+                'django.template.context_processors.request',           # 自带admin管理 相关
+                'django.contrib.auth.context_processors.auth',          # 自带admin管理 相关
+                'django.contrib.messages.context_processors.messages',  # 自带admin管理 相关
                 'django.template.context_processors.static',
             ],
         },
@@ -91,7 +93,7 @@ DATABASES = {
         'NAME': 'blog_django',
         'USER': 'django',
         'PASSWORD': 'asdf;lkjdlmmdjango',
-        'HOST': '172.29.0.2',
+        'HOST': 'mysql5.7.39',
         'PORT': 3306,
     },
     'second_db':{
@@ -132,13 +134,14 @@ LANGUAGE_CODE = 'zh-hans'
 
 TIME_ZONE = 'Asia/Shanghai'
 
+# 一个布尔值，用于指定是否应该启用 Django 的翻译系统。这提供了一个关闭翻译系统的方法，以保证性能。如果设置为 False，Django 会进行一些优化，以避免加载翻译机制。
 USE_I18N = True
-
+# 一个布尔值，用于指定是否默认启用数据的本地化格式。如果设置为 True，例如，Django 将使用当前语言的格式来显示数字和日期。
 USE_L10N = True
-
+# 当 USE_TZ 为 False 时，这是 Django 存储所有日期时间的时区。当 USE_TZ 为 True 时，这是 Django 在模板中显示日期时间和解释表单中输入的日期时间的默认时区。
 USE_TZ = False
 
-
+# 开启媒体存储路径 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
