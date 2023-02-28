@@ -49,7 +49,8 @@ class App01Lifelog(models.Model):
     class Meta:
         managed = False
         db_table = 'app01_lifelog'
-        
+    def __str__(self):
+        return self.content        
 
 class AuthGroup(models.Model):
     name = models.CharField(unique=True, max_length=150)
