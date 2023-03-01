@@ -4,15 +4,31 @@ from django.urls import reverse
 from django.views import generic
 
 from .models import Choice, Question
-
-#### v2 改良视图 我们将删除旧的 index, detail, 和 results 视图，并用 Django 的通用视图代替。
+### v4 改进v3的不足
+from django.utils import timezone
 class IndexView(generic.ListView):
+    # template_name 指定了使用哪个模板来渲染该视图。
     template_name = 'polls/index.html'
+    # context_object_name 指定了传递给模板的变量名称，该变量将包含视图返回的对象列表。
     context_object_name = 'latest_question_list'
 
     def get_queryset(self):
         """Return the last five published questions."""
-        return Question.objects.order_by('-pub_date')[:5]
+        return Question.objects.filter(
+            pub_date__lte=timezone.now()
+        ).order_by('-pub_date')[:5]
+
+### 不足|bug现在的投票列表会显示将来的投票
+### v2 改良视图 我们将删除旧的 index, detail, 和 results 视图，并用 Django 的通用视图代替。
+# class IndexView(generic.ListView):
+#     # template_name 指定了使用哪个模板来渲染该视图。
+#     template_name = 'polls/index.html'
+#     # context_object_name 指定了传递给模板的变量名称，该变量将包含视图返回的对象列表。
+#     context_object_name = 'latest_question_list'
+
+#     def get_queryset(self):
+#         """Return the last five published questions."""
+#         return Question.objects.order_by('-pub_date')[:5]
 
 # def index(request):
 #     latest_question_list = Question.objects.order_by('-pub_date')[:5]

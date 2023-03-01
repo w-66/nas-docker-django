@@ -10,7 +10,19 @@ class Question(models.Model):
     pub_date = models.DateTimeField('date published')
 
     def was_published_recently(self):
-        return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
+        '''如果 Question 是在一天之内发布的， 
+           Question.was_published_recently() 方法将会返回 True'''
+        # 判断问题发布时间是否是当天
+        ## self.pub_date 实例对象的发布时间
+        ## timezone.now()现在时间 
+        ## datetime.timedelta(days=1) 一天的时间
+        ### v3 优化代码，增加可读性
+        now = timezone.now()
+        return now - datetime.timedelta(days=1) <= self.pub_date <= now
+        ### v2 修复bug，未来时间，显示true
+        # return timezone.now() >= self.pub_date >= timezone.now() - datetime.timedelta(days=1)
+        ### v1 
+        # return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
     
     def __str__(self):
         return self.question_text
