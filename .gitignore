@@ -10,3 +10,8 @@ __pycache__
 .pki/
 .viminfo
 .wget-hsts
+.dotnet/
+.gitignore.swo
+.gitignore.swp
+.vscode/
+
