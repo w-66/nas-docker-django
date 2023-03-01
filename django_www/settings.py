@@ -149,6 +149,7 @@ MEDIA_URL = '/media/'
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 # 默认优先在app中查找静态资源
 STATIC_URL = '/static/'
+
 STATICFILES_DIRS = [ BASE_DIR / "static" ]
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

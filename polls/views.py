@@ -11,11 +11,10 @@ class IndexView(generic.ListView):
     template_name = 'polls/index.html'
     # context_object_name 指定了传递给模板的变量名称，该变量将包含视图返回的对象列表。
     context_object_name = 'latest_question_list'
-
     def get_queryset(self):
         """Return the last five published questions."""
         return Question.objects.filter(
-            pub_date__lte=timezone.now()
+            pub_date__lte=timezone.now()  # 后面新增的，对于未来时间的投票不显示在页面上
         ).order_by('-pub_date')[:5]
 
 ### 不足|bug现在的投票列表会显示将来的投票

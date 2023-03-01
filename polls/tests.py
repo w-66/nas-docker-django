@@ -70,8 +70,8 @@ class QuestionIndexViewTests(TestCase):
         the index page.
         """
         create_question(question_text="Future question.", days=30)
-        response = self.client.get(reverse('polls:index'))
-        self.assertContains(response, "No polls are available.")
+        response = self.client.get(reverse('polls:index'))                      # 通过client.get获取polls/的HTML响应内容
+        self.assertContains(response, "No polls are available.")                # 判断响应内容必须要包含"No polls are available"(没有可用投票)
         self.assertQuerysetEqual(response.context['latest_question_list'], [])
 
     def test_future_question_and_past_question(self):
