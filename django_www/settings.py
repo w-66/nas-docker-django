@@ -61,7 +61,7 @@ ROOT_URLCONF = 'django_www.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],   # 你的模板文件路径(默认优先在app中查找)
         'APP_DIRS': True,   # 这一选项将会让 DjangoTemplates 在每个 INSTALLED_APPS 文件夹中寻找 "templates" 子目录。
         'OPTIONS': {
             'context_processors': [
