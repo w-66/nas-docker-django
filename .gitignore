@@ -14,4 +14,6 @@ __pycache__
 .gitignore.swo
 .gitignore.swp
 .vscode/
+.ssh
+
 
