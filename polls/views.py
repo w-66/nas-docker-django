@@ -1,3 +1,4 @@
+from django.utils import timezone
 from django.http import HttpResponseRedirect
 from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
@@ -5,7 +6,6 @@ from django.views import generic
 
 from .models import Choice, Question
 ### v4 改进v3的不足
-from django.utils import timezone
 class IndexView(generic.ListView):
     # template_name 指定了使用哪个模板来渲染该视图。
     template_name = 'polls/index.html'

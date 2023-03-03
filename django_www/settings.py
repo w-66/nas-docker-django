@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'app01',                       # 自建的app01 入门学习
     'app02',                       # 自建的app02 学习
     'polls',                       # Django官方文档入门学习教程案例
+    'demo',                        # 自建app 学习时的demo与案例等
 ]
 
 MIDDLEWARE = [

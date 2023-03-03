@@ -4,7 +4,7 @@ from django.urls import path, re_path, include
 from django.views.static import serve
 from django.conf import settings
 from app01.views import index, learn_bootstrap, learn_js, learn_react, lifelog, music
-from app01.views import login, task, lifelog_v2, chart, demo
+from app01.views import login, task, lifelog_v2, chart
 
 
 urlpatterns = [
@@ -13,6 +13,10 @@ urlpatterns = [
 
     path("app02/", include('app02.urls')),
     path('polls/', include('polls.urls')),
+    path('demo/', include('demo.urls')),
+    # Demo
+    # path("demo/uploadfile/", demo.demo_uploadfile),
+    # path("demo/1/", demo.demo_1),
     
     re_path(r'^media/(?P<path>.*)$', serve, {'document_root':settings.MEDIA_ROOT}, name='media'),
 
@@ -46,9 +50,7 @@ urlpatterns = [
     path('learn/js/03/', learn_js.learn_js_03),
     path('learn/js/02/', learn_js.learn_js_02),
     path('learn/js/01/', learn_js.learn_js_01),
-    # Demo
-    path("demo/uploadfile/", demo.demo_uploadfile),
-    path("demo/1/", demo.demo_1),
+
 
     # 图表
     path('chart/list/', chart.chart_list),
