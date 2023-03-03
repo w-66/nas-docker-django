@@ -13,17 +13,20 @@ urlpatterns = [
 
     # Django 自带 admin管理页面
     path('admin/', admin.site.urls),
-
+    # app routing
     path("app02/", include('app02.urls')),
     path('polls/', include('polls.urls')),
     path('demo/', include('demo.urls')),
+    path('me/', include('me.urls')),
+    path('tagsystem/', include('tagsystem.urls')),
+
+
+
     # Demo 老路径，暂未迁移
     # path("demo/uploadfile/", demo.demo_uploadfile),
     # path("demo/1/", demo.demo_1),
     # media 媒体文件
     re_path(r'^media/(?P<path>.*)$', serve, {'document_root':settings.MEDIA_ROOT}, name='media'),
-
-
 
     # Bootstrap
     path('learn/bootstrap/01/', learn_bootstrap.learn_bootstrap_01),
