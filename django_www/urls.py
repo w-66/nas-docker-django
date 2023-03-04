@@ -5,9 +5,11 @@ from django.views.static import serve
 from django.conf import settings
 from app01.views import index, learn_bootstrap, learn_js, learn_react, lifelog, music
 from app01.views import login, task, lifelog_v2, chart
+from blog.views  import index as blogindex
 
 
 urlpatterns = [
+    path('', blogindex),
     # index 
     path('index/', index.index),
 
@@ -17,7 +19,7 @@ urlpatterns = [
     path("app02/", include('app02.urls')),
     path('polls/', include('polls.urls')),
     path('demo/', include('demo.urls')),
-    path('me/', include('me.urls')),
+    path('blog/', include('blog.urls')),
     path('tagsystem/', include('tagsystem.urls')),
 
 

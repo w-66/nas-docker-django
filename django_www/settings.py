@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'app02',                       # 自建的app02 学习
     'polls',                       # Django官方文档入门学习教程案例
     'demo',                        # 自建app 学习时的demo与案例等
-    'me',                          # 个人信息页
+    'blog',                        # 个人信息页
     'tagsystem',                   # 标签系统
 ]
 
