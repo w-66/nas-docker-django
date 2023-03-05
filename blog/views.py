@@ -1,8 +1,15 @@
 from django.shortcuts import render
 
-
+# 网页图标logo
+site_logo = 'icon-logo-1'
 def index(request):
     title = 'Blog'
-    return render(request, 'blog/index.html', {'title':title})
+    dict = {
+        'title':title,
+        'site_logo':site_logo,
+    }
+    return render(request, 'blog/index.html', dict)
 def log(request):
-    return render(request, 'blog/lifelog.html')
+
+    return render(request, 'blog/lifelog.html', {'site_logo':site_logo})
+
