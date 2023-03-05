@@ -7,8 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- 引入Bootstrap -->
-    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <!-- 引入Bootstrap css-->
+    <!-- <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}"> -->
+    <link rel="stylesheet" href="{% static 'bootstrap/custom.css' %}">
+
 
     <!-- fontawesome图标 -->
     <!-- <script defer src="https://kit.fontawesome.com/24ee1fea7f.js" crossorigin="anonymous"></script> -->
@@ -33,7 +35,10 @@
 </head>
 <body>
 
-   {% block bodyContent %}{% endblock %}
+
+{% block bodyContent %}{% endblock %}
+<!-- 页尾 -->
+{% include 'footer.html' %}
 
 <!-- 引入JS，顺序很重要... -->
 <!-- 引入JQeruy 因为jquery需要生成HTML所以需要优先执行，不能加defer -->

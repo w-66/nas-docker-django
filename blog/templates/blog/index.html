@@ -1,15 +1,44 @@
 {%extends 'tplt_init_bootstrap.html'%}
 {% load static %}
 
+{% block css %}
+<style>
+    /* 隐藏火狐浏览器的滚动条 */
+    html {
+        scrollbar-width: none;
+    }
+
+    /* 隐藏谷歌浏览器的滚动条 */
+    html::-webkit-scrollbar {
+        display: none;
+        /* Chrome, Safari, Edge */
+    }
+
+    .navbar {
+        /* position: sticky;
+        top: 0; */
+        background-color: rgba(128, 128, 128, 0.9);
+    } 
+</style>
+{% endblock %}
+
+{% block js %}
+<script>
+    // 控制导航栏粘滞在顶部
+    var myDiv = document.getElementById("navbar");  // 获取到该标签的DOM对象
+    myDiv.classList.add("sticky-sm-top");           // 使用DOM对象的 classList 属性的 add() 方法来添加类名
+</script>
+{% endblock %}
+
 <!-- #body内容 -->
 {% block bodyContent %}
 <title>{{title}}</title>
-<!-- 导航栏 -->
-{% include "navbar.html" %}
+
+
 
 <!-- 首图 -->
 <section class="spotlight parallax bg-cover bg-size--cover" data-spotlight="fullscreen"
-    style="background-image: url('https://w.wallhaven.cc/full/9d/wallhaven-9doozw.jpg'); background-size: cover;">
+    style="background-image: url('{% static 'img/secery.jpg' %}'); background-size: cover;">
 
     <span class="mask bg-primary alpha-7"></span>
     <div class="spotlight-holder py-lg pt-lg-xl" style="height: 588px;">
@@ -22,11 +51,11 @@
                                 data-animation-in="jackInTheBox" data-animation-delay="1000">
                             <h2 class="heading display-4 font-weight-400 text-white mt-5 animated"
                                 data-animation-in="fadeInUp" data-animation-delay="2000">
-                                <span class="font-weight-700">Qusay</span> Site
+                                <span class="font-weight-700 text-info">Qusay</span> Site
                             </h2>
                             <p class="lead text-white mt-3 lh-180 c-white animated" data-animation-in="fadeInUp"
                                 data-animation-delay="2500">
-                                欢迎来到我的网站 <strong class="text-white">(๑‾ ꇴ ‾๑)</strong>
+                                欢迎来到我的网站 <strong class="text-primary"">(๑‾ ꇴ ‾๑)</strong>
                             </p>
                         </div>
                     </div>
@@ -35,97 +64,104 @@
         </div>
     </div>
 </section>
+{% include 'navbar.html' %}
+<div class=" container p-0 ">
+    <!-- 卡片 -->
+    <div class=" container px-4" id="custom-cards">
+                                    <h2 class="pb-2 border-bottom">Custom cards</h2>
 
-<!-- 卡片 -->
-<div class="container px-4 py-5" id="custom-cards">
-    <h2 class="pb-2 border-bottom">Custom cards</h2>
+                                    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                                        <div class="col">
+                                            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                                                style="background-image: url('{% static 'img/secery.jpg' %}');">
+                                                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long
+                                                        jacket</h3>
+                                                    <ul class="d-flex list-unstyled mt-auto">
+                                                        <li class="me-auto">
+                                                            <img src="https://github.com/twbs.png" alt="Bootstrap"
+                                                                class="rounded-circle border border-white" width="32"
+                                                                height="32">
+                                                        </li>
+                                                        <li class="d-flex align-items-center me-3">
+                                                            <svg class="bi me-2" width="1em" height="1em">
+                                                                <use xlink:href="#geo-fill"></use>
+                                                            </svg>
+                                                            <small>Earth</small>
+                                                        </li>
+                                                        <li class="d-flex align-items-center">
+                                                            <svg class="bi me-2" width="1em" height="1em">
+                                                                <use xlink:href="#calendar3"></use>
+                                                            </svg>
+                                                            <small>3d</small>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
 
-    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-        <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                style="background-image: url('https://w.wallhaven.cc/full/yx/wallhaven-yxq3r7.png');">
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
-                    <ul class="d-flex list-unstyled mt-auto">
-                        <li class="me-auto">
-                            <img src="https://github.com/twbs.png" alt="Bootstrap"
-                                class="rounded-circle border border-white" width="32" height="32">
-                        </li>
-                        <li class="d-flex align-items-center me-3">
-                            <svg class="bi me-2" width="1em" height="1em">
-                                <use xlink:href="#geo-fill"></use>
-                            </svg>
-                            <small>Earth</small>
-                        </li>
-                        <li class="d-flex align-items-center">
-                            <svg class="bi me-2" width="1em" height="1em">
-                                <use xlink:href="#calendar3"></use>
-                            </svg>
-                            <small>3d</small>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+                                        <div class="col">
+                                            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                                                style="background-image: url('{% static 'img/secery.jpg' %}');">
+                                                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title
+                                                        that wraps to multiple lines
+                                                    </h3>
+                                                    <ul class="d-flex list-unstyled mt-auto">
+                                                        <li class="me-auto">
+                                                            <img src="https://github.com/twbs.png" alt="Bootstrap"
+                                                                class="rounded-circle border border-white" width="32"
+                                                                height="32">
+                                                        </li>
+                                                        <li class="d-flex align-items-center me-3">
+                                                            <svg class="bi me-2" width="1em" height="1em">
+                                                                <use xlink:href="#geo-fill"></use>
+                                                            </svg>
+                                                            <small>Pakistan</small>
+                                                        </li>
+                                                        <li class="d-flex align-items-center">
+                                                            <svg class="bi me-2" width="1em" height="1em">
+                                                                <use xlink:href="#calendar3"></use>
+                                                            </svg>
+                                                            <small>4d</small>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
 
-        <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                style="background-image: url('unsplash-photo-2.jpg');">
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines
-                    </h3>
-                    <ul class="d-flex list-unstyled mt-auto">
-                        <li class="me-auto">
-                            <img src="https://github.com/twbs.png" alt="Bootstrap"
-                                class="rounded-circle border border-white" width="32" height="32">
-                        </li>
-                        <li class="d-flex align-items-center me-3">
-                            <svg class="bi me-2" width="1em" height="1em">
-                                <use xlink:href="#geo-fill"></use>
-                            </svg>
-                            <small>Pakistan</small>
-                        </li>
-                        <li class="d-flex align-items-center">
-                            <svg class="bi me-2" width="1em" height="1em">
-                                <use xlink:href="#calendar3"></use>
-                            </svg>
-                            <small>4d</small>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+                                        <div class="col">
+                                            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                                                style="background-image: url('{% static 'img/secery.jpg' %}');">
+                                                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                                                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer
+                                                        title belongs here</h3>
+                                                    <ul class="d-flex list-unstyled mt-auto">
+                                                        <li class="me-auto">
+                                                            <img src="https://github.com/twbs.png" alt="Bootstrap"
+                                                                class="rounded-circle border border-white" width="32"
+                                                                height="32">
+                                                        </li>
+                                                        <li class="d-flex align-items-center me-3">
+                                                            <svg class="bi me-2" width="1em" height="1em">
+                                                                <use xlink:href="#geo-fill"></use>
+                                                            </svg>
+                                                            <small>California</small>
+                                                        </li>
+                                                        <li class="d-flex align-items-center">
+                                                            <svg class="bi me-2" width="1em" height="1em">
+                                                                <use xlink:href="#calendar3"></use>
+                                                            </svg>
+                                                            <small>5d</small>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                    </div>
 
-        <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                style="background-image: url('unsplash-photo-3.jpg');">
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
-                    <ul class="d-flex list-unstyled mt-auto">
-                        <li class="me-auto">
-                            <img src="https://github.com/twbs.png" alt="Bootstrap"
-                                class="rounded-circle border border-white" width="32" height="32">
-                        </li>
-                        <li class="d-flex align-items-center me-3">
-                            <svg class="bi me-2" width="1em" height="1em">
-                                <use xlink:href="#geo-fill"></use>
-                            </svg>
-                            <small>California</small>
-                        </li>
-                        <li class="d-flex align-items-center">
-                            <svg class="bi me-2" width="1em" height="1em">
-                                <use xlink:href="#calendar3"></use>
-                            </svg>
-                            <small>5d</small>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
-<!-- 页尾 -->
-{% include 'footer.html' %}
 
-{% endblock %}
+                    {% endblock %}
