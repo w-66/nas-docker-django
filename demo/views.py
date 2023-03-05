@@ -8,6 +8,14 @@ def index(request):
     return render(request, 'demo/index.html')
 
 def navbar1(request):
-    return render(request, 'demo/navbar1.html', {"title":'navbar1'})
+    function_name = navbar1.__name__
+    return render(request, 'demo/navbar1.html', {"title":function_name})
+
 def navbar2(request):
-    return render(request, 'demo/navbar2.html', {"title":'navbar2'})
+    function_name = navbar2.__name__
+    return render(request, 'demo/navbar2.html', {"title":function_name})
+
+def test1(request):
+    function_name = test1.__name__
+    return render(request, 'demo/test1.html',{"title":function_name})
+    
