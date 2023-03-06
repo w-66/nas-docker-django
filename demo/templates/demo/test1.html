@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+    https://www.bilibili.com/video/BV1dV411x7R4?t=43
+    -->
+    <!--    <meta http-equiv="refresh" content="4"-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport">
+    <title>copy</title>
+    <script>
+        /*@cc_on
+        window.location.href="http://support.dmeng.net/upgrade-your-browser.html?referrer="+encodeURIComponent(window.location.href); @*/
+    </script>
+
+    <style>
+        @font-face {
+            font-family: "diy";
+            src: url("./font/HYYouYuanTiW.ttf");
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        /* 隐藏火狐浏览器的滚动条 */
+        /* 隐藏谷歌浏览器的滚动条 */
+        .container::-webkit-scrollbar {
+            display: none;
+            /* Chrome, Safari, Edge */
+        }
+
+        /*
+        section是不会被继承
+         */
+        section {
+            /*flex: none;  !* 将画面由上下滚动变成了横向 *!*/
+            scroll-snap-align: start;
+            /* 重点1：实现图片之间上下滚动定位正好在屏幕中央 */
+            height: 100vh;
+            width: 100vw;
+            background-blend-mode: multiply;
+            /*这样在背景图中的颜色和图片都能被显示出来，也就是被cover的状态。*/
+            display: flex;
+            /*使用工具*/
+            justify-content: center;
+            /*文字水平居中*/
+            align-items: center;
+            /*水平文字居中*/
+            letter-spacing: 2px;
+            /*增加文字之间的间隔4ge像素点*/
+            color: #83ffe7;
+            /*设置字体颜色*/
+            font-size: 1.6em;
+            /*设置字体大小*/
+            font-family: "diy", serif;
+            /*设置自定义字体*/
+            text-align: center;
+            /*文字居中*/
+        }
+
+        .container {
+            /* display: flex;  !* 将画面由上下滚动变成了横向 *! */
+            height: 100vh;
+            width: 100vw;
+            scroll-snap-type: y proximity;
+            /* 重点1：实现图片之间上下滚动定位正好在屏幕中央 */
+            overflow-y: scroll;
+            /*在什么（mandatory）上面滚动  重点1：实现图片之间上下滚动定位正好在屏幕中央*/
+        }
+
+        .container section:nth-child(1) {
+            background-color: teal;
+            background-image: url("./images/1.jpg");
+            /*在我们使用image时，color是不会生效的。需要在section中添加些东西*/
+            background-size: cover;
+            /*整个区域被图片覆盖*/
+        }
+
+        .container section:nth-child(2) {
+            background-color: #ff688c;
+            background-image: url("./images/2.jpg");
+            background-size: cover;
+        }
+
+        .container section:nth-child(3) {
+            background-color: #e99f95;
+            background-image: url("./images/3.jpg");
+            background-size: cover;
+        }
+
+        .container section:nth-child(4) {
+            background-color: #83ffe7;
+            background-image: url("./images/4.jpg");
+            background-size: cover;
+        }
+    </style>
+    <style>
+        /* 隐藏火狐浏览器的滚动条 */
+        html .container {
+            scrollbar-width: none;
+        }
+
+        /* 隐藏谷歌浏览器的滚动条 */
+        html::-webkit-scrollbar {
+            display: none;
+            /* Chrome, Safari, Edge */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section>生活就像一盒巧克力 <br> Life is like a box of chocolates</section>
+        <section>你永远无法知道你的下一颗是什么味道 <br> You will never know what your next one will taste like</section>
+        <section>人生不止有眼前的苟且 <br> Life is more than just present</section>
+        <section>还有远方的苟且 <br> There is still a distant sorrow...</section>
+</body>
+
+</html>

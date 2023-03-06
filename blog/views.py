@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 # 网页图标logo
-site_logo = 'icon-logo-1'
+# site_logo = 'icon-logo-1' 替换成本地路径的logo
 def index(request):
     title = 'Blog'
     dict = {
