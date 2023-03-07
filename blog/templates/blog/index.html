@@ -1,35 +1,236 @@
-{%extends 'tplt_init_bootstrap.html'%}
+{%extends 'tplt_init_b.html'%}
 {% load static %}
 
 {% block css %}
+<link rel="stylesheet" href="{%static 'css/1.css'%}">
 <style>
-    /* 隐藏火狐浏览器的滚动条 */
-    html {
-        scrollbar-width: none;
-    }
+/* Define custom CSS variables */
+.continue-application {
+  --color: #fff; /* Text color */
+  --background: #404660; /* Background color */
+  --background-hover: #3A4059; /* Background color when element is hovered */
+  --background-left: #2B3044; /* Background color of the left part of the element */
+  --folder: #F3E9CB; /* Color of the folder icon */
+  --folder-inner: #BEB393; /* Color of the folder icon's inner parts */
+  --paper: #FFFFFF; /* Color of the paper in the folder icon */
+  --paper-lines: #BBC1E1; /* Color of the paper's lines in the folder icon */
+  --paper-behind: #E1E6F9; /* Color of the paper behind the folder icon */
+  --pencil-cap: #fff; /* Color of the pencil's cap in the folder icon */
+  --pencil-top: #275EFE; /* Color of the top part of the pencil in the folder icon */
+  --pencil-middle: #fff; /* Color of the middle part of the pencil in the folder icon */
+  --pencil-bottom: #5C86FF; /* Color of the bottom part of the pencil in the folder icon */
+  --shadow: rgba(13, 15, 25, .2); /* Color of the element's shadow */
+  border: none; /* Remove the element's border */
+  outline: none; /* Remove the element's outline */
+  cursor: pointer; /* Set the cursor to a pointer when hovering over the element */
+  position: relative; /* Set the element's position to relative */
+  border-radius: 5px; /* Set the element's border radius */
+  font-size: 14px; /* Set the font size of the element */
+  font-weight: 500; /* Set the font weight of the element */
+  line-height: 19px; /* Set the line height of the element */
+  -webkit-appearance: none; /* Remove the default appearance of the element in WebKit-based browsers */
+  -webkit-tap-highlight-color: transparent; /* Set the tap highlight color to transparent */
+  padding: 17px 29px 17px 69px; /* Set the padding of the element */
+  transition: background 0.3s; /* Add a transition effect to the element's background */
+  color: var(--color); /* Set the text color to the value of the --color variable */
+  background: var(--bg, var(--background)); /* Set the background color to the value of the --bg variable or, if it's not defined, to the value of the --background variable */
+}
 
-    /* 隐藏谷歌浏览器的滚动条 */
-    html::-webkit-scrollbar {
-        display: none;
-        /* Chrome, Safari, Edge */
-    }
-</style>
-<style>
-    #topimg {
-        /* # 首页大图 */
-        background-image: url("{% static 'img/secery.jpg' %}");
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: top;
-    }
+/* Style the left part of the element */
+.continue-application > div {
+  top: 0; /* Set the top position of the element to 0 */
+  left: 0; /* Set the left position of the element to 0 */
+  bottom: 0; /* Set the bottom position of the element to 0 */
+  width: 53px; /* Set the width of the element to 53 pixels */
+  position: absolute; /* Set the position of the element to absolute */
+  overflow: hidden; /* Hide the overflow of the element */
+  border-radius: 5px 0 0 5px; /* Set the border radius of the element */
+  background: var(--background-left); /* Set the background color of the element to the value of the --background-left variable */
+}
+
+.continue-application > div .folder {
+  width: 23px;
+  height: 27px;
+  position: absolute;
+  left: 15px;
+  top: 13px;
+}
+
+
+.continue-application > div .folder {
+  /* 定义文件夹容器的宽高和位置 */
+  width: 23px;
+  height: 27px;
+  position: absolute;
+  left: 15px;
+  top: 13px;
+}
+
+.continue-application > div .folder .top {
+  /* 定义文件夹的顶部 */
+  left: 0;
+  top: 0;
+  z-index: 2;
+  position: absolute;
+  transform: translateX(var(--fx, 0));
+  transition: transform 0.4s ease var(--fd, 0.3s);
+}
+
+.continue-application > div .folder .top svg {
+  /* 定义文件夹的图标 */
+  width: 24px;
+  height: 27px;
+  display: block;
+  fill: var(--folder);
+  transform-origin: 0 50%;
+  transition: transform 0.3s ease var(--fds, 0.45s);
+  transform: perspective(120px) rotateY(var(--fr, 0deg));
+}
+
+.continue-application > div .folder:before,
+.continue-application > div .folder:after,
+.continue-application > div .folder .paper {
+  /* 定义文件夹的背景和阴影 */
+  content: "";
+  position: absolute;
+  left: var(--l, 0);
+  top: var(--t, 0);
+  width: var(--w, 100%);
+  height: var(--h, 100%);
+  border-radius: 1px;
+  background: var(--b, var(--folder-inner));
+}
+
+.continue-application > div .folder:before {
+  /* 定义文件夹的前景 */
+  box-shadow: 0 1.5px 3px var(--shadow), 0 2.5px 5px var(--shadow), 0 3.5px 7px var(--shadow);
+  transform: translateX(var(--fx, 0));
+  transition: transform 0.4s ease var(--fd, 0.3s);
+}
+
+.continue-application > div .folder:after,
+.continue-application > div .folder .paper {
+  --l: 1px;
+  --t: 1px;
+  --w: 21px;
+  --h: 25px;
+  --b: var(--paper-behind);
+}
+
+.continue-application > div .folder:after {
+  transform: translate(var(--pbx, 0), var(--pby, 0));
+  transition: transform 0.4s ease var(--pbd, 0s);
+}
+
+.continue-application > div .folder .paper {
+  z-index: 1;
+  --b: var(--paper);
+}
+
+.continue-application > div .folder .paper:before, .continue-application > div .folder .paper:after {
+  content: "";
+  width: var(--wp, 14px);
+  height: 2px;
+  border-radius: 1px;
+  transform: scaleY(0.5);
+  left: 3px;
+  top: var(--tp, 3px);
+  position: absolute;
+  background: var(--paper-lines);
+  box-shadow: 0 12px 0 0 var(--paper-lines), 0 24px 0 0 var(--paper-lines);
+}
+
+.continue-application > div .folder .paper:after {
+  --tp: 6px;
+  --wp: 10px;
+}
+
+.continue-application > div .pencil {
+  height: 2px;
+  width: 3px;
+  border-radius: 1px 1px 0 0;
+  top: 8px;
+  left: 105%;
+  position: absolute;
+  z-index: 3;
+  transform-origin: 50% 19px;
+  background: var(--pencil-cap);
+  transform: translateX(var(--pex, 0)) rotate(35deg);
+  transition: transform 0.4s ease var(--pbd, 0s);
+}
+
+.continue-application > div .pencil:before, .continue-application > div .pencil:after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: var(--b, linear-gradient(var(--pencil-top) 55%, var(--pencil-middle) 55.1%, var(--pencil-middle) 60%, var(--pencil-bottom) 60.1%));
+  width: var(--w, 5px);
+  height: var(--h, 20px);
+  border-radius: var(--br, 2px 2px 0 0);
+  top: var(--t, 2px);
+  left: var(--l, -1px);
+}
+
+.continue-application > div .pencil:before {
+  -webkit-clip-path: polygon(0 5%, 5px 5%, 5px 17px, 50% 20px, 0 17px);
+  clip-path: polygon(0 5%, 5px 5%, 5px 17px, 50% 20px, 0 17px);
+}
+
+.continue-application > div .pencil:after {
+  --b: none;
+  --w: 3px;
+  --h: 6px;
+  --br: 0 2px 1px 0;
+  --t: 3px;
+  --l: 3px;
+  border-top: 1px solid var(--pencil-top);
+  border-right: 1px solid var(--pencil-top);
+}
+
+.continue-application:before, .continue-application:after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  border-radius: 1px;
+  background: var(--color);
+  transform-origin: 9px 1px;
+  transform: translateX(var(--cx, 0)) scale(0.5) rotate(var(--r, -45deg));
+  top: 26px;
+  right: 16px;
+  transition: transform 0.3s;
+}
+
+.continue-application:after {
+  --r: 45deg;
+}
+
+.continue-application:hover {
+  --cx: 2px;
+  --bg: var(--background-hover);
+  --fx: -40px;
+  --fr: -60deg;
+  --fd: .15s;
+  --fds: 0s;
+  --pbx: 3px;
+  --pby: -3px;
+  --pbd: .15s;
+  --pex: -24px;
+}
+
 </style>
 {% endblock %}
 
 {% block js %}
 <script>
-    // 控制导航栏粘滞在顶部
+    // 添加的东西只在当前页面有
+    // 添加类：控制导航栏粘滞在顶部
     var myDiv = document.getElementById("navbar");  // 获取到该标签的DOM对象
     myDiv.classList.add("sticky-top");           // 使用DOM对象的 classList 属性的 add() 方法来添加类名
+    // 添加属性
+    myDiv.setAttribute('data-bs-spy', 'scroll');
+    myDiv.setAttribute('data-bs-target', '#navbar-example');
+
 </script>
 {% endblock %}
 
@@ -38,7 +239,7 @@
 <title>{{title}}</title>
 
 <!-- 首图 -->
-<section id="topimg" class="spotlight parallax bg-cover bg-size--cover" data-spotlight="fullscreen">
+<section id="topimg" class="vh-100 spotlight parallax bg-cover bg-size--cover" data-spotlight="fullscreen">
     <span class="mask bg-primary alpha-7 "></span>
     <div class="spotlight-holder py-lg pt-lg-xl" style="height: 588px;">
         <div class="container d-flex align-items-center no-padding">
@@ -54,90 +255,164 @@
                             </h2>
                             <p class="lead text-white mt-3 lh-180 c-white animated" data-animation-in="fadeInUp"
                                 data-animation-delay="2500">
-                                欢迎来到我的网站 <strong class="text-primary"">(๑‾ ꇴ ‾๑)</strong>
+                                welcome <strong class="text-primary"">(๑‾ ꇴ ‾๑)</strong>
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- 首图下部份内容 -->
+        <div class="d-flex justify-content-center align-items-center" style="height: 400px">
+            <!-- 图标1 -->
+                <div class="p-1">
+                    <button class="continue-application">
+                        <div>
+                            <div class="pencil"></div>
+                            <div class="folder">
+                                <div class="top">
+                                    <svg viewBox="0 0 24 27">
+                                        <path
+                                            d="M1,0 L23,0 C23.5522847,-1.01453063e-16 24,0.44771525 24,1 L24,8.17157288 C24,8.70200585 23.7892863,9.21071368 23.4142136,9.58578644 L20.5857864,12.4142136 C20.2107137,12.7892863 20,13.2979941 20,13.8284271 L20,26 C20,26.5522847 19.5522847,27 19,27 L1,27 C0.44771525,27 6.76353751e-17,26.5522847 0,26 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="paper"></div>
+                            </div>
+                        </div>
+                        Continue Application
+                    </button>
+                </div>
+            <!-- 图标2 -->
+                <div class="p-1">
+                    <button class="continue-application">
+                        <div>
+                            <div class="pencil"></div>
+                            <div class="folder">
+                                <div class="top">
+                                    <svg viewBox="0 0 24 27">
+                                        <path
+                                            d="M1,0 L23,0 C23.5522847,-1.01453063e-16 24,0.44771525 24,1 L24,8.17157288 C24,8.70200585 23.7892863,9.21071368 23.4142136,9.58578644 L20.5857864,12.4142136 C20.2107137,12.7892863 20,13.2979941 20,13.8284271 L20,26 C20,26.5522847 19.5522847,27 19,27 L1,27 C0.44771525,27 6.76353751e-17,26.5522847 0,26 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="paper"></div>
+                            </div>
+                        </div>
+                        Continue Application
+                    </button>
+                </div>
+            <!-- <div class="p-2"></div>
+            <div class="p-2"></div> -->
+          </div>
+        
     </div>
 </section>
+
 <!-- 导航栏 -->
 {% include 'navbar.html' %}
+
 <!-- 卡片 -->
 <section>
-    <div class="container px-4 py-5" id="custom-cards">
+    <div class=" container px-4 py-5" id="custom-cards">
         <h2 class="pb-2 border-bottom">
-            <img  class="rounded-circle border border-white" width="32" height="32" src="{% static 'img/site_logo_small.svg' %}" alt="">
+            <img class="rounded-circle border border-white" width="32" height="32"
+                src="{% static 'img/site_logo_small.svg' %}" alt="">
             信息
         </h2>
-    
+
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <img src="{% static 'img/site_logo_small.svg' %}" alt="Bootstrap" class="rounded-circle border border-white" width="32" height="32">
-                  </li>
-                  <li class="d-flex align-items-center me-3">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                    <small>Earth</small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                    <small>3d</small>
-                  </li>
-                </ul>
-              </div>
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url('');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long
+                            jacket</h3>
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                                <img src="{% static 'img/site_logo_small.svg' %}"
+                                    alt="Bootstrap"
+                                    class="rounded-circle border border-white" width="32"
+                                    height="32">
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#geo-fill"></use>
+                                </svg>
+                                <small>Earth</small>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#calendar3"></use>
+                                </svg>
+                                <small>3d</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
-    
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h3>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <img src="{% static 'img/site_logo_small.svg' %}" alt="Bootstrap" class="rounded-circle border border-white" width="32" height="32">
-                  </li>
-                  <li class="d-flex align-items-center me-3">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                    <small>Pakistan</small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                    <small>4d</small>
-                  </li>
-                </ul>
-              </div>
+
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url('');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title
+                            that wraps to multiple lines</h3>
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                                <img src="{% static 'img/site_logo_small.svg' %}"
+                                    alt="Bootstrap"
+                                    class="rounded-circle border border-white" width="32"
+                                    height="32">
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#geo-fill"></use>
+                                </svg>
+                                <small>Pakistan</small>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#calendar3"></use>
+                                </svg>
+                                <small>4d</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
-    
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <img src="{% static 'img/site_logo_small.svg' %}" alt="Bootstrap" class="rounded-circle border border-white" width="32" height="32">
-                  </li>
-                  <li class="d-flex align-items-center me-3">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                    <small>California</small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                    <small>5d</small>
-                  </li>
-                </ul>
-              </div>
+
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url('');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer
+                            title belongs here</h3>
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                                <img src="{% static 'img/site_logo_small.svg' %}"
+                                    alt="Bootstrap"
+                                    class="rounded-circle border border-white" width="32"
+                                    height="32">
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#geo-fill"></use>
+                                </svg>
+                                <small>California</small>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#calendar3"></use>
+                                </svg>
+                                <small>5d</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
 </section>
 
 

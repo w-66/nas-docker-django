@@ -6,7 +6,6 @@ def index(request):
     title = 'Blog'
     dict = {
         'title':title,
-        'site_logo':site_logo,
     }
     return render(request, 'blog/index.html', dict)
 def log(request):

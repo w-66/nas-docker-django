@@ -19,3 +19,15 @@ def test1(request):
     function_name = test1.__name__
     return render(request, 'demo/test1.html',{"title":function_name})
     
+def test2(request):
+    function_name = test2.__name__
+    return render(request, 'demo/test2.html',{"title":function_name})
+    
+def test3(request):
+    function_name = test3.__name__
+    return render(request, 'demo/test3.html',{"title":function_name})
+    
+def test4(request):
+    function_name = test4.__name__
+    return render(request, 'demo/test4.html',{"title":function_name})
+    

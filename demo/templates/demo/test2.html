@@ -1,0 +1,70 @@
+{% extends 'tplt_init_m.html'%}
+{% load static %}
+
+
+
+{% block js %}
+<script>
+    // 获取页面中的两个部分
+    const section1 = document.querySelector('.section-1');
+    const section2 = document.querySelector('.section-2');
+
+    // 监听页面滚动事件
+    window.addEventListener('scroll', () => {
+        // 获取当前滚动位置
+        const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+        // 判断是否接近第二部分的顶部位置
+        if (scrollPosition > section1.offsetHeight - 100) {
+            // 执行滚动动画到第二部分的内容
+            section2.scrollIntoView({ behavior: 'smooth',block: "end", inline: "nearest"});
+        }
+    });
+
+</script>
+{% endblock %}
+
+
+
+{% block css %}
+<style>
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    .section-1,
+    .section-2 {
+        height: 100%;
+    }
+
+    .section-1 {
+        background-color: lightblue;
+    }
+
+    .section-2 {
+        background-color: lightgreen;
+    }
+</style>
+{% endblock %}
+
+
+{%block bodyContent%}
+<title>{{title}}</title>
+<p>在这个示例中，滚动事件被绑定到窗口上，当滚动位置接近第二部分的顶部时（这里以距离第二部分顶部100像素的位置作为阈值），
+    使用 scrollIntoView() 方法执行滚动动画到第二部分的内容。这个方法有一个选项 behavior: 'smooth'，表示执行平滑滚动动画
+<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Element/scrollIntoView">https://developer.mozilla.org/zh-CN/docs/Web/API/Element/scrollIntoView</a>
+</p>
+<div class="section-1">
+    <h1>Section 1</h1>
+</div>
+<div class="section-2">
+    <h1>Section 2</h1>
+</div>
+
+
+
+{% endblock %}
+
