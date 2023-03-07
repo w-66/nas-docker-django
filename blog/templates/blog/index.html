@@ -3,6 +3,7 @@
 
 {% block css %}
 <link rel="stylesheet" href="{%static 'css/1.css'%}">
+<!-- 首图下方图标样式 -->
 <style>
 /* Define custom CSS variables */
 .continue-application {
@@ -219,6 +220,7 @@
 }
 
 </style>
+
 {% endblock %}
 
 {% block js %}
@@ -227,9 +229,38 @@
     // 添加类：控制导航栏粘滞在顶部
     var myDiv = document.getElementById("navbar");  // 获取到该标签的DOM对象
     myDiv.classList.add("sticky-top");           // 使用DOM对象的 classList 属性的 add() 方法来添加类名
-    // 添加属性
+    // 为本页的导航栏 添加属性
     myDiv.setAttribute('data-bs-spy', 'scroll');
     myDiv.setAttribute('data-bs-target', '#navbar-example');
+</script>
+
+<script>
+    // 调用设置高度的函数
+    setTopUnit2Height()
+
+    // 通过jquery获取 高度 来设置首页下方图标的位置为首图的底部位置
+    function setTopUnit2Height(){
+        var topunit1=$("#topunit1");
+        var topunit1Height = (topunit1.outerHeight(true));
+        console.log(topunit1Height)
+
+        var topimgHeight=$("#topimg");
+        var topimgHeight1 = (topimgHeight.outerHeight(true));
+        console.log(topimgHeight1)
+        var topunit2Height = topimgHeight1 - topunit1Height
+        console.log(topunit2Height)
+        addHeightForTopUnit2()
+
+        function addHeightForTopUnit2(){
+            // var h=$('#topunit2')
+            $('#topunit2').height(topunit2Height-10);
+        }
+    };
+
+    $(window).resize( function  () {
+        // 当网页变化时，调用函数修改#topunit2的高度
+        setTopUnit2Height()
+    });
 
 </script>
 {% endblock %}
@@ -242,7 +273,7 @@
 <section id="topimg" class="vh-100 spotlight parallax bg-cover bg-size--cover" data-spotlight="fullscreen">
     <span class="mask bg-primary alpha-7 "></span>
     <div class="spotlight-holder py-lg pt-lg-xl" style="height: 588px;">
-        <div class="container d-flex align-items-center no-padding">
+        <div class="container d-flex align-items-center no-padding" id="topunit1">
             <div class="col">
                 <div class="row cols-xs-space align-items-center text-center text-md-left justify-content-center">
                     <div class="col-7">
@@ -263,49 +294,46 @@
             </div>
         </div>
         <!-- 首图下部份内容 -->
-        <div class="d-flex justify-content-center align-items-center" style="height: 400px">
-            <!-- 图标1 -->
-                <div class="p-1">
-                    <button class="continue-application">
-                        <div>
-                            <div class="pencil"></div>
-                            <div class="folder">
-                                <div class="top">
-                                    <svg viewBox="0 0 24 27">
-                                        <path
-                                            d="M1,0 L23,0 C23.5522847,-1.01453063e-16 24,0.44771525 24,1 L24,8.17157288 C24,8.70200585 23.7892863,9.21071368 23.4142136,9.58578644 L20.5857864,12.4142136 C20.2107137,12.7892863 20,13.2979941 20,13.8284271 L20,26 C20,26.5522847 19.5522847,27 19,27 L1,27 C0.44771525,27 6.76353751e-17,26.5522847 0,26 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z">
-                                        </path>
-                                    </svg>
+        <div class="container d-flex align-items-end justify-content-center" id="topunit2">
+                <!-- 图标1 -->
+                    <div class="row m-1">
+                        <button class="continue-application">
+                            <div>
+                                <div class="pencil"></div>
+                                <div class="folder">
+                                    <div class="top">
+                                        <svg viewBox="0 0 24 27">
+                                            <path
+                                                d="M1,0 L23,0 C23.5522847,-1.01453063e-16 24,0.44771525 24,1 L24,8.17157288 C24,8.70200585 23.7892863,9.21071368 23.4142136,9.58578644 L20.5857864,12.4142136 C20.2107137,12.7892863 20,13.2979941 20,13.8284271 L20,26 C20,26.5522847 19.5522847,27 19,27 L1,27 C0.44771525,27 6.76353751e-17,26.5522847 0,26 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="paper"></div>
                                 </div>
-                                <div class="paper"></div>
                             </div>
-                        </div>
-                        Continue Application
-                    </button>
-                </div>
-            <!-- 图标2 -->
-                <div class="p-1">
-                    <button class="continue-application">
-                        <div>
-                            <div class="pencil"></div>
-                            <div class="folder">
-                                <div class="top">
-                                    <svg viewBox="0 0 24 27">
-                                        <path
-                                            d="M1,0 L23,0 C23.5522847,-1.01453063e-16 24,0.44771525 24,1 L24,8.17157288 C24,8.70200585 23.7892863,9.21071368 23.4142136,9.58578644 L20.5857864,12.4142136 C20.2107137,12.7892863 20,13.2979941 20,13.8284271 L20,26 C20,26.5522847 19.5522847,27 19,27 L1,27 C0.44771525,27 6.76353751e-17,26.5522847 0,26 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z">
-                                        </path>
-                                    </svg>
+                            Write
+                        </button>
+                    </div>
+                <!-- 图标2 -->
+                    <div class="row m-1">
+                        <button class="continue-application">
+                            <div>
+                                <div class="pencil"></div>
+                                <div class="folder">
+                                    <div class="top">
+                                        <svg viewBox="0 0 24 27">
+                                            <path
+                                                d="M1,0 L23,0 C23.5522847,-1.01453063e-16 24,0.44771525 24,1 L24,8.17157288 C24,8.70200585 23.7892863,9.21071368 23.4142136,9.58578644 L20.5857864,12.4142136 C20.2107137,12.7892863 20,13.2979941 20,13.8284271 L20,26 C20,26.5522847 19.5522847,27 19,27 L1,27 C0.44771525,27 6.76353751e-17,26.5522847 0,26 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="paper"></div>
                                 </div>
-                                <div class="paper"></div>
                             </div>
-                        </div>
-                        Continue Application
-                    </button>
-                </div>
-            <!-- <div class="p-2"></div>
-            <div class="p-2"></div> -->
+                            read
+                        </button>
+                    </div>
           </div>
-        
     </div>
 </section>
 
