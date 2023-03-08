@@ -8,7 +8,7 @@ def index(request):
         'title':title,
     }
     return render(request, 'blog/index.html', dict)
-def log(request):
-
-    return render(request, 'blog/lifelog.html', {'site_logo':site_logo})
+def lifelog(request):
+    
+    return render(request, 'blog/lifelog.html')
 
