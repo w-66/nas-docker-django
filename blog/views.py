@@ -8,6 +8,7 @@ def index(request):
         'title':title,
     }
     return render(request, 'blog/index.html', dict)
+    
 def lifelog(request):
     
     return render(request, 'blog/lifelog.html')
