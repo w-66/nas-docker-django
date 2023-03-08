@@ -1,4 +1,4 @@
-{%extends 'tplt_init_b.html'%}
+{%extends 'tplt_init.html'%}
 {% load static %}
 
 {% block css %}
@@ -140,7 +140,7 @@
         var windowHeight = $(window).height();
         let topUnitHeight = (topSection.outerHeight(true));
         let navbarHeight = (navbar1.outerHeight(true));
-        console.log(topUnitHeight, navbarHeight, windowHeight)
+        // console.log(topUnitHeight, navbarHeight, windowHeight)
 
         // 设置标签高度
         $("#topSection").height(windowHeight-navbarHeight);
