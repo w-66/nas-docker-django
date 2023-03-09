@@ -1,0 +1,39 @@
+<nav class="container  mt-3 mb-0">
+    <div class="row justify-content-center">
+        <ul class="pagination m-0 col-auto">
+            {% if page_obj.has_previous %}
+            <li class="page-item"><a class="page-link px-1" href="?page=1">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-arrow-double-left"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link px-1" href="?page={{ page_obj.previous_page_number }}">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-arrow-left-bold"></use>
+                    </svg>
+                </a>
+            </li>
+            {% endif %}
+
+            <li class="page-item"><a class="page-link" href="#">
+                {{page_obj.number}}/{{ page_obj.paginator.num_pages}}
+            </a></li>
+            {% if page_obj.has_next %}
+            <li class="page-item"><a class="page-link px-1" href="?page={{ page_obj.next_page_number }}">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-arrow-right-bold"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link px-1" href="?page={{ page_obj.paginator.num_pages }}">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-arrow-double-right"></use>
+                    </svg>
+                </a>
+            </li>
+            {% endif %}
+
+        </ul>
+    </div>
+</nav>

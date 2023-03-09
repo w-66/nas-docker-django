@@ -15,6 +15,7 @@ def index(request):
 class Lifelog_ListView(generic.ListView):
     template_name = 'blog/lifelog.html'
     context_object_name = 'queryset'
+    paginate_by = 5
     def get_queryset(self):
         return Lifelog.objects.order_by('-pub_date')
 
