@@ -34,7 +34,24 @@ class LifelogAdmin(admin.ModelAdmin):
     list_per_page = 20                         # 一页上限
     date_hierarchy = 'pub_date'                # 时间筛选
     list_max_show_all = 200                    # default 控制 “全部显示” 的管理员更改列表页面上可以出现多少个项目。
-    autocomplete_fields = ['tags']             # use select2 to select user   
+    autocomplete_fields = ['tags']             # use select2 to select user  
+
+
+
+
+    actions = ['custom_delete']
+    
+    def custom_delete(self, request, queryset):
+        # You cannot call .distinct() before .delete()
+        queryset = queryset.distinct()
+        
+        # Perform the actual delete operation
+        for obj in queryset:
+            obj.delete()
+    custom_delete.short_description = "自定义删除所选对象"
+    # delete_queryset = [custom_delete]
+   
+
 
 class TagAdmin(admin.ModelAdmin):
     search_fields = ['tag']    # 搜索
