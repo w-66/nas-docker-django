@@ -33,7 +33,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 # 这里包括了会在你项目中启用的所有 Django 应用
 INSTALLED_APPS = [
-    'django.contrib.admin',        # 自带应用 自带的admin管理
+    'django.contrib.admin',        # 自带应用 自带的admin管理 ; Django 会自动在每个应用程序中寻找 admin 模块并导入它。
     'django.contrib.auth',         # 自带应用 认证授权系统 admin管理 依赖
     'django.contrib.contenttypes', # 自带应用 内容类型框架 admin管理 依赖
     'django.contrib.sessions',     # 自带应用 会话框架 admin管理 依赖

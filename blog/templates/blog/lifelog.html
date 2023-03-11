@@ -11,13 +11,15 @@
     {% if queryset %}
 
     {% for item in queryset %}
-    <div class="d-flex text-muted pt-3">
+    <div class="d-flex text-muted pt-3 ">
         <img src="{% static 'img/site_logo_small.svg' %}" class="bd-placeholder-img flex-shrink-0 me-2 rounded"
             width="32" height="32" alt="">
         <p class="pb-3 mb-0 small lh-sm border-bottom text-truncate">
             <strong class="d-block text-dark">
-                <font style="vertical-align: inherit;">
-                    {{item.title_text}}
+                <font style="vertical-align: inherit;" class="me-3">
+                    {% for tag in item.tags.all %}
+                    <span class="badge bg-secondary">{{ tag.tag }}</span>
+                    {% endfor %}
                 </font>
             </strong>
             <span class="">

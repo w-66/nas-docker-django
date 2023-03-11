@@ -2,30 +2,46 @@
     <div class="row justify-content-center">
         <ul class="pagination m-0 col-auto">
             {% if page_obj.has_previous %}
+            <!-- 第一页 -->
             <li class="page-item"><a class="page-link px-1" href="?page=1">
                     <svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-arrow-double-left"></use>
                     </svg>
                 </a>
             </li>
-            <li class="page-item"><a class="page-link px-1" href="?page={{ page_obj.previous_page_number }}">
+            <!-- 上一页 -->
+            <li class="page-item"><a class="page-link px-1 border-end-0" href="?page={{ page_obj.previous_page_number }}">
                     <svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-arrow-left-bold"></use>
                     </svg>
                 </a>
             </li>
             {% endif %}
+            <!-- 页码/总页码 -->
+            <li class="page-item ">
+                <form class="form-inline d-flex">
+                    <div class="form-group">
 
-            <li class="page-item"><a class="page-link" href="#">
-                {{page_obj.number}}/{{ page_obj.paginator.num_pages}}
-            </a></li>
+                      <input type="text" 
+                             class="form-control rounded-0  " name="page" 
+                             placeholder="{{page_obj.number}}/{{page_obj.paginator.num_pages}}" required
+                             style="width: 70px;"
+                             >
+                    </div>
+                    <button type="submit" class="btn btn-primary rounded-0 border-end-0">Go</button>
+                </form>
+ 
+            </li>
             {% if page_obj.has_next %}
+
+            <!-- 下一页 -->
             <li class="page-item"><a class="page-link px-1" href="?page={{ page_obj.next_page_number }}">
                     <svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-arrow-right-bold"></use>
                     </svg>
                 </a>
             </li>
+            <!-- 最后一页 -->
             <li class="page-item"><a class="page-link px-1" href="?page={{ page_obj.paginator.num_pages }}">
                     <svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-arrow-double-right"></use>

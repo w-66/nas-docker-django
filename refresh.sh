@@ -1,0 +1,1 @@
+tail -f /www/django_www/django_www.log 
