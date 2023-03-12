@@ -1,0 +1,36 @@
+{% extends 'tplt_init.html'%}
+{% load static %}
+{% block css %}
+<style>
+    .text-truncate-2 {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 3;
+        /* 控制文本行数 */
+    }
+</style>
+{% endblock %}
+{% block js %}
+{% endblock %}
+
+{%block bodyContent%}
+<div class="container">
+    <!-- Block level -->
+    <div class="row">
+        <div class="col-4 text-truncate-2">
+            This text is quite long, and will be truncated once displayed.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus perspiciatis id rerum eveniet vitae eius,
+            error consequatur voluptates esse. Atque aut modi in at ipsam optio provident ullam quasi perspiciatis?
+            Veritatis expedita minus, maxime alias iure fugit mollitia, dolore vitae dicta aliquid sunt, assumenda
+            architecto rem blanditiis quo voluptas facilis at distinctio unde asperiores. Vero enim nesciunt illum
+            placeat molestias?
+        </div>
+    </div>
+
+    <!-- Inline level -->
+    <span class="d-inline-block text-truncate" style="max-width: 150px;">
+        This text is quite long, and will be truncated once displayed.
+    </span>
+</div>
+{% endblock %}

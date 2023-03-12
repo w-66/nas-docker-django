@@ -57,7 +57,7 @@ class LifelogAdmin(admin.ModelAdmin):
 
 class TagAdmin(admin.ModelAdmin):
     search_fields = ['tag']    # 搜索
-    ordering = ['id']          # 通过id进行正序排序，'-' 表示逆序
+    ordering = ['-references_count']          # 通过id进行正序排序，'-' 表示逆序
 
 admin.site.register(Lifelog,LifelogAdmin)
 admin.site.register(Tag,TagAdmin)
