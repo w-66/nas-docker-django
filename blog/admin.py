@@ -40,7 +40,7 @@ class LifelogAdmin(admin.ModelAdmin):
     date_hierarchy = 'pub_date'                # 时间筛选
     list_max_show_all = 200                    # default 控制 “全部显示” 的管理员更改列表页面上可以出现多少个项目。
     autocomplete_fields = ['tags']             # use select2 to select user  
-
+    ordering = ['-pub_date']                   # 以日期进行排序
 
     actions = ['custom_delete']                # 自定义批量删除，动作，原方法在搜索之后无法使用，因为搜索之后使用了distinct()，delete()无法在此之后被调用   
     def custom_delete(self, request, queryset):
@@ -57,7 +57,8 @@ class LifelogAdmin(admin.ModelAdmin):
 
 class TagAdmin(admin.ModelAdmin):
     search_fields = ['tag']    # 搜索
-    ordering = ['-references_count']          # 通过id进行正序排序，'-' 表示逆序
+    ordering = ['-references_count']          # 通过引用数量 进行倒序排序，'-' 表示逆序
+    list_display = ('id', 'tag', 'references_count')
 
 admin.site.register(Lifelog,LifelogAdmin)
 admin.site.register(Tag,TagAdmin)
