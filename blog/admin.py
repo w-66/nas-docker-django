@@ -24,7 +24,7 @@ class LifelogAdmin(admin.ModelAdmin):
     def formatted_pub_date(self, obj):         # 自定义pub_date的格式
         return html.format_html(
             '<span style="color: DeepSkyBlue;">{}</span>',
-            obj.pub_date.strftime("%Y-%m-%d %H:%M")
+            obj.pub_date.strftime("%Y-%m-%d %H:%M %A")
         )
     formatted_pub_date.short_description = '记录日期'
     def tags_list(self, obj):                  # 自定义 在列表中显示 条目对应的tags
