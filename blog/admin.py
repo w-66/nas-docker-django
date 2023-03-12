@@ -33,13 +33,14 @@ class LifelogAdmin(admin.ModelAdmin):
         
     # list_filter = ['pub_date']               # 过滤选项
 
-    search_fields = ['tags__tag']    
+    search_fields = ['tags__tag', 'content', 'pub_date']    
                                                # 搜索 
                                                # tags__tag 表示关联查询，它告诉Django ORM搜索tags字段的相关(相关联的)模型（即Tag模型），并使用tag字段进行搜索。
-    list_per_page = 20                         # 一页上限
+    list_per_page = 40                         # 一页上限
     date_hierarchy = 'pub_date'                # 时间筛选
     list_max_show_all = 200                    # default 控制 “全部显示” 的管理员更改列表页面上可以出现多少个项目。
     autocomplete_fields = ['tags']             # use select2 to select user  
+
 
     actions = ['custom_delete']                # 自定义批量删除，动作，原方法在搜索之后无法使用，因为搜索之后使用了distinct()，delete()无法在此之后被调用   
     def custom_delete(self, request, queryset):
@@ -56,7 +57,7 @@ class LifelogAdmin(admin.ModelAdmin):
 
 class TagAdmin(admin.ModelAdmin):
     search_fields = ['tag']    # 搜索
-
+    ordering = ['id']          # 通过id进行正序排序，'-' 表示逆序
 
 admin.site.register(Lifelog,LifelogAdmin)
 admin.site.register(Tag,TagAdmin)

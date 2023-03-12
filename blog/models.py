@@ -1,12 +1,15 @@
 from django.db import models
 from django.utils import timezone
 
-
+# 为了动态计算每个标签的引用次数
+from django.db.models.signals import m2m_changed
+from django.dispatch import receiver
 
 # Create your models here.
 
 class Tag(models.Model):
     tag = models.CharField(verbose_name='标签名', unique=True, max_length=200)
+    references_count = models.IntegerField(verbose_name='引用次数', default=0)
     def __str__(self):
         return self.tag
 
@@ -24,7 +27,12 @@ class Lifelog(models.Model):
     # tag = models.ForeignKey(Tag, null=True, blank=True, on_delete=models.SET_NULL, verbose_name='标签')
     tags = models.ManyToManyField(Tag, verbose_name='标签')
 
-        
     # def __str__(self):
     #     return self.content
 
+@receiver(m2m_changed, sender=Lifelog.tags.through)
+def update_tag_references_count(sender, instance, action, model, **kwargs):
+    if action == 'post_add' or action == 'post_remove':
+        for tag in instance.tags.all():
+            tag.references_count = tag.lifelog_set.count()
+            tag.save()

@@ -8,15 +8,19 @@
 {% include "navbar.html" %}
 
 <div class="container my-3 p-3 bg-body rounded shadow-sm">
+    <!--  -->
+    <!-- <a name="" id="" class="btn btn-primary" href="#" role="button">Button</a> -->
+    <a href="/admin/blog/lifelog/add/" class="addlink btn btn-primary">增加</a>
+    <!--  -->
     {% if queryset %}
-
     {% for item in queryset %}
     <div class="d-flex text-muted pt-3 ">
         <img src="{% static 'img/site_logo_small.svg' %}" class="bd-placeholder-img flex-shrink-0 me-2 rounded"
             width="32" height="32" alt="">
-        <p class="pb-3 mb-0 small lh-sm border-bottom text-truncate">
+        <p class="pb-3 mb-0 small lh-sm border-bottom text-truncate h-25">
             <strong class="d-block text-dark">
                 <font style="vertical-align: inherit;" class="me-3">
+                    {{ item.pub_date|date:"Y-m-d H:m" }}
                     {% for tag in item.tags.all %}
                     <span class="badge bg-secondary">{{ tag.tag }}</span>
                     {% endfor %}
