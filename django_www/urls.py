@@ -20,7 +20,6 @@ urlpatterns = [
     path('polls/', include('polls.urls')),
     path('demo/', include('demo.urls')),
     path('blog/', include('blog.urls')),
-    path('editormd/', include('editormd.urls')),
     path('tagsystem/', include('tagsystem.urls')),
 
 

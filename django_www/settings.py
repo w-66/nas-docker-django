@@ -45,7 +45,6 @@ INSTALLED_APPS = [
     'demo',                        # 自建app 学习时的demo与案例等
     'blog',                        # 个人信息页
     'tagsystem',                   # 标签系统
-    'editormd'
 ]
 
 MIDDLEWARE = [
