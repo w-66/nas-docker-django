@@ -8,7 +8,7 @@ class LifelogAdmin(admin.ModelAdmin):
     #  “添加” 和 “更改” 页面的布局
     fieldsets = [
         ('基础信息', {
-            'fields': ['pub_date','tags', 'location'],
+            'fields': ['pub_date',('tags', 'location')],
             # 'classes': ['wide']
             # 'description': '日期'
         }),
