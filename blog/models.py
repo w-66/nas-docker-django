@@ -27,8 +27,8 @@ class Lifelog(models.Model):
     # tag = models.ForeignKey(Tag, null=True, blank=True, on_delete=models.SET_NULL, verbose_name='标签')
     tags = models.ManyToManyField(Tag, verbose_name='标签')
 
-    # def __str__(self):
-    #     return self.content
+    def __str__(self):
+        return self.content
 
 
 ### v2 解决v1的问题
