@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'demo',                        # 自建app 学习时的demo与案例等
     'blog',                        # 个人信息页
     'tagsystem',                   # 标签系统
+    'mdeditor',                   # Markdown 编辑器
 ]
 
 MIDDLEWARE = [
@@ -160,3 +161,7 @@ STATICFILES_DIRS = [ BASE_DIR / "static" ]
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')  #uploads必须存在，且在项目目录下
+MEDIA_URL = '/media/'   #你上传的文件和图片会默认存在/uploads/editor下
+X_FRAME_OPTIONS = 'SAMEORIGIN'  # django 3.0 + 默认为 deny

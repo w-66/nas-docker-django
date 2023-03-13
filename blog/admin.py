@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Lifelog,Tag
+from .models import Lifelog,Tag,Article
 from django.db import models
 from django.utils import html
 
@@ -60,5 +60,11 @@ class TagAdmin(admin.ModelAdmin):
     ordering = ['-references_count']          # 通过引用数量 进行倒序排序，'-' 表示逆序
     list_display = ('id', 'tag', 'references_count')
 
+class ArticleAdmin(admin.ModelAdmin):
+    list_display = ('id', 'title')
+    list_display_links = ('id', 'title')      # 列表可编辑跳转链接
+
+
 admin.site.register(Lifelog,LifelogAdmin)
 admin.site.register(Tag,TagAdmin)
+admin.site.register(Article,ArticleAdmin)

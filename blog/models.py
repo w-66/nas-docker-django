@@ -56,3 +56,14 @@ def delete_lifelog(sender, instance, **kwargs):
 #         for tag in instance.tags.all():
 #             tag.references_count = tag.lifelog_set.count()
 #             tag.save()
+
+
+#####
+from mdeditor.fields import MDTextField
+
+class Article(models.Model):
+    title = models.CharField(verbose_name='标题', max_length=10)
+    content = MDTextField(verbose_name='内容')
+    
+    def __str__(self):
+        return self.title
