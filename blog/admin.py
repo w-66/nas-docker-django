@@ -58,7 +58,7 @@ class LifelogAdmin(admin.ModelAdmin):
 class TagAdmin(admin.ModelAdmin):
     search_fields = ['tag']    # 搜索
     ordering = ['-references_count']          # 通过引用数量 进行倒序排序，'-' 表示逆序
-    list_display = ('id', 'tag', 'references_count')
+    list_display = ( 'tag', 'references_count', 'id')
 
 class ArticleAdmin(admin.ModelAdmin):
     list_display = ('id', 'title')
