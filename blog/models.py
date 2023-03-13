@@ -27,8 +27,8 @@ class Lifelog(models.Model):
     # tag = models.ForeignKey(Tag, null=True, blank=True, on_delete=models.SET_NULL, verbose_name='标签')
     tags = models.ManyToManyField(Tag, verbose_name='标签')
 
-    def __str__(self):
-        return self.content
+    # def __str__(self):
+    #     return self.content
 
 
 ### v2 解决v1的问题
@@ -64,6 +64,7 @@ from mdeditor.fields import MDTextField
 class Article(models.Model):
     title = models.CharField(verbose_name='标题', max_length=10)
     content = MDTextField(verbose_name='内容')
+    pub_date = models.DateTimeField(verbose_name='发布时间',default=timezone.now)
     
     def __str__(self):
         return self.title

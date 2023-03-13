@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.views import generic
 from .models import Lifelog, Article
 
@@ -29,15 +29,41 @@ class Lifelog_ListView(generic.ListView):
 #     def get_queryset(self):
 #         return Lifelog.objects
 
-import markdown
+# import markdown
+from django import forms
 
-def article(request, pk):
+class Article_ListView(generic.ListView):
+    # pass
+    template_name = 'blog/article_list.html'
+    context_object_name = 'queryset'
+    def get_queryset(self):
+        return Article.objects.order_by('-pub_date')
+
+def article_detail(request, pk):
     article = get_object_or_404(Article, pk=pk)
     # 记得在顶部引入 markdown 模块
-    article.content = markdown.markdown(article.content,
-                                  extensions=[
-                                     'markdown.extensions.extra',
-                                     'markdown.extensions.codehilite',
-                                     'markdown.extensions.toc',
-                                  ])
-    return render(request, 'blog/article.html', context={'article': article})
+    # article.content = markdown.markdown(article.content,
+    #                               extensions=[
+    #                                  'markdown.extensions.extra',
+    #                                  'markdown.extensions.codehilite',
+    #                                  'markdown.extensions.toc',
+    #                               ])
+    return render(request, 'blog/article_detail.html', context={'article': article})
+
+# 在 Form 中使用 markdown 编辑字段
+class ArticleMDEditorModleForm(forms.ModelForm):
+    class Meta:
+        model = Article
+        fields = '__all__'
+
+# 在前端使用markdown编辑器
+def article_change(request, pk):
+    """新增; 修改 使用markdown编辑器; """
+    if request.method == "GET":
+        form = ArticleMDEditorModleForm()
+        return render(request, 'blog/article_change.html', {'form':form})
+
+    form = ArticleMDEditorModleForm(data=request.POST)
+    if form.is_valid():
+        form.save()
+        return redirect('/')
