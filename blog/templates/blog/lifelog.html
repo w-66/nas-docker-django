@@ -18,7 +18,7 @@
         <img src="{% static 'img/site_logo_small.svg' %}" class="bd-placeholder-img flex-shrink-0 me-2 rounded"
             width="32" height="32" alt="">
         <p class="pb-3 mb-0 small lh-sm border-bottom text-truncate h-25">
-            <strong class="d-block text-dark">
+            <strong class="d-block">
                 <font style="vertical-align: inherit;" class="me-3">
                     {{ item.pub_date|date:"Y-m-d H:m" }}
                     {% for tag in item.tags.all %}

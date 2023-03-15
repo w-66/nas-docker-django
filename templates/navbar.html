@@ -48,17 +48,5 @@
     </div>
 </nav>
 
-<script>
-    $("#switch").change(function () {
-        // 获取复选框的选中状态
-        var isChecked = $(this).prop("checked");
 
-        // 如果选中，将 body 标签的 data-bs-theme 属性设置为 "dark"，否则设置为 "light"
-        if (isChecked) {
-            $("body").attr("data-bs-theme", "dark");
-        } else {
-            $("body").attr("data-bs-theme", "light");
-        }
-    });
-</script>
 <!-- End Navbar -->
