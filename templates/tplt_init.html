@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- 引入Bootstrap css-->
-    <!-- <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}"> -->
-    <link rel="stylesheet" href="{% static 'bootstrap/custom.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'bootstrap/custom.css' %}"> -->
 
 
     <!-- fontawesome图标 -->
@@ -33,9 +33,7 @@
 {% block css %}{% endblock %}
 
 </head>
-<body>
-
-
+<body  data-bs-theme="light">
 {% block bodyContent %}{% endblock %}
 
 <!-- 引入JS，顺序很重要... -->
@@ -47,7 +45,8 @@
 <script src="{% static 'popper/popper2.11.6.js' %}" ></script>
 
 <!-- 引入Bootstrap -->
-<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+<!-- <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script> -->
+<script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
 <!-- 包含了popper.js的Bootstrap文件，但是体积较大，暂时不使用 -->
 <!-- <script src="{% static 'bootstrap/js/bootstrap.bundle.js' %}"></script> -->
@@ -56,5 +55,35 @@
 <script defer src="//at.alicdn.com/t/c/font_3883106_okkeh74ucrr.js"></script>
 
 {% block js %}{% endblock %}
+<script>
+$(function() {
+  // 读取复选框的状态
+  var isChecked = localStorage.getItem("isChecked") === "true";
+  // 设置复选框的状态
+  $("#switch").prop("checked", isChecked);
+  // 根据复选框的状态设置主题
+  setTheme(isChecked);
+
+  // 监听复选框的点击事件
+  $("#switch").on("click", function() {
+    // 保存复选框的状态到本地存储
+    localStorage.setItem("isChecked", $(this).prop("checked"));
+    // 根据复选框的状态设置主题
+    setTheme($(this).prop("checked"));
+  });
+
+  // 设置主题的函数
+  function setTheme(isChecked) {
+    if (isChecked) {
+      // 如果复选框选中，则设置 body 标签的 data-bs-theme 属性为 "dark"
+      $("body").attr("data-bs-theme", "dark");
+    } else {
+      // 如果复选框未选中，则设置 body 标签的 data-bs-theme 属性为 "light"
+      $("body").attr("data-bs-theme", "light");
+    }
+  }
+});
+
+</script>
 </body>
 </html>
