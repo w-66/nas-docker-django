@@ -12,7 +12,7 @@
 {% include 'navbar.html' %}
 <main>
 <!-- 第一部分 -->
-    <section class="py-5 text-center container">
+    <section class="py-5 text-center container ">
         <div class="row py-lg-2">
             <div class="col-lg-6 col-md-8 mx-auto">
                 <h1 class="fw-light">Album example</h1>
@@ -29,9 +29,7 @@
 <!-- 第二部份 -->
     <div class="album py-5">
         <div class="container">
-
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3 ">
                 {% if queryset %}
                 {% for item in queryset %}
                 <div class="col">
@@ -51,7 +49,7 @@
                                     <button type="button" class="btn btn-sm btn-outline-secondary"><a href="{% url 'blog:article_detail' item.id %}">View</a></button>
                                     <button type="button" class="btn btn-sm btn-outline-secondary"><a href="">Edit</a></button>
                                 </div>
-                                <small class="text-muted">{{item.pub_date|date:"y m d"}}</small>
+                                <small class="text-muted">{{item.pub_date|date:"ymd"}}</small>
                             </div>
                         </div>
                     </div>
