@@ -1,0 +1,18 @@
+/* 隐藏火狐浏览器的滚动条 */
+html {
+    scrollbar-width: none;
+}
+
+/* 隐藏谷歌浏览器的滚动条 */
+html::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Edge */
+}
+
+#topimg {
+    /* # 首页大图 */
+    background-image: url("/static/img/secery.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+}
