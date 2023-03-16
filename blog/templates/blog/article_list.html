@@ -1,0 +1,78 @@
+{% extends 'tplt_init.html'%}
+{% load static %}
+{% block css %}
+{% endblock %}
+{% block js %}
+{% endblock %}
+
+
+{%block bodyContent%}
+
+<!-- 导航栏 -->
+{% include 'navbar.html' %}
+<main>
+<!-- 第一部分 -->
+    <section class="py-5 text-center container">
+        <div class="row py-lg-2">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-light">Album example</h1>
+                <p class="lead text-muted">
+                    {% lorem 1 b  %} 
+                </p>
+                <p>
+                    <!-- <a href="{% url 'blog:article_add' %}" class="btn btn-primary my-2">添加</a> -->
+                    <!-- <a href="#" class="btn btn-secondary my-2">Secondary action</a> -->
+                </p>
+            </div>
+        </div>
+    </section>
+<!-- 第二部份 -->
+    <div class="album py-5 bg-light">
+        <div class="container">
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+                {% if queryset %}
+                {% for item in queryset %}
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                                dy=".3em">{{forloop.counter}}、{{item.title}}</text>
+                        </svg>
+
+                        <div class="card-body">
+                            <p class="card-text">{{ item.content|truncatechars:30 }}</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"><a href="{% url 'blog:article_detail' item.id %}">View</a></button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"><a href="">Edit</a></button>
+                                </div>
+                                <small class="text-muted">{{item.pub_date|date:"y m d"}}</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                {% endfor %}
+                {% else %}
+                <p>No querset are available.</p>
+                {% endif %}
+
+
+
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<!-- 页脚 -->
+{% include 'footer.html' %}
+
+
+
+{% endblock %}

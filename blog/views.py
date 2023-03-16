@@ -29,4 +29,12 @@ class Lifelog_ListView(generic.ListView):
 #     def get_queryset(self):
 #         return Lifelog.objects
 
-    
+from django import forms
+
+class Article_ListView(generic.ListView):
+    # pass
+    template_name = 'blog/article_list.html'
+    context_object_name = 'queryset'
+    def get_queryset(self):
+        return Article.objects.order_by('-pub_date')
+

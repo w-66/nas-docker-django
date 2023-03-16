@@ -1,0 +1,26 @@
+{% extends 'tplt_init.html'%}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+<style>
+    
+</style>
+{% endblock %}
+{% block js %}
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+<script>
+  hljs.highlightAll();
+</script> -->
+
+{% endblock %}
+
+{%block bodyContent%}
+{% include 'navbar.html' %}
+
+<div class="container-md">
+    <div>
+        {{ article|safe }}
+
+    </div>
+</div>
+{% endblock %}
