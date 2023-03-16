@@ -32,7 +32,7 @@
                     {% lorem 1 b %}
                 </p>
                 <p>
-                    <!-- <a href="{% url 'blog:article_add' %}" class="btn btn-primary my-2">添加</a> -->
+                    <!-- <a href="" class="btn btn-primary my-2">添加</a> -->
                     <!-- <a href="#" class="btn btn-secondary my-2">Secondary action</a> -->
                 </p>
             </div>
@@ -51,6 +51,7 @@
                             <div class="card mb-3">
                                 <div class="row g-0">
                                     <div class="col-md-8">
+                                        <a href="{% url 'blog:article_detail' item.id %}" class="text-body">
                                         <div class="card-body">
                                             <h5 class="card-title">{{forloop.counter}}、{{item.title}}</h5>
                                             <p class="card-text">{{ item.content|truncatechars:30 }}</p>
@@ -58,6 +59,7 @@
                                                     class="text-muted">{{item.pub_date|date:"ymd"}}</small>
                                             </p>
                                         </div>
+                                    </a>
                                     </div>
                                     <div class="col-md-4 card_bg_img">
                                         <!-- <img  src="{% static 'img/2.jpg' %}" class="img-fluid rounded-start" alt="..."> -->
