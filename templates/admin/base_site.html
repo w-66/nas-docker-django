@@ -1,9 +1,14 @@
 {% extends "admin/base.html" %}
+{% load static %}
 
 {% block title %}{% if subtitle %}{{ subtitle }} | {% endif %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
 
 {% block branding %}
-<h1 id="site-name"><a href="{% url 'admin:index' %}">My site manager</a></h1>
+<div style="display: flex; align-items: center;">
+    <img src="{% static 'img/site_logo_small.svg' %}" style="width: 2em; margin-right: 1em;" alt="logo">
+    <h1 id="site-name"><a href="{% url 'admin:index' %}">Blog Background Manager</a></h1>
+</div>
+
 {% endblock %}
 
 {% block nav-global %}{% endblock %}

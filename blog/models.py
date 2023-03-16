@@ -57,7 +57,6 @@ def delete_lifelog(sender, instance, **kwargs):
 #             tag.references_count = tag.lifelog_set.count()
 #             tag.save()
 
-
 #####
 # from mdeditor.fields import MDTextField
 

@@ -1,7 +1,9 @@
 from django.contrib import admin
 from .models import Lifelog,Tag, Article
+
 from django.db import models
 from django.utils import html
+
 
 @admin.display(empty_value='Null')    # empty_value_display = '-empty-' # 该属性覆盖记录字段为空（None、空字符串等）的默认显示值。默认值是 - （破折号）。
 class LifelogAdmin(admin.ModelAdmin):
