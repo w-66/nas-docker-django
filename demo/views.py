@@ -50,8 +50,12 @@ class MovieSerializers(serializers.Serializer):
     def create(self, validated_data):
         add_movie = Movie.objects.create(**self.validated_data)
         return add_movie
-
-class APIViewMovie(APIView):
+    def update(self, validated_data):
+        update = Movie.objects.filter(id=id).update(**self.validated_data)
+        return update
+    
+#===========查所有&添加数据#===========
+class MovieAPIView(APIView):
     def get(self, request):
         movies_list = Movie.objects.all()
         serializer = MovieSerializers(instance=movies_list, many=True)
@@ -68,7 +72,27 @@ class APIViewMovie(APIView):
             return Response(serializer.data)
         else:
             return Response(serializer.errors)
-
+#===========查询一条,更新一条
+class MovieDetailAPIView(APIView):
+    def get(self, request, id):
+        # movie_detail = Movie.objects.get(id=id)
+        movie_detail = Movie.objects.filter(id=id).first()
+        serializers = MovieSerializers(instance=movie_detail, many=False)
+        return Response(serializers.data)
+    #===========更新一条
+    def post(self, request, id):
+        update_data = Movie.objects.get(id=id)
+        serializer = MovieSerializers(instance=update_data, data=request.data)
+        if serializer.is_valid():
+            print("更新数据ing", serializer.validated_data)  # >> 更新数据ing OrderedDict([('name_ch', '千与千寻'), ('name_en', 'Spirited Away'), ('movie_synopsis', '更新数据')])
+            Movie.objects.filter(id=id).update(**serializer.validated_data)
+            update = Movie.objects.filter(id=id).first()
+            serializer.instance = update
+            # serializer.save()
+            return Response(serializer.data)
+        else:
+            print("更新数据失败")
+            return Response(serializer.errors)
 
 ##############其他Demo##############
 def navbar1(request):
