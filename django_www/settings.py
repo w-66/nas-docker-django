@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',     # 自带应用 会话框架 admin管理 依赖
     'django.contrib.messages',     # 自带应用 消息框架 admin管理 依赖
     'django.contrib.staticfiles',  # 自带应用 管理静态文件的框架
+    'rest_framework',              # DRF 
     'app01',                       # 自建的app01 入门学习
     'app02',                       # 自建的app02 学习
     'polls',                       # Django官方文档入门学习教程案例
@@ -51,7 +52,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',  # 自带admin管理 相关
     'django.contrib.messages.middleware.MessageMiddleware',     # 自带admin管理 相关
     'django.middleware.clickjacking.XFrameOptionsMiddleware',

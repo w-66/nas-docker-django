@@ -1,10 +1,19 @@
 from django.urls import path
-from . import views
+from demo import views
 
 app_name = 'demo'
 
 urlpatterns = [
     path('', views.index, name='index'),
+
+    ##############DRF Demo START##############
+    # path('rdf/', views.rdf, name='demo_rdf'),
+    path('rdf/', views.CBV_View.as_view(), name='demo_rdf'),
+    path('rdf/movie/', views.APIViewMovie.as_view()),
+    path('rdf/movie/(\d+)', views.APIViewMovie.as_view()),    
+    
+    ##############DRF END##############
+
 
     path('navbar/1/', views.navbar1, name='navbar1'),
     path('navbar/2/', views.navbar2, name='navbar2'),
