@@ -47,6 +47,10 @@ class MovieSerializers(serializers.Serializer):
     name_en = serializers.CharField(max_length=100)
     description = serializers.CharField(source="movie_synopsis", required=False)
 
+    def create(self, validated_data):
+        add_movie = Movie.objects.create(**self.validated_data)
+        return add_movie
+
 class APIViewMovie(APIView):
     def get(self, request):
         movies_list = Movie.objects.all()
