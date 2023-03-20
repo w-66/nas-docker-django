@@ -1,7 +1,12 @@
 from django.urls import path, re_path
 from demo import views
+from rest_framework import routers
 
 app_name = 'demo'
+
+router = routers.DefaultRouter()
+router.register('drf/movie', views.MovieModelViewSet)
+
 
 urlpatterns = [
     path('', views.index, name='index'),
@@ -13,12 +18,13 @@ urlpatterns = [
     # path('drf/movie/', views.MovieView.as_view()),
     # re_path('drf/movie/(?P<pk>\d+)/', views.MovieDetailView.as_view()),    # 与下相同
     # path('drf/movie/<int:id>/', views.MovieDetailView.as_view()),    
-    # ----使用ViewSet，两条路由使用同一个类
-    # path("drf/movie/", views.PublishView.as_view({'get':'get_all', 'post':'add_item'})),
-    # path("drf/movie/<int:id>/", views.PublishView.as_view({'get':'get_item', 'put':'update_item', 'delete':'delete_item'})),
-    # 
-    path("drf/movie/", views.MovieModelViewSet.as_view({'get':'list', 'post':'create'})),
-    path("drf/movie/<int:id>/", views.MovieModelViewSet.as_view({'get':'retrieve', 'put':'update', 'delete':'destroy'})),
+    # # ----使用ViewSet，两条路由使用同一个类
+    # # path("drf/movie/", views.PublishView.as_view({'get':'get_all', 'post':'add_item'})),
+    # # path("drf/movie/<int:id>/", views.PublishView.as_view({'get':'get_item', 'put':'update_item', 'delete':'delete_item'})),
+    # # 
+    # path("drf/movie/", views.MovieModelViewSet.as_view({'get':'list', 'post':'create'})),
+    # path("drf/movie/<int:id>/", views.MovieModelViewSet.as_view({'get':'retrieve', 'put':'update', 'delete':'destroy'})),
+
 
     ##############DRF END##############
     
@@ -30,3 +36,4 @@ urlpatterns = [
     path('test/3/', views.test3, name='test3'),
     path('test/4/', views.test4, name='test4'),
 ]
+urlpatterns += router.urls
