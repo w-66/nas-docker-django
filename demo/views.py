@@ -42,7 +42,7 @@ class CBV_View(APIView):
         return HttpResponse('framework post')
 ##############对一个表做五个接口，CRUD操作##############
 #------定义序列化器-------
-# class MovieModelSerializer(serializers.Serializer):
+# class MovieSerializer(serializers.Serializer):
 #     name_ch = serializers.CharField(max_length=100, required=True)
 #     name_en = serializers.CharField(max_length=100)
 #     description = serializers.CharField(source="movie_synopsis", required=False)
