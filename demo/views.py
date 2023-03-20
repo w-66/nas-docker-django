@@ -165,8 +165,10 @@ class MovieDetailView(GenericAPIView):
         return Response(serializers.data)
     #===========更新一条
     def post(self, request, id):
-        update_data = Movie.objects.get(id=id)
-        serializer = MovieModelSerializer(instance=update_data, data=request.data)
+        serializer = self.get_serializer(instance=self.get_object(), data=request.data)
+
+        # update_data = Movie.objects.get(id=id)
+        # serializer = MovieModelSerializer(instance=update_data, data=request.data)
         if serializer.is_valid():
             # print("更新数据ing", serializer.validated_data)  # >> 更新数据ing OrderedDict([('name_ch', '千与千寻'), ('name_en', 'Spirited Away'), ('movie_synopsis', '更新数据')])
             # Movie.objects.filter(id=id).update(**serializer.validated_data)
@@ -179,7 +181,8 @@ class MovieDetailView(GenericAPIView):
             return Response(serializer.errors)
     #===========删除一条
     def delete(self, request, id):
-        Movie.objects.get(pk=id).delete()
+        self.get_object().delete()
+        # Movie.objects.get(pk=id).delete()
         return Response()
 
 
