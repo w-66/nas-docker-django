@@ -116,6 +116,7 @@ class CBV_View(View):
 # ##############对一个表做五个接口，使用GenericAPIView##############
 # from rest_framework.generics import GenericAPIView
 
+#===========查所有&添加数据#===========
 class MovieModelSerializer(serializers.ModelSerializer):
     # description = serializers.CharField(source='movie_synopsis')
     class Meta:
@@ -140,8 +141,8 @@ class MovieView(GenericAPIView):
         # return HttpResponse(serializer.data)
     
     def post(self, request):
-        # 数据校验
         serializer = self.get_serializer(data=request.data)
+        # 数据校验
         if serializer.is_valid():
             # print('data', request.data)
             # Movie.objects.create(**serializer.validated_data)
@@ -150,8 +151,36 @@ class MovieView(GenericAPIView):
         else:
             return Response(serializer.errors)
 
-class MovieDetailView(APIView):
-    pass
+#===========查询一条,更新一条,删除一条
+class MovieDetailView(GenericAPIView):
+    queryset = Movie.objects.all()
+    serializer_class = MovieModelSerializer
+    lookup_field = 'id'
+    #===========查询一条
+    def get(self, request, id):
+        serializers = self.get_serializer(instance=self.get_object(), many=False)
+        # movie_detail = Movie.objects.get(id=id)
+        # movie_detail = Movie.objects.filter(id=id).first()
+        # serializers = MovieModelSerializer(instance=movie_detail, many=False)
+        return Response(serializers.data)
+    #===========更新一条
+    def post(self, request, id):
+        update_data = Movie.objects.get(id=id)
+        serializer = MovieModelSerializer(instance=update_data, data=request.data)
+        if serializer.is_valid():
+            # print("更新数据ing", serializer.validated_data)  # >> 更新数据ing OrderedDict([('name_ch', '千与千寻'), ('name_en', 'Spirited Away'), ('movie_synopsis', '更新数据')])
+            # Movie.objects.filter(id=id).update(**serializer.validated_data)
+            # update = Movie.objects.filter(id=id).first()
+            # serializer.instance = update
+            serializer.save()
+            return Response(serializer.data)
+        else:
+            print("更新数据失败")
+            return Response(serializer.errors)
+    #===========删除一条
+    def delete(self, request, id):
+        Movie.objects.get(pk=id).delete()
+        return Response()
 
 
 

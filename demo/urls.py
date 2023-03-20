@@ -10,7 +10,8 @@ urlpatterns = [
     # path('rdf/', views.rdf, name='demo_rdf'),
     path('rdf/', views.CBV_View.as_view(), name='demo_rdf'),
     path('rdf/movie/', views.MovieView.as_view()),
-    re_path('rdf/movie/(\d+)/', views.MovieView.as_view()),    
+    # re_path('rdf/movie/(?P<pk>\d+)/', views.MovieDetailView.as_view()),    # 与下相同
+    path('rdf/movie/<int:id>/', views.MovieDetailView.as_view()),    
     
     ##############DRF END##############
 
