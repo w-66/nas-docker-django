@@ -42,31 +42,39 @@ class CBV_View(APIView):
         return HttpResponse('framework post')
 ##############对一个表做五个接口，CRUD操作##############
 #------定义序列化器-------
-class MovieSerializers(serializers.Serializer):
-    name_ch = serializers.CharField(max_length=100, required=True)
-    name_en = serializers.CharField(max_length=100)
-    description = serializers.CharField(source="movie_synopsis", required=False)
+# class MovieModelSerializer(serializers.Serializer):
+#     name_ch = serializers.CharField(max_length=100, required=True)
+#     name_en = serializers.CharField(max_length=100)
+#     description = serializers.CharField(source="movie_synopsis", required=False)
 
-    def create(self, validated_data):
-        add_movie = Movie.objects.create(**self.validated_data)
-        return add_movie
-    def update(self, instance, validated_data):
-        Movie.objects.filter(id=instance.pk).update(**validated_data)
-        # update = Movie.objects.get(id=instance.pk)
-        update = Movie.objects.get(id=instance.id)
-        return update
+#     def create(self, validated_data):
+#         add_movie = Movie.objects.create(**self.validated_data)
+#         return add_movie
+#     def update(self, instance, validated_data):
+#         Movie.objects.filter(id=instance.pk).update(**validated_data)
+#         # update = Movie.objects.get(id=instance.pk)
+#         update = Movie.objects.get(id=instance.id)
+#         return update
+
+class MovieModelSerializer(serializers.ModelSerializer):
+    description = serializers.CharField(source='movie_synopsis')
+    class Meta:
+        model = Movie
+        # fields = ["name_ch","movie_synopsis"]  # 指定字段
+        # fields = "__all__"                       # 指定所有字段
+        exclude = ["movie_synopsis"]
     
 #===========查所有&添加数据#===========
 class MovieAPIView(APIView):
     def get(self, request):
         movies_list = Movie.objects.all()
-        serializer = MovieSerializers(instance=movies_list, many=True)
+        serializer = MovieModelSerializer(instance=movies_list, many=True)
         # return HttpResponse(serializer.data)
         return Response(serializer.data)
     
     def post(self, request):
         # 数据校验
-        serializer = MovieSerializers(data=request.data)
+        serializer = MovieModelSerializer(data=request.data)
         if serializer.is_valid():
             # print('data', request.data)
             # Movie.objects.create(**serializer.validated_data)
@@ -76,15 +84,16 @@ class MovieAPIView(APIView):
             return Response(serializer.errors)
 #===========查询一条,更新一条,删除一条
 class MovieDetailAPIView(APIView):
+    #===========查询一条
     def get(self, request, id):
         # movie_detail = Movie.objects.get(id=id)
         movie_detail = Movie.objects.filter(id=id).first()
-        serializers = MovieSerializers(instance=movie_detail, many=False)
+        serializers = MovieModelSerializer(instance=movie_detail, many=False)
         return Response(serializers.data)
     #===========更新一条
     def post(self, request, id):
         update_data = Movie.objects.get(id=id)
-        serializer = MovieSerializers(instance=update_data, data=request.data)
+        serializer = MovieModelSerializer(instance=update_data, data=request.data)
         if serializer.is_valid():
             # print("更新数据ing", serializer.validated_data)  # >> 更新数据ing OrderedDict([('name_ch', '千与千寻'), ('name_en', 'Spirited Away'), ('movie_synopsis', '更新数据')])
             # Movie.objects.filter(id=id).update(**serializer.validated_data)
@@ -95,6 +104,7 @@ class MovieDetailAPIView(APIView):
         else:
             print("更新数据失败")
             return Response(serializer.errors)
+    #===========删除一条
     def delete(self, request, id):
         Movie.objects.get(pk=id).delete()
         return Response()
