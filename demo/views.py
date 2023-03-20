@@ -1,6 +1,5 @@
 from django.utils import timezone
 from django.http import HttpResponseRedirect
-from demo.models import Movie
 from django.shortcuts import get_object_or_404, render, HttpResponse
 from django.urls import reverse
 from django.views import generic
@@ -8,6 +7,7 @@ from django.views.generic.base import View
 # 该装饰器标记着一个视图被免除了中间件所确保的保护
 from django.views.decorators.csrf import csrf_exempt
 #
+from demo.models import Movie
 
 
 def index(request):
@@ -74,7 +74,7 @@ class MovieAPIView(APIView):
             return Response(serializer.data)
         else:
             return Response(serializer.errors)
-#===========查询一条,更新一条
+#===========查询一条,更新一条,删除一条
 class MovieDetailAPIView(APIView):
     def get(self, request, id):
         # movie_detail = Movie.objects.get(id=id)
@@ -95,7 +95,9 @@ class MovieDetailAPIView(APIView):
         else:
             print("更新数据失败")
             return Response(serializer.errors)
-
+    def delete(self, request, id):
+        Movie.objects.get(pk=id).delete()
+        return Response()
 ##############其他Demo##############
 def navbar1(request):
     return render(request, 'demo/navbar1.html',)
