@@ -5,12 +5,12 @@ from django.urls import reverse
 from django.views import generic
 from django.views.generic.base import View
 # 该装饰器标记着一个视图被免除了中间件所确保的保护
-from django.views.decorators.csrf import csrf_exempt
+# from django.views.decorators.csrf import csrf_exempt
 #
-from rest_framework.views import APIView     # drf的api view
 from rest_framework import serializers       # 序列化器
 from rest_framework.response import Response # def的响应，更易读的格式
-from rest_framework.generics import GenericAPIView
+# from rest_framework.views import APIView     # drf的api view
+# from rest_framework.generics import GenericAPIView
 
 #
 from demo.models import Movie
@@ -22,22 +22,39 @@ def index(request):
 
 
 ##############RDF Demo##############
+from rest_framework.viewsets import ViewSet
 
-##############再次封装mixins 混合类 v4##############
-from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView
 class MovieModelSerializer(serializers.ModelSerializer):
     class Meta:
         model = Movie
         fields = "__all__"       # 指定所有字段
+class PublishView(ViewSet):
+    def get_all(self, request):            # 查询所有
+        return self.list(request)       
+    def add_item(self, request):           # 添加一条记录
+        return Response('add_item')
+    def get_item(self, request, id):       # 查询一条记录
+        return Response('get_item')        
+    def update_item(self, request, id):    # 更新一条记录
+        return Response('update_item')
+    def delete_item(self, request, id):    # 删除一条记录
+        return Response('delete_item')     
 
-class MovieView(ListCreateAPIView):            # 查询所有; 添加一条记录
-    queryset = Movie.objects.all()
-    serializer_class = MovieModelSerializer
+# ##############再次封装mixins 混合类 v4##############
+# from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView
+# class MovieModelSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = Movie
+#         fields = "__all__"       # 指定所有字段
 
-class MovieDetailView(RetrieveUpdateDestroyAPIView):  # 查询一条记录，更新一条记录, 删除一条记录
-    queryset = Movie.objects.all()
-    serializer_class = MovieModelSerializer
-    lookup_field = 'id'                               # 使用 id 作为默认传参名称
+# class MovieView(ListCreateAPIView):            # 查询所有; 添加一条记录
+#     queryset = Movie.objects.all()
+#     serializer_class = MovieModelSerializer
+
+# class MovieDetailView(RetrieveUpdateDestroyAPIView):  # 查询一条记录，更新一条记录, 删除一条记录
+#     queryset = Movie.objects.all()
+#     serializer_class = MovieModelSerializer
+#     lookup_field = 'id'                               # 使用 id 作为默认传参名称
 
 
 ##############再次封装 v3##############

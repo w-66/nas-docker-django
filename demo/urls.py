@@ -7,11 +7,15 @@ urlpatterns = [
     path('', views.index, name='index'),
 
     ##############DRF Demo START##############
-    # path('rdf/', views.rdf, name='demo_rdf'),
-    # path('rdf/', views.CBV_View.as_view(), name='demo_rdf'),
-    path('rdf/movie/', views.MovieView.as_view()),
-    # re_path('rdf/movie/(?P<pk>\d+)/', views.MovieDetailView.as_view()),    # 与下相同
-    path('rdf/movie/<int:id>/', views.MovieDetailView.as_view()),    
+    # path('drf/', views.rdf, name='demo_rdf'),
+    # path('drf/', views.CBV_View.as_view(), name='demo_rdf'),
+    # ----
+    # path('drf/movie/', views.MovieView.as_view()),
+    # re_path('drf/movie/(?P<pk>\d+)/', views.MovieDetailView.as_view()),    # 与下相同
+    # path('drf/movie/<int:id>/', views.MovieDetailView.as_view()),    
+    # ----使用ViewSet，两条路由使用同一个类
+    path("drf/movie/", views.PublishView.as_view({'get':'get_all', 'post':'add_item'})),
+    path("drf/movie/<int:id>/", views.PublishView.as_view({'get':'get_item', 'put':'update_item', 'delete':'delete_item'})),
     
     ##############DRF END##############
 
