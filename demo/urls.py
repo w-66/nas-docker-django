@@ -1,12 +1,14 @@
 from django.urls import path, re_path
 from demo import views
-from rest_framework import routers
 
 app_name = 'demo'
 
+##############DRF 注册路由 START##############
+from rest_framework import routers
+
 router = routers.DefaultRouter()
 router.register('drf/movie', views.MovieModelViewSet)
-
+##############DRF Demo 注册路由 END##############
 
 urlpatterns = [
     path('', views.index, name='index'),
