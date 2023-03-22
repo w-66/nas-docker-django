@@ -34,7 +34,8 @@ class MovieModelViewSet(ModelViewSet):
     serializer_class = MovieModelSerializer
     lookup_field = 'id'     # 使用 id 作为传参名称(默认是pk)
 
-
+# drf 封装迭代的历史代码
+'''
 ##############将五个接口放到一个视图的实现（具体业务还差一步）将五个接口放到一个视图的实现（具体业务还差一步）
 # from rest_framework.viewsets import ViewSet
 # class MovieModelSerializer(serializers.ModelSerializer):
@@ -255,10 +256,19 @@ class MovieModelViewSet(ModelViewSet):
 # # #         self.get_object().delete()
 # # #         # Movie.objects.get(pk=id).delete()
 # # #         return Response()
-
-
+'''
 
 ##############其他Demo##############
+
+#START============Markdown 浏览与后台编辑
+def MarkdownDetail(request):
+
+    return HttpResponse('markdown')
+#END==============Markdown 浏览与后台编辑
+
+
+
+
 def navbar1(request):
     return render(request, 'demo/navbar1.html',)
 
