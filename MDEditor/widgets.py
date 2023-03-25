@@ -38,6 +38,7 @@ class MDEditorWidget(forms.Textarea):
         return mark_safe(render_to_string('MDEditor/markdown.html', {
             'final_attrs': flatatt(final_attrs),
             'value': conditional_escape(force_str(value)),
+            # 'value': '123/n123',
             'id': final_attrs['id'],
             'config': self.config,
         }))
@@ -55,10 +56,9 @@ class MDEditorWidget(forms.Textarea):
     def _get_media(self):
         return forms.Media(
             css={
-                "all": ("mdeditor/css/editormd.css",)
+                # "all": ("vditor/css/index.css",)
             },
             js=(
-                "mdeditor/js/jquery.min.js",
-                "mdeditor/js/editormd.min.js",
+                # "vditor/js/index.min.js",
             ))
     media = property(_get_media)
