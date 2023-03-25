@@ -39,11 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',     # 自带应用 会话框架 admin管理 依赖
     'django.contrib.messages',     # 自带应用 消息框架 admin管理 依赖
     'django.contrib.staticfiles',  # 自带应用 管理静态文件的框架
-    'rest_framework',              # DRF 
     'app01',                       # 自建的app01 入门学习
     'app02',                       # 自建的app02 学习
     'polls',                       # Django官方文档入门学习教程案例
     'demo',                        # 自建app 学习时的demo与案例等
+    'rest_framework',              # DRF 
     'blog',                        # 个人信息页
     'tagsystem',                   # 标签系统
     'MDEditor'                     # md 编辑器
@@ -147,7 +147,7 @@ USE_L10N = True
 USE_TZ = False
 
 # 开启媒体存储路径 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
 MEDIA_URL = '/media/'
 
 # Static files (CSS, JavaScript, Images)
@@ -162,3 +162,4 @@ STATICFILES_DIRS = [ BASE_DIR / "static" ]
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
+X_FRAME_OPTIONS = 'SAMEORIGIN' 
