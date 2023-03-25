@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils import timezone
+from MDEditor.fields import MDTextField
 
 # Create your models here.
 class Movie(models.Model):
@@ -9,7 +10,8 @@ class Movie(models.Model):
 
 class Article(models.Model):
     title = models.CharField(verbose_name='标题', max_length=10)
-    content = models.TextField(verbose_name='内容')
+    # content = models.TextField(verbose_name='内容')
+    content = MDTextField(verbose_name='内容')
     pub_date = models.DateTimeField(verbose_name='发布时间',default=timezone.now)
     
     def __str__(self):

@@ -5,7 +5,7 @@ from django.core.exceptions import ImproperlyConfigured
 
 DEFAULT_CONFIG = {
     'width': '100%',
-    'height': 500,
+    'height': 400,
     'toolbar': ["undo", "redo", "|",
                 "bold", "del", "italic", "quote", "ucwords", "uppercase", "lowercase", "|",
                 "h1", "h2", "h3", "h5", "h6", "|",
@@ -18,9 +18,9 @@ DEFAULT_CONFIG = {
                              "PNG", "bmp", "BMP", "webp", "WEBP"],
     'upload_image_url': '/mdeditor/uploads/',
     'image_folder': 'editor',
-    'theme': 'default',  # dark / default
-    'preview_theme': 'default',  # dark / default
-    'editor_theme': 'default',  # pastel-on-dark / default
+    'theme': 'dark',  # dark / default
+    'preview_theme': 'dark',  # dark / default
+    'editor_theme': 'pastel-on-dark',  # pastel-on-dark / default
     'toolbar_autofixed': True,
     'search_replace': True,
     'emoji': True,
