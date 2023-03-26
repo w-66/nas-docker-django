@@ -1,70 +1,47 @@
-# -*- coding:utf-8 -*-
 from django.conf import settings
 from django.core.exceptions import ImproperlyConfigured
 
-
+#There are currently fewer options, more options will be added in the future
 DEFAULT_CONFIG = {
-    'width': '100%',
-    'height': 400,
-    'toolbar': ["undo", "redo", "|",
-                "bold", "del", "italic", "quote", "ucwords", "uppercase", "lowercase", "|",
-                "h1", "h2", "h3", "h5", "h6", "|",
-                "list-ul", "list-ol", "hr", "|",
-                "link", "reference-link", "image", "code", "preformatted-text", "code-block", "table", "datetime",
-                "emoji", "html-entities", "pagebreak", "goto-line", "|",
-                "help", "info",
-                "||", "preview", "watch", "fullscreen"],
-    'upload_image_formats': ["jpg", "JPG", "jpeg", "JPEG", "gif", "GIF", "png",
-                             "PNG", "bmp", "BMP", "webp", "WEBP"],
-    'upload_image_url': '/mdeditor/uploads/',
-    'image_folder': 'editor',
-    'theme': 'dark',  # dark / default
-    'preview_theme': 'dark',  # dark / default
-    'editor_theme': 'pastel-on-dark',  # pastel-on-dark / default
-    'toolbar_autofixed': True,
-    'search_replace': True,
-    'emoji': True,
-    'tex': True,
-    'task_list': False,
-    'flow_chart': True,
-    'sequence': True,
-    'language': 'zh',  # zh / en / de 
-    'watch': True,  # Live preview
-    'lineWrapping': False,  # lineWrapping
-    'lineNumbers': False  # lineNumbers
+    "width": "auto",
+    "height": 400,
+    "preview_theme": "light",
+    "typewriterMode": "True",
+    "mode": "ir",
+    "debugger": "false",
+    "value": "",
+    "theme": "light",
+    "icon": "ant",
+    "outline": "false",
 }
 
+if settings.LANGUAGE_CODE == "zh-Hans":
+    DEFAULT_CONFIG["lang"] = "zh_CN"
+elif settings.LANGUAGE_CODE == "ja-jp":
+    DEFAULT_CONFIG["lang"] = "ja_JP"
+elif settings.LANGUAGE_CODE == "ko-kr":
+    DEFAULT_CONFIG["lang"] = "ko_KR"
+else:
+    DEFAULT_CONFIG["lang"] = "en_US"
 
 class MDConfig(dict):
-
-    def __init__(self, config_name='default'):
+    def __init__(self, config_name = "default"):
         self.update(DEFAULT_CONFIG)
         self.set_configs(config_name)
 
-    def set_configs(self, config_name='default'):
-        """
-        set config item
-        :param config_name:
-        :return:
-        """
-        # Try to get valid config from settings.
-        configs = getattr(settings, 'MDEDITOR_CONFIGS', None)
+    def set_configs(self, config_name = "default"):
+        configs = getattr(settings, "VDITOR_CONFIGS", None)
         if configs:
             if isinstance(configs, dict):
-                # Make sure the config_name exists.
                 if config_name in configs:
                     config = configs[config_name]
-                    # Make sure the configuration is a dictionary.
                     if not isinstance(config, dict):
-                        raise ImproperlyConfigured('MDEDITOR_CONFIGS["%s"] \
-                                        setting must be a dictionary type.' %
-                                                   config_name)
-                    # Override defaults with settings config.
+                        raise ImproperlyConfigured('VDITOR_CONFIGS["%s"] \
+                                        setting must be a dictionary type.' %config_name)
                     self.update(config)
                 else:
                     raise ImproperlyConfigured("No configuration named '%s' \
-                                    found in your CKEDITOR_CONFIGS setting." %
-                                               config_name)
+                                    found in your VDITOR_CONFIGS setting." %config_name)
             else:
-                raise ImproperlyConfigured('MDEDITOR_CONFIGS setting must be a\
+                raise ImproperlyConfigured('VDITOR_CONFIGS setting must be a\
                                 dictionary type.')

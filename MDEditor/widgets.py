@@ -18,10 +18,6 @@ from .configs import MDConfig
 
 
 class MDEditorWidget(forms.Textarea):
-    """
-    Widget providing Editor.md for Rich Text Editing.
-    see Editor.md docs: https://pandao.github.io/editor.md/examples/index.html
-    """
     def __init__(self, config_name='default', *args, **kwargs):
         super(MDEditorWidget, self).__init__(*args, **kwargs)
         # Setup config from defaults.
@@ -29,19 +25,25 @@ class MDEditorWidget(forms.Textarea):
 
     def render(self, name, value, renderer=None, attrs=None):
         """
+        name : 字段名
+        value : 对应字段的值，但是显示出来换行直接生效了
+
         renderer: django2.1 新增加的参数，此处不做应用，赋值None做兼容处理
         """
         if value is None:
             value = ''
+        # 换行问题，转义...只能想到这个解决办法了，想了我多久啊，起码一个星期...想想就难受，人菜瘾大...
+        value = value.replace('\r\n', '\\r\\n')  
+        # print(value)
 
         final_attrs = self.build_attrs(self.attrs, attrs, name=name)
+
         return mark_safe(render_to_string('MDEditor/markdown.html', {
             'final_attrs': flatatt(final_attrs),
             'value': conditional_escape(force_str(value)),
-            # 'value': '123/n123',
             'id': final_attrs['id'],
             'config': self.config,
-        }))
+            }))
 
     def build_attrs(self, base_attrs, extra_attrs=None, **kwargs):
         """

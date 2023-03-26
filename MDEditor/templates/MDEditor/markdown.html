@@ -3,6 +3,7 @@
 <script src="https://cdn.jsdelivr.net/npm/vditor@3.8.12/dist/index.css"></script>
 
 <div id="vditor"></div>
+<textarea {{ final_attrs|safe }} style="display: none">{{ value }}</textarea>
 
 
 <script src="https://b3log.org/vditor/vditor.js"></script>
@@ -10,13 +11,41 @@
 <script src="https://cdn.jsdelivr.net/npm/vditor@3.8.12/dist/js/i18n/zh_CN.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vcmt@1.3.1/dist/index.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vditor@3.8.12/dist/js/lute/lute.min.js"></script>
-<script>
-    new Vditor('vditor', {
-        "cache": {
-            "enable": false
-        },
-        "height": 360,
-        "value": '{{value}}'
-    })
 
+<script type="text/javascript">
+    const vditor = new Vditor("vditor", {
+        width: '{{ config.width|safe }}',
+        height: {{ config.height }},
+        lang: '{{ config.lang|safe }}',
+        // typewriterMode: '{{ config.typewriterMode|safe }}',
+        mode: '{{ config.mode|safe }}',
+        debugger: '{{ config.debugger|safe }}',
+        cache: {
+            enable: false,
+        },
+        value: "{{value}}",
+        theme: '{{ config.theme|safe }}',
+        icon: '{{ config.icon|safe }}',
+        outline: '{{config.outline }}',
+        // cdn: '/static',
+        preview: {
+            theme: {
+                current: '{{ config.preview_theme|safe }}',
+                path: '/static/dist/css/content-theme'
+            },
+        },
+        upload: {
+            url: '/vditor/uploads/',
+            linkToImgUrl: '/vditor/uploads/',
+            accept: '.jpg,.png,.gif,.jpeg',
+            filename(name) {
+                return name.replace(/\?|\\|\/|:|\||<|>|\*|\[|\]|\s+/g, '-')
+            },
+        },
+        input(md) {
+            document.getElementById('id_content').value = md
+        },
+    })
+    //clear cache
+    vditor.clearCache();
 </script>
