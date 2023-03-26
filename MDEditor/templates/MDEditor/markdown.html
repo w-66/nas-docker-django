@@ -23,7 +23,7 @@
         cache: {
             enable: false,
         },
-        value: "{{value}}",
+        value: "{{value|safe}}",
         theme: '{{ config.theme }}',
         icon: '{{ config.icon|safe }}',
         outline: '{{config.outline }}',
@@ -35,6 +35,7 @@
                 path: '/static/vditor/css/content-theme'
             },
         },
+        
         upload: {
             url: '/vditor/uploads/',
             linkToImgUrl: '/vditor/uploads/',

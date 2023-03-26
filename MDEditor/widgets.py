@@ -3,6 +3,7 @@ from __future__ import absolute_import
 
 from django import forms
 from django.template.loader import render_to_string
+from django.utils.encoding import force_text
 from django.utils.encoding import force_str
 from django.utils.html import conditional_escape
 from django.utils.safestring import mark_safe
@@ -15,7 +16,6 @@ except ImportError:
     from django.forms.util import flatatt
 
 from .configs import MDConfig
-
 
 class MDEditorWidget(forms.Textarea):
     def __init__(self, config_name='default', *args, **kwargs):
@@ -34,13 +34,22 @@ class MDEditorWidget(forms.Textarea):
             value = ''
         # 换行问题，转义...只能想到这个解决办法了，想了我多久啊，起码一个星期...想想就难受，人菜瘾大...
         value = value.replace('\r\n', '\\r\\n')  
-        # print(value)
-
+        # print(f'正常的值：{value}')
+        # print(f'改后的值force_text：{(force_text(value))}')
+        # print(f'改后的值force_str：{(force_str(value))}')
+        # print(f'改后的值conditional_escape：{conditional_escape(force_text(value))}')
+        '''tem
+        正常的值：<123>[hello]\r\n\r\n<你好>\r\n\r\n<>？“{}\r\n\r\n{}
+        改后的值force_text：<123>[hello]\r\n\r\n<你好>\r\n\r\n<>？“{}\r\n\r\n{}
+        改后的值force_str：<123>[hello]\r\n\r\n<你好>\r\n\r\n<>？“{}\r\n\r\n{}
+        改后的值conditional_escape：&lt;123&gt;[hello]\r\n\r\n&lt;你好&gt;\r\n\r\n&lt;&gt;？“{}\r\n\r\n{}
+        '''
         final_attrs = self.build_attrs(self.attrs, attrs, name=name)
 
         return mark_safe(render_to_string('MDEditor/markdown.html', {
             'final_attrs': flatatt(final_attrs),
-            'value': conditional_escape(force_str(value)),
+            # 'value': conditional_escape(force_text(value)),
+            'value': value,
             'id': final_attrs['id'],
             'config': self.config,
             }))
