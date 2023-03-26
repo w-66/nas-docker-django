@@ -15,7 +15,7 @@ DEFAULT_CONFIG = {
     "outline": "false",
 }
 
-if settings.LANGUAGE_CODE == "zh-hans":
+if settings.LANGUAGE_CODE.lower() == "zh-hans":
     DEFAULT_CONFIG["lang"] = "zh_CN"
 elif settings.LANGUAGE_CODE == "ja-jp":
     DEFAULT_CONFIG["lang"] = "ja_JP"
