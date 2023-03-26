@@ -3,19 +3,19 @@ from django.core.exceptions import ImproperlyConfigured
 
 #There are currently fewer options, more options will be added in the future
 DEFAULT_CONFIG = {
-    "width": "auto",
+    "width": "100%",
     "height": 400,
-    "preview_theme": "light",
+    "preview_theme": "dark",
     "typewriterMode": "True",
     "mode": "ir",
     "debugger": "false",
     "value": "",
-    "theme": "light",
+    "theme": "dark",
     "icon": "ant",
     "outline": "false",
 }
 
-if settings.LANGUAGE_CODE == "zh-Hans":
+if settings.LANGUAGE_CODE == "zh-hans":
     DEFAULT_CONFIG["lang"] = "zh_CN"
 elif settings.LANGUAGE_CODE == "ja-jp":
     DEFAULT_CONFIG["lang"] = "ja_JP"

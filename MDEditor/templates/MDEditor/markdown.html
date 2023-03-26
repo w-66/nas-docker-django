@@ -17,21 +17,22 @@
         width: '{{ config.width|safe }}',
         height: {{ config.height }},
         lang: '{{ config.lang|safe }}',
-        // typewriterMode: '{{ config.typewriterMode|safe }}',
+        typewriterMode: '{{ config.typewriterMode|safe }}',
         mode: '{{ config.mode|safe }}',
         debugger: '{{ config.debugger|safe }}',
         cache: {
             enable: false,
         },
         value: "{{value}}",
-        theme: '{{ config.theme|safe }}',
+        theme: '{{ config.theme }}',
         icon: '{{ config.icon|safe }}',
         outline: '{{config.outline }}',
-        // cdn: '/static',
-        preview: {
+        // cdn: '/static/',
+        preview: {  
+            // 预览(渲染)主题
             theme: {
                 current: '{{ config.preview_theme|safe }}',
-                path: '/static/dist/css/content-theme'
+                path: '/static/vditor/css/content-theme'
             },
         },
         upload: {
@@ -48,4 +49,7 @@
     })
     //clear cache
     vditor.clearCache();
+    // vditor.setTheme(document.getElementById('theme').value,
+    // document.getElementById('contentTheme').value,
+    // document.getElementById('codeTheme').value)
 </script>
