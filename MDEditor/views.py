@@ -39,6 +39,7 @@ def VditorImagesUploadView(request):
                     "data": {
                     "errFiles": [],
                     "succMap": {
+                        # 返回URL的路径
                         VditorImagesName: os.path.join(settings.MEDIA_URL, custom_path, VditorImagesNameFull),
                         }
                     }
