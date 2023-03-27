@@ -32,7 +32,10 @@
             // 预览(渲染)主题
             theme: {
                 current: '{{ config.preview_theme|safe }}',
-                path: '/static/vditor/css/content-theme'
+                path: '/static/vditor/css/content-theme',
+                markdown: {
+                    toc: true
+                }
             },
         },
 
