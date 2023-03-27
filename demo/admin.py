@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.db import models
-from .widgets import VditorWidget
+from MDEditor.widgets import MDEditorWidget
 
 from .models import Article
 
@@ -12,7 +12,6 @@ from .models import Article
 class ArticleAdmin(admin.ModelAdmin):
     list_display = ('id', 'title')
     list_display_links = ('id', 'title')      # 列表可编辑跳转链接
-<<<<<<< HEAD
 
     fieldsets = [
         ('基础信息', {
@@ -24,7 +23,7 @@ class ArticleAdmin(admin.ModelAdmin):
     ]
 
     formfield_overrides = {
-        models.TextField: {'widget': VditorWidget}
+        models.TextField: {'widget': MDEditorWidget}
     }
 
 
@@ -37,11 +36,4 @@ class ArticleAdmin(admin.ModelAdmin):
     #     }
     #     js = ('plugin/vditor/index.min.js',)
 
-=======
-    fieldsets = [
-        ('基础信息', {'fields': [('title', 'pub_date'),'content']})
-        # ('', {'fields': ['content']})
-    ]
-
->>>>>>> dev_test_makrdown
 admin.site.register(Article,ArticleAdmin)
