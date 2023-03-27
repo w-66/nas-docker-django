@@ -17,9 +17,9 @@ DEFAULT_CONFIG = {
 
 if settings.LANGUAGE_CODE.lower() == "zh-hans":
     DEFAULT_CONFIG["lang"] = "zh_CN"
-elif settings.LANGUAGE_CODE == "ja-jp":
+elif settings.LANGUAGE_CODE.lower() == "ja-jp":
     DEFAULT_CONFIG["lang"] = "ja_JP"
-elif settings.LANGUAGE_CODE == "ko-kr":
+elif settings.LANGUAGE_CODE.lower() == "ko-kr":
     DEFAULT_CONFIG["lang"] = "ko_KR"
 else:
     DEFAULT_CONFIG["lang"] = "en_US"

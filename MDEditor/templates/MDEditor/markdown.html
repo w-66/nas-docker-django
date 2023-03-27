@@ -35,13 +35,24 @@
                 path: '/static/vditor/css/content-theme'
             },
         },
-        
+
+        // upload: {
+        //     url: '/media/vditor/uploads/',
+        //     linkToImgUrl: '/media/vditor/uploads/',
+        //     accept: '.jpg,.png,.gif,.jpeg',
+        //     filename(name) {
+        //         return name.replace(/\?|\\|\/|:|\||<|>|\*|\[|\]|\s+/g, '-')
+        //     },
+        // },
         upload: {
-            url: '/vditor/uploads/',
-            linkToImgUrl: '/vditor/uploads/',
-            accept: '.jpg,.png,.gif,.jpeg',
+            accept: 'image/*,.mp3, .wav, .rar',
+            token: 'test',
+            url: '/mdeditor/uploads/',
+            linkToImgUrl: '/media/mdimg/',
             filename(name) {
-                return name.replace(/\?|\\|\/|:|\||<|>|\*|\[|\]|\s+/g, '-')
+                return name.replace(/[^(a-zA-Z0-9\u4e00-\u9fa5\.)]/g, '').
+                    replace(/[\?\\/:|<>\*\[\]\(\)\$%\{\}@~]/g, '').
+                    replace('/\\s/g', '')
             },
         },
         input(md) {
