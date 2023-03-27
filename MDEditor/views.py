@@ -18,7 +18,7 @@ def VditorImagesUploadView(request):
     VditorImagesUpload = request.FILES.get('file[]', None)
     VditorImagesNameList = VditorImagesUpload.name.split('.')
     VditorImagesName = '.'.join(VditorImagesNameList)
-    VditorImagesUploadPath = os.path.join(settings.MEDIA_ROOT)
+    VditorImagesUploadPath = os.path.join(settings.MEDIA_ROOT, 'mdeditor/uploads')
     VditorImagesNameFull = '%s_%s' % (uuid.uuid4(), VditorImagesName)
     if not VditorImagesNameList:
         print('No picture')
