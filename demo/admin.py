@@ -4,11 +4,15 @@ from .widgets import VditorWidget
 
 from .models import Article
 
+
+from .models import Article
+
 # Register your models here.
 
 class ArticleAdmin(admin.ModelAdmin):
     list_display = ('id', 'title')
     list_display_links = ('id', 'title')      # 列表可编辑跳转链接
+<<<<<<< HEAD
 
     fieldsets = [
         ('基础信息', {
@@ -33,4 +37,11 @@ class ArticleAdmin(admin.ModelAdmin):
     #     }
     #     js = ('plugin/vditor/index.min.js',)
 
+=======
+    fieldsets = [
+        ('基础信息', {'fields': [('title', 'pub_date'),'content']})
+        # ('', {'fields': ['content']})
+    ]
+
+>>>>>>> dev_test_makrdown
 admin.site.register(Article,ArticleAdmin)

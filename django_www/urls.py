@@ -21,14 +21,15 @@ urlpatterns = [
     path('demo/', include('demo.urls')),
     path('blog/', include('blog.urls')),
     path('tagsystem/', include('tagsystem.urls')),
-
-
+    # app路径
+    path('mdeditor/', include('MDEditor.urls')),
+    # uploads/5f44-24.png
+    # media 媒体文件 访问路径
+    re_path(r'^media/(?P<path>.*)$', serve, {'document_root':settings.MEDIA_ROOT}, name='media'),
 
     # Demo 老路径，暂未迁移
     # path("demo/uploadfile/", demo.demo_uploadfile),
     # path("demo/1/", demo.demo_1),
-    # media 媒体文件
-    re_path(r'^media/(?P<path>.*)$', serve, {'document_root':settings.MEDIA_ROOT}, name='media'),
 
     # Bootstrap
     path('learn/bootstrap/01/', learn_bootstrap.learn_bootstrap_01),
@@ -99,6 +100,8 @@ urlpatterns = [
     path('music/list/', music.music_list),
     ##音乐列表编辑页
     path('music/list/edit/<int:global_id>/', music.music_list_edit),
-
-
 ]
+from django.conf.urls.static import static
+if settings.DEBUG:
+    # static files (images, css, javascript, etc.)
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

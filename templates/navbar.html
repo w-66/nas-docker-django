@@ -1,23 +1,29 @@
 {% load static %}
 <!-- Navbar Transparent -->
-
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark  static-top p-0 " id="navbar" >
-    <div class="container" >
+<link rel="stylesheet" href="{% static 'css/switch.css' %}">
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark shadow static-top p-0 sticky-top" id="navbar">
+    <div class="container">
         <!-- 左侧图标 -->
         <a href="/">
-            <img  class="me-2" width="32" height="32" src="{% static 'img/site_logo_small.svg' %}" alt="">
+            <img class="me-2" width="32" height="32" src="{% static 'img/site_logo_small.svg' %}" alt="">
         </a>
         <!-- 小屏出现的下拉按钮 -->
         <button class="navbar-toggler collapsed " type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <svg class="icon" aria-hidden="true"><use xlink:href="#icon-xiala2"></use>
-            </svg>            
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-xiala2"></use>
+            </svg>
         </button>
 
         <div class="collapse navbar-collapse show" id="navbarSupportedContent">
             <!-- 靠左边内容 -->
             <ul class="vfx1 navbar-nav me-auto mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="{% url 'blog:article_list' %}">
+                        Article
+                    </a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="{% url 'blog:lifelog' %}">
                         Lifelog
@@ -28,11 +34,11 @@
                     </a>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="/music/list/">
-                    MusicList
+                        MusicList
                     </a>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="/admin/">
-                    Admin
+                        Admin
                     </a>
                 </li>
                 <li class="nav-item">
@@ -40,8 +46,12 @@
                 </li>
             </ul>
         </div>
+        <label class="switch">
+            <input id="switch" class="chk" type="checkbox">
+            <span class="slider"></span>
+        </label>
     </div>
 </nav>
 
-<!-- End Navbar -->
 
+<!-- End Navbar -->

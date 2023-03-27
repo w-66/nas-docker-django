@@ -1,6 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404, redirect
 from django.views import generic
-from .models import Lifelog
+from .models import Lifelog, Article
 
 # 网页图标logo
 # site_logo = 'icon-logo-1' 替换成本地路径的logo
@@ -15,18 +15,21 @@ def index(request):
 class Lifelog_ListView(generic.ListView):
     template_name = 'blog/lifelog.html'
     context_object_name = 'queryset'
-    paginate_by = 5
+    paginate_by = 6
     def get_queryset(self):
         return Lifelog.objects.order_by('-pub_date')
 
-# def lifelog(request):    
-#     return render(request, 'blog/lifelog.html')
+from django import forms
 
-# class Lifelog_DetailView(generic.DetailView):
-#     model = Lifelog
-#     template_name = 'blog/detail.html'
-
-#     def get_queryset(self):
-#         return Lifelog.objects
-
+class Article_ListView(generic.ListView):
+    # pass
+    template_name = 'blog/article_list.html'
+    context_object_name = 'queryset'
+    def get_queryset(self):
+        return Article.objects.order_by('-pub_date')
+def article_detail(request, pk):
+    article = get_object_or_404(Article, pk=pk)    # 从名为“Article”的模型中获取一个主键（pk）等于给定值，如果该实例不存在，则引发HTTP 404异常。
+    md_content = str(article.content)
     
+    return render(request, 'blog/article_detail.html', {'md_content':md_content})
+

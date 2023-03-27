@@ -1,0 +1,96 @@
+{% extends 'tplt_init.html'%}
+{% load static %}
+{% block css %}
+<style>
+    .card_bg_img {
+        background-position: center;
+        /* background-size: contain; */
+        background-size: 400px auto;
+        background-repeat: no-repeat;
+        background-image: url("{% static 'img/2.jpg' %}");
+        /* background-attachment: fixed; */
+        /* background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)); */
+    }
+</style>
+{% endblock %}
+{% block js %}
+
+{% endblock %}
+
+
+{%block bodyContent%}
+
+<!-- 导航栏 -->
+{% include 'navbar.html' %}
+<main>
+    <!-- 第一部分 -->
+    <section class="py-5 text-center container ">
+        <div class="row py-lg-2">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-light">Album example</h1>
+                <p class="lead text-muted">
+                    {% lorem 1 b %}
+                </p>
+                <p>
+                    <!-- <a href="" class="btn btn-primary my-2">添加</a> -->
+                    <!-- <a href="#" class="btn btn-secondary my-2">Secondary action</a> -->
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- 第二部份 -->
+    <div class="album py-5">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-10">
+
+                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 g-3 ">
+                        {% if queryset %}
+                        {% for item in queryset %}
+                        <div class="col">
+                            <div class="card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-8">
+                                        <a href="{% url 'blog:article_detail' item.id %}" class="text-body">
+                                        <div class="card-body">
+                                            <h5 class="card-title">{{forloop.counter}}、{{item.title}}</h5>
+                                            <p class="card-text">{{ item.content|truncatechars:30 }}</p>
+                                            <p class="card-text"><small
+                                                    class="text-muted">{{item.pub_date|date:"ymd"}}</small>
+                                            </p>
+                                        </div>
+                                    </a>
+                                    </div>
+                                    <div class="col-md-4 card_bg_img">
+                                        <!-- <img  src="{% static 'img/2.jpg' %}" class="img-fluid rounded-start" alt="..."> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        {% else %}
+                        <p>No querset are available.</p>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="static-top p-0 sticky-top" style="top: 40px;">
+                        123
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quis quos laborum itaque rem excepturi! Quaerat aliquid deserunt asperiores, et, ab consequatur vero quis at cum minima similique cumque nulla?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quis quos laborum itaque rem excepturi! Quaerat aliquid deserunt asperiores, et, ab consequatur vero quis at cum minima similique cumque nulla?
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+<!-- 页脚 -->
+{% include 'footer.html' %}
+
+
+
+{% endblock %}

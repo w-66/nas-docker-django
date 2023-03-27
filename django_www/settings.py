@@ -33,7 +33,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 # 这里包括了会在你项目中启用的所有 Django 应用
 INSTALLED_APPS = [
-    'django.contrib.admin',        # 自带应用 自带的admin管理
+    'django.contrib.admin',        # 自带应用 自带的admin管理 ; Django 会自动在每个应用程序中寻找 admin 模块并导入它。
     'django.contrib.auth',         # 自带应用 认证授权系统 admin管理 依赖
     'django.contrib.contenttypes', # 自带应用 内容类型框架 admin管理 依赖
     'django.contrib.sessions',     # 自带应用 会话框架 admin管理 依赖
@@ -43,15 +43,17 @@ INSTALLED_APPS = [
     'app02',                       # 自建的app02 学习
     'polls',                       # Django官方文档入门学习教程案例
     'demo',                        # 自建app 学习时的demo与案例等
+    'rest_framework',              # DRF 
     'blog',                        # 个人信息页
     'tagsystem',                   # 标签系统
+    'MDEditor'                     # md 编辑器
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',  # 自带admin管理 相关
     'django.contrib.messages.middleware.MessageMiddleware',     # 自带admin管理 相关
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -145,8 +147,8 @@ USE_L10N = True
 USE_TZ = False
 
 # 开启媒体存储路径 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # 实际媒体路径
+MEDIA_URL = '/media/'                         # url可以访问的路径
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
@@ -160,3 +162,4 @@ STATICFILES_DIRS = [ BASE_DIR / "static" ]
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
+X_FRAME_OPTIONS = 'SAMEORIGIN' 

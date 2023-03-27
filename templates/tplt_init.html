@@ -2,59 +2,83 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- 引入Bootstrap css-->
-    <!-- <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}"> -->
-    <link rel="stylesheet" href="{% static 'bootstrap/custom.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'bootstrap/custom.css' %}"> -->
 
 
     <!-- fontawesome图标 -->
     <!-- <script defer src="https://kit.fontawesome.com/24ee1fea7f.js" crossorigin="anonymous"></script> -->
 
-    <style type="text/css">
-        /* <!-- 设置阿里图标的大小与位置等 --> */
-        .icon {
-           width: 1.2em; height: 1.2em;
-           vertical-align: -0.3em;
-           fill: currentColor;
-           overflow: hidden;
-        }
-        /* 去除所有链接的下划线 */
-        a {
-            text-decoration: none
-        }
-
-    </style>
+<link rel="stylesheet" href="{% static 'css/global.css' %}">
     <!-- 其他单独需要使用CSS或者JS的单独引用 -->
-{% block css %}{% endblock %}
+    {% block css %}{% endblock %}
 
 </head>
-<body>
+
+<body data-bs-theme="light">
+    {% block bodyContent %}{% endblock %}
 
 
-{% block bodyContent %}{% endblock %}
+    
+    <!-- 引入JS，顺序很重要... -->
+    <!-- 引入JQeruy 因为jquery需要生成HTML所以需要优先执行，不能加defer -->
+    <script src="{% static 'jquery-3.5.1/jquery.min.js' %}"></script>
 
-<!-- 引入JS，顺序很重要... -->
-<!-- 引入JQeruy 因为jquery需要生成HTML所以需要优先执行，不能加defer -->
-<script  src="{% static 'jquery-3.5.1/jquery.min.js' %}"></script>
+    <!-- 单独加载插件popper.js文件，用于下拉菜单的定位 -->
+    <!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
+    <script src="{% static 'popper/popper2.11.6.js' %}"></script>
 
-<!-- 单独加载插件popper.js文件，用于下拉菜单的定位 -->
-<!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
-<script src="{% static 'popper/popper2.11.6.js' %}" ></script>
+    <!-- 引入Bootstrap -->
+    <!-- <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script> -->
+    <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
-<!-- 引入Bootstrap -->
-<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    <!-- 包含了popper.js的Bootstrap文件，但是体积较大，暂时不使用 -->
+    <!-- <script src="{% static 'bootstrap/js/bootstrap.bundle.js' %}"></script> -->
 
-<!-- 包含了popper.js的Bootstrap文件，但是体积较大，暂时不使用 -->
-<!-- <script src="{% static 'bootstrap/js/bootstrap.bundle.js' %}"></script> -->
+    <script>
+        $(function () {
+            // 夜晚开关
+            // 读取复选框的状态
+            var isChecked = localStorage.getItem("isChecked") === "true";
+            // 设置复选框的状态
+            $("#switch").prop("checked", isChecked);
+            // 根据复选框的状态设置主题
+            setTheme(isChecked);
 
-<!-- 阿里图标库 -->
-<script defer src="//at.alicdn.com/t/c/font_3883106_okkeh74ucrr.js"></script>
+            // 监听复选框的点击事件
+            $("#switch").on("click", function () {
+                // 保存复选框的状态到本地存储
+                localStorage.setItem("isChecked", $(this).prop("checked"));
+                // 根据复选框的状态设置主题
+                setTheme($(this).prop("checked"));
+            });
 
-{% block js %}{% endblock %}
+            // 设置主题的函数
+            function setTheme(isChecked) {
+                if (isChecked) {
+                    // 如果复选框选中，则设置 body 标签的 data-bs-theme 属性为 "dark"
+                    $("body").attr("data-bs-theme", "dark");
+                } else {
+                    // 如果复选框未选中，则设置 body 标签的 data-bs-theme 属性为 "light"
+                    $("body").attr("data-bs-theme", "light");
+                }
+            }
+        });
+
+    </script>
+
+    <!-- 阿里图标库 -->
+    <script defer src="//at.alicdn.com/t/c/font_3883106_okkeh74ucrr.js"></script>
+
+    {% block js %}{% endblock %}
+
 </body>
+
 </html>
