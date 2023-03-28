@@ -4,6 +4,8 @@ from django.utils import timezone
 # 为了动态计算每个标签的引用次数
 from django.db.models.signals import m2m_changed, pre_delete
 from django.dispatch import receiver
+# 引入自定义字段
+from MDEditor.fields import MDTextField
 
 # Create your models here.
 
@@ -61,8 +63,8 @@ def delete_lifelog(sender, instance, **kwargs):
 # from mdeditor.fields import MDTextField
 
 class Article(models.Model):
-    title = models.CharField(verbose_name='标题', max_length=10)
-    content = models.TextField(verbose_name='内容')
+    title = models.CharField(verbose_name='标题', max_length=128)
+    content = MDTextField(verbose_name='内容')
     pub_date = models.DateTimeField(verbose_name='发布时间',default=timezone.now)
     
     def __str__(self):
