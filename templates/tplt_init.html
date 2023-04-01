@@ -46,7 +46,7 @@
         $(function () {
             // 夜晚开关
             // 读取复选框的状态
-            var isChecked = localStorage.getItem("isChecked") === "true";
+            const isChecked = localStorage.getItem("isChecked") === "true";
             // 设置复选框的状态
             $("#switch").prop("checked", isChecked);
             // 根据复选框的状态设置主题

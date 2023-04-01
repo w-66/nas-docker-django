@@ -15,19 +15,19 @@
     const vditor = new Vditor("vditor", {
         width: '{{ config.width|safe }}',
         height: {{ config.height }},
-    lang: '{{ config.lang|safe }}',
+        lang: '{{ config.lang|safe }}',
         typewriterMode: '{{ config.typewriterMode|safe }}',
-            mode: '{{ config.mode|safe }}',
+        mode: '{{ config.mode|safe }}',
         debugger: '{{ config.debugger|safe }}',
         cache: {
         enable: false,
         },
-    value: "{{value|safe}}",
+        value: "{{value|safe}}",
         theme: '{{ config.theme }}',
-            icon: '{{ config.icon|safe }}',
-                outline: '{{config.outline }}',
-                    // cdn: '/static/',
-                    preview: {
+        icon: '{{ config.icon|safe }}',
+        outline: '{{config.outline }}',
+        // cdn: '/static/',
+        preview: {
         // 预览(渲染)主题
         theme: {
             current: '{{ config.preview_theme|safe }}',
