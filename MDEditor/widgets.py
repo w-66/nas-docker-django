@@ -33,7 +33,10 @@ class MDEditorWidget(forms.Textarea):
         if value is None:
             value = ''
         # 换行问题，转义...只能想到这个解决办法了，想了我多久啊，起码一个星期...想想就难受，人菜瘾大...
-        value = value.replace('\r\n', '\\r\\n')  
+        # value = value.replace('\r\n', '\\r\\n')  
+        # value = value.replace('`', '\`')  
+        # value = value.replace('<', '\<')  
+        # value = value.replace('>', '\>')  
         # print(f'正常的值：{value}')
         # print(f'改后的值force_text：{(force_text(value))}')
         # print(f'改后的值force_str：{(force_str(value))}')
@@ -49,6 +52,7 @@ class MDEditorWidget(forms.Textarea):
         return mark_safe(render_to_string('MDEditor/markdown.html', {
             'final_attrs': flatatt(final_attrs),
             # 'value': conditional_escape(force_text(value)),
+            # 'value': force_text(value),
             'value': value,
             'id': final_attrs['id'],
             'config': self.config,
