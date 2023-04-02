@@ -30,10 +30,11 @@ class Article_ListView(generic.ListView):
 def article_detail(request, pk):
     article = get_object_or_404(Article, pk=pk)    # 从名为“Article”的模型中获取一个主键（pk）等于给定值，如果该实例不存在，则引发HTTP 404异常。
     md_content = str(article.content)
+    md_title = str(article.title)
     # md_content = md_content.replace('`', '\`')  
     # md_content = md_content.replace('\r\n', '\\r\\n')  
     # md_content = md_content.replace('<', '\<')  
     # md_content = md_content.replace('>', '\>')  
     # md_content = md_content.replace("'", "\'")  
-    return render(request, 'blog/article_detail.html', {'md_content':md_content})
+    return render(request, 'blog/article_detail.html', {'md_content':md_content,'md_title':md_title})
 

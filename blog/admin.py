@@ -12,8 +12,6 @@ class LifelogAdmin(admin.ModelAdmin):
     fieldsets = [
         ('基础信息', {
             'fields': ['pub_date',('tags', 'location')],
-            # 'classes': ['wide']
-            # 'description': '日期'
         }),
         (None, {
             'fields': ['content']

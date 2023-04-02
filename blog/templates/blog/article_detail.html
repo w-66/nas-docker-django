@@ -2,6 +2,11 @@
 {% load static %}
 {% block css %}
 <link rel="stylesheet" href="{% static 'vditor/3.9.1/css/index.min.css'%}">
+
+<style>
+  .vditor-reset--anchor {
+    padding-left: 0px;
+  }
 </style>
 {% endblock %}
 {% block js %}
@@ -10,7 +15,7 @@
   integrity="sha512-Svg4kRegVH4xym5HLd/Q/h1RhZcbah7m/xJapksFXWhsQrv3lTD/LLgHZOV5cHujVebGtqtML5BzKP3aAGpcug=="
   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-  {% comment %}
+{% comment %}
 <script src="https://b3log.org/vditor/vditor.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vditor@3.8.12/dist/index.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vditor/3.9.1/index.min.js"
@@ -75,7 +80,7 @@
         },
       })
     // ---
-    
+
     // 设置 动态主题颜色
     // 读取复选框的状态
     // ---
@@ -93,12 +98,14 @@
 {% include 'navbar.html' %}
 
 <div class="container-md">
-  <div class="row">
+  <div class="row mt-3">
 
     <div class="col-md-1">
       123
     </div>
     <div class="col-md-11">
+      <div class="h1">{{md_title}}</div>
+      <hr>
       <div id="preview"></div>
 
     </div>
