@@ -2,7 +2,7 @@ import html
 import re
 from django.contrib import admin
 from .models import Lifelog,Tag, Article
-
+import mistune
 from django.db import models
 from django.utils import html
 
@@ -66,35 +66,12 @@ class TagAdmin(admin.ModelAdmin):
 class ArticleAdmin(admin.ModelAdmin):
     list_display = ('id', 'title')
     list_display_links = ('id', 'title')      # 列表可编辑跳转链接
-
-
-    def escape_markdown(self, text):
-        # 需要转义的字符
-        chars_to_escape = r'<>'
-        # 查找需要转义的字符
-        pattern = re.compile('[{}]'.format(chars_to_escape))
-        matches = pattern.findall(text)
-        # 如果没有需要转义的字符，则直接返回
-        if not matches:
-            return text
-        # 查找代码块
-        code_blocks = re.findall(r'```.*?```', text, re.DOTALL)
-        # 将代码块中的内容替换为占位符
-        placeholders = {}
-        for i, code_block in enumerate(code_blocks):
-            placeholder = f'__CODE_BLOCK_{i}__'
-            placeholders[placeholder] = code_block
-            text = text.replace(code_block, placeholder)
-        # 对需要转义的字符进行转义
-        for char in set(matches):
-            # 对排除代码块的文本进行转义
-            text = text.replace(char, html.escape(char))
-        # 将代码块中的内容替换回来
-        for placeholder, code_block in placeholders.items():
-            text = text.replace(placeholder, code_block)
-        return text
-
-
+    fieldsets = [
+        ('基础信息', {
+            'fields': [('title','pub_date'),
+                       'content'],
+        })
+    ]
     def save_model(self, request, obj, form, change):
         """
         Given a model instance save it to the database.
@@ -103,12 +80,11 @@ class ArticleAdmin(admin.ModelAdmin):
         # 对表单数据进行预处理 `
         from django.utils.html import escape
         content = form.cleaned_data['content']
-        content = self.escape_markdown(content)
+        # content = self.escape_markdown(content)
         if '&#96;' not in content:
             content = content.replace("`", "\`")
-        obj.content = content
 
-# 
+        obj.content = content
         print(obj.content)  # content的值
         # print(form.cleaned_data['content']) # 获取更新的数据
         obj.save()

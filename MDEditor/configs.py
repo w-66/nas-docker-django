@@ -13,6 +13,7 @@ DEFAULT_CONFIG = {
     "theme": "dark",
     "icon": "ant",
     "outline": "false",
+    "sanitize":"true"
 }
 
 if settings.LANGUAGE_CODE.lower() == "zh-hans":
