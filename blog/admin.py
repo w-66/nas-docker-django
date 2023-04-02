@@ -64,6 +64,12 @@ class TagAdmin(admin.ModelAdmin):
     list_display = ( 'tag', 'references_count', 'id')
 
 class ArticleAdmin(admin.ModelAdmin):
+    class Media:
+        css = {
+            # 自定义单独的CSS 以覆盖DJagno admin默认的forms.css 样式
+            'all': ('/static/css/articles.css',) # 主要修改了列表的缩进
+        }
+
     list_display = ('id', 'title')
     list_display_links = ('id', 'title')      # 列表可编辑跳转链接
     fieldsets = [
@@ -88,9 +94,7 @@ class ArticleAdmin(admin.ModelAdmin):
         print(obj.content)  # content的值
         # print(form.cleaned_data['content']) # 获取更新的数据
         obj.save()
-    # def save_model(self, request, obj, form, change):
-    #     obj.added_by = request.user
-    #     super().save_model(request, obj, form, change)
+
 
 
 
